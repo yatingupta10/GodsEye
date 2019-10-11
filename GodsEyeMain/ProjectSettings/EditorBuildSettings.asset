@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CategoryView.unity
     guid: 554fbf770a5282f4bb42bc2d037fb01a
   - enabled: 1
+    path: Assets/Scenes/UsernameView.unity
+    guid: b7e79c68d5c8a914199662b016d4c1a5
+  - enabled: 1
     path: Assets/Scenes/PersonalView.unity
     guid: c97a2f7c25adb5f49934a1a4e8d87868
   - enabled: 1
