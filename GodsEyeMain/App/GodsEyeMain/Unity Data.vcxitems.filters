@@ -2,46 +2,46 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Data">
-      <UniqueIdentifier>{57fd4e8d-ca22-41f2-91e5-9c7c719b1a45}</UniqueIdentifier>
+      <UniqueIdentifier>{38fc7a2a-c237-494a-a447-b8fd5fb0aee0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono">
-      <UniqueIdentifier>{5c2a898d-975b-4170-8bf1-2905789dd4e9}</UniqueIdentifier>
+      <UniqueIdentifier>{f83fda9d-db16-4915-8f27-f4b0926001cf}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\2.0">
-      <UniqueIdentifier>{8cc9c2df-c6ce-4042-8118-238c2c18186d}</UniqueIdentifier>
+      <UniqueIdentifier>{4bd0b0e3-12af-4582-b704-6b5bb45375bf}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\2.0\Browsers">
-      <UniqueIdentifier>{16d23804-e106-4771-9c49-50d6135c4ed8}</UniqueIdentifier>
+      <UniqueIdentifier>{c840f140-a1d4-49f2-b1d4-a160ba0a2424}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.0">
-      <UniqueIdentifier>{7eb1e8d4-db85-4ef3-9af7-f0db225dc22e}</UniqueIdentifier>
+      <UniqueIdentifier>{d48be5b9-45cb-4b40-a3a1-2facf349804e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.0\Browsers">
-      <UniqueIdentifier>{222e8e8e-f6b1-46bb-9045-4dfeeec6bf41}</UniqueIdentifier>
+      <UniqueIdentifier>{e8f95413-d795-450a-85c5-641b4d81421b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.5">
-      <UniqueIdentifier>{7ccd5679-c106-40ed-abdc-660e99133415}</UniqueIdentifier>
+      <UniqueIdentifier>{c3b800ed-20e9-4ed7-8b30-10eb1cd7f1a5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\4.5\Browsers">
-      <UniqueIdentifier>{9c3617f5-bbce-47c0-8ac2-eba3c1d0ce68}</UniqueIdentifier>
+      <UniqueIdentifier>{08e58464-b7ea-491c-aa63-7216d3d7e6cd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc\mono\mconfig">
-      <UniqueIdentifier>{5c54b477-b6d8-4a84-a62b-ade67f47ffc0}</UniqueIdentifier>
+      <UniqueIdentifier>{ff22639b-256d-4302-9c8b-74345bc88669}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\Metadata">
-      <UniqueIdentifier>{691290b4-e698-456c-a7cf-759eeea272f9}</UniqueIdentifier>
+      <UniqueIdentifier>{310f7ec7-7127-49a9-9775-fc360d5b7739}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\Resources">
-      <UniqueIdentifier>{dfdd51e5-6118-4e24-87be-3d23be167a69}</UniqueIdentifier>
+      <UniqueIdentifier>{056d34ff-47fa-470e-9ae6-726aa388963e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\Resources">
-      <UniqueIdentifier>{92ecea9e-4073-438b-af16-e719d206f401}</UniqueIdentifier>
+      <UniqueIdentifier>{7b3b3980-3f94-4219-b664-9efc07dfb44b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data\etc">
-      <UniqueIdentifier>{5a3913e2-fe81-420d-9638-72e2ac5bf364}</UniqueIdentifier>
+      <UniqueIdentifier>{d3540746-dc06-4648-a443-e754f6cecbdc}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\il2cpp_data">
-      <UniqueIdentifier>{71c648e8-a633-4531-be41-23a0de22684e}</UniqueIdentifier>
+      <UniqueIdentifier>{99425700-c389-4c5f-8f58-300eab78e262}</UniqueIdentifier>
     </Filter>
     <Resource Include="$(MSBuildThisFileDirectory)Resource.res" />
     <None Include="$(MSBuildThisFileDirectory)StoreManifest.xml" />
@@ -125,19 +125,10 @@
     <None Include="$(MSBuildThisFileDirectory)Data\sharedassets1.assets">
       <Filter>Data</Filter>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets1.assets.resS">
-      <Filter>Data</Filter>
-    </None>
     <None Include="$(MSBuildThisFileDirectory)Data\sharedassets2.assets">
       <Filter>Data</Filter>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets2.assets.resS">
-      <Filter>Data</Filter>
-    </None>
     <None Include="$(MSBuildThisFileDirectory)Data\sharedassets3.assets">
-      <Filter>Data</Filter>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets3.assets.resS">
       <Filter>Data</Filter>
     </None>
     <None Include="$(MSBuildThisFileDirectory)Data\sharedassets4.assets">

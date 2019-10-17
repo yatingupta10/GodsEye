@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//move the face pane up after the user clicks it
 public class FacePaneController : MonoBehaviour
 {
     public GameObject pane;
