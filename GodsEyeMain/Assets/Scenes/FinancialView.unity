@@ -817,7 +817,7 @@ MonoBehaviour:
   SolverHandler: {fileID: 927829536}
   orientationType: 2
   localOffset: {x: 0, y: 0, z: 0}
-  worldOffset: {x: 0, y: 0, z: 0.7}
+  worldOffset: {x: 0, y: 0, z: 2}
   useAngleSteppingForWorldOffset: 0
   tetherAngleSteps: 6
 --- !u!114 &927829536
