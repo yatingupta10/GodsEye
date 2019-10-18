@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: 31a611a779d3499e8e35f1a2018ca841, type: 2}
+  activeProfile: {fileID: 11400000, guid: 4f9c6d06c1f3ab744975387d1683dcd0, type: 2}
 --- !u!4 &391338352
 Transform:
   m_ObjectHideFlags: 0
@@ -619,6 +619,46 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 610696696089439430, guid: 80a60318302d68c48ab104457b3d62f4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 610696696089439455, guid: 80a60318302d68c48ab104457b3d62f4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767341646170297523, guid: 80a60318302d68c48ab104457b3d62f4,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650276034486135205, guid: 80a60318302d68c48ab104457b3d62f4,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650276034486135205, guid: 80a60318302d68c48ab104457b3d62f4,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650276034486135205, guid: 80a60318302d68c48ab104457b3d62f4,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650276034486135205, guid: 80a60318302d68c48ab104457b3d62f4,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650276034486135205, guid: 80a60318302d68c48ab104457b3d62f4,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80a60318302d68c48ab104457b3d62f4, type: 3}
 --- !u!4 &861672356 stripped
@@ -698,7 +738,7 @@ MonoBehaviour:
   SolverHandler: {fileID: 1229399537}
   orientationType: 3
   localOffset: {x: 0, y: 0, z: 0}
-  worldOffset: {x: 0, y: 0, z: 2}
+  worldOffset: {x: 0, y: 0, z: 0.7}
   useAngleSteppingForWorldOffset: 0
   tetherAngleSteps: 6
 --- !u!114 &1229399537
