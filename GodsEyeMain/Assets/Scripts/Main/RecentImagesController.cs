@@ -12,8 +12,8 @@ public class RecentImagesController : MonoBehaviour
 
     int numImages = 0;
 
-    ArrayList RecentImages = new ArrayList();
-    ArrayList RecentImagesPrefabs = new ArrayList(); //image prefabs will be instantiated for each image
+    List<Sprite> RecentImages = new List<Sprite>();
+    List<GameObject> RecentImagesPrefabs = new List<GameObject>(); //image prefabs will be instantiated for each image
 
     int currentImage = 0;
 
@@ -53,8 +53,8 @@ public class RecentImagesController : MonoBehaviour
             RecentImagesPrefabs.Add(BaseImagePrefab);
 
             //set the sprite
-            ((GameObject)RecentImagesPrefabs[i]).GetComponentInChildren<Image>().sprite = (Sprite) RecentImages[i];
-            ((GameObject)RecentImagesPrefabs[i]).GetComponentInChildren<Image>().preserveAspect = true;
+            RecentImagesPrefabs[i].GetComponentInChildren<Image>().sprite = RecentImages[i];
+            RecentImagesPrefabs[i].GetComponentInChildren<Image>().preserveAspect = true;
 
             //add the image prefab to the scene inside the recent images data element
             Instantiate((GameObject)RecentImagesPrefabs[i], ImageBaseLocation.transform);
