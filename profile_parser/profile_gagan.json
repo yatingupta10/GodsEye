@@ -1,5 +1,5 @@
 {
-	"id":"gagan_vasudev",
+	"id":"gagan",
 	"first_name":"Gagan",
 	"last_name":"Vasudev",
 
@@ -14,7 +14,7 @@
 			},
 			{
 				"school":"MAIT",
-				"degree":"bachelors"
+				"degree":"bachelors",
 				"major":"Computer Science",
 				"tenure":"2011-2015"
 			}
@@ -97,7 +97,6 @@
 	}
 
 }
-
 
 
 
