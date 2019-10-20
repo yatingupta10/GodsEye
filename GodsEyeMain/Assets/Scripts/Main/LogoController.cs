@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//controller for showing the logo of the target's employer in the financial view
 public class LogoController : MonoBehaviour
 {
     public GameObject companyLogo;

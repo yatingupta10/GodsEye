@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+//controller for showing recent venmo transactions in the financial view
 public class RecentTransactionsController : MonoBehaviour
 {
     public GameObject transactionDataPrefab;
