@@ -9,7 +9,6 @@ public class LogoController : MonoBehaviour
     public GameObject companyLogo;
 
     //target's company logo will be stored in this directory when pulling in user data
-    [HideInInspector]
     public string recentImageDir = "Testing/EmployerLogo";
 
     Sprite logo;

@@ -21,7 +21,6 @@ public class RecentTransactionsController : MonoBehaviour
     List<GameObject> recentTransactions = new List<GameObject>();
 
     //recent transaction data can be stored in this directory when pulling in user data
-    [HideInInspector]
     public string recentTransactionDir = "Testing/RecentTransactions";
 
 

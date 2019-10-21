@@ -17,13 +17,12 @@ public class TopFriendsController : MonoBehaviour
 
     List<GameObject> friendPrefabs = new List<GameObject>();
 
-    [HideInInspector]
     public string friendsImagesDir = "Testing/TopFriends";
 
 
     // Start is called before the first frame update
     void Start(){
-        CreateFriendArrays();
+        //CreateFriendArrays();
     }
 
     Sprite ImportImage(string imagePath){

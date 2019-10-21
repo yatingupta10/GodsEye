@@ -17,7 +17,6 @@ public class FamilyMembersController : MonoBehaviour
 
     List<GameObject> memberPrefabs = new List<GameObject>();
 
-    [HideInInspector]
     public string familyMemberImagesDir = "Testing/FamilyMembers";
 
 

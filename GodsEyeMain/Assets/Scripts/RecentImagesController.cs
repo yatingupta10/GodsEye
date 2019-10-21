@@ -21,7 +21,6 @@ public class RecentImagesController : MonoBehaviour
     public GameObject forwardButton; //next button
 
     //recent social media images will be stored in this directory when pulling in user data
-    [HideInInspector]
     public string recentImageDir = "Testing/RecentImages";
 
 
