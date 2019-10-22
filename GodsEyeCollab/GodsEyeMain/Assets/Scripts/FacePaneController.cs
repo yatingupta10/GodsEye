@@ -65,6 +65,7 @@ public class FacePaneController : MonoBehaviour
 
     //adds text for name and score and shows buttons
     public void UpdatePane(){
-        moveStarted = true;
+        //moveStarted = true;
+        moveDone = true;
     }
 }
