@@ -27,8 +27,18 @@ public class UIController : MonoBehaviour
     
     //disable all views
     void DeactivateAllViews(){
+        //this will be replaced by an animation
         foreach (GameObject obj in viewList){
             obj.SetActive(false);
+        }
+    }
+
+    void ActivateView(int viewNum){
+        //this will be replace by an animation (different to the one for DeactiveAllViews)
+        viewList[viewNum].SetActive(true);
+
+        if (viewNum != 1){
+            currentView = viewNum;
         }
     }
 
@@ -38,8 +48,7 @@ public class UIController : MonoBehaviour
     public void MainView(){
         DeactivateAllViews();
 
-        viewList[0].SetActive(true);
-        currentView = 0;
+        ActivateView(0);
     }
 
 
@@ -47,7 +56,7 @@ public class UIController : MonoBehaviour
     public void UsernameView(){
         DeactivateAllViews();
 
-        viewList[1].SetActive(true);
+        ActivateView(1);
     }
 
 
@@ -55,29 +64,25 @@ public class UIController : MonoBehaviour
     public void PersonalView(){
         DeactivateAllViews();
 
-        viewList[2].SetActive(true);
-        currentView = 2;
+        ActivateView(2);
     }
 
     public void FinancialView(){
         DeactivateAllViews();
 
-        viewList[3].SetActive(true);
-        currentView = 3;
+        ActivateView(3);
     }
 
     public void InterestsView(){
         DeactivateAllViews();
 
-        viewList[4].SetActive(true);
-        currentView = 4;
+        ActivateView(4);
     }
 
     public void ConnectionsView(){
         DeactivateAllViews();
 
-        viewList[5].SetActive(true);
-        currentView = 5;
+        ActivateView(5);
     }
 
 
@@ -85,7 +90,7 @@ public class UIController : MonoBehaviour
     public void UsernamePreviousView(){
         DeactivateAllViews();
 
-        viewList[currentView].SetActive(true);
+        ActivateView(currentView);
     }
 
 
