@@ -36,3 +36,6 @@ sysinfo.txt
 *.unitypackage
 !Microsoft.*.unitypackage
 .DS_Store
+
+*/Data/resources.assets.resS
+*/Assets/UIPack/Resources/PSD/Components.psd
