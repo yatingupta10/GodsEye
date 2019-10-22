@@ -37,5 +37,5 @@ sysinfo.txt
 !Microsoft.*.unitypackage
 .DS_Store
 
-*/Data/resources.assets.resS
-*/Assets/UIPack/Resources/PSD/Components.psd
+GodsEyeCollab/GodsEyeMain/App/GodsEyeMain/Data/resources.assets.resS
+GodsEyeCollab/GodsEyeMain/Assets/UIPack/Resources/PSD/Components.psd
