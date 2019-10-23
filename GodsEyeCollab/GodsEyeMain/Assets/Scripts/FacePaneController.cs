@@ -25,6 +25,8 @@ public class FacePaneController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
+        return;
+
         float zPos = pane.GetComponentInParent<Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital>().WorldOffset.z;
 
         startPos = new Vector3(0.0f, -0.15f, zPos);
