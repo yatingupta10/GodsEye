@@ -2,72 +2,69 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//move the face pane up after the user clicks it
 public class FacePaneController : MonoBehaviour
 {
-    public GameObject pane;
     public GameObject scoreBubble;
     public GameObject faceButton;
     public GameObject nameText;
     public GameObject scoreText;
     public GameObject buttonCollection;
 
-    private bool moveStarted = false;
-    private bool moveDone = false;
+    public float upForceScale;
+    public float leftForceScale;
 
-    private Vector3 startPos;
-    private Vector3 endPos;
+    public Transform topPosition;
+    public Transform leftPosition;
+    
 
-    public float animationSpeed = 1.0f;
+    Rigidbody rb;
+    Vector3 upForce;
+    Vector3 leftForce;
 
-    private float startTime;
-    private float totalDistance;
+    bool moveStart = false;
+    bool nextMove = false;
 
     // Start is called before the first frame update
     void Start(){
-        return;
-
-        float zPos = pane.GetComponentInParent<Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital>().WorldOffset.z;
-
-        startPos = new Vector3(0.0f, -0.15f, zPos);
-        endPos = new Vector3(0.0f, 0.0f, zPos);
-
-        startTime = Time.time;
-        totalDistance = Vector3.Distance(startPos, endPos);
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update(){
-        if (moveStarted){
-            float distanceCovered = (Time.time - startTime) * animationSpeed;
-
-            float distanceFraction = distanceCovered / totalDistance;
-
-            pane.transform.position = Vector3.Lerp(startPos, endPos, distanceFraction);
-
-            if (pane.transform.position.y == 0.0f){
-                moveDone = true;
-            }
+        if (moveStart){
+            moveStart = false;
+            upForce = upForceScale * Vector3.Normalize(topPosition.position - gameObject.transform.position);
+            rb.AddForce(upForce);
+        }
+        
+        if (nextMove){
+            nextMove = false;
+            leftForce = leftForceScale * Vector3.Normalize(leftPosition.position - topPosition.position);
+            rb.AddForce(leftForce);
         }
 
-        if (moveDone){
-            moveStarted = false;
-            moveDone = false;
+    }
 
-            //remove score in text bubble, button over face
-            scoreBubble.SetActive(false);
-            faceButton.SetActive(false);
+    public void BeginMove(){
+        moveStart = true;
+        scoreBubble.SetActive(false);
+        faceButton.SetActive(false);
+    }
 
-            //show name, score and accept/reject buttons
+    void OnTriggerEnter(Collider col){
+        //collided with top collider, now move left
+        if (col.gameObject.name == "TopCollider"){
+            rb.constraints |= RigidbodyConstraints.FreezePositionY;
+            nextMove = true;
+        }
+
+        //collided with left collider, now stop moving
+        if (col.gameObject.name == "LeftCollider"){
+            rb.constraints |= RigidbodyConstraints.FreezeAll;
             nameText.SetActive(true);
             scoreText.SetActive(true);
             buttonCollection.SetActive(true);
+            Destroy(rb);
         }
-    }
-
-    //adds text for name and score and shows buttons
-    public void UpdatePane(){
-        //moveStarted = true;
-        moveDone = true;
     }
 }

@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8094257872065235959, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196487, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_Mesh
@@ -246,6 +251,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094257872065235959, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196487, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
@@ -372,6 +382,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interests
       objectReference: {fileID: 0}
+    - target: {fileID: 8094257872065235959, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196487, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_Mesh
@@ -491,6 +506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8094257872065235959, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196487, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
