@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
+using static ProfileParser;
 
 //controller for showing recent venmo transactions in the financial view
 public class RecentTransactionsController : MonoBehaviour
@@ -17,7 +19,7 @@ public class RecentTransactionsController : MonoBehaviour
     int numTransactions;
     int currentTransaction = 0;
 
-    List<TransactionData> transactionData;
+    List<VenmoTx> transactionData;
     List<GameObject> recentTransactions = new List<GameObject>();
 
     //recent transaction data can be stored in this directory when pulling in user data
@@ -27,26 +29,32 @@ public class RecentTransactionsController : MonoBehaviour
     // Start is called before the first frame update
     void Start(){
         CreateTransactionsArrays();
+       
 
         toggleUpButton(false);
     }
 
-    void ImportTransactionData(){
-        //this seems to work, but need to be sure since printing out doesn't work
-        TextAsset jsonObj = Resources.LoadAll(recentTransactionDir)[0] as TextAsset;
+    //void ImportTransactionData(){
+    //    //this seems to work, but need to be sure since printing out doesn't work
+    //    TextAsset jsonObj = Resources.LoadAll(recentTransactionDir)[0] as TextAsset;
 
-        Transaction tObj = JsonUtility.FromJson<Transaction>(jsonObj.text);
+    //    Transaction tObj = JsonUtility.FromJson<Transaction>(jsonObj.text);
 
-        transactionData = tObj.transactions;
+    //    transactionData = tObj.transactions;
 
-        numTransactions = transactionData.Count;
+    //    numTransactions = transactionData.Count;
 
-        Debug.Log("Imported " + numTransactions + " recent transactions.");
-    }
+    //    Debug.Log("Imported " + numTransactions + " recent transactions.");
+    //}
 
 
     void CreateTransactionsArrays(){
-        ImportTransactionData();
+        ProfileParser currentProf = ProfileParser.parseProfile("gagan");
+        Debug.Log(currentProf.profile.financial_info.venmo_tx);
+        Debug.Log(currentProf.profile.financial_info.venmo_tx.Count);
+        numTransactions = currentProf.profile.financial_info.venmo_tx.Count;
+        transactionData = currentProf.profile.financial_info.venmo_tx;
+        Debug.Log("Imported " + numTransactions + " recent transactions.");
 
         for (int i = 0; i < numTransactions; i++){
             recentTransactions.Add(transactionDataPrefab);
@@ -55,7 +63,7 @@ public class RecentTransactionsController : MonoBehaviour
             recentTransactions[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].date;
             recentTransactions[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].amount;
             recentTransactions[i].transform.GetChild(2).GetComponent<TextMeshPro>().text = transactionData[i].recipient;
-
+            //recentTransactions[i].transform.GetChild(3).GetComponent<TextMeshPro>().text = transactionData[i].payer;
             //add transaction data prefab to scene
             if (i == 0){
                 Instantiate(recentTransactions[i], upperLocation.transform);

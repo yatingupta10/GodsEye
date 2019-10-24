@@ -1,0 +1,135 @@
+﻿{
+    "id": "gagan",
+    "first_name": "Gagan",
+    "last_name": "Vasudev",
+
+    "personal_info": {
+        "age": 27,
+        "education": [
+            {
+                "school": "USC",
+                "degree": "masters",
+                "major": "Computer Science",
+                "tenure": "2018-2020"
+            },
+            {
+                "school": "MAIT",
+                "degree": "bachelors",
+                "major": "Computer Science",
+                "tenure": "2011-2015"
+            }
+        ],
+        "email": "gagan@gmail.com",
+        "contact_info": {
+            "mobile": "+1-2132453274",
+            "home": "+1-2134567890"
+        },
+
+        "residence": {
+            "apt": "2717 orchard Ave",
+            "city": "Los Angeles",
+            "state": "CA",
+            "country": "USA",
+            "zipcode": 90031,
+            "latitude": 34.029631,
+            "longitude": -118.287778
+        },
+
+        "recent_images": [
+            "gagan1.jpeg",
+            "gagan2.jpeg",
+            "gagan3.jpeg"
+        ]
+    },
+
+
+    "financial_info": {
+
+        "current_company": "Amazon",
+        "company_logo": "amazon.png",
+        "position": "Software Developer",
+        "location": "Seattle, WA",
+        "salary": 120000,
+        "venmo_tx": [
+            {
+                "amount": "$20",
+                "recipient": "Shwetha Rao",
+                "payer": "Gagan",
+                "date": "11th Oct 2019"
+            },
+            {
+                "amount": "$50",
+                "recipient": "Yatin Gupta",
+                "payer": "Gagan",
+                "date": "11th Oct 2019"
+            }
+        ]
+    },
+
+    "connections": {
+        "relationshit_status": "Married",
+        "no_of_dependents": 2,
+        "family_members": [
+            {
+                "name": "Daniel",
+                "relation": "brother"
+            },
+            {
+                "name": "megan",
+                "relation": "wife"
+            }
+        ],
+        "social_media_friends": [
+            "Jack Smith",
+            "John Robert",
+            "Ram Yadav",
+            "lizzy Bennete"
+        ]
+    },
+
+    "social_media_info": {
+        "facebook": {
+            "username": "vasudev.gags",
+            "url": "https://www.facebook.com/vasudev.gags"
+        },
+        "instagram": {
+            "username": "devilgags",
+            "url": "https://www.instagram.com/devilgags"
+        },
+        "linkedin": {
+            "username": "gagan.vasudev",
+            "url": "https://www.linkedin.com/in/gaganvasudev/"
+        },
+        "twitter": {
+            "username": "gaganvasudev",
+            "url": "https://twitter.com/gagan_vasudev"
+        }
+    },
+
+    "interests_info": {
+        "checkins": [
+            {
+                "location": "Universal Studio, LA",
+                "date": "7th Oct 2019",
+                "time": "14:45"
+            },
+            {
+                "location": "The Grove, LA",
+                "date": "10th Oct 2019",
+                "time": "20:00"
+            },
+            {
+                "location": "Universal Studio, LA",
+                "date": "13th Oct 2019",
+                "time": "14:45"
+            },
+            {
+                "location": "The Grove, LA",
+                "date": "18th Oct 2019",
+                "time": "20:00"
+            }
+        ]
+    }
+
+}
+
