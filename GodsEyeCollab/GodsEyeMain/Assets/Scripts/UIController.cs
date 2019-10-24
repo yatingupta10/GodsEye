@@ -49,6 +49,8 @@ public class UIController : MonoBehaviour
         DeactivateAllViews();
 
         ActivateView(0);
+
+        ActivateView(7); //temp
     }
 
 
@@ -57,6 +59,8 @@ public class UIController : MonoBehaviour
         DeactivateAllViews();
 
         ActivateView(1);
+
+        ActivateView(6); //temp
     }
 
 
@@ -65,24 +69,32 @@ public class UIController : MonoBehaviour
         DeactivateAllViews();
 
         ActivateView(2);
+
+        ActivateView(6); //temp
     }
 
     public void FinancialView(){
         DeactivateAllViews();
 
         ActivateView(3);
+
+        ActivateView(6); //temp
     }
 
     public void InterestsView(){
         DeactivateAllViews();
 
         ActivateView(4);
+
+        ActivateView(6); //temp
     }
 
     public void ConnectionsView(){
         DeactivateAllViews();
 
         ActivateView(5);
+
+        ActivateView(6); //temp
     }
 
 
@@ -91,6 +103,8 @@ public class UIController : MonoBehaviour
         DeactivateAllViews();
 
         ActivateView(currentView);
+
+        ActivateView(6); //temp
     }
 
 
