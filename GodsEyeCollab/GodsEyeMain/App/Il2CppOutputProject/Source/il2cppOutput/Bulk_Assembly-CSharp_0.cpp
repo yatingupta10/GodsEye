@@ -15574,6 +15574,8 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_MainView_mC741491CFC9FA0518D36C0
 		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
 		// ActivateView(0);
 		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 0, /*hidden argument*/NULL);
+		// ActivateView(7); //temp
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 7, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -15586,6 +15588,8 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_UsernameView_m5D0E46F230BAC437A4
 		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
 		// ActivateView(1);
 		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 1, /*hidden argument*/NULL);
+		// ActivateView(6); //temp
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -15598,6 +15602,8 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_PersonalView_m005F2FA65837D9FC8E
 		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
 		// ActivateView(2);
 		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 2, /*hidden argument*/NULL);
+		// ActivateView(6); //temp
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -15610,6 +15616,8 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_FinancialView_m39AFD524E940FD0FF
 		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
 		// ActivateView(3);
 		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 3, /*hidden argument*/NULL);
+		// ActivateView(6); //temp
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -15622,6 +15630,8 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_InterestsView_mF212BD90509EE12B4
 		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
 		// ActivateView(4);
 		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 4, /*hidden argument*/NULL);
+		// ActivateView(6); //temp
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -15634,6 +15644,8 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_ConnectionsView_mF2CA9C72B7F57CA
 		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
 		// ActivateView(5);
 		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 5, /*hidden argument*/NULL);
+		// ActivateView(6); //temp
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -15647,6 +15659,8 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_UsernamePreviousView_m84BB977414
 		// ActivateView(currentView);
 		int32_t L_0 = __this->get_currentView_6();
 		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_0, /*hidden argument*/NULL);
+		// ActivateView(6); //temp
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
 		// }
 		return;
 	}
