@@ -26,12 +26,34 @@ namespace Microsoft.MixedReality.Toolkit.UI
 
         public override void OnUpdate(InteractableStates state, Interactable source)
         {
-            if (state.GetState(InteractableStates.InteractableStateEnum.Pressed).Value > 0 && !hasDown)
+            /*if (state.GetState(InteractableStates.InteractableStateEnum.Pressed).Value > 0 && !hasDown)
             {
                 hasDown = true;
                 clickTimer = 0;
             }
             else if(state.GetState(InteractableStates.InteractableStateEnum.Pressed).Value < 1)
+            {
+                hasDown = false;
+            }
+
+            if (hasDown && clickTimer < HoldTime)
+            {
+                clickTimer += Time.deltaTime;
+
+                if (clickTimer >= HoldTime)
+                {
+                    uEvent.Invoke();
+                }
+            }*/
+
+
+            //attempting to modify this for only gazing
+            if (state.GetState(InteractableStates.InteractableStateEnum.Focus).Value > 0 && !hasDown)
+            {
+                hasDown = true;
+                clickTimer = 0;
+            }
+            else if (state.GetState(InteractableStates.InteractableStateEnum.Focus).Value < 1)
             {
                 hasDown = false;
             }
