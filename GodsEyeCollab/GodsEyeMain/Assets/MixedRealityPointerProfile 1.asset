@@ -20,7 +20,7 @@ MonoBehaviour:
   debugDrawPointingRays: 1
   debugDrawPointingRayColors:
   - {r: 0, g: 1, b: 0, a: 1}
-  gazeCursorPrefab: {fileID: 1000012072213228, guid: 5b3e2856904e43c680f84f326861032a,
+  gazeCursorPrefab: {fileID: 1000012072213228, guid: e0453425e3830564d82a82a06dcf24fb,
     type: 3}
   gazeProviderType:
     reference: Microsoft.MixedReality.Toolkit.Input.GazeProvider, Microsoft.MixedReality.Toolkit.Services.InputSystem
