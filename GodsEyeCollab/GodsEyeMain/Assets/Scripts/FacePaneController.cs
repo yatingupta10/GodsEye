@@ -46,6 +46,8 @@ public class FacePaneController : MonoBehaviour
     }
 
     public void BeginMove(){
+        //rb.constraints = RigidbodyConstraints.FreezeRotation;
+
         moveStart = true;
         scoreBubble.SetActive(false);
         faceButton.SetActive(false);
