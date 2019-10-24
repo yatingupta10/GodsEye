@@ -6,30 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Personal.unity
-    guid: 32b5ba682688c42fdac6efe2d1e25edf
-  - enabled: 1
-    path: Assets/Scenes/FaceView.unity
-    guid: d211e2ed9e9dc5444bbb89d5f69555a0
-  - enabled: 1
-    path: Assets/Scenes/CategoryView.unity
-    guid: 554fbf770a5282f4bb42bc2d037fb01a
-  - enabled: 1
-    path: Assets/Scenes/UsernameView.unity
-    guid: b7e79c68d5c8a914199662b016d4c1a5
-  - enabled: 1
-    path: Assets/Scenes/PersonalView.unity
-    guid: c97a2f7c25adb5f49934a1a4e8d87868
-  - enabled: 1
-    path: Assets/Scenes/FinancialView.unity
-    guid: b3fd4c80a1dfd394c8590fac7f9397ea
-  - enabled: 1
-    path: Assets/Scenes/ConnectionsView.unity
-    guid: 1358d4b119793eb43bce16b21e320bc7
-  - enabled: 1
-    path: Assets/Scenes/InterestsView.unity
-    guid: 619110eccc78ecb47950d0def4b1e217
-  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: f5b009585ee7867459275bc63e905291
+  - enabled: 0
+    path: Assets/Scenes/Personal.unity
+    guid: 32b5ba682688c42fdac6efe2d1e25edf
+  - enabled: 0
+    path: Assets/Scenes/FaceView.unity
+    guid: d211e2ed9e9dc5444bbb89d5f69555a0
+  - enabled: 0
+    path: Assets/Scenes/CategoryView.unity
+    guid: 554fbf770a5282f4bb42bc2d037fb01a
+  - enabled: 0
+    path: Assets/Scenes/UsernameView.unity
+    guid: b7e79c68d5c8a914199662b016d4c1a5
+  - enabled: 0
+    path: Assets/Scenes/PersonalView.unity
+    guid: c97a2f7c25adb5f49934a1a4e8d87868
+  - enabled: 0
+    path: Assets/Scenes/FinancialView.unity
+    guid: b3fd4c80a1dfd394c8590fac7f9397ea
+  - enabled: 0
+    path: Assets/Scenes/ConnectionsView.unity
+    guid: 1358d4b119793eb43bce16b21e320bc7
+  - enabled: 0
+    path: Assets/Scenes/InterestsView.unity
+    guid: 619110eccc78ecb47950d0def4b1e217
   m_configObjects: {}
