@@ -3935,7 +3935,7 @@ IL_0088:
 			NullCheck(L_28);
 			Type_t * L_29 = AudioExtensionDefinition_GetExtensionType_mA3CC9D2F26A5188863150BCC39CD6EBE6D175260(L_28, /*hidden argument*/NULL);
 			NullCheck(L_29);
-			String_t* L_30 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_29);
+			String_t* L_30 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_29);
 			IL2CPP_RUNTIME_CLASS_INIT(AudioExtensionManager_tC973F0DD47CBACBEA5C3A9D845082BAC1149CFDB_il2cpp_TypeInfo_var);
 			AudioExtensionManager_WriteExtensionProperties_m51EDE1F77BF1FF1677F4C85C9067A2B48FC58C97(L_26, L_30, /*hidden argument*/NULL);
 			AudioSourceExtension_t9643FEF245632F35A3FED88FBBDDEA3404BDEAE1 * L_31 = V_3;
@@ -4383,7 +4383,7 @@ IL_0090:
 			NullCheck(L_31);
 			Type_t * L_32 = AudioExtensionDefinition_GetExtensionType_mA3CC9D2F26A5188863150BCC39CD6EBE6D175260(L_31, /*hidden argument*/NULL);
 			NullCheck(L_32);
-			String_t* L_33 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_32);
+			String_t* L_33 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_32);
 			IL2CPP_RUNTIME_CLASS_INIT(AudioExtensionManager_tC973F0DD47CBACBEA5C3A9D845082BAC1149CFDB_il2cpp_TypeInfo_var);
 			AudioExtensionManager_WriteExtensionProperties_m445848E71B4139FEE237367139F75751A0425974(L_29, L_33, /*hidden argument*/NULL);
 			AudioListenerExtension_t1407D9FB8E79B710574DA30045A97C9C2216F03E * L_34 = V_3;

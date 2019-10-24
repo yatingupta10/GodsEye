@@ -24879,7 +24879,7 @@ extern "C" IL2CPP_METHOD_ATTR bool ExtendsAttribute_IsConstraintSatisfied_m89578
 		Type_t * L_2 = ExtendsAttribute_get_BaseType_m9C61DD73FC34FE669CED4D9D86116E02562D2A89(__this, /*hidden argument*/NULL);
 		Type_t * L_3 = ___type0;
 		NullCheck(L_2);
-		bool L_4 = VirtFuncInvoker1< bool, Type_t * >::Invoke(109 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_2, L_3);
+		bool L_4 = VirtFuncInvoker1< bool, Type_t * >::Invoke(115 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_2, L_3);
 		if (!L_4)
 		{
 			goto IL_0024;
@@ -25669,7 +25669,7 @@ extern "C" IL2CPP_METHOD_ATTR bool ImplementsAttribute_IsConstraintSatisfied_m62
 		// var interfaces = type.GetInterfaces();
 		Type_t * L_2 = ___type0;
 		NullCheck(L_2);
-		TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* L_3 = VirtFuncInvoker0< TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* >::Invoke(45 /* System.Type[] System.Type::GetInterfaces() */, L_2);
+		TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* L_3 = VirtFuncInvoker0< TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* >::Invoke(48 /* System.Type[] System.Type::GetInterfaces() */, L_2);
 		V_0 = L_3;
 		// for (var i = 0; i < interfaces.Length; i++)
 		V_1 = 0;
@@ -32991,7 +32991,7 @@ extern "C" IL2CPP_METHOD_ATTR MixedRealityControllerAttribute_t272BEB73458063028
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_2 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_1, /*hidden argument*/NULL);
 		NullCheck(L_0);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_3 = VirtFuncInvoker2< ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*, Type_t *, bool >::Invoke(11 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_2, (bool)1);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_3 = VirtFuncInvoker2< ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*, Type_t *, bool >::Invoke(12 /* System.Object[] System.Reflection.MemberInfo::GetCustomAttributes(System.Type,System.Boolean) */, L_0, L_2, (bool)1);
 		RuntimeObject * L_4 = Enumerable_FirstOrDefault_TisRuntimeObject_mDB7B84266E55526467766A96022CB6B9CD332251((RuntimeObject*)(RuntimeObject*)L_3, /*hidden argument*/Enumerable_FirstOrDefault_TisRuntimeObject_mDB7B84266E55526467766A96022CB6B9CD332251_RuntimeMethod_var);
 		return ((MixedRealityControllerAttribute_t272BEB7345806302811A499A74F732DB84A0BE8D *)IsInstClass((RuntimeObject*)L_4, MixedRealityControllerAttribute_t272BEB7345806302811A499A74F732DB84A0BE8D_il2cpp_TypeInfo_var));
 	}

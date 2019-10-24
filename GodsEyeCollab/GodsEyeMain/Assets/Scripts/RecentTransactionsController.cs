@@ -24,6 +24,10 @@ public class RecentTransactionsController : MonoBehaviour
 
     //recent transaction data can be stored in this directory when pulling in user data
     public string recentTransactionDir = "Testing/RecentTransactions";
+    string json_path = "profile_dir/";
+    string fileName = "profile_gagan.json";
+
+    //TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
 
 
     // Start is called before the first frame update
@@ -32,6 +36,8 @@ public class RecentTransactionsController : MonoBehaviour
        
 
         toggleUpButton(false);
+
+        
     }
 
     //void ImportTransactionData(){
@@ -49,7 +55,9 @@ public class RecentTransactionsController : MonoBehaviour
 
 
     void CreateTransactionsArrays(){
-        ProfileParser currentProf = ProfileParser.parseProfile("gagan");
+        TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
+
+        ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
         Debug.Log(currentProf.profile.financial_info.venmo_tx);
         Debug.Log(currentProf.profile.financial_info.venmo_tx.Count);
         numTransactions = currentProf.profile.financial_info.venmo_tx.Count;

@@ -24964,7 +24964,7 @@ extern "C" IL2CPP_METHOD_ATTR String_t* SystemType_GetReference_mF59AE61B8E5422D
 	{
 		Type_t * L_2 = ___type0;
 		NullCheck(L_2);
-		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_AssemblyQualifiedName() */, L_2);
+		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_AssemblyQualifiedName() */, L_2);
 		bool L_4 = String_IsNullOrEmpty_m06A85A206AC2106D1982826C5665B9BD35324229(L_3, /*hidden argument*/NULL);
 		if (!L_4)
 		{
@@ -24984,7 +24984,7 @@ IL_001c:
 		// string[] qualifiedNameComponents = type.AssemblyQualifiedName.Split(',');
 		Type_t * L_6 = ___type0;
 		NullCheck(L_6);
-		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_AssemblyQualifiedName() */, L_6);
+		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(28 /* System.String System.Type::get_AssemblyQualifiedName() */, L_6);
 		CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* L_8 = (CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2*)SZArrayNew(CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2_il2cpp_TypeInfo_var, (uint32_t)1);
 		CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* L_9 = L_8;
 		NullCheck(L_9);
@@ -25191,7 +25191,7 @@ extern "C" IL2CPP_METHOD_ATTR void SystemType_set_Type_mEF2C7EC76D57D43217EFC045
 	{
 		Type_t * L_4 = ___value0;
 		NullCheck(L_4);
-		bool L_5 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_4);
+		bool L_5 = VirtFuncInvoker0< bool >::Invoke(76 /* System.Boolean System.Type::get_IsEnum() */, L_4);
 		if (L_5)
 		{
 			goto IL_0021;
@@ -25233,7 +25233,7 @@ IL_002a:
 		// Debug.LogError($"'{value.FullName}' is not a valid class or struct type.");
 		Type_t * L_10 = ___value0;
 		NullCheck(L_10);
-		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_10);
+		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, L_10);
 		String_t* L_12 = String_Concat_mF4626905368D6558695A823466A1AF65EADB9923(_stringLiteralBB589D0621E5472F470FA3425A234C74B1E202E8, L_11, _stringLiteralE57FA2DDB88C9BDBF24553DA245254310C5C27F1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
 		Debug_LogError_m3BCF9B78263152261565DCA9DB7D55F0C391ED29(L_12, /*hidden argument*/NULL);
@@ -25324,7 +25324,7 @@ extern "C" IL2CPP_METHOD_ATTR String_t* SystemType_ToString_m8A4F807D3794535873E
 IL_000d:
 	{
 		NullCheck(G_B2_0);
-		String_t* L_2 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, G_B2_0);
+		String_t* L_2 = VirtFuncInvoker0< String_t* >::Invoke(26 /* System.String System.Type::get_FullName() */, G_B2_0);
 		G_B3_0 = L_2;
 	}
 

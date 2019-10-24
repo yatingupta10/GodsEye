@@ -3507,6 +3507,11 @@ PrefabInstance:
       propertyPath: leftPosition
       value: 
       objectReference: {fileID: 521320769}
+    - target: {fileID: 8747131785036203534, guid: 87bc726c8a5cb6447a3374b504401031,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 528808068530128189, guid: 87bc726c8a5cb6447a3374b504401031,
         type: 3}
       propertyPath: m_Mesh

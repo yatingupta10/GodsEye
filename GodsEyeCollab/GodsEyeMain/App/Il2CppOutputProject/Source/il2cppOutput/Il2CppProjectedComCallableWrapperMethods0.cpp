@@ -104,6 +104,8 @@ struct InterfaceFuncInvoker2
 
 // System.ArgumentOutOfRangeException
 struct ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA;
+// System.AsyncCallback
+struct AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4;
 // System.Byte[]
 struct ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821;
 // System.Char[]
@@ -222,10 +224,18 @@ struct ValueCollection_tE9C97C0BA62F10B910C55A152441C954EB79944A;
 struct ReadOnlyDictionary_2_t9AB03C58D299BE81D151A5B23097049F7106820C;
 // System.Collections.ObjectModel.ReadOnlyDictionary`2<System.String,System.Object>
 struct ReadOnlyDictionary_2_t05DA2EE84A80CF878ED69D88645B1D6CE04B9403;
+// System.ComponentModel.PropertyChangedEventArgs
+struct PropertyChangedEventArgs_t90CF85B82F87D594F73F03364494C77592B11F46;
+// System.DelegateData
+struct DelegateData_t1BF9F691B56DAE5F8C28C5E084FDE94F15F27BBE;
+// System.Delegate[]
+struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196;
 // System.Exception
 struct Exception_t;
+// System.IAsyncResult
+struct IAsyncResult_t8E194308510B375B42432981AE5E7488C458D598;
 // System.Int32[]
 struct Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83;
 // System.IntPtr[]
@@ -236,6 +246,8 @@ struct InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1;
 struct Binder_t4D5CB06963501D32847C057B57157D6DC49CA759;
 // System.Reflection.MemberFilter
 struct MemberFilter_t25C1BD92C42BE94426E300787C13C452CB89B381;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
 // System.Runtime.InteropServices.WindowsRuntime.Xaml.ListToBindableVectorViewAdapter
 struct ListToBindableVectorViewAdapter_t696401DFDF750C3C08073BE8C654F1CBC81E80D2;
 // System.Runtime.Serialization.SafeSerializationManager
@@ -257,7 +269,7 @@ extern RuntimeClass* Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_Ty
 extern RuntimeClass* ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821_il2cpp_TypeInfo_var;
 extern RuntimeClass* CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2_il2cpp_TypeInfo_var;
 extern RuntimeClass* Char_tBF22D9FC341BE970735250BB6FF1A4A92BBA58B9_il2cpp_TypeInfo_var;
-extern RuntimeClass* DateTimeOffsetU5BU5D_tA6AB0D688B74AD64A882F6A8D9824B6AD00813D7_il2cpp_TypeInfo_var;
+extern RuntimeClass* DateTimeOffsetU5BU5D_tBE5BF156BB0B9FFFC5B216B0D02C0D44288FCA25_il2cpp_TypeInfo_var;
 extern RuntimeClass* DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85_il2cpp_TypeInfo_var;
 extern RuntimeClass* DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D_il2cpp_TypeInfo_var;
 extern RuntimeClass* ExceptionU5BU5D_t09C3EFFA7CF3F84DA802016E2017E1608442F209_il2cpp_TypeInfo_var;
@@ -416,6 +428,7 @@ extern RuntimeClass* KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE_il
 extern RuntimeClass* KeyValuePair_2_tC167337BFA3217084F940401B1BC047130DED61D_il2cpp_TypeInfo_var;
 extern RuntimeClass* ListToBindableVectorViewAdapter_t696401DFDF750C3C08073BE8C654F1CBC81E80D2_il2cpp_TypeInfo_var;
 extern RuntimeClass* ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var;
+extern RuntimeClass* PropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82_il2cpp_TypeInfo_var;
 extern RuntimeClass* ReadOnlyCollection_1_t07FB9FA1EB5F6B186DE9DCEB6A7E7D05BD60ABEB_il2cpp_TypeInfo_var;
 extern RuntimeClass* ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23_il2cpp_TypeInfo_var;
 extern RuntimeClass* ReadOnlyCollection_1_t1C48C04EEE307D878272AF3D32F513B7BC12A23F_il2cpp_TypeInfo_var;
@@ -442,11 +455,13 @@ extern RuntimeClass* StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E_il2c
 extern RuntimeClass* String_t_il2cpp_TypeInfo_var;
 extern RuntimeClass* TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F_il2cpp_TypeInfo_var;
 extern RuntimeClass* UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB_il2cpp_TypeInfo_var;
+extern RuntimeClass* __Il2CppComDelegate_t0A30496F74225C39A0CF7FADB94934C0536120FD_il2cpp_TypeInfo_var;
 extern String_t* _stringLiteral4B82980DAF08650EBCD07B02A4F870A65CFD9297;
 extern String_t* _stringLiteral5F82205BEDF93F9FC5534E27F6D5798CA8E49C9A;
 extern String_t* _stringLiteral7DA9F73A36ABE2E58D56D121E5A7E2C3CF329C27;
 extern String_t* _stringLiteralE540CDD1328B2B21E29A95405C301B9313B7C346;
 extern String_t* _stringLiteralF950631609558C71038D503B8D357B1212A22575;
+extern const RuntimeMethod* PropertyChangedEventHandler_Invoke_m7DB0AABF07302887DD3FEE589E1F585B4C768F57_RuntimeMethod_var;
 extern const RuntimeMethod* ReadOnlyCollection_1__ctor_m1440D3837B7E6FDD6D6BB6DE771F96B58369814D_RuntimeMethod_var;
 extern const RuntimeMethod* ReadOnlyCollection_1__ctor_m17143042211251F07AA1895A1F46E56AF1EE03D1_RuntimeMethod_var;
 extern const RuntimeMethod* ReadOnlyCollection_1__ctor_m31D419935B6ABE1C3015B8C44961E9ED6551B5FE_RuntimeMethod_var;
@@ -559,6 +574,8 @@ extern const uint32_t IMap_2_Insert_mA6FC95D481A753B2937C94B7FEC5D261E1215BA2_Co
 extern const uint32_t IMap_2_Lookup_m4DE69E584A68A890CB4647557D06DFC9CD13844E_ComCallableWrapperProjectedMethod_MetadataUsageId;
 extern const uint32_t IMap_2_Remove_m78FFA27A31E30341C406CC0039B7B78CEAD9F23E_ComCallableWrapperProjectedMethod_MetadataUsageId;
 extern const uint32_t IMap_2_get_Size_m4967BDE59167A0462E277344856DDF1C1EDCD4E1_ComCallableWrapperProjectedMethod_MetadataUsageId;
+extern const uint32_t INotifyPropertyChanged_add_PropertyChanged_m01FBF4E7FF0D4B2AFC0F8E7FBC4D6A31A898637D_ComCallableWrapperProjectedMethod_MetadataUsageId;
+extern const uint32_t INotifyPropertyChanged_remove_PropertyChanged_m831A56A0E9ED477FD885C2A0D2D14278CAFA4C22_ComCallableWrapperProjectedMethod_MetadataUsageId;
 extern const uint32_t IVectorView_1_GetAt_m146E80BEB031C0625040A03FDFB795B0F59B2AB0_ComCallableWrapperProjectedMethod_MetadataUsageId;
 extern const uint32_t IVectorView_1_GetAt_m18B24A49FC02777CD1C5C100AAF5ADFDC0BE1B1E_ComCallableWrapperProjectedMethod_MetadataUsageId;
 extern const uint32_t IVectorView_1_GetAt_m1E87B8F39512EDB56DBF06070E82550DF49E7D74_ComCallableWrapperProjectedMethod_MetadataUsageId;
@@ -892,6 +909,8 @@ extern const uint32_t IVector_1_get_Size_mE7A8CA24DFAAFA5E8DCFEDDE2BC3AADA3B736D
 extern const uint32_t IVector_1_get_Size_mF60DA32A2799AEE508883CDF72641B30FF9A7D88_ComCallableWrapperProjectedMethod_MetadataUsageId;
 extern const uint32_t IVector_1_get_Size_mF67ADD732EE6887FDB6C6FA10423E3A17E70F907_ComCallableWrapperProjectedMethod_MetadataUsageId;
 struct DateTime_t9D0F9E236B6200FF6413DD837230D25E285E7795 ;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 struct IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7;
@@ -929,6 +948,7 @@ struct IKeyValuePair_2_t156C2EFE389FA077572EFC7951E33228934C8B70;
 struct IKeyValuePair_2_t53A22D6351252E7BA269A226AD3DC8D5D1BECA40;
 struct IKeyValuePair_2_t56132B513BFC3793EE91B0D7368F99CBD2C9ACE8;
 struct IMapView_2_tA9BC1207BBFBC7B5476A4914664EC142C2C7807C;
+struct IPropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82_ComCallableWrapper;
 struct IVectorView_1_t2BD142C07C846D035CBF1FFBE4D24A3A99EB5E74;
 struct IVectorView_1_t459C34CB8393ED708686F216EB76D7B0B4BD9A5F;
 struct IVectorView_1_t49125937EFCE90BE29846B53E08333F87E5BB8C4;
@@ -965,7 +985,7 @@ struct KeyValuePair_2U5BU5D_t4594E4068980FD80C0C538F4F8042A626BC1F262;
 struct KeyValuePair_2U5BU5D_t4EBB4872BC5FA3F4D13397844D1BE1117503C2B9;
 struct IEnumerableU5BU5D_t222D9A60EE38CA90C1D6E0AF8D5DA5768A2D6B3D;
 struct IListU5BU5D_tD04F1914DFBD702FC798125DC2E338D7DA2C4CDB;
-struct DateTimeOffsetU5BU5D_tA6AB0D688B74AD64A882F6A8D9824B6AD00813D7;
+struct DateTimeOffsetU5BU5D_tBE5BF156BB0B9FFFC5B216B0D02C0D44288FCA25;
 struct DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D;
 struct ExceptionU5BU5D_t09C3EFFA7CF3F84DA802016E2017E1608442F209;
 struct Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83;
@@ -3156,6 +3176,20 @@ struct ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_marshaled_com
 {
 };
 #endif // VALUETYPE_T4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_H
+#ifndef IL2CPPCOMOBJECT_H
+#define IL2CPPCOMOBJECT_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.__Il2CppComObject
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // IL2CPPCOMOBJECT_H
 #ifndef BOOLEAN_TB53F6830F670160873277339AA58F15CAED4399C_H
 #define BOOLEAN_TB53F6830F670160873277339AA58F15CAED4399C_H
 #ifdef __clang__
@@ -3681,6 +3715,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INTPTR_T_H
+#ifndef EVENTREGISTRATIONTOKEN_TE1F3FD8339DB10082B4291DE47C45A352DCB08A7_H
+#define EVENTREGISTRATIONTOKEN_TE1F3FD8339DB10082B4291DE47C45A352DCB08A7_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken
+struct  EventRegistrationToken_tE1F3FD8339DB10082B4291DE47C45A352DCB08A7 
+{
+public:
+	// System.UInt64 System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken::m_value
+	uint64_t ___m_value_0;
+
+public:
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(EventRegistrationToken_tE1F3FD8339DB10082B4291DE47C45A352DCB08A7, ___m_value_0)); }
+	inline uint64_t get_m_value_0() const { return ___m_value_0; }
+	inline uint64_t* get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(uint64_t value)
+	{
+		___m_value_0 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // EVENTREGISTRATIONTOKEN_TE1F3FD8339DB10082B4291DE47C45A352DCB08A7_H
 #ifndef SYSTEMEXCEPTION_T5380468142AA850BE4A341D7AF3EAB9C78746782_H
 #define SYSTEMEXCEPTION_T5380468142AA850BE4A341D7AF3EAB9C78746782_H
 #ifdef __clang__
@@ -3730,6 +3793,53 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // UINT32_T4980FA09003AFAAB5A6E361BA2748EA9A005709B_H
+#ifndef VOID_T22962CB4C05B1D89B55A6E1139F0E87A90987017_H
+#define VOID_T22962CB4C05B1D89B55A6E1139F0E87A90987017_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Void
+struct  Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017 
+{
+public:
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017__padding[1];
+	};
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VOID_T22962CB4C05B1D89B55A6E1139F0E87A90987017_H
+#ifndef __IL2CPPCOMDELEGATE_T0A30496F74225C39A0CF7FADB94934C0536120FD_H
+#define __IL2CPPCOMDELEGATE_T0A30496F74225C39A0CF7FADB94934C0536120FD_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.__Il2CppComDelegate
+struct  __Il2CppComDelegate_t0A30496F74225C39A0CF7FADB94934C0536120FD  : public Il2CppComObject
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // __IL2CPPCOMDELEGATE_T0A30496F74225C39A0CF7FADB94934C0536120FD_H
 #ifndef DATETIME_T9D0F9E236B6200FF6413DD837230D25E285E7795_H
 #define DATETIME_T9D0F9E236B6200FF6413DD837230D25E285E7795_H
 #ifdef __clang__
@@ -3903,6 +4013,169 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // DATETIMEOFFSET_T6C333873402CAD576160B4F8E159EB6834F06B85_H
+#ifndef DELEGATE_T_H
+#define DELEGATE_T_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Delegate
+struct  Delegate_t  : public RuntimeObject
+{
+public:
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject * ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::extra_arg
+	intptr_t ___extra_arg_5;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_6;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t * ___method_info_7;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t * ___original_method_info_8;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t1BF9F691B56DAE5F8C28C5E084FDE94F15F27BBE * ___data_9;
+	// System.Boolean System.Delegate::method_is_virtual
+	bool ___method_is_virtual_10;
+
+public:
+	inline static int32_t get_offset_of_method_ptr_0() { return static_cast<int32_t>(offsetof(Delegate_t, ___method_ptr_0)); }
+	inline Il2CppMethodPointer get_method_ptr_0() const { return ___method_ptr_0; }
+	inline Il2CppMethodPointer* get_address_of_method_ptr_0() { return &___method_ptr_0; }
+	inline void set_method_ptr_0(Il2CppMethodPointer value)
+	{
+		___method_ptr_0 = value;
+	}
+
+	inline static int32_t get_offset_of_invoke_impl_1() { return static_cast<int32_t>(offsetof(Delegate_t, ___invoke_impl_1)); }
+	inline intptr_t get_invoke_impl_1() const { return ___invoke_impl_1; }
+	inline intptr_t* get_address_of_invoke_impl_1() { return &___invoke_impl_1; }
+	inline void set_invoke_impl_1(intptr_t value)
+	{
+		___invoke_impl_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_target_2() { return static_cast<int32_t>(offsetof(Delegate_t, ___m_target_2)); }
+	inline RuntimeObject * get_m_target_2() const { return ___m_target_2; }
+	inline RuntimeObject ** get_address_of_m_target_2() { return &___m_target_2; }
+	inline void set_m_target_2(RuntimeObject * value)
+	{
+		___m_target_2 = value;
+		Il2CppCodeGenWriteBarrier((&___m_target_2), value);
+	}
+
+	inline static int32_t get_offset_of_method_3() { return static_cast<int32_t>(offsetof(Delegate_t, ___method_3)); }
+	inline intptr_t get_method_3() const { return ___method_3; }
+	inline intptr_t* get_address_of_method_3() { return &___method_3; }
+	inline void set_method_3(intptr_t value)
+	{
+		___method_3 = value;
+	}
+
+	inline static int32_t get_offset_of_delegate_trampoline_4() { return static_cast<int32_t>(offsetof(Delegate_t, ___delegate_trampoline_4)); }
+	inline intptr_t get_delegate_trampoline_4() const { return ___delegate_trampoline_4; }
+	inline intptr_t* get_address_of_delegate_trampoline_4() { return &___delegate_trampoline_4; }
+	inline void set_delegate_trampoline_4(intptr_t value)
+	{
+		___delegate_trampoline_4 = value;
+	}
+
+	inline static int32_t get_offset_of_extra_arg_5() { return static_cast<int32_t>(offsetof(Delegate_t, ___extra_arg_5)); }
+	inline intptr_t get_extra_arg_5() const { return ___extra_arg_5; }
+	inline intptr_t* get_address_of_extra_arg_5() { return &___extra_arg_5; }
+	inline void set_extra_arg_5(intptr_t value)
+	{
+		___extra_arg_5 = value;
+	}
+
+	inline static int32_t get_offset_of_method_code_6() { return static_cast<int32_t>(offsetof(Delegate_t, ___method_code_6)); }
+	inline intptr_t get_method_code_6() const { return ___method_code_6; }
+	inline intptr_t* get_address_of_method_code_6() { return &___method_code_6; }
+	inline void set_method_code_6(intptr_t value)
+	{
+		___method_code_6 = value;
+	}
+
+	inline static int32_t get_offset_of_method_info_7() { return static_cast<int32_t>(offsetof(Delegate_t, ___method_info_7)); }
+	inline MethodInfo_t * get_method_info_7() const { return ___method_info_7; }
+	inline MethodInfo_t ** get_address_of_method_info_7() { return &___method_info_7; }
+	inline void set_method_info_7(MethodInfo_t * value)
+	{
+		___method_info_7 = value;
+		Il2CppCodeGenWriteBarrier((&___method_info_7), value);
+	}
+
+	inline static int32_t get_offset_of_original_method_info_8() { return static_cast<int32_t>(offsetof(Delegate_t, ___original_method_info_8)); }
+	inline MethodInfo_t * get_original_method_info_8() const { return ___original_method_info_8; }
+	inline MethodInfo_t ** get_address_of_original_method_info_8() { return &___original_method_info_8; }
+	inline void set_original_method_info_8(MethodInfo_t * value)
+	{
+		___original_method_info_8 = value;
+		Il2CppCodeGenWriteBarrier((&___original_method_info_8), value);
+	}
+
+	inline static int32_t get_offset_of_data_9() { return static_cast<int32_t>(offsetof(Delegate_t, ___data_9)); }
+	inline DelegateData_t1BF9F691B56DAE5F8C28C5E084FDE94F15F27BBE * get_data_9() const { return ___data_9; }
+	inline DelegateData_t1BF9F691B56DAE5F8C28C5E084FDE94F15F27BBE ** get_address_of_data_9() { return &___data_9; }
+	inline void set_data_9(DelegateData_t1BF9F691B56DAE5F8C28C5E084FDE94F15F27BBE * value)
+	{
+		___data_9 = value;
+		Il2CppCodeGenWriteBarrier((&___data_9), value);
+	}
+
+	inline static int32_t get_offset_of_method_is_virtual_10() { return static_cast<int32_t>(offsetof(Delegate_t, ___method_is_virtual_10)); }
+	inline bool get_method_is_virtual_10() const { return ___method_is_virtual_10; }
+	inline bool* get_address_of_method_is_virtual_10() { return &___method_is_virtual_10; }
+	inline void set_method_is_virtual_10(bool value)
+	{
+		___method_is_virtual_10 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Native definition for P/Invoke marshalling of System.Delegate
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	MethodInfo_t * ___method_info_7;
+	MethodInfo_t * ___original_method_info_8;
+	DelegateData_t1BF9F691B56DAE5F8C28C5E084FDE94F15F27BBE * ___data_9;
+	int32_t ___method_is_virtual_10;
+};
+// Native definition for COM marshalling of System.Delegate
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	MethodInfo_t * ___method_info_7;
+	MethodInfo_t * ___original_method_info_8;
+	DelegateData_t1BF9F691B56DAE5F8C28C5E084FDE94F15F27BBE * ___data_9;
+	int32_t ___method_is_virtual_10;
+};
+#endif // DELEGATE_T_H
 #ifndef INVALIDOPERATIONEXCEPTION_T0530E734D823F78310CAFAFA424CA5164D93A1F1_H
 #define INVALIDOPERATIONEXCEPTION_T0530E734D823F78310CAFAFA424CA5164D93A1F1_H
 #ifdef __clang__
@@ -4016,6 +4289,13 @@ struct NOVTABLE IVector_1_tD61C3A806DFF3B06231CC29D49F9D51020B06037 : Il2CppIIns
 	virtual il2cpp_hresult_t STDCALL IVector_1_GetMany_mF73D3F5A0B08010D1871505126F6865BAB0EF419(uint32_t ___startIndex0, uint32_t ___items1ArraySize, DateTime_t9D0F9E236B6200FF6413DD837230D25E285E7795 * ___items1, uint32_t* comReturnValue) = 0;
 	virtual il2cpp_hresult_t STDCALL IVector_1_ReplaceAll_m494A7928543F0FCFC3F71410C81099835B558F5A(uint32_t ___items0ArraySize, DateTime_t9D0F9E236B6200FF6413DD837230D25E285E7795 * ___items0) = 0;
 };
+// Windows.UI.Xaml.Data.INotifyPropertyChanged
+struct NOVTABLE INotifyPropertyChanged_tB31F042FEC66B36D56BBB43C37AC9199E80D350D : Il2CppIInspectable
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL INotifyPropertyChanged_add_PropertyChanged_m01FBF4E7FF0D4B2AFC0F8E7FBC4D6A31A898637D(IPropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82_ComCallableWrapper* ___handler0, EventRegistrationToken_tE1F3FD8339DB10082B4291DE47C45A352DCB08A7 * comReturnValue) = 0;
+	virtual il2cpp_hresult_t STDCALL INotifyPropertyChanged_remove_PropertyChanged_m831A56A0E9ED477FD885C2A0D2D14278CAFA4C22(EventRegistrationToken_tE1F3FD8339DB10082B4291DE47C45A352DCB08A7  ___token0) = 0;
+};
 #ifndef ARGUMENTOUTOFRANGEEXCEPTION_T94D19DF918A54511AEDF4784C9A08741BAD1DEDA_H
 #define ARGUMENTOUTOFRANGEEXCEPTION_T94D19DF918A54511AEDF4784C9A08741BAD1DEDA_H
 #ifdef __clang__
@@ -4063,6 +4343,46 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ARGUMENTOUTOFRANGEEXCEPTION_T94D19DF918A54511AEDF4784C9A08741BAD1DEDA_H
+#ifndef MULTICASTDELEGATE_T_H
+#define MULTICASTDELEGATE_T_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.MulticastDelegate
+struct  MulticastDelegate_t  : public Delegate_t
+{
+public:
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* ___delegates_11;
+
+public:
+	inline static int32_t get_offset_of_delegates_11() { return static_cast<int32_t>(offsetof(MulticastDelegate_t, ___delegates_11)); }
+	inline DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* get_delegates_11() const { return ___delegates_11; }
+	inline DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86** get_address_of_delegates_11() { return &___delegates_11; }
+	inline void set_delegates_11(DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* value)
+	{
+		___delegates_11 = value;
+		Il2CppCodeGenWriteBarrier((&___delegates_11), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates_11;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates_11;
+};
+#endif // MULTICASTDELEGATE_T_H
 #ifndef TYPE_T_H
 #define TYPE_T_H
 #ifdef __clang__
@@ -4209,6 +4529,33 @@ struct NOVTABLE IVector_1_t60EFEFBFAD1C0F4812BB2EC0FBCD97CCDE8F94A7 : Il2CppIIns
 	virtual il2cpp_hresult_t STDCALL IVector_1_GetMany_mBF8A1F3B907FE60F169F7D107024C697ABDAC4F9(uint32_t ___startIndex0, uint32_t ___items1ArraySize, int32_t* ___items1, uint32_t* comReturnValue) = 0;
 	virtual il2cpp_hresult_t STDCALL IVector_1_ReplaceAll_m155BF07D4FDCA4554705C3D2DC83408F1F8ADC47(uint32_t ___items0ArraySize, int32_t* ___items0) = 0;
 };
+#ifndef PROPERTYCHANGEDEVENTHANDLER_T617E98E1876A8EB394D2B329340CE02D21FFFC82_H
+#define PROPERTYCHANGEDEVENTHANDLER_T617E98E1876A8EB394D2B329340CE02D21FFFC82_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ComponentModel.PropertyChangedEventHandler
+struct  PropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// COM Callable Wrapper interface definition for System.ComponentModel.PropertyChangedEventHandler
+struct IPropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82_ComCallableWrapper : Il2CppIUnknown
+{
+	static const Il2CppGuid IID;
+	virtual il2cpp_hresult_t STDCALL Invoke(Il2CppIInspectable* ___sender0, PropertyChangedEventArgs_t90CF85B82F87D594F73F03364494C77592B11F46 * ___e1) = 0;
+};
+
+#endif // PROPERTYCHANGEDEVENTHANDLER_T617E98E1876A8EB394D2B329340CE02D21FFFC82_H
 // Windows.Foundation.Collections.IIterator`1<System.Type>
 struct NOVTABLE IIterator_1_t2B21213FEB0A065EE8EE08505D4993A125B94604 : Il2CppIInspectable
 {
@@ -4244,43 +4591,6 @@ struct NOVTABLE IVector_1_t69FD2625E88151AA72D15A3EC18DA0AF5B403A0C : Il2CppIIns
 	virtual il2cpp_hresult_t STDCALL IVector_1_GetMany_mDCEA26B2F642A423C49CF156CB93442BCC132DE7(uint32_t ___startIndex0, uint32_t ___items1ArraySize, Il2CppWindowsRuntimeTypeName* ___items1, uint32_t* comReturnValue) = 0;
 	virtual il2cpp_hresult_t STDCALL IVector_1_ReplaceAll_m8E31DAA9F521E443155FF5AD9FEF14D10D41ECAD(uint32_t ___items0ArraySize, Il2CppWindowsRuntimeTypeName* ___items0) = 0;
 };
-// System.Type[]
-struct TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) Type_t * m_Items[1];
-
-public:
-	inline Type_t * GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Type_t ** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Type_t * value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-	inline Type_t * GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Type_t ** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Type_t * value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-};
 // System.Object[]
 struct ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A  : public RuntimeArray
 {
@@ -4313,6 +4623,80 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Collections.IEnumerable[]
+struct IEnumerableU5BU5D_t222D9A60EE38CA90C1D6E0AF8D5DA5768A2D6B3D  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+public:
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Type[]
+struct TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Type_t * m_Items[1];
+
+public:
+	inline Type_t * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Type_t ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Type_t * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline Type_t * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Type_t ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Type_t * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
@@ -4425,43 +4809,6 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
-// System.Collections.IEnumerable[]
-struct IEnumerableU5BU5D_t222D9A60EE38CA90C1D6E0AF8D5DA5768A2D6B3D  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
-
-public:
-	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-};
 // System.Collections.Generic.IEnumerable`1<System.Char>[]
 struct IEnumerable_1U5BU5D_tD7B22355B92AC1BC298A9D512C5B201A83DE97C4  : public RuntimeArray
 {
@@ -4530,6 +4877,41 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.UInt32[]
+struct UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) uint32_t m_Items[1];
+
+public:
+	inline uint32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint32_t value)
 	{
 		m_Items[index] = value;
 	}
@@ -4747,7 +5129,7 @@ public:
 	}
 };
 // System.DateTimeOffset[]
-struct DateTimeOffsetU5BU5D_tA6AB0D688B74AD64A882F6A8D9824B6AD00813D7  : public RuntimeArray
+struct DateTimeOffsetU5BU5D_tBE5BF156BB0B9FFFC5B216B0D02C0D44288FCA25  : public RuntimeArray
 {
 public:
 	ALIGN_FIELD (8) DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  m_Items[1];
@@ -4777,41 +5159,6 @@ public:
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// System.UInt32[]
-struct UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB  : public RuntimeArray
-{
-public:
-	ALIGN_FIELD (8) uint32_t m_Items[1];
-
-public:
-	inline uint32_t GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline uint32_t* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, uint32_t value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline uint32_t GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline uint32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, uint32_t value)
 	{
 		m_Items[index] = value;
 	}
@@ -5000,6 +5347,7 @@ public:
 	}
 };
 
+extern "C"  void PropertyChangedEventHandler_Invoke_m7DB0AABF07302887DD3FEE589E1F585B4C768F57_NativeInvoker (Il2CppComObject * __this, RuntimeObject * ___sender0, PropertyChangedEventArgs_t90CF85B82F87D594F73F03364494C77592B11F46 * ___e1, const RuntimeMethod* method);;
 
 // System.Void System.Collections.ObjectModel.ReadOnlyDictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
 extern "C" IL2CPP_METHOD_ATTR void ReadOnlyDictionary_2__ctor_mC417F57C7FB9D62B2F8388B52FD3E45955BA160A_gshared (ReadOnlyDictionary_2_t9AB03C58D299BE81D151A5B23097049F7106820C * __this, RuntimeObject* ___dictionary0, const RuntimeMethod* method);
@@ -5011,6 +5359,8 @@ extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_m6C61612178C00E3BB
 extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_m3527F068C74D7EBB6092E9F088B4E986A442EBD4_gshared (ReadOnlyCollection_1_tBB62FB8445058A2E04F8BA8DD46EE8EF69DDDD7E * __this, RuntimeObject* ___list0, const RuntimeMethod* method);
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.Int32>::.ctor(System.Collections.Generic.IList`1<T>)
 extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_m9486A2F6910759B20F1268EBB3803A1F1F71BAF8_gshared (ReadOnlyCollection_1_t22C5A6EEADA76AAC96510076AA495DB385A6C9FC * __this, RuntimeObject* ___list0, const RuntimeMethod* method);
+// System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.UInt32>::.ctor(System.Collections.Generic.IList`1<T>)
+extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D_gshared (ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23 * __this, RuntimeObject* ___list0, const RuntimeMethod* method);
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Collections.Generic.IList`1<T>)
 extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_m31D419935B6ABE1C3015B8C44961E9ED6551B5FE_gshared (ReadOnlyCollection_1_t6A00CD81074EA3A8F34F215C576BDD908B0E9F7F * __this, RuntimeObject* ___list0, const RuntimeMethod* method);
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.Int64>::.ctor(System.Collections.Generic.IList`1<T>)
@@ -5021,8 +5371,6 @@ extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_m400A9F160129B56AE
 extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_m9FD08CA81EC862523F5084414A0AD738F3AAA53F_gshared (ReadOnlyCollection_1_t648B62D19FDBAEA2CEF4F491638C1CBC3FF532BB * __this, RuntimeObject* ___list0, const RuntimeMethod* method);
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.DateTimeOffset>::.ctor(System.Collections.Generic.IList`1<T>)
 extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_mFE0394ECAF007E02D886664AB9B505D6166EE75E_gshared (ReadOnlyCollection_1_tC73E723193A045A987CE85C14366248173205463 * __this, RuntimeObject* ___list0, const RuntimeMethod* method);
-// System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.UInt32>::.ctor(System.Collections.Generic.IList`1<T>)
-extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D_gshared (ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23 * __this, RuntimeObject* ___list0, const RuntimeMethod* method);
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.Double>::.ctor(System.Collections.Generic.IList`1<T>)
 extern "C" IL2CPP_METHOD_ATTR void ReadOnlyCollection_1__ctor_mBA653B7DFC1999CA107D1B752637DC670CCD39A8_gshared (ReadOnlyCollection_1_tE1C8498DEBC3B0CE2EB2567F43725C786B29222F * __this, RuntimeObject* ___list0, const RuntimeMethod* method);
 
@@ -5039,13 +5387,13 @@ inline void ReadOnlyDictionary_2__ctor_mC9CB99F4923E90D9DC5C454220833DCB845F79A9
 {
 	((  void (*) (ReadOnlyDictionary_2_t05DA2EE84A80CF878ED69D88645B1D6CE04B9403 *, RuntimeObject*, const RuntimeMethod*))ReadOnlyDictionary_2__ctor_mC417F57C7FB9D62B2F8388B52FD3E45955BA160A_gshared)(__this, ___dictionary0, method);
 }
+// System.Void System.ArgumentOutOfRangeException::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6 (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * __this, String_t* ___paramName0, const RuntimeMethod* method);
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.Type>::.ctor(System.Collections.Generic.IList`1<T>)
 inline void ReadOnlyCollection_1__ctor_mF8999E284FBD2EBD4972D84EB1B1D92AA8694D1A (ReadOnlyCollection_1_t939D62F14F1AD7277F33BE6A3257AA7B359B35EE * __this, RuntimeObject* ___list0, const RuntimeMethod* method)
 {
 	((  void (*) (ReadOnlyCollection_1_t939D62F14F1AD7277F33BE6A3257AA7B359B35EE *, RuntimeObject*, const RuntimeMethod*))ReadOnlyCollection_1__ctor_m8F7880F43C4E281DBF7CA5A9431D5E6DD3797B7E_gshared)(__this, ___list0, method);
 }
-// System.Void System.ArgumentOutOfRangeException::.ctor(System.String)
-extern "C" IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6 (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * __this, String_t* ___paramName0, const RuntimeMethod* method);
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>::.ctor(System.Collections.Generic.IList`1<T>)
 inline void ReadOnlyCollection_1__ctor_m8F7880F43C4E281DBF7CA5A9431D5E6DD3797B7E (ReadOnlyCollection_1_t5D996E967221C71E4EC5CC11210C3076432D5A50 * __this, RuntimeObject* ___list0, const RuntimeMethod* method)
 {
@@ -5084,6 +5432,11 @@ inline void ReadOnlyCollection_1__ctor_m6DA8D48F0B78B5EB24C84365A2556B2A11CCEFFD
 inline void ReadOnlyCollection_1__ctor_m9486A2F6910759B20F1268EBB3803A1F1F71BAF8 (ReadOnlyCollection_1_t22C5A6EEADA76AAC96510076AA495DB385A6C9FC * __this, RuntimeObject* ___list0, const RuntimeMethod* method)
 {
 	((  void (*) (ReadOnlyCollection_1_t22C5A6EEADA76AAC96510076AA495DB385A6C9FC *, RuntimeObject*, const RuntimeMethod*))ReadOnlyCollection_1__ctor_m9486A2F6910759B20F1268EBB3803A1F1F71BAF8_gshared)(__this, ___list0, method);
+}
+// System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.UInt32>::.ctor(System.Collections.Generic.IList`1<T>)
+inline void ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D (ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23 * __this, RuntimeObject* ___list0, const RuntimeMethod* method)
+{
+	((  void (*) (ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23 *, RuntimeObject*, const RuntimeMethod*))ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D_gshared)(__this, ___list0, method);
 }
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Collections.Generic.IList`1<T>)
 inline void ReadOnlyCollection_1__ctor_m31D419935B6ABE1C3015B8C44961E9ED6551B5FE (ReadOnlyCollection_1_t6A00CD81074EA3A8F34F215C576BDD908B0E9F7F * __this, RuntimeObject* ___list0, const RuntimeMethod* method)
@@ -5128,11 +5481,6 @@ extern "C" IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_m300CE4D04A
 extern "C" IL2CPP_METHOD_ATTR DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  DateTimeOffset_ToLocalTime_m65354A4753A3DA468F1278591C9B07A85C36A1BE (DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85 * __this, bool ___throwOnOverflow0, const RuntimeMethod* method);
 // System.Boolean System.DateTimeOffset::Equals(System.Object)
 extern "C" IL2CPP_METHOD_ATTR bool DateTimeOffset_Equals_mD93E06EF35F3E3A0BD2AC363D3EDA347CE4E6858 (DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method);
-// System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.UInt32>::.ctor(System.Collections.Generic.IList`1<T>)
-inline void ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D (ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23 * __this, RuntimeObject* ___list0, const RuntimeMethod* method)
-{
-	((  void (*) (ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23 *, RuntimeObject*, const RuntimeMethod*))ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D_gshared)(__this, ___list0, method);
-}
 // System.Void System.Collections.ObjectModel.ReadOnlyCollection`1<System.Collections.IList>::.ctor(System.Collections.Generic.IList`1<T>)
 inline void ReadOnlyCollection_1__ctor_mCFAB60378363B43AB6F3C4E21DD597D164C259FF (ReadOnlyCollection_1_t70A536227E283E7CEB667551DA85BE3D06D04FC4 * __this, RuntimeObject* ___list0, const RuntimeMethod* method)
 {
@@ -7975,6 +8323,583 @@ il2cpp_hresult_t IIterable_1_First_mFFB1B49776648BCFAE14E56BCC852C171A2EED56_Com
 
 	return IL2CPP_S_OK;
 }
+// Projected COM callable wrapper method for T Windows.Foundation.Collections.IVectorView`1<System.Object>::GetAt(System.UInt32)
+il2cpp_hresult_t IVectorView_1_GetAt_mD3660639E080D0270BD89F5FF0E11D420C7C24A3_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, Il2CppIInspectable** comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_GetAt_mD3660639E080D0270BD89F5FF0E11D420C7C24A3_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	RuntimeObject * returnValue;
+	try
+	{
+		try
+		{
+			returnValue = InterfaceFuncInvoker1< RuntimeObject *, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Object>::get_Item(System.Int32) */, IReadOnlyList_1_tE81E1489F9663A3FFB16117EBB97C07D91EA7557_il2cpp_TypeInfo_var, __this, ___index0);
+		}
+		catch (const Il2CppExceptionWrapper& ex)
+		{
+			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
+			{
+				ex.ex->hresult = -2147483637; // E_BOUNDS
+			}
+
+			throw;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	// Marshaling of return value back from managed representation
+	Il2CppIInspectable* _returnValue_marshaled = NULL;
+	if (returnValue != NULL)
+	{
+		if (il2cpp_codegen_is_import_or_windows_runtime(returnValue))
+		{
+			il2cpp_hresult_t hr = ((Il2CppComObject *)returnValue)->identity->QueryInterface(Il2CppIInspectable::IID, reinterpret_cast<void**>(&_returnValue_marshaled));
+			il2cpp_codegen_com_raise_exception_if_failed(hr, false);
+		}
+		else
+		{
+			_returnValue_marshaled = il2cpp_codegen_com_get_or_create_ccw<Il2CppIInspectable>(returnValue);
+		}
+	}
+	else
+	{
+		_returnValue_marshaled = NULL;
+	}
+
+	*comReturnValue = _returnValue_marshaled;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.Object>::get_Size()
+il2cpp_hresult_t IVectorView_1_get_Size_m0843BB6131B4AABC19D01E1F36A545E661F1D836_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_get_Size_m0843BB6131B4AABC19D01E1F36A545E661F1D836_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)__this;
+		returnValue = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Object>::get_Count() */, IReadOnlyCollection_1_t58561E9801A5809BD7207D4393CFA1FB3F33CD47_il2cpp_TypeInfo_var, __thisValue);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Boolean Windows.Foundation.Collections.IVectorView`1<System.Object>::IndexOf(T,System.UInt32U26)
+il2cpp_hresult_t IVectorView_1_IndexOf_m5856F61ED284420941D9E9331FB3334F5592B4B7_ComCallableWrapperProjectedMethod(RuntimeObject* __this, Il2CppIInspectable* ___value0, uint32_t* ___index1, bool* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_IndexOf_m5856F61ED284420941D9E9331FB3334F5592B4B7_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Marshaling of parameter U27___value0U27 to managed representation
+	RuntimeObject * ____value0_unmarshaled = NULL;
+	if (___value0 != NULL)
+	{
+		____value0_unmarshaled = il2cpp_codegen_com_get_or_create_rcw_from_iinspectable<RuntimeObject>(___value0, Il2CppComObject_il2cpp_TypeInfo_var);
+	}
+	else
+	{
+		____value0_unmarshaled = NULL;
+	}
+
+	// Marshaling of parameter U27___index1U27 to managed representation
+	uint32_t ____index1_empty = 0;
+
+	// Managed method invocation
+	bool returnValue;
+	try
+	{
+		____index1_empty = 0;
+		returnValue = false;
+
+		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Object>::get_Count() */, IReadOnlyCollection_1_t58561E9801A5809BD7207D4393CFA1FB3F33CD47_il2cpp_TypeInfo_var, __this);
+		for (int i = 0; i < elementsInCollection; i++)
+		{
+			RuntimeObject * item = InterfaceFuncInvoker1< RuntimeObject *, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Object>::get_Item(System.Int32) */, IReadOnlyList_1_tE81E1489F9663A3FFB16117EBB97C07D91EA7557_il2cpp_TypeInfo_var, __this, i);
+			if (VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, item, ____value0_unmarshaled))
+			{
+				____index1_empty = static_cast<uint32_t>(i);
+				returnValue = true;
+				break;
+			}
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	// Marshaling of parameter U27___index1U27 back from managed representation
+	*___index1 = ____index1_empty;
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.Object>::GetMany(System.UInt32,T[])
+il2cpp_hresult_t IVectorView_1_GetMany_m7D4ECA15D113EFDF96BC56FFEA31151E28191EB3_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___startIndex0, uint32_t ___items1ArraySize, Il2CppIInspectable** ___items1, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_GetMany_m7D4ECA15D113EFDF96BC56FFEA31151E28191EB3_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		uint32_t elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Object>::get_Count() */, IReadOnlyCollection_1_t58561E9801A5809BD7207D4393CFA1FB3F33CD47_il2cpp_TypeInfo_var, __this);
+		if (___startIndex0 != elementsInCollection && ___items1 != NULL)
+		{
+			if (___startIndex0 > elementsInCollection || ___startIndex0 > 2147483647)
+			{
+				ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * exception = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA*)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
+				ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6(exception, _stringLiteralE540CDD1328B2B21E29A95405C301B9313B7C346, NULL);
+				Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
+				IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
+			}
+			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
+			for (uint32_t i = 0; i < returnValue; i++)
+			{
+				RuntimeObject * itemManaged = InterfaceFuncInvoker1< RuntimeObject *, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Object>::get_Item(System.Int32) */, IReadOnlyList_1_tE81E1489F9663A3FFB16117EBB97C07D91EA7557_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
+				if (itemManaged != NULL)
+				{
+					if (il2cpp_codegen_is_import_or_windows_runtime(itemManaged))
+					{
+						il2cpp_hresult_t hr = ((Il2CppComObject *)itemManaged)->identity->QueryInterface(Il2CppIInspectable::IID, reinterpret_cast<void**>(&___items1[i]));
+						il2cpp_codegen_com_raise_exception_if_failed(hr, false);
+					}
+					else
+					{
+						___items1[i] = il2cpp_codegen_com_get_or_create_ccw<Il2CppIInspectable>(itemManaged);
+					}
+				}
+				else
+				{
+					___items1[i] = NULL;
+				}
+			}
+		}
+		else
+		{
+			returnValue = 0;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken Windows.UI.Xaml.Data.INotifyPropertyChanged::add_PropertyChanged(System.ComponentModel.PropertyChangedEventHandler)
+il2cpp_hresult_t INotifyPropertyChanged_add_PropertyChanged_m01FBF4E7FF0D4B2AFC0F8E7FBC4D6A31A898637D_ComCallableWrapperProjectedMethod(RuntimeObject* __this, IPropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82_ComCallableWrapper* ___handler0, EventRegistrationToken_tE1F3FD8339DB10082B4291DE47C45A352DCB08A7 * comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (INotifyPropertyChanged_add_PropertyChanged_m01FBF4E7FF0D4B2AFC0F8E7FBC4D6A31A898637D_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Marshaling of parameter U27___handler0U27 to managed representation
+	PropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82 * ____handler0_unmarshaled = NULL;
+	if (___handler0 != NULL)
+	{
+		Il2CppIManagedObjectHolder* imanagedObject = NULL;
+		il2cpp_hresult_t hr = (___handler0)->QueryInterface(Il2CppIManagedObjectHolder::IID, reinterpret_cast<void**>(&imanagedObject));
+		if (IL2CPP_HR_SUCCEEDED(hr))
+		{
+			____handler0_unmarshaled = static_cast<PropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82 *>(imanagedObject->GetManagedObject());
+			imanagedObject->Release();
+		}
+		else
+		{
+			____handler0_unmarshaled = (PropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82*)il2cpp_codegen_object_new(PropertyChangedEventHandler_t617E98E1876A8EB394D2B329340CE02D21FFFC82_il2cpp_TypeInfo_var);
+			____handler0_unmarshaled->set_method_ptr_0((Il2CppMethodPointer)PropertyChangedEventHandler_Invoke_m7DB0AABF07302887DD3FEE589E1F585B4C768F57_NativeInvoker);
+			intptr_t methodInfo;
+			methodInfo = reinterpret_cast<intptr_t>(PropertyChangedEventHandler_Invoke_m7DB0AABF07302887DD3FEE589E1F585B4C768F57_RuntimeMethod_var);
+			____handler0_unmarshaled->set_method_3(methodInfo);
+			____handler0_unmarshaled->set_m_target_2(il2cpp_codegen_com_get_or_create_rcw_for_sealed_class<__Il2CppComDelegate_t0A30496F74225C39A0CF7FADB94934C0536120FD>(___handler0, __Il2CppComDelegate_t0A30496F74225C39A0CF7FADB94934C0536120FD_il2cpp_TypeInfo_var));
+		}
+	}
+	else
+	{
+		____handler0_unmarshaled = NULL;
+	}
+
+	// Managed method invocation
+	EventRegistrationToken_tE1F3FD8339DB10082B4291DE47C45A352DCB08A7  returnValue;
+	try
+	{
+		IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Cannot call method 'System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken Windows.UI.Xaml.Data.INotifyPropertyChanged::add_PropertyChanged(System.ComponentModel.PropertyChangedEventHandler)' from native code. IL2CPP does not yet support calling this projected method."), NULL, NULL);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Void Windows.UI.Xaml.Data.INotifyPropertyChanged::remove_PropertyChanged(System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)
+il2cpp_hresult_t INotifyPropertyChanged_remove_PropertyChanged_m831A56A0E9ED477FD885C2A0D2D14278CAFA4C22_ComCallableWrapperProjectedMethod(RuntimeObject* __this, EventRegistrationToken_tE1F3FD8339DB10082B4291DE47C45A352DCB08A7  ___token0)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (INotifyPropertyChanged_remove_PropertyChanged_m831A56A0E9ED477FD885C2A0D2D14278CAFA4C22_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	try
+	{
+		IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Cannot call method 'System.Void Windows.UI.Xaml.Data.INotifyPropertyChanged::remove_PropertyChanged(System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)' from native code. IL2CPP does not yet support calling this projected method."), NULL, NULL);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for T Windows.Foundation.Collections.IVectorView`1<System.Collections.IEnumerable>::GetAt(System.UInt32)
+il2cpp_hresult_t IVectorView_1_GetAt_mE92F40A15F7A4160BC73DC34BE2B952CCB6A6CC9_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7** comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_GetAt_mE92F40A15F7A4160BC73DC34BE2B952CCB6A6CC9_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	RuntimeObject* returnValue;
+	try
+	{
+		try
+		{
+			returnValue = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.IEnumerable>::get_Item(System.Int32) */, IReadOnlyList_1_t4ECC0CFD021054E51D421E03C0DDEB7DD2D69487_il2cpp_TypeInfo_var, __this, ___index0);
+		}
+		catch (const Il2CppExceptionWrapper& ex)
+		{
+			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
+			{
+				ex.ex->hresult = -2147483637; // E_BOUNDS
+			}
+
+			throw;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	// Marshaling of return value back from managed representation
+	IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7* _returnValue_marshaled = NULL;
+	if (returnValue != NULL)
+	{
+		if (il2cpp_codegen_is_import_or_windows_runtime(returnValue))
+		{
+			il2cpp_hresult_t hr = ((Il2CppComObject *)returnValue)->identity->QueryInterface(IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7::IID, reinterpret_cast<void**>(&_returnValue_marshaled));
+			il2cpp_codegen_com_raise_exception_if_failed(hr, false);
+		}
+		else
+		{
+			_returnValue_marshaled = il2cpp_codegen_com_get_or_create_ccw<IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7>(returnValue);
+		}
+	}
+	else
+	{
+		_returnValue_marshaled = NULL;
+	}
+
+	*comReturnValue = _returnValue_marshaled;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.Collections.IEnumerable>::get_Size()
+il2cpp_hresult_t IVectorView_1_get_Size_m6C9A5EB233BDD0D6840D71594DBEC7005E572679_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_get_Size_m6C9A5EB233BDD0D6840D71594DBEC7005E572679_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)__this;
+		returnValue = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Collections.IEnumerable>::get_Count() */, IReadOnlyCollection_1_t4EB6EF1AB03E4E7F89734F6B264EF674B2A10863_il2cpp_TypeInfo_var, __thisValue);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Boolean Windows.Foundation.Collections.IVectorView`1<System.Collections.IEnumerable>::IndexOf(T,System.UInt32U26)
+il2cpp_hresult_t IVectorView_1_IndexOf_m624FC07BF1FB0CE5A3988E9DC8FE4F4DEFA7BB19_ComCallableWrapperProjectedMethod(RuntimeObject* __this, IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7* ___value0, uint32_t* ___index1, bool* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_IndexOf_m624FC07BF1FB0CE5A3988E9DC8FE4F4DEFA7BB19_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Marshaling of parameter U27___value0U27 to managed representation
+	RuntimeObject* ____value0_unmarshaled = NULL;
+	if (___value0 != NULL)
+	{
+		____value0_unmarshaled = il2cpp_codegen_com_get_or_create_rcw_from_iinspectable<RuntimeObject>(___value0, Il2CppComObject_il2cpp_TypeInfo_var);
+	}
+	else
+	{
+		____value0_unmarshaled = NULL;
+	}
+
+	// Marshaling of parameter U27___index1U27 to managed representation
+	uint32_t ____index1_empty = 0;
+
+	// Managed method invocation
+	bool returnValue;
+	try
+	{
+		____index1_empty = 0;
+		returnValue = false;
+
+		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Collections.IEnumerable>::get_Count() */, IReadOnlyCollection_1_t4EB6EF1AB03E4E7F89734F6B264EF674B2A10863_il2cpp_TypeInfo_var, __this);
+		for (int i = 0; i < elementsInCollection; i++)
+		{
+			RuntimeObject* item = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.IEnumerable>::get_Item(System.Int32) */, IReadOnlyList_1_t4ECC0CFD021054E51D421E03C0DDEB7DD2D69487_il2cpp_TypeInfo_var, __this, i);
+			if (VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, item, ____value0_unmarshaled))
+			{
+				____index1_empty = static_cast<uint32_t>(i);
+				returnValue = true;
+				break;
+			}
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	// Marshaling of parameter U27___index1U27 back from managed representation
+	*___index1 = ____index1_empty;
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.Collections.IEnumerable>::GetMany(System.UInt32,T[])
+il2cpp_hresult_t IVectorView_1_GetMany_mA6B7C5129191F9FABD887800915DB7D141B7BA3D_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___startIndex0, uint32_t ___items1ArraySize, IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7** ___items1, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_GetMany_mA6B7C5129191F9FABD887800915DB7D141B7BA3D_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		uint32_t elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Collections.IEnumerable>::get_Count() */, IReadOnlyCollection_1_t4EB6EF1AB03E4E7F89734F6B264EF674B2A10863_il2cpp_TypeInfo_var, __this);
+		if (___startIndex0 != elementsInCollection && ___items1 != NULL)
+		{
+			if (___startIndex0 > elementsInCollection || ___startIndex0 > 2147483647)
+			{
+				ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * exception = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA*)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
+				ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6(exception, _stringLiteralE540CDD1328B2B21E29A95405C301B9313B7C346, NULL);
+				Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
+				IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
+			}
+			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
+			for (uint32_t i = 0; i < returnValue; i++)
+			{
+				RuntimeObject* itemManaged = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.IEnumerable>::get_Item(System.Int32) */, IReadOnlyList_1_t4ECC0CFD021054E51D421E03C0DDEB7DD2D69487_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
+				if (itemManaged != NULL)
+				{
+					if (il2cpp_codegen_is_import_or_windows_runtime(itemManaged))
+					{
+						il2cpp_hresult_t hr = ((Il2CppComObject *)itemManaged)->identity->QueryInterface(IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7::IID, reinterpret_cast<void**>(&___items1[i]));
+						il2cpp_codegen_com_raise_exception_if_failed(hr, false);
+					}
+					else
+					{
+						___items1[i] = il2cpp_codegen_com_get_or_create_ccw<IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7>(itemManaged);
+					}
+				}
+				else
+				{
+					___items1[i] = NULL;
+				}
+			}
+		}
+		else
+		{
+			returnValue = 0;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
 // Projected COM callable wrapper method for T Windows.Foundation.Collections.IVector`1<System.Type>::GetAt(System.UInt32)
 il2cpp_hresult_t IVector_1_GetAt_m753F84B2B58A069E1926F7547ED499FC04C34B7C_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, Il2CppWindowsRuntimeTypeName* comReturnValue)
 {
@@ -9009,247 +9934,6 @@ il2cpp_hresult_t IVectorView_1_GetMany_m19A7973D213566841BC30D081C554FC099AF7D01
 			{
 				Type_t * itemManaged = InterfaceFuncInvoker1< Type_t *, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Type>::get_Item(System.Int32) */, IReadOnlyList_1_t01A3840E18EB701C30DC004301045ACAAA52761F_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
 				il2cpp_codegen_marshal_type_to_native(itemManaged, ___items1[i]);
-			}
-		}
-		else
-		{
-			returnValue = 0;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for T Windows.Foundation.Collections.IVectorView`1<System.Object>::GetAt(System.UInt32)
-il2cpp_hresult_t IVectorView_1_GetAt_mD3660639E080D0270BD89F5FF0E11D420C7C24A3_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, Il2CppIInspectable** comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_GetAt_mD3660639E080D0270BD89F5FF0E11D420C7C24A3_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	RuntimeObject * returnValue;
-	try
-	{
-		try
-		{
-			returnValue = InterfaceFuncInvoker1< RuntimeObject *, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Object>::get_Item(System.Int32) */, IReadOnlyList_1_tE81E1489F9663A3FFB16117EBB97C07D91EA7557_il2cpp_TypeInfo_var, __this, ___index0);
-		}
-		catch (const Il2CppExceptionWrapper& ex)
-		{
-			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
-			{
-				ex.ex->hresult = -2147483637; // E_BOUNDS
-			}
-
-			throw;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	// Marshaling of return value back from managed representation
-	Il2CppIInspectable* _returnValue_marshaled = NULL;
-	if (returnValue != NULL)
-	{
-		if (il2cpp_codegen_is_import_or_windows_runtime(returnValue))
-		{
-			il2cpp_hresult_t hr = ((Il2CppComObject *)returnValue)->identity->QueryInterface(Il2CppIInspectable::IID, reinterpret_cast<void**>(&_returnValue_marshaled));
-			il2cpp_codegen_com_raise_exception_if_failed(hr, false);
-		}
-		else
-		{
-			_returnValue_marshaled = il2cpp_codegen_com_get_or_create_ccw<Il2CppIInspectable>(returnValue);
-		}
-	}
-	else
-	{
-		_returnValue_marshaled = NULL;
-	}
-
-	*comReturnValue = _returnValue_marshaled;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.Object>::get_Size()
-il2cpp_hresult_t IVectorView_1_get_Size_m0843BB6131B4AABC19D01E1F36A545E661F1D836_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_get_Size_m0843BB6131B4AABC19D01E1F36A545E661F1D836_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)__this;
-		returnValue = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Object>::get_Count() */, IReadOnlyCollection_1_t58561E9801A5809BD7207D4393CFA1FB3F33CD47_il2cpp_TypeInfo_var, __thisValue);
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Boolean Windows.Foundation.Collections.IVectorView`1<System.Object>::IndexOf(T,System.UInt32U26)
-il2cpp_hresult_t IVectorView_1_IndexOf_m5856F61ED284420941D9E9331FB3334F5592B4B7_ComCallableWrapperProjectedMethod(RuntimeObject* __this, Il2CppIInspectable* ___value0, uint32_t* ___index1, bool* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_IndexOf_m5856F61ED284420941D9E9331FB3334F5592B4B7_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Marshaling of parameter U27___value0U27 to managed representation
-	RuntimeObject * ____value0_unmarshaled = NULL;
-	if (___value0 != NULL)
-	{
-		____value0_unmarshaled = il2cpp_codegen_com_get_or_create_rcw_from_iinspectable<RuntimeObject>(___value0, Il2CppComObject_il2cpp_TypeInfo_var);
-	}
-	else
-	{
-		____value0_unmarshaled = NULL;
-	}
-
-	// Marshaling of parameter U27___index1U27 to managed representation
-	uint32_t ____index1_empty = 0;
-
-	// Managed method invocation
-	bool returnValue;
-	try
-	{
-		____index1_empty = 0;
-		returnValue = false;
-
-		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Object>::get_Count() */, IReadOnlyCollection_1_t58561E9801A5809BD7207D4393CFA1FB3F33CD47_il2cpp_TypeInfo_var, __this);
-		for (int i = 0; i < elementsInCollection; i++)
-		{
-			RuntimeObject * item = InterfaceFuncInvoker1< RuntimeObject *, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Object>::get_Item(System.Int32) */, IReadOnlyList_1_tE81E1489F9663A3FFB16117EBB97C07D91EA7557_il2cpp_TypeInfo_var, __this, i);
-			if (VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, item, ____value0_unmarshaled))
-			{
-				____index1_empty = static_cast<uint32_t>(i);
-				returnValue = true;
-				break;
-			}
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	// Marshaling of parameter U27___index1U27 back from managed representation
-	*___index1 = ____index1_empty;
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.Object>::GetMany(System.UInt32,T[])
-il2cpp_hresult_t IVectorView_1_GetMany_m7D4ECA15D113EFDF96BC56FFEA31151E28191EB3_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___startIndex0, uint32_t ___items1ArraySize, Il2CppIInspectable** ___items1, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_GetMany_m7D4ECA15D113EFDF96BC56FFEA31151E28191EB3_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		uint32_t elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Object>::get_Count() */, IReadOnlyCollection_1_t58561E9801A5809BD7207D4393CFA1FB3F33CD47_il2cpp_TypeInfo_var, __this);
-		if (___startIndex0 != elementsInCollection && ___items1 != NULL)
-		{
-			if (___startIndex0 > elementsInCollection || ___startIndex0 > 2147483647)
-			{
-				ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * exception = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA*)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
-				ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6(exception, _stringLiteralE540CDD1328B2B21E29A95405C301B9313B7C346, NULL);
-				Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
-				IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
-			}
-			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
-			for (uint32_t i = 0; i < returnValue; i++)
-			{
-				RuntimeObject * itemManaged = InterfaceFuncInvoker1< RuntimeObject *, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Object>::get_Item(System.Int32) */, IReadOnlyList_1_tE81E1489F9663A3FFB16117EBB97C07D91EA7557_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
-				if (itemManaged != NULL)
-				{
-					if (il2cpp_codegen_is_import_or_windows_runtime(itemManaged))
-					{
-						il2cpp_hresult_t hr = ((Il2CppComObject *)itemManaged)->identity->QueryInterface(Il2CppIInspectable::IID, reinterpret_cast<void**>(&___items1[i]));
-						il2cpp_codegen_com_raise_exception_if_failed(hr, false);
-					}
-					else
-					{
-						___items1[i] = il2cpp_codegen_com_get_or_create_ccw<Il2CppIInspectable>(itemManaged);
-					}
-				}
-				else
-				{
-					___items1[i] = NULL;
-				}
 			}
 		}
 		else
@@ -13069,247 +13753,6 @@ il2cpp_hresult_t IVectorView_1_GetMany_mD450EE275C4B76270023297AB0FE06CAFA60E4C9
 	*comReturnValue = returnValue;
 	return IL2CPP_S_OK;
 }
-// Projected COM callable wrapper method for T Windows.Foundation.Collections.IVectorView`1<System.Collections.IEnumerable>::GetAt(System.UInt32)
-il2cpp_hresult_t IVectorView_1_GetAt_mE92F40A15F7A4160BC73DC34BE2B952CCB6A6CC9_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7** comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_GetAt_mE92F40A15F7A4160BC73DC34BE2B952CCB6A6CC9_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	RuntimeObject* returnValue;
-	try
-	{
-		try
-		{
-			returnValue = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.IEnumerable>::get_Item(System.Int32) */, IReadOnlyList_1_t4ECC0CFD021054E51D421E03C0DDEB7DD2D69487_il2cpp_TypeInfo_var, __this, ___index0);
-		}
-		catch (const Il2CppExceptionWrapper& ex)
-		{
-			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
-			{
-				ex.ex->hresult = -2147483637; // E_BOUNDS
-			}
-
-			throw;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	// Marshaling of return value back from managed representation
-	IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7* _returnValue_marshaled = NULL;
-	if (returnValue != NULL)
-	{
-		if (il2cpp_codegen_is_import_or_windows_runtime(returnValue))
-		{
-			il2cpp_hresult_t hr = ((Il2CppComObject *)returnValue)->identity->QueryInterface(IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7::IID, reinterpret_cast<void**>(&_returnValue_marshaled));
-			il2cpp_codegen_com_raise_exception_if_failed(hr, false);
-		}
-		else
-		{
-			_returnValue_marshaled = il2cpp_codegen_com_get_or_create_ccw<IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7>(returnValue);
-		}
-	}
-	else
-	{
-		_returnValue_marshaled = NULL;
-	}
-
-	*comReturnValue = _returnValue_marshaled;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.Collections.IEnumerable>::get_Size()
-il2cpp_hresult_t IVectorView_1_get_Size_m6C9A5EB233BDD0D6840D71594DBEC7005E572679_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_get_Size_m6C9A5EB233BDD0D6840D71594DBEC7005E572679_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)__this;
-		returnValue = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Collections.IEnumerable>::get_Count() */, IReadOnlyCollection_1_t4EB6EF1AB03E4E7F89734F6B264EF674B2A10863_il2cpp_TypeInfo_var, __thisValue);
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Boolean Windows.Foundation.Collections.IVectorView`1<System.Collections.IEnumerable>::IndexOf(T,System.UInt32U26)
-il2cpp_hresult_t IVectorView_1_IndexOf_m624FC07BF1FB0CE5A3988E9DC8FE4F4DEFA7BB19_ComCallableWrapperProjectedMethod(RuntimeObject* __this, IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7* ___value0, uint32_t* ___index1, bool* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_IndexOf_m624FC07BF1FB0CE5A3988E9DC8FE4F4DEFA7BB19_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Marshaling of parameter U27___value0U27 to managed representation
-	RuntimeObject* ____value0_unmarshaled = NULL;
-	if (___value0 != NULL)
-	{
-		____value0_unmarshaled = il2cpp_codegen_com_get_or_create_rcw_from_iinspectable<RuntimeObject>(___value0, Il2CppComObject_il2cpp_TypeInfo_var);
-	}
-	else
-	{
-		____value0_unmarshaled = NULL;
-	}
-
-	// Marshaling of parameter U27___index1U27 to managed representation
-	uint32_t ____index1_empty = 0;
-
-	// Managed method invocation
-	bool returnValue;
-	try
-	{
-		____index1_empty = 0;
-		returnValue = false;
-
-		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Collections.IEnumerable>::get_Count() */, IReadOnlyCollection_1_t4EB6EF1AB03E4E7F89734F6B264EF674B2A10863_il2cpp_TypeInfo_var, __this);
-		for (int i = 0; i < elementsInCollection; i++)
-		{
-			RuntimeObject* item = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.IEnumerable>::get_Item(System.Int32) */, IReadOnlyList_1_t4ECC0CFD021054E51D421E03C0DDEB7DD2D69487_il2cpp_TypeInfo_var, __this, i);
-			if (VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, item, ____value0_unmarshaled))
-			{
-				____index1_empty = static_cast<uint32_t>(i);
-				returnValue = true;
-				break;
-			}
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	// Marshaling of parameter U27___index1U27 back from managed representation
-	*___index1 = ____index1_empty;
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.Collections.IEnumerable>::GetMany(System.UInt32,T[])
-il2cpp_hresult_t IVectorView_1_GetMany_mA6B7C5129191F9FABD887800915DB7D141B7BA3D_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___startIndex0, uint32_t ___items1ArraySize, IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7** ___items1, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_GetMany_mA6B7C5129191F9FABD887800915DB7D141B7BA3D_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		uint32_t elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.Collections.IEnumerable>::get_Count() */, IReadOnlyCollection_1_t4EB6EF1AB03E4E7F89734F6B264EF674B2A10863_il2cpp_TypeInfo_var, __this);
-		if (___startIndex0 != elementsInCollection && ___items1 != NULL)
-		{
-			if (___startIndex0 > elementsInCollection || ___startIndex0 > 2147483647)
-			{
-				ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * exception = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA*)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
-				ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6(exception, _stringLiteralE540CDD1328B2B21E29A95405C301B9313B7C346, NULL);
-				Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
-				IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
-			}
-			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
-			for (uint32_t i = 0; i < returnValue; i++)
-			{
-				RuntimeObject* itemManaged = InterfaceFuncInvoker1< RuntimeObject*, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Collections.IEnumerable>::get_Item(System.Int32) */, IReadOnlyList_1_t4ECC0CFD021054E51D421E03C0DDEB7DD2D69487_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
-				if (itemManaged != NULL)
-				{
-					if (il2cpp_codegen_is_import_or_windows_runtime(itemManaged))
-					{
-						il2cpp_hresult_t hr = ((Il2CppComObject *)itemManaged)->identity->QueryInterface(IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7::IID, reinterpret_cast<void**>(&___items1[i]));
-						il2cpp_codegen_com_raise_exception_if_failed(hr, false);
-					}
-					else
-					{
-						___items1[i] = il2cpp_codegen_com_get_or_create_ccw<IBindableIterable_t9143D67D77A22933794984D33C26495AE2C9D6D7>(itemManaged);
-					}
-				}
-				else
-				{
-					___items1[i] = NULL;
-				}
-			}
-		}
-		else
-		{
-			returnValue = 0;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
 // Projected COM callable wrapper method for T Windows.Foundation.Collections.IVectorView`1<System.Collections.Generic.IEnumerable`1<System.Char>>::GetAt(System.UInt32)
 il2cpp_hresult_t IVectorView_1_GetAt_mC88F765FAC31C2BDC24E09D2FB29F68925BDC94F_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, IIterable_1_t71D81FF0A80BD32F1D0592CA0D6C869D447FFBC1** comReturnValue)
 {
@@ -15846,6 +16289,1028 @@ il2cpp_hresult_t IVectorView_1_GetMany_m67532923FC1037FC9CC15B4D8403A3E2305683FB
 			for (uint32_t i = 0; i < returnValue; i++)
 			{
 				int32_t itemManaged = InterfaceFuncInvoker1< int32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.Int32>::get_Item(System.Int32) */, IReadOnlyList_1_t1A846F80E39FC3745D79DF72D9E6F2C2CE81C792_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
+				___items1[i] = itemManaged;
+			}
+		}
+		else
+		{
+			returnValue = 0;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for T Windows.Foundation.Collections.IVector`1<System.UInt32>::GetAt(System.UInt32)
+il2cpp_hresult_t IVector_1_GetAt_m5ABDD04F15FB7CEC30207428388FB0CF01B32BCD_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_GetAt_m5ABDD04F15FB7CEC30207428388FB0CF01B32BCD_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		try
+		{
+			returnValue = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<System.UInt32>::get_Item(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, ___index0);
+		}
+		catch (const Il2CppExceptionWrapper& ex)
+		{
+			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
+			{
+				ex.ex->hresult = -2147483637; // E_BOUNDS
+			}
+
+			throw;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVector`1<System.UInt32>::get_Size()
+il2cpp_hresult_t IVector_1_get_Size_m55176912249C675441743DB4E41AB52F5739FF46_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_get_Size_m55176912249C675441743DB4E41AB52F5739FF46_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)__this;
+		returnValue = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.UInt32>::get_Count() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Collections.Generic.IReadOnlyList`1<T> Windows.Foundation.Collections.IVector`1<System.UInt32>::GetView()
+il2cpp_hresult_t IVector_1_GetView_mE43953B57883F4E8B0A48C354383EC71B9AC2218_ComCallableWrapperProjectedMethod(RuntimeObject* __this, IVectorView_1_t2BD142C07C846D035CBF1FFBE4D24A3A99EB5E74** comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_GetView_mE43953B57883F4E8B0A48C354383EC71B9AC2218_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	RuntimeObject* returnValue;
+	try
+	{
+		RuntimeObject* __thisValue = __this;
+		if (IsInst(__thisValue, IReadOnlyList_1_t229E375A7572BE3989C8F033AC2A82D4A17602E5_il2cpp_TypeInfo_var))
+		{
+			returnValue = __thisValue;
+		}
+		else
+		{
+			ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23 * readOnlyCollection = (ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23*)il2cpp_codegen_object_new(ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23_il2cpp_TypeInfo_var);
+			ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D(readOnlyCollection, __thisValue, ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D_RuntimeMethod_var);
+			returnValue = readOnlyCollection;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	// Marshaling of return value back from managed representation
+	IVectorView_1_t2BD142C07C846D035CBF1FFBE4D24A3A99EB5E74* _returnValue_marshaled = NULL;
+	if (returnValue != NULL)
+	{
+		if (il2cpp_codegen_is_import_or_windows_runtime(returnValue))
+		{
+			il2cpp_hresult_t hr = ((Il2CppComObject *)returnValue)->identity->QueryInterface(IVectorView_1_t2BD142C07C846D035CBF1FFBE4D24A3A99EB5E74::IID, reinterpret_cast<void**>(&_returnValue_marshaled));
+			il2cpp_codegen_com_raise_exception_if_failed(hr, false);
+		}
+		else
+		{
+			_returnValue_marshaled = il2cpp_codegen_com_get_or_create_ccw<IVectorView_1_t2BD142C07C846D035CBF1FFBE4D24A3A99EB5E74>(returnValue);
+		}
+	}
+	else
+	{
+		_returnValue_marshaled = NULL;
+	}
+
+	*comReturnValue = _returnValue_marshaled;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Boolean Windows.Foundation.Collections.IVector`1<System.UInt32>::IndexOf(T,System.UInt32U26)
+il2cpp_hresult_t IVector_1_IndexOf_m3481C941839444235BC28809EEC84583DCC34C6D_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___value0, uint32_t* ___index1, bool* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_IndexOf_m3481C941839444235BC28809EEC84583DCC34C6D_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Marshaling of parameter U27___index1U27 to managed representation
+	uint32_t ____index1_empty = 0;
+
+	// Managed method invocation
+	bool returnValue;
+	try
+	{
+		____index1_empty = 0;
+		returnValue = false;
+
+		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.UInt32>::get_Count() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __this);
+		for (int i = 0; i < elementsInCollection; i++)
+		{
+			uint32_t item = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<System.UInt32>::get_Item(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, i);
+			if (item == ___value0)
+			{
+				____index1_empty = static_cast<uint32_t>(i);
+				returnValue = true;
+				break;
+			}
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	// Marshaling of parameter U27___index1U27 back from managed representation
+	*___index1 = ____index1_empty;
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::SetAt(System.UInt32,T)
+il2cpp_hresult_t IVector_1_SetAt_mBDC3203A164B75C01D7DD1DF71152CA39DA85191_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, uint32_t ___value1)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_SetAt_mBDC3203A164B75C01D7DD1DF71152CA39DA85191_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	try
+	{
+		try
+		{
+			InterfaceActionInvoker2< int32_t, uint32_t >::Invoke(1 /* System.Void System.Collections.Generic.IList`1<System.UInt32>::set_Item(System.Int32,T) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, ___index0, ___value1);
+		}
+		catch (const Il2CppExceptionWrapper& ex)
+		{
+			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
+			{
+				ex.ex->hresult = -2147483637; // E_BOUNDS
+			}
+
+			throw;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::InsertAt(System.UInt32,T)
+il2cpp_hresult_t IVector_1_InsertAt_m504C6B41C3CF3F5E99EC9F497ECA220E1EEBC109_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, uint32_t ___value1)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_InsertAt_m504C6B41C3CF3F5E99EC9F497ECA220E1EEBC109_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	try
+	{
+		try
+		{
+			InterfaceActionInvoker2< int32_t, uint32_t >::Invoke(3 /* System.Void System.Collections.Generic.IList`1<System.UInt32>::Insert(System.Int32,T) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, ___index0, ___value1);
+		}
+		catch (const Il2CppExceptionWrapper& ex)
+		{
+			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
+			{
+				ex.ex->hresult = -2147483637; // E_BOUNDS
+			}
+
+			throw;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::RemoveAt(System.UInt32)
+il2cpp_hresult_t IVector_1_RemoveAt_m62FFFDB79A552EFB5C1632BA0E081470DFF5FF62_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_RemoveAt_m62FFFDB79A552EFB5C1632BA0E081470DFF5FF62_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	try
+	{
+		try
+		{
+			InterfaceActionInvoker1< int32_t >::Invoke(4 /* System.Void System.Collections.Generic.IList`1<System.UInt32>::RemoveAt(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, ___index0);
+		}
+		catch (const Il2CppExceptionWrapper& ex)
+		{
+			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
+			{
+				ex.ex->hresult = -2147483637; // E_BOUNDS
+			}
+
+			throw;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::Append(T)
+il2cpp_hresult_t IVector_1_Append_mA2F373813EE01816D5B4C1E71F9844C3022711F8_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___value0)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_Append_mA2F373813EE01816D5B4C1E71F9844C3022711F8_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)__this;
+		InterfaceActionInvoker1< uint32_t >::Invoke(2 /* System.Void System.Collections.Generic.ICollection`1<System.UInt32>::Add(T) */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue, ___value0);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::RemoveAtEnd()
+il2cpp_hresult_t IVector_1_RemoveAtEnd_m87E57C0A59EBD70F319E02706BE3033EAA1A4CF1_ComCallableWrapperProjectedMethod(RuntimeObject* __this)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_RemoveAtEnd_m87E57C0A59EBD70F319E02706BE3033EAA1A4CF1_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)__this;
+		int32_t itemsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.UInt32>::get_Count() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue);
+		if (itemsInCollection == 0)
+		{
+			InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1 * exception = (InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1*)il2cpp_codegen_object_new(InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1_il2cpp_TypeInfo_var);
+			InvalidOperationException__ctor_m72027D5F1D513C25C05137E203EEED8FD8297706(exception, _stringLiteralF950631609558C71038D503B8D357B1212A22575, NULL);
+			Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
+			IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
+		}
+		InterfaceActionInvoker1< int32_t >::Invoke(4 /* System.Void System.Collections.Generic.IList`1<System.UInt32>::RemoveAt(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __thisValue, itemsInCollection - 1);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::Clear()
+il2cpp_hresult_t IVector_1_Clear_mED17BE89CEEA1506E41D2DF69D960C25C9D774DF_ComCallableWrapperProjectedMethod(RuntimeObject* __this)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_Clear_mED17BE89CEEA1506E41D2DF69D960C25C9D774DF_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)__this;
+		InterfaceActionInvoker0::Invoke(3 /* System.Void System.Collections.Generic.ICollection`1<System.UInt32>::Clear() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVector`1<System.UInt32>::GetMany(System.UInt32,T[])
+il2cpp_hresult_t IVector_1_GetMany_m83585D6407D2FFDD6FCABADAE5B9AD748551A1EC_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___startIndex0, uint32_t ___items1ArraySize, uint32_t* ___items1, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_GetMany_m83585D6407D2FFDD6FCABADAE5B9AD748551A1EC_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		uint32_t elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.UInt32>::get_Count() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __this);
+		if (___startIndex0 != elementsInCollection && ___items1 != NULL)
+		{
+			if (___startIndex0 > elementsInCollection || ___startIndex0 > 2147483647)
+			{
+				ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * exception = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA*)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
+				ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6(exception, _stringLiteralE540CDD1328B2B21E29A95405C301B9313B7C346, NULL);
+				Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
+				IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
+			}
+			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
+			for (uint32_t i = 0; i < returnValue; i++)
+			{
+				uint32_t itemManaged = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<System.UInt32>::get_Item(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
+				___items1[i] = itemManaged;
+			}
+		}
+		else
+		{
+			returnValue = 0;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::ReplaceAll(T[])
+il2cpp_hresult_t IVector_1_ReplaceAll_mE36016391EFA3F94BF9301E22F0047BCE04D02E9_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___items0ArraySize, uint32_t* ___items0)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVector_1_ReplaceAll_mE36016391EFA3F94BF9301E22F0047BCE04D02E9_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Marshaling of parameter U27___items0U27 to managed representation
+	UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB* ____items0_unmarshaled = NULL;
+	if (___items0 != NULL)
+	{
+		____items0_unmarshaled = reinterpret_cast<UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB*>(SZArrayNew(UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB_il2cpp_TypeInfo_var, static_cast<int32_t>(___items0ArraySize)));
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(static_cast<int32_t>(___items0ArraySize)); i++)
+		{
+			(____items0_unmarshaled)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (___items0)[i]);
+		}
+	}
+
+	// Managed method invocation
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)__this;
+		InterfaceActionInvoker0::Invoke(3 /* System.Void System.Collections.Generic.ICollection`1<System.UInt32>::Clear() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue);
+		if (____items0_unmarshaled != NULL)
+		{
+			il2cpp_array_size_t itemsInCollection = ____items0_unmarshaled->max_length;
+			for (il2cpp_array_size_t i = 0; i < itemsInCollection; i++)
+			{
+				InterfaceActionInvoker1< uint32_t >::Invoke(2 /* System.Void System.Collections.Generic.ICollection`1<System.UInt32>::Add(T) */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue, (____items0_unmarshaled)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i)));
+			}
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	return IL2CPP_S_OK;
+}
+// Windows.Foundation.Collections.IIterator`1<System.UInt32> adapter
+struct IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter IL2CPP_FINAL : il2cpp::vm::NonCachedCCWBase<IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter>, IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB
+{
+	inline IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter(RuntimeObject* obj) : il2cpp::vm::NonCachedCCWBase<IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter>(obj), _initialized(false), _hasCurrent(false) {}
+
+	virtual il2cpp_hresult_t STDCALL QueryInterface(const Il2CppGuid& iid, void** object) IL2CPP_OVERRIDE
+	{
+		if (::memcmp(&iid, &Il2CppIUnknown::IID, sizeof(Il2CppGuid)) == 0
+		 || ::memcmp(&iid, &Il2CppIInspectable::IID, sizeof(Il2CppGuid)) == 0
+		 || ::memcmp(&iid, &Il2CppIAgileObject::IID, sizeof(Il2CppGuid)) == 0)
+		{
+			*object = GetIdentity();
+			AddRefImpl();
+			return IL2CPP_S_OK;
+		}
+
+		if (::memcmp(&iid, &Il2CppIManagedObjectHolder::IID, sizeof(Il2CppGuid)) == 0)
+		{
+			*object = static_cast<Il2CppIManagedObjectHolder*>(this);
+			AddRefImpl();
+			return IL2CPP_S_OK;
+		}
+
+		if (::memcmp(&iid, &IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB::IID, sizeof(Il2CppGuid)) == 0)
+		{
+			*object = static_cast<IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB*>(this);
+			AddRefImpl();
+			return IL2CPP_S_OK;
+		}
+
+		if (::memcmp(&iid, &Il2CppIMarshal::IID, sizeof(Il2CppGuid)) == 0)
+		{
+			*object = static_cast<Il2CppIMarshal*>(this);
+			AddRefImpl();
+			return IL2CPP_S_OK;
+		}
+
+		if (::memcmp(&iid, &Il2CppIWeakReferenceSource::IID, sizeof(Il2CppGuid)) == 0)
+		{
+			*object = static_cast<Il2CppIWeakReferenceSource*>(this);
+			AddRefImpl();
+			return IL2CPP_S_OK;
+		}
+
+		*object = NULL;
+		return IL2CPP_E_NOINTERFACE;
+	}
+
+	virtual uint32_t STDCALL AddRef() IL2CPP_OVERRIDE
+	{
+		return AddRefImpl();
+	}
+
+	virtual uint32_t STDCALL Release() IL2CPP_OVERRIDE
+	{
+		return ReleaseImpl();
+	}
+
+	virtual il2cpp_hresult_t STDCALL GetIids(uint32_t* iidCount, Il2CppGuid** iids) IL2CPP_OVERRIDE
+	{
+		Il2CppGuid* interfaceIds = il2cpp_codegen_marshal_allocate_array<Il2CppGuid>(1);
+		interfaceIds[0] = IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB::IID;
+
+		*iidCount = 1;
+		*iids = interfaceIds;
+		return IL2CPP_S_OK;
+	}
+
+	virtual il2cpp_hresult_t STDCALL GetRuntimeClassName(Il2CppHString* className) IL2CPP_OVERRIDE
+	{
+		return ComObjectBase::GetRuntimeClassName(className);
+	}
+
+	virtual il2cpp_hresult_t STDCALL GetTrustLevel(int32_t* trustLevel) IL2CPP_OVERRIDE
+	{
+		return ComObjectBase::GetTrustLevel(trustLevel);
+	}
+	virtual il2cpp_hresult_t STDCALL IIterator_1_get_Current_m2F06167D0B0F6ECDD90F47777F19EDCF6DAD5857(uint32_t* comReturnValue) IL2CPP_OVERRIDE;
+	virtual il2cpp_hresult_t STDCALL IIterator_1_get_HasCurrent_mE0C93154274BF199E8A873F0CE97847237167FB3(bool* comReturnValue) IL2CPP_OVERRIDE;
+	virtual il2cpp_hresult_t STDCALL IIterator_1_MoveNext_mB57A14CD1E43625DA1FE023CB07FF06045005239(bool* comReturnValue) IL2CPP_OVERRIDE;
+	virtual il2cpp_hresult_t STDCALL IIterator_1_GetMany_m5F27241E04C3739D87A3CDB400E0A1E428F0B7B5(uint32_t ___items0ArraySize, uint32_t* ___items0, uint32_t* comReturnValue) IL2CPP_OVERRIDE;
+private:
+	bool _initialized;
+	bool _hasCurrent;
+	il2cpp_hresult_t Initialize();
+	il2cpp_hresult_t GetCurrent(uint32_t* comReturnValue);
+	il2cpp_hresult_t MoveNext(bool* comReturnValue);
+};
+il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::IIterator_1_get_Current_m2F06167D0B0F6ECDD90F47777F19EDCF6DAD5857(uint32_t* comReturnValue)
+{
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+	il2cpp_hresult_t hr = Initialize();
+	if (IL2CPP_HR_FAILED(hr))
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		return hr;
+	}
+	return GetCurrent(comReturnValue);
+}
+il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::IIterator_1_get_HasCurrent_mE0C93154274BF199E8A873F0CE97847237167FB3(bool* comReturnValue)
+{
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+	il2cpp_hresult_t hr = Initialize();
+	if (IL2CPP_HR_FAILED(hr))
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		return hr;
+	}
+	*comReturnValue = _hasCurrent;
+	return IL2CPP_S_OK;
+}
+il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::IIterator_1_MoveNext_mB57A14CD1E43625DA1FE023CB07FF06045005239(bool* comReturnValue)
+{
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+	il2cpp_hresult_t hr = Initialize();
+	if (IL2CPP_HR_FAILED(hr))
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		return hr;
+	}
+	hr = MoveNext(&_hasCurrent);
+	*comReturnValue = _hasCurrent;
+	return hr;
+}
+il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::IIterator_1_GetMany_m5F27241E04C3739D87A3CDB400E0A1E428F0B7B5(uint32_t ___items0ArraySize, uint32_t* ___items0, uint32_t* comReturnValue)
+{
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+	il2cpp_hresult_t hr = Initialize();
+	if (IL2CPP_HR_FAILED(hr))
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		return hr;
+	}
+	uint32_t count = 0;
+	for (; _hasCurrent && (count < ___items0ArraySize); ++count)
+	{
+		hr = GetCurrent(___items0 + count);
+		if (IL2CPP_HR_FAILED(hr))
+		{
+			*comReturnValue = count;
+			return hr;
+		}
+		hr = MoveNext(&_hasCurrent);
+		if (IL2CPP_HR_FAILED(hr))
+		{
+			*comReturnValue = count + 1;
+			return hr;
+		}
+	}
+	*comReturnValue = count;
+	return IL2CPP_S_OK;
+}
+il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::Initialize()
+{
+	if (_initialized)
+	{
+		return IL2CPP_S_OK;
+	}
+	il2cpp_hresult_t hr = MoveNext(&_hasCurrent);
+	_initialized = IL2CPP_HR_SUCCEEDED(hr);
+	return hr;
+}
+il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::GetCurrent(uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter_GetCurrent_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)GetManagedObjectInline();
+		returnValue = InterfaceFuncInvoker0< uint32_t >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.UInt32>::get_Current() */, IEnumerator_1_t6AEF21B80E2C499BFFB48F8148C3026FBBA3FD72_il2cpp_TypeInfo_var, __thisValue);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return (ex.ex->hresult == IL2CPP_COR_E_INVALIDOPERATION) ? IL2CPP_E_BOUNDS : ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::MoveNext(bool* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter_MoveNext_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	// Managed method invocation
+	bool returnValue;
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)GetManagedObjectInline();
+		returnValue = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t8789118187258CC88B77AFAC6315B5AF87D3E18A_il2cpp_TypeInfo_var, __thisValue);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for Windows.Foundation.Collections.IIterator`1<T> Windows.Foundation.Collections.IIterable`1<System.UInt32>::First()
+il2cpp_hresult_t IIterable_1_First_m998D2831815B26385CE89927C017143CC7263CD3_ComCallableWrapperProjectedMethod(RuntimeObject* __this, IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB** comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IIterable_1_First_m998D2831815B26385CE89927C017143CC7263CD3_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	try
+	{
+		RuntimeObject* returnValue;
+		RuntimeObject* __thisValue = (RuntimeObject*)__this;
+		returnValue = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.UInt32>::GetEnumerator() */, IEnumerable_1_tB244008973DD93E9AABDF39E52AD093FA0E7560A_il2cpp_TypeInfo_var, __thisValue);
+		*comReturnValue = (returnValue != NULL) ? IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::__CreateInstance(returnValue) : NULL;
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for T Windows.Foundation.Collections.IVectorView`1<System.UInt32>::GetAt(System.UInt32)
+il2cpp_hresult_t IVectorView_1_GetAt_mC63EA0391D278D0DF1121643937DDE0A63279F5A_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_GetAt_mC63EA0391D278D0DF1121643937DDE0A63279F5A_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		try
+		{
+			returnValue = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.UInt32>::get_Item(System.Int32) */, IReadOnlyList_1_t229E375A7572BE3989C8F033AC2A82D4A17602E5_il2cpp_TypeInfo_var, __this, ___index0);
+		}
+		catch (const Il2CppExceptionWrapper& ex)
+		{
+			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
+			{
+				ex.ex->hresult = -2147483637; // E_BOUNDS
+			}
+
+			throw;
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.UInt32>::get_Size()
+il2cpp_hresult_t IVectorView_1_get_Size_mFE92CAAA7DB0789F5993DEBF2B254A511F7CC7BA_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_get_Size_mFE92CAAA7DB0789F5993DEBF2B254A511F7CC7BA_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		RuntimeObject* __thisValue = (RuntimeObject*)__this;
+		returnValue = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.UInt32>::get_Count() */, IReadOnlyCollection_1_tB5167EF4F9562420042AED8E5D27B4350E17FDB9_il2cpp_TypeInfo_var, __thisValue);
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.Boolean Windows.Foundation.Collections.IVectorView`1<System.UInt32>::IndexOf(T,System.UInt32U26)
+il2cpp_hresult_t IVectorView_1_IndexOf_mCC8BEF9DD52B697D4AD9DD0186EC14F5E5416BF8_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___value0, uint32_t* ___index1, bool* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_IndexOf_mCC8BEF9DD52B697D4AD9DD0186EC14F5E5416BF8_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Marshaling of parameter U27___index1U27 to managed representation
+	uint32_t ____index1_empty = 0;
+
+	// Managed method invocation
+	bool returnValue;
+	try
+	{
+		____index1_empty = 0;
+		returnValue = false;
+
+		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.UInt32>::get_Count() */, IReadOnlyCollection_1_tB5167EF4F9562420042AED8E5D27B4350E17FDB9_il2cpp_TypeInfo_var, __this);
+		for (int i = 0; i < elementsInCollection; i++)
+		{
+			uint32_t item = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.UInt32>::get_Item(System.Int32) */, IReadOnlyList_1_t229E375A7572BE3989C8F033AC2A82D4A17602E5_il2cpp_TypeInfo_var, __this, i);
+			if (item == ___value0)
+			{
+				____index1_empty = static_cast<uint32_t>(i);
+				returnValue = true;
+				break;
+			}
+		}
+	}
+	catch (const Il2CppExceptionWrapper& ex)
+	{
+		memset(comReturnValue, 0, sizeof(*comReturnValue));
+		String_t* exceptionStr = NULL;
+		try
+		{
+			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
+		}
+		catch (const Il2CppExceptionWrapper&)
+		{
+			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+		}
+		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
+		return ex.ex->hresult;
+	}
+
+	// Marshaling of parameter U27___index1U27 back from managed representation
+	*___index1 = ____index1_empty;
+
+	*comReturnValue = returnValue;
+	return IL2CPP_S_OK;
+}
+// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.UInt32>::GetMany(System.UInt32,T[])
+il2cpp_hresult_t IVectorView_1_GetMany_mB435F7E55EF1F11FB36A99801D6C23BD316659D8_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___startIndex0, uint32_t ___items1ArraySize, uint32_t* ___items1, uint32_t* comReturnValue)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (IVectorView_1_GetMany_mB435F7E55EF1F11FB36A99801D6C23BD316659D8_ComCallableWrapperProjectedMethod_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
+
+	// Managed method invocation
+	uint32_t returnValue;
+	try
+	{
+		uint32_t elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.UInt32>::get_Count() */, IReadOnlyCollection_1_tB5167EF4F9562420042AED8E5D27B4350E17FDB9_il2cpp_TypeInfo_var, __this);
+		if (___startIndex0 != elementsInCollection && ___items1 != NULL)
+		{
+			if (___startIndex0 > elementsInCollection || ___startIndex0 > 2147483647)
+			{
+				ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * exception = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA*)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
+				ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6(exception, _stringLiteralE540CDD1328B2B21E29A95405C301B9313B7C346, NULL);
+				Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
+				IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
+			}
+			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
+			for (uint32_t i = 0; i < returnValue; i++)
+			{
+				uint32_t itemManaged = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.UInt32>::get_Item(System.Int32) */, IReadOnlyList_1_t229E375A7572BE3989C8F033AC2A82D4A17602E5_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
 				___items1[i] = itemManaged;
 			}
 		}
@@ -23213,12 +24678,12 @@ il2cpp_hresult_t IVector_1_ReplaceAll_m494A7928543F0FCFC3F71410C81099835B558F5A_
 	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
 
 	// Marshaling of parameter U27___items0U27 to managed representation
-	DateTimeOffsetU5BU5D_tA6AB0D688B74AD64A882F6A8D9824B6AD00813D7* ____items0_unmarshaled = NULL;
+	DateTimeOffsetU5BU5D_tBE5BF156BB0B9FFFC5B216B0D02C0D44288FCA25* ____items0_unmarshaled = NULL;
 	if (___items0 != NULL)
 	{
 		if (____items0_unmarshaled == NULL)
 		{
-			____items0_unmarshaled = reinterpret_cast<DateTimeOffsetU5BU5D_tA6AB0D688B74AD64A882F6A8D9824B6AD00813D7*>(SZArrayNew(DateTimeOffsetU5BU5D_tA6AB0D688B74AD64A882F6A8D9824B6AD00813D7_il2cpp_TypeInfo_var, static_cast<int32_t>(___items0ArraySize)));
+			____items0_unmarshaled = reinterpret_cast<DateTimeOffsetU5BU5D_tBE5BF156BB0B9FFFC5B216B0D02C0D44288FCA25*>(SZArrayNew(DateTimeOffsetU5BU5D_tBE5BF156BB0B9FFFC5B216B0D02C0D44288FCA25_il2cpp_TypeInfo_var, static_cast<int32_t>(___items0ArraySize)));
 		}
 		il2cpp_array_size_t _arrayLength = (____items0_unmarshaled)->max_length;
 		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(_arrayLength); i++)
@@ -23735,1028 +25200,6 @@ il2cpp_hresult_t IVectorView_1_GetMany_mC59657284E4FFE7BFF651E1CB8DD1815A34C9392
 			{
 				DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  itemManaged = InterfaceFuncInvoker1< DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85 , int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.DateTimeOffset>::get_Item(System.Int32) */, IReadOnlyList_1_t241739826E7B322F3BB26DE065E94447689BA9C3_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
 				(___items1[i]).set_UniversalTime_0((itemManaged.get_m_dateTime_2().get_dateData_44() & 0x3FFFFFFFFFFFFFFF) - 504911232000000000);
-			}
-		}
-		else
-		{
-			returnValue = 0;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for T Windows.Foundation.Collections.IVector`1<System.UInt32>::GetAt(System.UInt32)
-il2cpp_hresult_t IVector_1_GetAt_m5ABDD04F15FB7CEC30207428388FB0CF01B32BCD_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_GetAt_m5ABDD04F15FB7CEC30207428388FB0CF01B32BCD_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		try
-		{
-			returnValue = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<System.UInt32>::get_Item(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, ___index0);
-		}
-		catch (const Il2CppExceptionWrapper& ex)
-		{
-			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
-			{
-				ex.ex->hresult = -2147483637; // E_BOUNDS
-			}
-
-			throw;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVector`1<System.UInt32>::get_Size()
-il2cpp_hresult_t IVector_1_get_Size_m55176912249C675441743DB4E41AB52F5739FF46_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_get_Size_m55176912249C675441743DB4E41AB52F5739FF46_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)__this;
-		returnValue = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.UInt32>::get_Count() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue);
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Collections.Generic.IReadOnlyList`1<T> Windows.Foundation.Collections.IVector`1<System.UInt32>::GetView()
-il2cpp_hresult_t IVector_1_GetView_mE43953B57883F4E8B0A48C354383EC71B9AC2218_ComCallableWrapperProjectedMethod(RuntimeObject* __this, IVectorView_1_t2BD142C07C846D035CBF1FFBE4D24A3A99EB5E74** comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_GetView_mE43953B57883F4E8B0A48C354383EC71B9AC2218_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	RuntimeObject* returnValue;
-	try
-	{
-		RuntimeObject* __thisValue = __this;
-		if (IsInst(__thisValue, IReadOnlyList_1_t229E375A7572BE3989C8F033AC2A82D4A17602E5_il2cpp_TypeInfo_var))
-		{
-			returnValue = __thisValue;
-		}
-		else
-		{
-			ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23 * readOnlyCollection = (ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23*)il2cpp_codegen_object_new(ReadOnlyCollection_1_t0CF0CA2BC9F738CF7082E9EE1762C96B20ED8B23_il2cpp_TypeInfo_var);
-			ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D(readOnlyCollection, __thisValue, ReadOnlyCollection_1__ctor_m4B05B0D58F74935FE5848324513EE9B2A53AF08D_RuntimeMethod_var);
-			returnValue = readOnlyCollection;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	// Marshaling of return value back from managed representation
-	IVectorView_1_t2BD142C07C846D035CBF1FFBE4D24A3A99EB5E74* _returnValue_marshaled = NULL;
-	if (returnValue != NULL)
-	{
-		if (il2cpp_codegen_is_import_or_windows_runtime(returnValue))
-		{
-			il2cpp_hresult_t hr = ((Il2CppComObject *)returnValue)->identity->QueryInterface(IVectorView_1_t2BD142C07C846D035CBF1FFBE4D24A3A99EB5E74::IID, reinterpret_cast<void**>(&_returnValue_marshaled));
-			il2cpp_codegen_com_raise_exception_if_failed(hr, false);
-		}
-		else
-		{
-			_returnValue_marshaled = il2cpp_codegen_com_get_or_create_ccw<IVectorView_1_t2BD142C07C846D035CBF1FFBE4D24A3A99EB5E74>(returnValue);
-		}
-	}
-	else
-	{
-		_returnValue_marshaled = NULL;
-	}
-
-	*comReturnValue = _returnValue_marshaled;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Boolean Windows.Foundation.Collections.IVector`1<System.UInt32>::IndexOf(T,System.UInt32U26)
-il2cpp_hresult_t IVector_1_IndexOf_m3481C941839444235BC28809EEC84583DCC34C6D_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___value0, uint32_t* ___index1, bool* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_IndexOf_m3481C941839444235BC28809EEC84583DCC34C6D_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Marshaling of parameter U27___index1U27 to managed representation
-	uint32_t ____index1_empty = 0;
-
-	// Managed method invocation
-	bool returnValue;
-	try
-	{
-		____index1_empty = 0;
-		returnValue = false;
-
-		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.UInt32>::get_Count() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __this);
-		for (int i = 0; i < elementsInCollection; i++)
-		{
-			uint32_t item = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<System.UInt32>::get_Item(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, i);
-			if (item == ___value0)
-			{
-				____index1_empty = static_cast<uint32_t>(i);
-				returnValue = true;
-				break;
-			}
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	// Marshaling of parameter U27___index1U27 back from managed representation
-	*___index1 = ____index1_empty;
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::SetAt(System.UInt32,T)
-il2cpp_hresult_t IVector_1_SetAt_mBDC3203A164B75C01D7DD1DF71152CA39DA85191_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, uint32_t ___value1)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_SetAt_mBDC3203A164B75C01D7DD1DF71152CA39DA85191_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	try
-	{
-		try
-		{
-			InterfaceActionInvoker2< int32_t, uint32_t >::Invoke(1 /* System.Void System.Collections.Generic.IList`1<System.UInt32>::set_Item(System.Int32,T) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, ___index0, ___value1);
-		}
-		catch (const Il2CppExceptionWrapper& ex)
-		{
-			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
-			{
-				ex.ex->hresult = -2147483637; // E_BOUNDS
-			}
-
-			throw;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::InsertAt(System.UInt32,T)
-il2cpp_hresult_t IVector_1_InsertAt_m504C6B41C3CF3F5E99EC9F497ECA220E1EEBC109_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, uint32_t ___value1)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_InsertAt_m504C6B41C3CF3F5E99EC9F497ECA220E1EEBC109_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	try
-	{
-		try
-		{
-			InterfaceActionInvoker2< int32_t, uint32_t >::Invoke(3 /* System.Void System.Collections.Generic.IList`1<System.UInt32>::Insert(System.Int32,T) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, ___index0, ___value1);
-		}
-		catch (const Il2CppExceptionWrapper& ex)
-		{
-			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
-			{
-				ex.ex->hresult = -2147483637; // E_BOUNDS
-			}
-
-			throw;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::RemoveAt(System.UInt32)
-il2cpp_hresult_t IVector_1_RemoveAt_m62FFFDB79A552EFB5C1632BA0E081470DFF5FF62_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_RemoveAt_m62FFFDB79A552EFB5C1632BA0E081470DFF5FF62_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	try
-	{
-		try
-		{
-			InterfaceActionInvoker1< int32_t >::Invoke(4 /* System.Void System.Collections.Generic.IList`1<System.UInt32>::RemoveAt(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, ___index0);
-		}
-		catch (const Il2CppExceptionWrapper& ex)
-		{
-			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
-			{
-				ex.ex->hresult = -2147483637; // E_BOUNDS
-			}
-
-			throw;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::Append(T)
-il2cpp_hresult_t IVector_1_Append_mA2F373813EE01816D5B4C1E71F9844C3022711F8_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___value0)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_Append_mA2F373813EE01816D5B4C1E71F9844C3022711F8_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)__this;
-		InterfaceActionInvoker1< uint32_t >::Invoke(2 /* System.Void System.Collections.Generic.ICollection`1<System.UInt32>::Add(T) */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue, ___value0);
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::RemoveAtEnd()
-il2cpp_hresult_t IVector_1_RemoveAtEnd_m87E57C0A59EBD70F319E02706BE3033EAA1A4CF1_ComCallableWrapperProjectedMethod(RuntimeObject* __this)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_RemoveAtEnd_m87E57C0A59EBD70F319E02706BE3033EAA1A4CF1_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)__this;
-		int32_t itemsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.UInt32>::get_Count() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue);
-		if (itemsInCollection == 0)
-		{
-			InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1 * exception = (InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1*)il2cpp_codegen_object_new(InvalidOperationException_t0530E734D823F78310CAFAFA424CA5164D93A1F1_il2cpp_TypeInfo_var);
-			InvalidOperationException__ctor_m72027D5F1D513C25C05137E203EEED8FD8297706(exception, _stringLiteralF950631609558C71038D503B8D357B1212A22575, NULL);
-			Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
-			IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
-		}
-		InterfaceActionInvoker1< int32_t >::Invoke(4 /* System.Void System.Collections.Generic.IList`1<System.UInt32>::RemoveAt(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __thisValue, itemsInCollection - 1);
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::Clear()
-il2cpp_hresult_t IVector_1_Clear_mED17BE89CEEA1506E41D2DF69D960C25C9D774DF_ComCallableWrapperProjectedMethod(RuntimeObject* __this)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_Clear_mED17BE89CEEA1506E41D2DF69D960C25C9D774DF_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)__this;
-		InterfaceActionInvoker0::Invoke(3 /* System.Void System.Collections.Generic.ICollection`1<System.UInt32>::Clear() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue);
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVector`1<System.UInt32>::GetMany(System.UInt32,T[])
-il2cpp_hresult_t IVector_1_GetMany_m83585D6407D2FFDD6FCABADAE5B9AD748551A1EC_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___startIndex0, uint32_t ___items1ArraySize, uint32_t* ___items1, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_GetMany_m83585D6407D2FFDD6FCABADAE5B9AD748551A1EC_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		uint32_t elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.UInt32>::get_Count() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __this);
-		if (___startIndex0 != elementsInCollection && ___items1 != NULL)
-		{
-			if (___startIndex0 > elementsInCollection || ___startIndex0 > 2147483647)
-			{
-				ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * exception = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA*)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
-				ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6(exception, _stringLiteralE540CDD1328B2B21E29A95405C301B9313B7C346, NULL);
-				Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
-				IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
-			}
-			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
-			for (uint32_t i = 0; i < returnValue; i++)
-			{
-				uint32_t itemManaged = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<System.UInt32>::get_Item(System.Int32) */, IList_1_tD27EC39BF81A6398B30A0F17239861720D6C83DB_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
-				___items1[i] = itemManaged;
-			}
-		}
-		else
-		{
-			returnValue = 0;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Void Windows.Foundation.Collections.IVector`1<System.UInt32>::ReplaceAll(T[])
-il2cpp_hresult_t IVector_1_ReplaceAll_mE36016391EFA3F94BF9301E22F0047BCE04D02E9_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___items0ArraySize, uint32_t* ___items0)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVector_1_ReplaceAll_mE36016391EFA3F94BF9301E22F0047BCE04D02E9_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Marshaling of parameter U27___items0U27 to managed representation
-	UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB* ____items0_unmarshaled = NULL;
-	if (___items0 != NULL)
-	{
-		____items0_unmarshaled = reinterpret_cast<UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB*>(SZArrayNew(UInt32U5BU5D_t9AA834AF2940E75BBF8E3F08FF0D20D266DB71CB_il2cpp_TypeInfo_var, static_cast<int32_t>(___items0ArraySize)));
-		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(static_cast<int32_t>(___items0ArraySize)); i++)
-		{
-			(____items0_unmarshaled)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (___items0)[i]);
-		}
-	}
-
-	// Managed method invocation
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)__this;
-		InterfaceActionInvoker0::Invoke(3 /* System.Void System.Collections.Generic.ICollection`1<System.UInt32>::Clear() */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue);
-		if (____items0_unmarshaled != NULL)
-		{
-			il2cpp_array_size_t itemsInCollection = ____items0_unmarshaled->max_length;
-			for (il2cpp_array_size_t i = 0; i < itemsInCollection; i++)
-			{
-				InterfaceActionInvoker1< uint32_t >::Invoke(2 /* System.Void System.Collections.Generic.ICollection`1<System.UInt32>::Add(T) */, ICollection_1_tA9BBE0AD0266A54F411B095A2C158FD0294B1FBD_il2cpp_TypeInfo_var, __thisValue, (____items0_unmarshaled)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i)));
-			}
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	return IL2CPP_S_OK;
-}
-// Windows.Foundation.Collections.IIterator`1<System.UInt32> adapter
-struct IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter IL2CPP_FINAL : il2cpp::vm::NonCachedCCWBase<IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter>, IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB
-{
-	inline IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter(RuntimeObject* obj) : il2cpp::vm::NonCachedCCWBase<IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter>(obj), _initialized(false), _hasCurrent(false) {}
-
-	virtual il2cpp_hresult_t STDCALL QueryInterface(const Il2CppGuid& iid, void** object) IL2CPP_OVERRIDE
-	{
-		if (::memcmp(&iid, &Il2CppIUnknown::IID, sizeof(Il2CppGuid)) == 0
-		 || ::memcmp(&iid, &Il2CppIInspectable::IID, sizeof(Il2CppGuid)) == 0
-		 || ::memcmp(&iid, &Il2CppIAgileObject::IID, sizeof(Il2CppGuid)) == 0)
-		{
-			*object = GetIdentity();
-			AddRefImpl();
-			return IL2CPP_S_OK;
-		}
-
-		if (::memcmp(&iid, &Il2CppIManagedObjectHolder::IID, sizeof(Il2CppGuid)) == 0)
-		{
-			*object = static_cast<Il2CppIManagedObjectHolder*>(this);
-			AddRefImpl();
-			return IL2CPP_S_OK;
-		}
-
-		if (::memcmp(&iid, &IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB::IID, sizeof(Il2CppGuid)) == 0)
-		{
-			*object = static_cast<IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB*>(this);
-			AddRefImpl();
-			return IL2CPP_S_OK;
-		}
-
-		if (::memcmp(&iid, &Il2CppIMarshal::IID, sizeof(Il2CppGuid)) == 0)
-		{
-			*object = static_cast<Il2CppIMarshal*>(this);
-			AddRefImpl();
-			return IL2CPP_S_OK;
-		}
-
-		if (::memcmp(&iid, &Il2CppIWeakReferenceSource::IID, sizeof(Il2CppGuid)) == 0)
-		{
-			*object = static_cast<Il2CppIWeakReferenceSource*>(this);
-			AddRefImpl();
-			return IL2CPP_S_OK;
-		}
-
-		*object = NULL;
-		return IL2CPP_E_NOINTERFACE;
-	}
-
-	virtual uint32_t STDCALL AddRef() IL2CPP_OVERRIDE
-	{
-		return AddRefImpl();
-	}
-
-	virtual uint32_t STDCALL Release() IL2CPP_OVERRIDE
-	{
-		return ReleaseImpl();
-	}
-
-	virtual il2cpp_hresult_t STDCALL GetIids(uint32_t* iidCount, Il2CppGuid** iids) IL2CPP_OVERRIDE
-	{
-		Il2CppGuid* interfaceIds = il2cpp_codegen_marshal_allocate_array<Il2CppGuid>(1);
-		interfaceIds[0] = IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB::IID;
-
-		*iidCount = 1;
-		*iids = interfaceIds;
-		return IL2CPP_S_OK;
-	}
-
-	virtual il2cpp_hresult_t STDCALL GetRuntimeClassName(Il2CppHString* className) IL2CPP_OVERRIDE
-	{
-		return ComObjectBase::GetRuntimeClassName(className);
-	}
-
-	virtual il2cpp_hresult_t STDCALL GetTrustLevel(int32_t* trustLevel) IL2CPP_OVERRIDE
-	{
-		return ComObjectBase::GetTrustLevel(trustLevel);
-	}
-	virtual il2cpp_hresult_t STDCALL IIterator_1_get_Current_m2F06167D0B0F6ECDD90F47777F19EDCF6DAD5857(uint32_t* comReturnValue) IL2CPP_OVERRIDE;
-	virtual il2cpp_hresult_t STDCALL IIterator_1_get_HasCurrent_mE0C93154274BF199E8A873F0CE97847237167FB3(bool* comReturnValue) IL2CPP_OVERRIDE;
-	virtual il2cpp_hresult_t STDCALL IIterator_1_MoveNext_mB57A14CD1E43625DA1FE023CB07FF06045005239(bool* comReturnValue) IL2CPP_OVERRIDE;
-	virtual il2cpp_hresult_t STDCALL IIterator_1_GetMany_m5F27241E04C3739D87A3CDB400E0A1E428F0B7B5(uint32_t ___items0ArraySize, uint32_t* ___items0, uint32_t* comReturnValue) IL2CPP_OVERRIDE;
-private:
-	bool _initialized;
-	bool _hasCurrent;
-	il2cpp_hresult_t Initialize();
-	il2cpp_hresult_t GetCurrent(uint32_t* comReturnValue);
-	il2cpp_hresult_t MoveNext(bool* comReturnValue);
-};
-il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::IIterator_1_get_Current_m2F06167D0B0F6ECDD90F47777F19EDCF6DAD5857(uint32_t* comReturnValue)
-{
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-	il2cpp_hresult_t hr = Initialize();
-	if (IL2CPP_HR_FAILED(hr))
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		return hr;
-	}
-	return GetCurrent(comReturnValue);
-}
-il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::IIterator_1_get_HasCurrent_mE0C93154274BF199E8A873F0CE97847237167FB3(bool* comReturnValue)
-{
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-	il2cpp_hresult_t hr = Initialize();
-	if (IL2CPP_HR_FAILED(hr))
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		return hr;
-	}
-	*comReturnValue = _hasCurrent;
-	return IL2CPP_S_OK;
-}
-il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::IIterator_1_MoveNext_mB57A14CD1E43625DA1FE023CB07FF06045005239(bool* comReturnValue)
-{
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-	il2cpp_hresult_t hr = Initialize();
-	if (IL2CPP_HR_FAILED(hr))
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		return hr;
-	}
-	hr = MoveNext(&_hasCurrent);
-	*comReturnValue = _hasCurrent;
-	return hr;
-}
-il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::IIterator_1_GetMany_m5F27241E04C3739D87A3CDB400E0A1E428F0B7B5(uint32_t ___items0ArraySize, uint32_t* ___items0, uint32_t* comReturnValue)
-{
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-	il2cpp_hresult_t hr = Initialize();
-	if (IL2CPP_HR_FAILED(hr))
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		return hr;
-	}
-	uint32_t count = 0;
-	for (; _hasCurrent && (count < ___items0ArraySize); ++count)
-	{
-		hr = GetCurrent(___items0 + count);
-		if (IL2CPP_HR_FAILED(hr))
-		{
-			*comReturnValue = count;
-			return hr;
-		}
-		hr = MoveNext(&_hasCurrent);
-		if (IL2CPP_HR_FAILED(hr))
-		{
-			*comReturnValue = count + 1;
-			return hr;
-		}
-	}
-	*comReturnValue = count;
-	return IL2CPP_S_OK;
-}
-il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::Initialize()
-{
-	if (_initialized)
-	{
-		return IL2CPP_S_OK;
-	}
-	il2cpp_hresult_t hr = MoveNext(&_hasCurrent);
-	_initialized = IL2CPP_HR_SUCCEEDED(hr);
-	return hr;
-}
-il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::GetCurrent(uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter_GetCurrent_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)GetManagedObjectInline();
-		returnValue = InterfaceFuncInvoker0< uint32_t >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.UInt32>::get_Current() */, IEnumerator_1_t6AEF21B80E2C499BFFB48F8148C3026FBBA3FD72_il2cpp_TypeInfo_var, __thisValue);
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return (ex.ex->hresult == IL2CPP_COR_E_INVALIDOPERATION) ? IL2CPP_E_BOUNDS : ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-il2cpp_hresult_t IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::MoveNext(bool* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter_MoveNext_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	// Managed method invocation
-	bool returnValue;
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)GetManagedObjectInline();
-		returnValue = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t8789118187258CC88B77AFAC6315B5AF87D3E18A_il2cpp_TypeInfo_var, __thisValue);
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for Windows.Foundation.Collections.IIterator`1<T> Windows.Foundation.Collections.IIterable`1<System.UInt32>::First()
-il2cpp_hresult_t IIterable_1_First_m998D2831815B26385CE89927C017143CC7263CD3_ComCallableWrapperProjectedMethod(RuntimeObject* __this, IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB** comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IIterable_1_First_m998D2831815B26385CE89927C017143CC7263CD3_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	try
-	{
-		RuntimeObject* returnValue;
-		RuntimeObject* __thisValue = (RuntimeObject*)__this;
-		returnValue = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.UInt32>::GetEnumerator() */, IEnumerable_1_tB244008973DD93E9AABDF39E52AD093FA0E7560A_il2cpp_TypeInfo_var, __thisValue);
-		*comReturnValue = (returnValue != NULL) ? IIterator_1_tFF6703AB3BAEE7BB3758077472D6861AF62E61FB_Adapter::__CreateInstance(returnValue) : NULL;
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for T Windows.Foundation.Collections.IVectorView`1<System.UInt32>::GetAt(System.UInt32)
-il2cpp_hresult_t IVectorView_1_GetAt_mC63EA0391D278D0DF1121643937DDE0A63279F5A_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___index0, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_GetAt_mC63EA0391D278D0DF1121643937DDE0A63279F5A_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		try
-		{
-			returnValue = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.UInt32>::get_Item(System.Int32) */, IReadOnlyList_1_t229E375A7572BE3989C8F033AC2A82D4A17602E5_il2cpp_TypeInfo_var, __this, ___index0);
-		}
-		catch (const Il2CppExceptionWrapper& ex)
-		{
-			if (IsInst(ex.ex, ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var))
-			{
-				ex.ex->hresult = -2147483637; // E_BOUNDS
-			}
-
-			throw;
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.UInt32>::get_Size()
-il2cpp_hresult_t IVectorView_1_get_Size_mFE92CAAA7DB0789F5993DEBF2B254A511F7CC7BA_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_get_Size_mFE92CAAA7DB0789F5993DEBF2B254A511F7CC7BA_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		RuntimeObject* __thisValue = (RuntimeObject*)__this;
-		returnValue = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.UInt32>::get_Count() */, IReadOnlyCollection_1_tB5167EF4F9562420042AED8E5D27B4350E17FDB9_il2cpp_TypeInfo_var, __thisValue);
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.Boolean Windows.Foundation.Collections.IVectorView`1<System.UInt32>::IndexOf(T,System.UInt32U26)
-il2cpp_hresult_t IVectorView_1_IndexOf_mCC8BEF9DD52B697D4AD9DD0186EC14F5E5416BF8_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___value0, uint32_t* ___index1, bool* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_IndexOf_mCC8BEF9DD52B697D4AD9DD0186EC14F5E5416BF8_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Marshaling of parameter U27___index1U27 to managed representation
-	uint32_t ____index1_empty = 0;
-
-	// Managed method invocation
-	bool returnValue;
-	try
-	{
-		____index1_empty = 0;
-		returnValue = false;
-
-		int elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.UInt32>::get_Count() */, IReadOnlyCollection_1_tB5167EF4F9562420042AED8E5D27B4350E17FDB9_il2cpp_TypeInfo_var, __this);
-		for (int i = 0; i < elementsInCollection; i++)
-		{
-			uint32_t item = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.UInt32>::get_Item(System.Int32) */, IReadOnlyList_1_t229E375A7572BE3989C8F033AC2A82D4A17602E5_il2cpp_TypeInfo_var, __this, i);
-			if (item == ___value0)
-			{
-				____index1_empty = static_cast<uint32_t>(i);
-				returnValue = true;
-				break;
-			}
-		}
-	}
-	catch (const Il2CppExceptionWrapper& ex)
-	{
-		memset(comReturnValue, 0, sizeof(*comReturnValue));
-		String_t* exceptionStr = NULL;
-		try
-		{
-			exceptionStr = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, ex.ex);
-		}
-		catch (const Il2CppExceptionWrapper&)
-		{
-			exceptionStr = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		}
-		il2cpp_codegen_store_exception_info(ex.ex, exceptionStr);
-		return ex.ex->hresult;
-	}
-
-	// Marshaling of parameter U27___index1U27 back from managed representation
-	*___index1 = ____index1_empty;
-
-	*comReturnValue = returnValue;
-	return IL2CPP_S_OK;
-}
-// Projected COM callable wrapper method for System.UInt32 Windows.Foundation.Collections.IVectorView`1<System.UInt32>::GetMany(System.UInt32,T[])
-il2cpp_hresult_t IVectorView_1_GetMany_mB435F7E55EF1F11FB36A99801D6C23BD316659D8_ComCallableWrapperProjectedMethod(RuntimeObject* __this, uint32_t ___startIndex0, uint32_t ___items1ArraySize, uint32_t* ___items1, uint32_t* comReturnValue)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (IVectorView_1_GetMany_mB435F7E55EF1F11FB36A99801D6C23BD316659D8_ComCallableWrapperProjectedMethod_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	il2cpp::vm::ScopedThreadAttacher _vmThreadHelper;
-
-	// Managed method invocation
-	uint32_t returnValue;
-	try
-	{
-		uint32_t elementsInCollection = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.IReadOnlyCollection`1<System.UInt32>::get_Count() */, IReadOnlyCollection_1_tB5167EF4F9562420042AED8E5D27B4350E17FDB9_il2cpp_TypeInfo_var, __this);
-		if (___startIndex0 != elementsInCollection && ___items1 != NULL)
-		{
-			if (___startIndex0 > elementsInCollection || ___startIndex0 > 2147483647)
-			{
-				ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * exception = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA*)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
-				ArgumentOutOfRangeException__ctor_m6B36E60C989DC798A8B44556DB35960282B133A6(exception, _stringLiteralE540CDD1328B2B21E29A95405C301B9313B7C346, NULL);
-				Exception_set_HResult_m920DF8C728D8A0EC0759685FED890C775FA08B99(exception, -2147483637, NULL); // E_BOUNDS
-				IL2CPP_RAISE_MANAGED_EXCEPTION(exception, NULL, NULL);
-			}
-			returnValue = std::min(___items1ArraySize, elementsInCollection - ___startIndex0);
-			for (uint32_t i = 0; i < returnValue; i++)
-			{
-				uint32_t itemManaged = InterfaceFuncInvoker1< uint32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<System.UInt32>::get_Item(System.Int32) */, IReadOnlyList_1_t229E375A7572BE3989C8F033AC2A82D4A17602E5_il2cpp_TypeInfo_var, __this, i + ___startIndex0);
-				___items1[i] = itemManaged;
 			}
 		}
 		else

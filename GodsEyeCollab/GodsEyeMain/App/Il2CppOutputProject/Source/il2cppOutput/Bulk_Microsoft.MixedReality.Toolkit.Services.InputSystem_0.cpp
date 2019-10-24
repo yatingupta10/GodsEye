@@ -536,7 +536,7 @@ struct List_1_tB291263EEE72B9F137CA4DC19F039DE672D08028;
 // System.Collections.Generic.List`1<UnityEngine.GameObject>
 struct List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0;
 // System.Collections.Generic.Stack`1<System.Object>
-struct Stack_1_t0D197BFD9E4E8ABDD6CB59029EE175E24078F45D;
+struct Stack_1_t5697A763CE21E705BB0297FFBE9AFCB5F95C9163;
 // System.Collections.Generic.Stack`1<UnityEngine.GameObject>
 struct Stack_1_tC02709ACE540EF1B798420EEAA99B467885E23FC;
 // System.Collections.IDictionary
@@ -13949,7 +13949,7 @@ extern "C" IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m2204D6D532702FD13AB2A9AD
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m7D745ADE56151C2895459668F4A4242985E526D8_gshared (Dictionary_2_t03608389BB57475AA3F4B2B79D176A27807BC884 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Stack`1<System.Object>::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void Stack_1__ctor_mD0E32FFEA8E13AF0454470323C18CA9475986570_gshared (Stack_1_t0D197BFD9E4E8ABDD6CB59029EE175E24078F45D * __this, const RuntimeMethod* method);
+extern "C" IL2CPP_METHOD_ATTR void Stack_1__ctor_m54114F5D347F44F2C0FD45AF09974A5B55EC5373_gshared (Stack_1_t5697A763CE21E705BB0297FFBE9AFCB5F95C9163 * __this, const RuntimeMethod* method);
 // !!0[] UnityEngine.Object::FindObjectsOfType<System.Object>()
 extern "C" IL2CPP_METHOD_ATTR ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* Object_FindObjectsOfType_TisRuntimeObject_m0B70FC55F5C9919F875EDF6AAEE564A194492094_gshared (const RuntimeMethod* method);
 // System.Void Microsoft.MixedReality.Toolkit.Input.SourcePoseEventData`1<System.Int32Enum>::.ctor(UnityEngine.EventSystems.EventSystem)
@@ -13975,13 +13975,13 @@ extern "C" IL2CPP_METHOD_ATTR void InputEventData_1__ctor_mFC42959F7AF4598F507EB
 // System.Void Microsoft.MixedReality.Toolkit.Input.InputEventData`1<System.Object>::.ctor(UnityEngine.EventSystems.EventSystem)
 extern "C" IL2CPP_METHOD_ATTR void InputEventData_1__ctor_mA91DEBBEBCA2A1A6C842BAFD728D26BD1A368D66_gshared (InputEventData_1_t61588401993701F571AB3C6C97E08104CEBA7440 * __this, EventSystem_t06ACEF1C8D95D44D3A7F57ED4BAA577101B4EA77 * p0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Stack`1<System.Object>::Push(!0)
-extern "C" IL2CPP_METHOD_ATTR void Stack_1_Push_m37B071735755DFDACCBD15B90883504F838E91EC_gshared (Stack_1_t0D197BFD9E4E8ABDD6CB59029EE175E24078F45D * __this, RuntimeObject * p0, const RuntimeMethod* method);
+extern "C" IL2CPP_METHOD_ATTR void Stack_1_Push_mB892D933D8982A0702F4E09E2F0D7B0C33E2A4E1_gshared (Stack_1_t5697A763CE21E705BB0297FFBE9AFCB5F95C9163 * __this, RuntimeObject * p0, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.Stack`1<System.Object>::get_Count()
-extern "C" IL2CPP_METHOD_ATTR int32_t Stack_1_get_Count_m8803B4178385D39338A1EDDC39FE6D8152F01A1D_gshared (Stack_1_t0D197BFD9E4E8ABDD6CB59029EE175E24078F45D * __this, const RuntimeMethod* method);
+extern "C" IL2CPP_METHOD_ATTR int32_t Stack_1_get_Count_m8803B4178385D39338A1EDDC39FE6D8152F01A1D_gshared (Stack_1_t5697A763CE21E705BB0297FFBE9AFCB5F95C9163 * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.Stack`1<System.Object>::Pop()
-extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Stack_1_Pop_mD632EB4DA13E5CAEC62EECFAD1C88818F1223E20_gshared (Stack_1_t0D197BFD9E4E8ABDD6CB59029EE175E24078F45D * __this, const RuntimeMethod* method);
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Stack_1_Pop_mD632EB4DA13E5CAEC62EECFAD1C88818F1223E20_gshared (Stack_1_t5697A763CE21E705BB0297FFBE9AFCB5F95C9163 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Stack`1<System.Object>::Clear()
-extern "C" IL2CPP_METHOD_ATTR void Stack_1_Clear_m0B559B216B5E802A621DC7C10B9E8C5EC683FFE4_gshared (Stack_1_t0D197BFD9E4E8ABDD6CB59029EE175E24078F45D * __this, const RuntimeMethod* method);
+extern "C" IL2CPP_METHOD_ATTR void Stack_1_Clear_m0B559B216B5E802A621DC7C10B9E8C5EC683FFE4_gshared (Stack_1_t5697A763CE21E705BB0297FFBE9AFCB5F95C9163 * __this, const RuntimeMethod* method);
 // System.Void Microsoft.MixedReality.Toolkit.Input.SourcePoseEventData`1<System.Int32Enum>::Initialize(Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputSource,Microsoft.MixedReality.Toolkit.Input.IMixedRealityController,!0)
 extern "C" IL2CPP_METHOD_ATTR void SourcePoseEventData_1_Initialize_mA8C697DA63AC5AE2DB77ED9B611E218BDBA942C5_gshared (SourcePoseEventData_1_tDC74DF90DF6D20FE5530AF7A0555F6B1879EFA9E * __this, RuntimeObject* p0, RuntimeObject* p1, int32_t p2, const RuntimeMethod* method);
 // System.Void Microsoft.MixedReality.Toolkit.Input.SourcePoseEventData`1<UnityEngine.Vector2>::Initialize(Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputSource,Microsoft.MixedReality.Toolkit.Input.IMixedRealityController,!0)
@@ -14937,7 +14937,7 @@ inline void HashSet_1__ctor_m49C286A6EBEB45D2C376B5500FCE73CEB925FA22 (HashSet_1
 // System.Void System.Collections.Generic.Stack`1<UnityEngine.GameObject>::.ctor()
 inline void Stack_1__ctor_mF400039D8900FD561A28673CD076F76107C4671C (Stack_1_tC02709ACE540EF1B798420EEAA99B467885E23FC * __this, const RuntimeMethod* method)
 {
-	((  void (*) (Stack_1_tC02709ACE540EF1B798420EEAA99B467885E23FC *, const RuntimeMethod*))Stack_1__ctor_mD0E32FFEA8E13AF0454470323C18CA9475986570_gshared)(__this, method);
+	((  void (*) (Stack_1_tC02709ACE540EF1B798420EEAA99B467885E23FC *, const RuntimeMethod*))Stack_1__ctor_m54114F5D347F44F2C0FD45AF09974A5B55EC5373_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager>::.ctor()
 inline void List_1__ctor_m494DD3A26D22B6C9B2BB50E7B4D84F8B6ED8686E (List_1_tB7C621224CC650D961F7562934FE33B7B3B36936 * __this, const RuntimeMethod* method)
@@ -15110,7 +15110,7 @@ extern "C" IL2CPP_METHOD_ATTR void BaseEventSystem_Unregister_mD66EE653C21F29DA2
 // System.Void System.Collections.Generic.Stack`1<UnityEngine.GameObject>::Push(!0)
 inline void Stack_1_Push_mF929EE10646217F668437801A1D2106AF7AB1CB5 (Stack_1_tC02709ACE540EF1B798420EEAA99B467885E23FC * __this, GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * p0, const RuntimeMethod* method)
 {
-	((  void (*) (Stack_1_tC02709ACE540EF1B798420EEAA99B467885E23FC *, GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))Stack_1_Push_m37B071735755DFDACCBD15B90883504F838E91EC_gshared)(__this, p0, method);
+	((  void (*) (Stack_1_tC02709ACE540EF1B798420EEAA99B467885E23FC *, GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))Stack_1_Push_mB892D933D8982A0702F4E09E2F0D7B0C33E2A4E1_gshared)(__this, p0, method);
 }
 // System.Int32 System.Collections.Generic.Stack`1<UnityEngine.GameObject>::get_Count()
 inline int32_t Stack_1_get_Count_m310679CEA5EA243C60D43EEA5C3868C747E91A94 (Stack_1_tC02709ACE540EF1B798420EEAA99B467885E23FC * __this, const RuntimeMethod* method)
@@ -24658,7 +24658,7 @@ IL_0020:
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_13 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_12, /*hidden argument*/NULL);
 		NullCheck(L_13);
-		String_t* L_14 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_13);
+		String_t* L_14 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_13);
 		String_t* L_15 = String_Concat_mF4626905368D6558695A823466A1AF65EADB9923(_stringLiteralD036EEEE0988FDD1ED777BD055C58BB1B2BAEFCF, L_14, _stringLiteralBAA4B38CAE48FDF4A972FC621F00BD9B7F67DE86, /*hidden argument*/NULL);
 		Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * L_16 = CameraCache_get_Main_m23FB3162F6476988FEE59F829DEAF08702D81554(/*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
@@ -24701,7 +24701,7 @@ IL_00a6:
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_24 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_23, /*hidden argument*/NULL);
 		NullCheck(L_24);
-		String_t* L_25 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_24);
+		String_t* L_25 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_24);
 		String_t* L_26 = String_Concat_mF4626905368D6558695A823466A1AF65EADB9923(_stringLiteral00BE79507B8311BF6721D9102D9B1694C2E90455, L_25, _stringLiteralB78815AB276B3EC260A5130A5046F541D6154257, /*hidden argument*/NULL);
 		BaseInputModuleU5BU5D_t96C73D6EB068D1ED6D0BB05720B83EACFB44E115* L_27 = V_1;
 		NullCheck(L_27);

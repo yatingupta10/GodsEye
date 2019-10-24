@@ -17906,7 +17906,7 @@ extern "C" IL2CPP_METHOD_ATTR void SystemTypeAttribute__ctor_m238BF9240722193DB8
 	{
 		Type_t * L_6 = ___type0;
 		NullCheck(L_6);
-		bool L_7 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_6);
+		bool L_7 = VirtFuncInvoker0< bool >::Invoke(76 /* System.Boolean System.Type::get_IsEnum() */, L_6);
 		G_B6_0 = ((((int32_t)L_7) == ((int32_t)0))? 1 : 0);
 		goto IL_002d;
 	}

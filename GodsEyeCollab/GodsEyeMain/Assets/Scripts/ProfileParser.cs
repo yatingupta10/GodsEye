@@ -229,16 +229,19 @@ class ProfileParser
 
 
 
-    public static ProfileParser parseProfile(string id)
+    public static ProfileParser parseProfile(string text)
     {
-        using (StreamReader r = new StreamReader("Assets/Resources/profile_dir/profile_" + id + ".json"))
-        {
-            var json = r.ReadToEnd();
-            var items = JsonConvert.DeserializeObject<RootObject>(json);
+
+        //using (StreamReader r = new StreamReader("Assets/Resources/profile_dir/profile_" + id + ".json"))
+        //using (StreamReader r = new StreamReader(path))
+        //{
+            //var json = r.ReadToEnd();
+               
+            var items = JsonConvert.DeserializeObject<RootObject>(text);
             int vulScore = calVulnerabilityScore(items.personal_info.residence.zipcode, items.financial_info.salary, items.connections.no_of_dependents, items.interests_info.checkins, items.personal_info.age);
             ProfileParser profileObj = new ProfileParser(items, vulScore);
             return profileObj;
-        }
+        //}
 
     }
 
