@@ -9898,16 +9898,12 @@ IL_00a7:
 extern "C" IL2CPP_METHOD_ATTR void FacePaneController_BeginMove_mE55D0AB160C182386E3613440BD7518E68C50CAD (FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF * __this, const RuntimeMethod* method)
 {
 	{
-		// moveStart = true;
-		__this->set_moveStart_16((bool)1);
-		// scoreBubble.SetActive(false);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_scoreBubble_4();
+		// nextMove = true;
+		__this->set_nextMove_17((bool)1);
+		// faceButton.SetActive(false);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_faceButton_5();
 		NullCheck(L_0);
 		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_0, (bool)0, /*hidden argument*/NULL);
-		// faceButton.SetActive(false);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = __this->get_faceButton_5();
-		NullCheck(L_1);
-		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_1, (bool)0, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -9957,7 +9953,7 @@ IL_0031:
 		bool L_10 = String_op_Equality_m139F0E4195AE2F856019E63B241F36F016997FCE(L_9, _stringLiteral7FE80403354BDA7FB596B0F9608845E4DA306DDC, /*hidden argument*/NULL);
 		if (!L_10)
 		{
-			goto IL_008b;
+			goto IL_007f;
 		}
 	}
 	{
@@ -9972,21 +9968,17 @@ IL_0031:
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_14 = __this->get_nameText_6();
 		NullCheck(L_14);
 		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_14, (bool)1, /*hidden argument*/NULL);
-		// scoreText.SetActive(true);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_15 = __this->get_scoreText_7();
+		// buttonCollection.SetActive(true);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_15 = __this->get_buttonCollection_8();
 		NullCheck(L_15);
 		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_15, (bool)1, /*hidden argument*/NULL);
-		// buttonCollection.SetActive(true);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_16 = __this->get_buttonCollection_8();
-		NullCheck(L_16);
-		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_16, (bool)1, /*hidden argument*/NULL);
 		// Destroy(rb);
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_17 = __this->get_rb_13();
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_16 = __this->get_rb_13();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		Object_Destroy_m23B4562495BA35A74266D4372D45368F8C05109A(L_17, /*hidden argument*/NULL);
+		Object_Destroy_m23B4562495BA35A74266D4372D45368F8C05109A(L_16, /*hidden argument*/NULL);
 	}
 
-IL_008b:
+IL_007f:
 	{
 		// }
 		return;
