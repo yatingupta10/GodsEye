@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3535333444938905660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3535333444999456232}
@@ -40,6 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3535333444999456232}
+  - component: {fileID: 6137371074842532200}
   m_Layer: 0
   m_Name: CategoryCollection
   m_TagString: Untagged
@@ -65,6 +66,28 @@ Transform:
   m_Father: {fileID: 3535333444938905661}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6137371074842532200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3535333444999456239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf12ee76e7e00a44a9a84256760020e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreInactiveTransforms: 1
+  sortType: 0
+  surfaceType: 1
+  orientType: 3
+  layout: 2
+  radius: 2
+  radialRange: 180
+  rows: 4
+  cellWidth: 0.5
+  cellHeight: 0.25
 --- !u!1001 &575580509531851558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,12 +103,12 @@ PrefabInstance:
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.375
       objectReference: {fileID: 0}
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
@@ -165,17 +188,27 @@ PrefabInstance:
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_fontSize
-      value: 1.7
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 1.7
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_text
       value: Connections
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 603469afa9f8804489a05b9020850a68, type: 3}
@@ -200,32 +233,17 @@ PrefabInstance:
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.35
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
@@ -251,6 +269,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8094257872065235959, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
@@ -290,16 +313,21 @@ PrefabInstance:
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_fontSize
-      value: 2
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 2
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_enableAutoSizing
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -325,12 +353,12 @@ PrefabInstance:
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.125
       objectReference: {fileID: 0}
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
@@ -380,7 +408,7 @@ PrefabInstance:
     - target: {fileID: 5764519534027196483, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_Name
-      value: Interests
+      value: CategoryText
       objectReference: {fileID: 0}
     - target: {fileID: 8094257872065235959, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
@@ -415,22 +443,32 @@ PrefabInstance:
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_fontSize
-      value: 2
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 2
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_text
       value: Interests
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746969823304296344, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 603469afa9f8804489a05b9020850a68, type: 3}
@@ -455,12 +493,12 @@ PrefabInstance:
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.35
+      value: 0.375
       objectReference: {fileID: 0}
     - target: {fileID: 5764519532770231975, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
@@ -540,12 +578,12 @@ PrefabInstance:
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_fontSize
-      value: 2
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 2
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
@@ -555,6 +593,11 @@ PrefabInstance:
     - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764519534027196485, guid: 603469afa9f8804489a05b9020850a68,
+        type: 3}
+      propertyPath: m_enableAutoSizing
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

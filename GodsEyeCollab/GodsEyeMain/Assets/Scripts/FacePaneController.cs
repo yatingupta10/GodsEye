@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class FacePaneController : MonoBehaviour
 {
-    public GameObject scoreBubble;
     public GameObject faceButton;
     public GameObject nameText;
-    public GameObject scoreText;
-    public GameObject buttonCollection;
+    public GameObject screen;
 
     public float upForceScale;
     public float leftForceScale;
@@ -48,8 +46,9 @@ public class FacePaneController : MonoBehaviour
     public void BeginMove(){
         //rb.constraints = RigidbodyConstraints.FreezeRotation;
 
-        moveStart = true;
-        scoreBubble.SetActive(false);
+        //moveStart = true;
+        nextMove = true;
+        //scoreBubble.SetActive(false);
         faceButton.SetActive(false);
     }
 
@@ -64,8 +63,9 @@ public class FacePaneController : MonoBehaviour
         if (col.gameObject.name == "LeftCollider"){
             rb.constraints |= RigidbodyConstraints.FreezeAll;
             nameText.SetActive(true);
-            scoreText.SetActive(true);
-            buttonCollection.SetActive(true);
+            //scoreText.SetActive(true);
+            //buttonCollection.SetActive(true);
+            screen.SetActive(true);
             Destroy(rb);
         }
     }
