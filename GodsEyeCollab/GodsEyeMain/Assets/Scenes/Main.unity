@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -916,7 +916,7 @@ PrefabInstance:
     - target: {fileID: 3380288716055692126, guid: 980269704a3c68a4881415ef35495f63,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3380288716055692113, guid: 980269704a3c68a4881415ef35495f63,
         type: 3}
@@ -1098,6 +1098,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380288715639090105, guid: 980269704a3c68a4881415ef35495f63,
+        type: 3}
+      propertyPath: m_TagString
+      value: FacebookUsername
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269952846231153217, guid: 980269704a3c68a4881415ef35495f63,
+        type: 3}
+      propertyPath: m_TagString
+      value: LinkedinUsername
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269952846789303129, guid: 980269704a3c68a4881415ef35495f63,
+        type: 3}
+      propertyPath: m_TagString
+      value: TwitterUsername
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269952846837917617, guid: 980269704a3c68a4881415ef35495f63,
+        type: 3}
+      propertyPath: m_TagString
+      value: InstagramUsername
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 980269704a3c68a4881415ef35495f63, type: 3}
@@ -3526,6 +3546,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 572180887}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2051518432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051518431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfe2df535c4542a7ae2e70d77b8e0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &57900287582178232
 CanvasRenderer:
   m_ObjectHideFlags: 0
