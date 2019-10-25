@@ -35,8 +35,8 @@ public class RadialProgress : MonoBehaviour
         }
     }
 
-    public void Begin(){
-        Debug.Log("called");
+    public void Begin(float s){
+        speed = s;
         startLoad = true;
     }
 
