@@ -4,19 +4,74 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
-    public GameObject mainUI;
-    public List<GameObject> viewList = new List<GameObject>();
-    //views are added to this list in a very specific order, so don't change the list indexes
-
-    //used for username view's back button
-    int currentView = -1;
-
     //how long after pressing the face button the categories show up
     public float categoryViewTime;
 
+    [Header("All Views")]
+    public GameObject mainUI;
+
+    public GameObject facePane;
+    public GameObject centerFacePane;
+    public GameObject rightScoreFacePane;
+
+    public GameObject navBar;
+    public GameObject backgroundScreen;
+
+    public GameObject categoryView;
+    public GameObject usernameView;
+    public GameObject personalView;
+    public GameObject financialView;
+    public GameObject interestsView;
+    public GameObject connectionsView;
+
+    List<GameObject> viewList = new List<GameObject>();
+
+
+    [Header("Navigation Bar Buttons")]
+    public GameObject categoryButton;
+    public GameObject usernameButton;
+    public GameObject personalButton;
+    public GameObject financialButton;
+    public GameObject interestsButton;
+    public GameObject connectionsButton;
+
+    List<GameObject> navList = new List<GameObject>();
+
+    [Header("Navigation Bar Icons")]
+    public GameObject usernameIcon;
+    public GameObject personalIcon;
+    public GameObject financialIcon;
+    public GameObject interestsIcon;
+    public GameObject connectionsIcon;
+
+    List<GameObject> iconList = new List<GameObject>();
+    
+
     // Start is called before the first frame update
     void Start(){
-        
+        viewList.Add(facePane);
+        viewList.Add(centerFacePane);
+        viewList.Add(rightScoreFacePane);
+        viewList.Add(navBar);
+        viewList.Add(categoryView);
+        viewList.Add(usernameView);
+        viewList.Add(personalView);
+        viewList.Add(financialView);
+        viewList.Add(interestsView);
+        viewList.Add(connectionsView);
+
+        navList.Add(categoryButton);
+        navList.Add(usernameButton);
+        navList.Add(personalButton);
+        navList.Add(financialButton);
+        navList.Add(interestsButton);
+        navList.Add(connectionsButton);
+
+        iconList.Add(usernameIcon);
+        iconList.Add(personalIcon);
+        iconList.Add(financialIcon);
+        iconList.Add(interestsIcon);
+        iconList.Add(connectionsIcon);
     }
 
 
@@ -24,6 +79,12 @@ public class UIController : MonoBehaviour
         Invoke("MainView", categoryViewTime);
     }
 
+
+    void DeactivateAll(){
+        DeactivateAllViews();
+        DeactivateAllNavButtons();
+        DeactivateAllNavIcons();
+    }
     
     //disable all views
     void DeactivateAllViews(){
@@ -33,13 +94,37 @@ public class UIController : MonoBehaviour
         }
     }
 
-    void ActivateView(int viewNum){
-        //this will be replace by an animation (different to the one for DeactiveAllViews)
-        viewList[viewNum].SetActive(true);
-
-        if (viewNum != 1){
-            currentView = viewNum;
+    //disable all nav bar buttons
+    void DeactivateAllNavButtons(){
+        foreach (GameObject obj in navList){
+            obj.SetActive(false);
         }
+    }
+
+    //disable all nave bar icons
+    void DeactivateAllNavIcons(){
+        foreach (GameObject obj in iconList){
+            obj.SetActive(false);
+        }
+    }
+
+
+    void ActivateView(int viewNum){
+        viewList[viewNum].SetActive(true);
+    }
+
+    void ActivateAllNavButtons(){
+        foreach (GameObject obj in navList){
+            obj.SetActive(true);
+        }
+    }
+
+    void DeactivateNavButton(int btnNum){
+        navList[btnNum].SetActive(false);
+    }
+
+    void ActivateIcon(int iconNum){
+        iconList[iconNum].SetActive(true);
     }
 
 
@@ -48,63 +133,78 @@ public class UIController : MonoBehaviour
     public void MainView(){
         DeactivateAllViews();
 
-        ActivateView(0);
-
-        ActivateView(7); //temp
+        ActivateView(viewList.IndexOf(categoryView));
+        ActivateView(viewList.IndexOf(facePane));
     }
 
-
+    
     //show the usernames
     public void UsernameView(){
-        DeactivateAllViews();
+        DeactivateAll();
 
-        ActivateView(1);
+        ActivateView(viewList.IndexOf(usernameView));
+        ActivateView(viewList.IndexOf(centerFacePane));
 
-        ActivateView(6); //temp
+        ActivateView(viewList.IndexOf(navBar));
+
+        ActivateAllNavButtons();
+        DeactivateNavButton(navList.IndexOf(usernameButton));
+        ActivateIcon(iconList.IndexOf(usernameIcon));
     }
 
 
-    //methods for category buttons
+    //methods for category buttons as well as navBar buttons
     public void PersonalView(){
-        DeactivateAllViews();
+        DeactivateAll();
 
-        ActivateView(2);
+        ActivateView(viewList.IndexOf(personalView));
+        ActivateView(viewList.IndexOf(centerFacePane));
+        //will probably change this to rightScoreFacePane
 
-        ActivateView(6); //temp
+        ActivateView(viewList.IndexOf(navBar));
+
+        ActivateAllNavButtons();
+        DeactivateNavButton(navList.IndexOf(personalButton));
+        ActivateIcon(iconList.IndexOf(personalIcon));
     }
 
     public void FinancialView(){
-        DeactivateAllViews();
+        DeactivateAll();
 
-        ActivateView(3);
+        ActivateView(viewList.IndexOf(financialView));
+        ActivateView(viewList.IndexOf(centerFacePane));
 
-        ActivateView(6); //temp
+        ActivateView(viewList.IndexOf(navBar));
+
+        ActivateAllNavButtons();
+        DeactivateNavButton(navList.IndexOf(financialButton));
+        ActivateIcon(iconList.IndexOf(financialIcon));
     }
 
     public void InterestsView(){
-        DeactivateAllViews();
+        DeactivateAll();
 
-        ActivateView(4);
+        ActivateView(viewList.IndexOf(interestsView));
+        ActivateView(viewList.IndexOf(centerFacePane));
 
-        ActivateView(6); //temp
+        ActivateView(viewList.IndexOf(navBar));
+
+        ActivateAllNavButtons();
+        DeactivateNavButton(navList.IndexOf(interestsButton));
+        ActivateIcon(iconList.IndexOf(interestsIcon));
     }
 
     public void ConnectionsView(){
-        DeactivateAllViews();
+        DeactivateAll();
 
-        ActivateView(5);
+        ActivateView(viewList.IndexOf(connectionsView));
+        ActivateView(viewList.IndexOf(rightScoreFacePane));
 
-        ActivateView(6); //temp
-    }
+        ActivateView(viewList.IndexOf(navBar));
 
-
-    //go back to previous view from the usernames
-    public void UsernamePreviousView(){
-        DeactivateAllViews();
-
-        ActivateView(currentView);
-
-        ActivateView(6); //temp
+        ActivateAllNavButtons();
+        DeactivateNavButton(navList.IndexOf(connectionsButton));
+        ActivateIcon(iconList.IndexOf(connectionsIcon));
     }
 
 

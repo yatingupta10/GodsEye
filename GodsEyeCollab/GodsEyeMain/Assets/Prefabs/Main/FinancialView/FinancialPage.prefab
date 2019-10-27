@@ -4457,6 +4457,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackButton
       objectReference: {fileID: 0}
+    - target: {fileID: 6713949576519516977, guid: 2a86fd889fa72e84e9c12bafcbccc834,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6713949575999948240, guid: 2a86fd889fa72e84e9c12bafcbccc834,
         type: 3}
       propertyPath: m_LocalPosition.x

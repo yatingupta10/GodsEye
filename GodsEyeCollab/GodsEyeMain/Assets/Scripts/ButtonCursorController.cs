@@ -11,5 +11,5 @@ public class ButtonCursorController : MonoBehaviour
     
     public void EndLoadingCursor(){
         RadialProgress.instance.End();
-    }   
+    }
 }
