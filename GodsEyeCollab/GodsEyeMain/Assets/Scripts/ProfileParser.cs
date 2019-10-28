@@ -75,14 +75,21 @@ class ProfileParser
     {
         public string name { get; set; }
         public string relation { get; set; }
+        public string url { get; set; }
+    }
+
+    public class SocialMediaFriend
+    {
+        public string name { get; set; }
+        public string url { get; set; }
     }
 
     public class Connections
     {
-        public string relationshit_status { get; set; }
+        public string relationship_status { get; set; }
         public int no_of_dependents { get; set; }
         public List<FamilyMember> family_members { get; set; }
-        public List<string> social_media_friends { get; set; }
+        public List<SocialMediaFriend> social_media_friends { get; set; }
     }
 
     public class Facebook
