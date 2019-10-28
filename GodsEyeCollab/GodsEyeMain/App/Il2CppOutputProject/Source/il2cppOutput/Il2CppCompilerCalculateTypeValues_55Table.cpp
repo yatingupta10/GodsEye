@@ -256,26 +256,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // U3CMODULEU3E_T6CDDDF959E7E18A6744E43B613F41CDAC780256A_H
-#ifndef U3CMODULEU3E_T44B733462DE5B14B2B58B57D985D3CFAFB864580_H
-#define U3CMODULEU3E_T44B733462DE5B14B2B58B57D985D3CFAFB864580_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// <Module>
-struct  U3CModuleU3E_t44B733462DE5B14B2B58B57D985D3CFAFB864580 
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // U3CMODULEU3E_T44B733462DE5B14B2B58B57D985D3CFAFB864580_H
 #ifndef U3CMODULEU3E_T48E804B4B798B43CA0CD55ED001EDCBA95A63993_H
 #define U3CMODULEU3E_T48E804B4B798B43CA0CD55ED001EDCBA95A63993_H
 #ifdef __clang__
@@ -316,6 +296,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // U3CMODULEU3E_T4128AA319B877B9CF69AB4915499E9717D75242E_H
+#ifndef U3CMODULEU3E_T44B733462DE5B14B2B58B57D985D3CFAFB864580_H
+#define U3CMODULEU3E_T44B733462DE5B14B2B58B57D985D3CFAFB864580_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// <Module>
+struct  U3CModuleU3E_t44B733462DE5B14B2B58B57D985D3CFAFB864580 
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // U3CMODULEU3E_T44B733462DE5B14B2B58B57D985D3CFAFB864580_H
 #ifndef U3CMODULEU3E_T641756DAEB4C73250E09DD79225E0492E0EC93AF_H
 #define U3CMODULEU3E_T641756DAEB4C73250E09DD79225E0492E0EC93AF_H
 #ifdef __clang__
@@ -1550,69 +1550,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RESIDENCE_T20DD980B13F2490138E56A356328BCEE8BB305BB_H
-#ifndef VENMOTX_TD409C89C591E7AA257B175A9286AE336A8961F41_H
-#define VENMOTX_TD409C89C591E7AA257B175A9286AE336A8961F41_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// ProfileParser_VenmoTx
-struct  VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41  : public RuntimeObject
-{
-public:
-	// System.String ProfileParser_VenmoTx::<amount>k__BackingField
-	String_t* ___U3CamountU3Ek__BackingField_0;
-	// System.String ProfileParser_VenmoTx::<recipient>k__BackingField
-	String_t* ___U3CrecipientU3Ek__BackingField_1;
-	// System.String ProfileParser_VenmoTx::<payer>k__BackingField
-	String_t* ___U3CpayerU3Ek__BackingField_2;
-	// System.String ProfileParser_VenmoTx::<date>k__BackingField
-	String_t* ___U3CdateU3Ek__BackingField_3;
-
-public:
-	inline static int32_t get_offset_of_U3CamountU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41, ___U3CamountU3Ek__BackingField_0)); }
-	inline String_t* get_U3CamountU3Ek__BackingField_0() const { return ___U3CamountU3Ek__BackingField_0; }
-	inline String_t** get_address_of_U3CamountU3Ek__BackingField_0() { return &___U3CamountU3Ek__BackingField_0; }
-	inline void set_U3CamountU3Ek__BackingField_0(String_t* value)
-	{
-		___U3CamountU3Ek__BackingField_0 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CamountU3Ek__BackingField_0), value);
-	}
-
-	inline static int32_t get_offset_of_U3CrecipientU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41, ___U3CrecipientU3Ek__BackingField_1)); }
-	inline String_t* get_U3CrecipientU3Ek__BackingField_1() const { return ___U3CrecipientU3Ek__BackingField_1; }
-	inline String_t** get_address_of_U3CrecipientU3Ek__BackingField_1() { return &___U3CrecipientU3Ek__BackingField_1; }
-	inline void set_U3CrecipientU3Ek__BackingField_1(String_t* value)
-	{
-		___U3CrecipientU3Ek__BackingField_1 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CrecipientU3Ek__BackingField_1), value);
-	}
-
-	inline static int32_t get_offset_of_U3CpayerU3Ek__BackingField_2() { return static_cast<int32_t>(offsetof(VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41, ___U3CpayerU3Ek__BackingField_2)); }
-	inline String_t* get_U3CpayerU3Ek__BackingField_2() const { return ___U3CpayerU3Ek__BackingField_2; }
-	inline String_t** get_address_of_U3CpayerU3Ek__BackingField_2() { return &___U3CpayerU3Ek__BackingField_2; }
-	inline void set_U3CpayerU3Ek__BackingField_2(String_t* value)
-	{
-		___U3CpayerU3Ek__BackingField_2 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CpayerU3Ek__BackingField_2), value);
-	}
-
-	inline static int32_t get_offset_of_U3CdateU3Ek__BackingField_3() { return static_cast<int32_t>(offsetof(VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41, ___U3CdateU3Ek__BackingField_3)); }
-	inline String_t* get_U3CdateU3Ek__BackingField_3() const { return ___U3CdateU3Ek__BackingField_3; }
-	inline String_t** get_address_of_U3CdateU3Ek__BackingField_3() { return &___U3CdateU3Ek__BackingField_3; }
-	inline void set_U3CdateU3Ek__BackingField_3(String_t* value)
-	{
-		___U3CdateU3Ek__BackingField_3 = value;
-		Il2CppCodeGenWriteBarrier((&___U3CdateU3Ek__BackingField_3), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // VENMOTX_TD409C89C591E7AA257B175A9286AE336A8961F41_H
 #ifndef VALUETYPE_T4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_H
 #define VALUETYPE_T4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_H
 #ifdef __clang__
@@ -6092,6 +6029,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MONOBEHAVIOUR_T4A60845CF505405AF8BE8C61CC07F75CADEF6429_H
+#ifndef BUTTONCURSORCONTROLLER_T74132024D9BE62558F3E60EBCD3F37559984D850_H
+#define BUTTONCURSORCONTROLLER_T74132024D9BE62558F3E60EBCD3F37559984D850_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// ButtonCursorController
+struct  ButtonCursorController_t74132024D9BE62558F3E60EBCD3F37559984D850  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // BUTTONCURSORCONTROLLER_T74132024D9BE62558F3E60EBCD3F37559984D850_H
 #ifndef FACEPANECONTROLLER_T5C0276D966E07DB4E013E80D8478300943EF36EF_H
 #define FACEPANECONTROLLER_T5C0276D966E07DB4E013E80D8478300943EF36EF_H
 #ifdef __clang__
@@ -11102,8 +11059,9 @@ extern const int32_t g_FieldOffsetTable5589[1] =
 	U3CU3Ec_tCF1C92E4F0F30B82D98CA44BBEF421E5E070BCB3_StaticFields::get_offset_of_U3CU3E9_0(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5590 = { sizeof (U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5591 = { sizeof (FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5591[12] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5591 = { sizeof (ButtonCursorController_t74132024D9BE62558F3E60EBCD3F37559984D850), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5592 = { sizeof (FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5592[12] = 
 {
 	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_faceButton_4(),
 	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_nameText_5(),
@@ -11118,8 +11076,8 @@ extern const int32_t g_FieldOffsetTable5591[12] =
 	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_moveStart_14(),
 	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_nextMove_15(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5592 = { sizeof (FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5592[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5593 = { sizeof (FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5593[7] = 
 {
 	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_baseMemberPrefab_4(),
 	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_currentMember_5(),
@@ -11129,36 +11087,36 @@ extern const int32_t g_FieldOffsetTable5592[7] =
 	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_memberPrefabs_9(),
 	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_familyMemberImagesDir_10(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5593 = { sizeof (LogoController_tE44B091262297EF668FBA7D4DFBF9FE5F6B34487), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5593[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5594 = { sizeof (LogoController_tE44B091262297EF668FBA7D4DFBF9FE5F6B34487), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5594[3] = 
 {
 	LogoController_tE44B091262297EF668FBA7D4DFBF9FE5F6B34487::get_offset_of_companyLogo_4(),
 	LogoController_tE44B091262297EF668FBA7D4DFBF9FE5F6B34487::get_offset_of_recentImageDir_5(),
 	LogoController_tE44B091262297EF668FBA7D4DFBF9FE5F6B34487::get_offset_of_logo_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5594 = { sizeof (ProfileParser_t9FA676F49C7F5766D1300AFB6C34F1FDFDC5448C), -1, sizeof(ProfileParser_t9FA676F49C7F5766D1300AFB6C34F1FDFDC5448C_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable5594[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5595 = { sizeof (ProfileParser_t9FA676F49C7F5766D1300AFB6C34F1FDFDC5448C), -1, sizeof(ProfileParser_t9FA676F49C7F5766D1300AFB6C34F1FDFDC5448C_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable5595[3] = 
 {
 	ProfileParser_t9FA676F49C7F5766D1300AFB6C34F1FDFDC5448C::get_offset_of_score_0(),
 	ProfileParser_t9FA676F49C7F5766D1300AFB6C34F1FDFDC5448C::get_offset_of_profile_1(),
 	ProfileParser_t9FA676F49C7F5766D1300AFB6C34F1FDFDC5448C_StaticFields::get_offset_of_residenceMap_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5595 = { sizeof (Education_tA13D24A13925485E841A9607E1E6A859E99A8BA6), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5595[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5596 = { sizeof (Education_tA13D24A13925485E841A9607E1E6A859E99A8BA6), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5596[4] = 
 {
 	Education_tA13D24A13925485E841A9607E1E6A859E99A8BA6::get_offset_of_U3CschoolU3Ek__BackingField_0(),
 	Education_tA13D24A13925485E841A9607E1E6A859E99A8BA6::get_offset_of_U3CdegreeU3Ek__BackingField_1(),
 	Education_tA13D24A13925485E841A9607E1E6A859E99A8BA6::get_offset_of_U3CmajorU3Ek__BackingField_2(),
 	Education_tA13D24A13925485E841A9607E1E6A859E99A8BA6::get_offset_of_U3CtenureU3Ek__BackingField_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5596 = { sizeof (ContactInfo_tAD1FBAC77F8E07AD6822EC0F8CA7FE5B5E04C9D8), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5596[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5597 = { sizeof (ContactInfo_tAD1FBAC77F8E07AD6822EC0F8CA7FE5B5E04C9D8), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5597[2] = 
 {
 	ContactInfo_tAD1FBAC77F8E07AD6822EC0F8CA7FE5B5E04C9D8::get_offset_of_U3CmobileU3Ek__BackingField_0(),
 	ContactInfo_tAD1FBAC77F8E07AD6822EC0F8CA7FE5B5E04C9D8::get_offset_of_U3ChomeU3Ek__BackingField_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5597 = { sizeof (Residence_t20DD980B13F2490138E56A356328BCEE8BB305BB), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5597[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5598 = { sizeof (Residence_t20DD980B13F2490138E56A356328BCEE8BB305BB), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5598[7] = 
 {
 	Residence_t20DD980B13F2490138E56A356328BCEE8BB305BB::get_offset_of_U3CaptU3Ek__BackingField_0(),
 	Residence_t20DD980B13F2490138E56A356328BCEE8BB305BB::get_offset_of_U3CcityU3Ek__BackingField_1(),
@@ -11168,8 +11126,8 @@ extern const int32_t g_FieldOffsetTable5597[7] =
 	Residence_t20DD980B13F2490138E56A356328BCEE8BB305BB::get_offset_of_U3ClatitudeU3Ek__BackingField_5(),
 	Residence_t20DD980B13F2490138E56A356328BCEE8BB305BB::get_offset_of_U3ClongitudeU3Ek__BackingField_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5598 = { sizeof (PersonalInfo_tCB7DA533B774C5699078CAB4D97163C4176731CC), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5598[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5599 = { sizeof (PersonalInfo_tCB7DA533B774C5699078CAB4D97163C4176731CC), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5599[6] = 
 {
 	PersonalInfo_tCB7DA533B774C5699078CAB4D97163C4176731CC::get_offset_of_U3CageU3Ek__BackingField_0(),
 	PersonalInfo_tCB7DA533B774C5699078CAB4D97163C4176731CC::get_offset_of_U3CeducationU3Ek__BackingField_1(),
@@ -11177,14 +11135,6 @@ extern const int32_t g_FieldOffsetTable5598[6] =
 	PersonalInfo_tCB7DA533B774C5699078CAB4D97163C4176731CC::get_offset_of_U3Ccontact_infoU3Ek__BackingField_3(),
 	PersonalInfo_tCB7DA533B774C5699078CAB4D97163C4176731CC::get_offset_of_U3CresidenceU3Ek__BackingField_4(),
 	PersonalInfo_tCB7DA533B774C5699078CAB4D97163C4176731CC::get_offset_of_U3Crecent_imagesU3Ek__BackingField_5(),
-};
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5599 = { sizeof (VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5599[4] = 
-{
-	VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41::get_offset_of_U3CamountU3Ek__BackingField_0(),
-	VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41::get_offset_of_U3CrecipientU3Ek__BackingField_1(),
-	VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41::get_offset_of_U3CpayerU3Ek__BackingField_2(),
-	VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41::get_offset_of_U3CdateU3Ek__BackingField_3(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop

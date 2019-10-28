@@ -829,7 +829,7 @@ GameObject:
   - component: {fileID: 5410144554320693252}
   - component: {fileID: 2444862272331552132}
   m_Layer: 0
-  m_Name: Face Score Background
+  m_Name: Face Score Background Initial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2031,8 +2031,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8747131785036203835}
-  - component: {fileID: 8747131785036203535}
-  - component: {fileID: 8747131785036203528}
+  - component: {fileID: 5578047730809738790}
+  - component: {fileID: 2842153340601998278}
   - component: {fileID: 8747131785036203534}
   m_Layer: 0
   m_Name: FacePane
@@ -2058,7 +2058,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8747131785036203535
+--- !u!54 &5578047730809738790
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2074,7 +2074,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &8747131785036203528
+--- !u!65 &2842153340601998278
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2085,7 +2085,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.9, z: 0.01}
+  m_Size: {x: 0.8, y: 0.9, z: -0.01}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8747131785036203534
 MonoBehaviour:
@@ -2540,8 +2540,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8747131785036203630}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.05, z: 0}
-  m_LocalScale: {x: 0.61330736, y: 0.6899708, z: 0.7666342}
+  m_LocalPosition: {x: 0, y: -0.04, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.75, z: 1}
   m_Children:
   - {fileID: 1048873187224413324}
   - {fileID: 2755105295843188267}
@@ -2624,7 +2624,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8747131785036203815
 Transform:
   m_ObjectHideFlags: 0
@@ -2877,7 +2877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6671112106322131308}
   m_Layer: 0
-  m_Name: Initial Score
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2901,6 +2901,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.3}
+  m_AnchoredPosition: {x: 0, y: 0.35}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}

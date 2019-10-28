@@ -27390,10 +27390,10 @@ extern "C" IL2CPP_METHOD_ATTR void InteractableOnHoldReceiver__ctor_m9A838D37120
 extern "C" IL2CPP_METHOD_ATTR void InteractableOnHoldReceiver_OnUpdate_m3FCD45A897463E813E6298FB8FDD067331CBDB64 (InteractableOnHoldReceiver_t59D530A0767DC4C57909F5DF2DB2C634C9896137 * __this, InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * ___state0, Interactable_tFCF652AFB3CEBDA8D19104D012B65BD505F2C05C * ___source1, const RuntimeMethod* method)
 {
 	{
-		// if (state.GetState(InteractableStates.InteractableStateEnum.Pressed).Value > 0 && !hasDown)
+		// if (state.GetState(InteractableStates.InteractableStateEnum.Focus).Value > 0 && !hasDown)
 		InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * L_0 = ___state0;
 		NullCheck(L_0);
-		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_1 = InteractableStates_GetState_mFD27740DC07D8ACE6D5D422EBCC0553D0FC155B0(L_0, 2, /*hidden argument*/NULL);
+		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_1 = InteractableStates_GetState_mFD27740DC07D8ACE6D5D422EBCC0553D0FC155B0(L_0, 1, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		int32_t L_2 = L_1->get_Value_3();
 		if ((((int32_t)L_2) <= ((int32_t)0)))
@@ -27419,10 +27419,10 @@ extern "C" IL2CPP_METHOD_ATTR void InteractableOnHoldReceiver_OnUpdate_m3FCD45A8
 
 IL_002b:
 	{
-		// else if(state.GetState(InteractableStates.InteractableStateEnum.Pressed).Value < 1)
+		// else if (state.GetState(InteractableStates.InteractableStateEnum.Focus).Value < 1)
 		InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * L_4 = ___state0;
 		NullCheck(L_4);
-		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_5 = InteractableStates_GetState_mFD27740DC07D8ACE6D5D422EBCC0553D0FC155B0(L_4, 2, /*hidden argument*/NULL);
+		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_5 = InteractableStates_GetState_mFD27740DC07D8ACE6D5D422EBCC0553D0FC155B0(L_4, 1, /*hidden argument*/NULL);
 		NullCheck(L_5);
 		int32_t L_6 = L_5->get_Value_3();
 		if ((((int32_t)L_6) >= ((int32_t)1)))

@@ -54,10 +54,10 @@ public class FacePaneController : MonoBehaviour
 
     void OnTriggerEnter(Collider col){
         //collided with top collider, now move left
-        if (col.gameObject.name == "TopCollider"){
+        /*if (col.gameObject.name == "TopCollider"){
             rb.constraints |= RigidbodyConstraints.FreezePositionY;
             nextMove = true;
-        }
+        }*/
 
         //collided with left collider, now stop moving
         if (col.gameObject.name == "LeftCollider"){
