@@ -463,6 +463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000011792100794}
   - component: {fileID: 114611684728110934}
+  - component: {fileID: 4351636324316587922}
   m_Layer: 2
   m_Name: LoadingDefaultCursor
   m_TagString: Untagged
@@ -569,6 +570,18 @@ MonoBehaviour:
     defaultBool: 1
     name: Waiting
   cursorAnimator: {fileID: 95274710619506266}
+--- !u!114 &4351636324316587922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012072213228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77f3e604fd6728144a4f7ce5817c52b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1000012150952002
 GameObject:
   m_ObjectHideFlags: 0

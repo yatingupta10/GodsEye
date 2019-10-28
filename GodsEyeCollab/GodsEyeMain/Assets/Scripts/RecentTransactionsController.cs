@@ -68,8 +68,8 @@ public class RecentTransactionsController : MonoBehaviour
             recentTransactions.Add(transactionDataPrefab);
 
             //set the text values for each transaction
-            recentTransactions[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].date;
-            recentTransactions[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].amount;
+            recentTransactions[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].amount;
+            recentTransactions[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].date;
             recentTransactions[i].transform.GetChild(2).GetComponent<TextMeshPro>().text = transactionData[i].recipient;
             //recentTransactions[i].transform.GetChild(3).GetComponent<TextMeshPro>().text = transactionData[i].payer;
             //add transaction data prefab to scene

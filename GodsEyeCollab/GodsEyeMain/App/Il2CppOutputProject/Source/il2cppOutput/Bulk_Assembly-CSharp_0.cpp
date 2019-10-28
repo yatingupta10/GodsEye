@@ -340,7 +340,6 @@ extern String_t* _stringLiteral808317D25D616FA76024CB6E3697F9736BAE23E7;
 extern String_t* _stringLiteral830022AC553C3785BEB11AB4066207D62E2B1C45;
 extern String_t* _stringLiteral8AF0896235723E378D9F5D0A1E3511913D9D2A5A;
 extern String_t* _stringLiteral90AFBC51574D7DB70A22348ED4A04CD1831B3E63;
-extern String_t* _stringLiteralAAB03F7C7C5F55684470A259A8D0708E0C2A30F6;
 extern String_t* _stringLiteralAE521BC4D60FDFC491372EBC23EEC022B5410832;
 extern String_t* _stringLiteralAF7B4002C27D41F25DFD348FBA4AF31F70089378;
 extern String_t* _stringLiteralBDE7EAA94433CD949257752CA936E958FAF03E4C;
@@ -378,6 +377,7 @@ extern const RuntimeMethod* JsonConvert_DeserializeObject_TisRootObject_tFAB9001
 extern const RuntimeMethod* List_1_Add_m7C1FE733F4D804E9586A1EBE1D859DEBBDDAB4B6_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var;
 extern const RuntimeMethod* List_1__ctor_m1307CE82767C2AC5D886F97B47D667E135EA7386_RuntimeMethod_var;
 extern const RuntimeMethod* List_1__ctor_m70B8A20433AEEDEB942CD3EEC229497AB693E9D6_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Count_m014418D29D2C0AC65758AD628CA4822F732BA8FD_RuntimeMethod_var;
@@ -423,9 +423,21 @@ extern const uint32_t SliderValuePass_UpdateProgress_mE12953CC480C951006E230934B
 extern const uint32_t TopFriendsController_CreateFriendArrays_m8DE77C116F03B76B5CC06ADE566EBEA6CE716831_MetadataUsageId;
 extern const uint32_t TopFriendsController_ImportImage_mEE06D0FCCFB8717402403804C9C28414A09AC987_MetadataUsageId;
 extern const uint32_t TopFriendsController__ctor_mCC6AF827A8EF8FEA65455EDF4E270EC4275F7863_MetadataUsageId;
+extern const uint32_t UIController_ActivateAllNavButtons_mC41988154639997D531390157103CB92637AFF63_MetadataUsageId;
+extern const uint32_t UIController_ActivateIcon_mC040550C2D2A8E2E9C20D38B722E391E2C7CA989_MetadataUsageId;
 extern const uint32_t UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8_MetadataUsageId;
 extern const uint32_t UIController_CategoryViewFromButton_mDFBBC19985411A340CF819AE40680BBD437413C9_MetadataUsageId;
+extern const uint32_t UIController_ConnectionsView_mF2CA9C72B7F57CABFEF6BE71AB845530685C5350_MetadataUsageId;
+extern const uint32_t UIController_DeactivateAllNavButtons_m4B4531DA35CC83A60F96291356C6DD1B54B5882B_MetadataUsageId;
+extern const uint32_t UIController_DeactivateAllNavIcons_m8D9BB2B2760DA8B18805244F93A6B605BBD72339_MetadataUsageId;
 extern const uint32_t UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8_MetadataUsageId;
+extern const uint32_t UIController_DeactivateNavButton_m4F8A7FFCA081F1A46F7EF21AC3EC438874B4D9AD_MetadataUsageId;
+extern const uint32_t UIController_FinancialView_m39AFD524E940FD0FF16BD156EC26C216B5F689CB_MetadataUsageId;
+extern const uint32_t UIController_InterestsView_mF212BD90509EE12B4E9593F15C3AD82A1452B242_MetadataUsageId;
+extern const uint32_t UIController_MainView_mC741491CFC9FA0518D36C00B66CC5754C9D7D0B1_MetadataUsageId;
+extern const uint32_t UIController_PersonalView_m005F2FA65837D9FC8E932513EFEA5D98884A3F41_MetadataUsageId;
+extern const uint32_t UIController_Start_m15E91565B003DEB2B4898F1FF002EDD1B7554D9B_MetadataUsageId;
+extern const uint32_t UIController_UsernameView_m5D0E46F230BAC437A4F1D741E3CACFAA5E09401B_MetadataUsageId;
 extern const uint32_t UIController__ctor_m2957FB6041970C1305D4DED3E11D4D800E932486_MetadataUsageId;
 extern const uint32_t UsernameController__ctor_m66CFA2D14A18C2FE6105B099BD260C50CB4902CE_MetadataUsageId;
 extern const uint32_t UsernameController_loadUsernames_m622C0A1AA0150793CBA1B96BC0E6738B4B6FCF58_MetadataUsageId;
@@ -8059,48 +8071,302 @@ public:
 struct  UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
-	// UnityEngine.GameObject UIController::mainUI
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___mainUI_4;
-	// System.Collections.Generic.List`1<UnityEngine.GameObject> UIController::viewList
-	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___viewList_5;
-	// System.Int32 UIController::currentView
-	int32_t ___currentView_6;
 	// System.Single UIController::categoryViewTime
-	float ___categoryViewTime_7;
+	float ___categoryViewTime_4;
+	// UnityEngine.GameObject UIController::mainUI
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___mainUI_5;
+	// UnityEngine.GameObject UIController::facePane
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___facePane_6;
+	// UnityEngine.GameObject UIController::centerFacePane
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___centerFacePane_7;
+	// UnityEngine.GameObject UIController::rightScoreFacePane
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___rightScoreFacePane_8;
+	// UnityEngine.GameObject UIController::navBar
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___navBar_9;
+	// UnityEngine.GameObject UIController::backgroundScreen
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___backgroundScreen_10;
+	// UnityEngine.GameObject UIController::categoryView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___categoryView_11;
+	// UnityEngine.GameObject UIController::usernameView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___usernameView_12;
+	// UnityEngine.GameObject UIController::personalView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___personalView_13;
+	// UnityEngine.GameObject UIController::financialView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___financialView_14;
+	// UnityEngine.GameObject UIController::interestsView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___interestsView_15;
+	// UnityEngine.GameObject UIController::connectionsView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___connectionsView_16;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> UIController::viewList
+	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___viewList_17;
+	// UnityEngine.GameObject UIController::categoryButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___categoryButton_18;
+	// UnityEngine.GameObject UIController::usernameButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___usernameButton_19;
+	// UnityEngine.GameObject UIController::personalButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___personalButton_20;
+	// UnityEngine.GameObject UIController::financialButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___financialButton_21;
+	// UnityEngine.GameObject UIController::interestsButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___interestsButton_22;
+	// UnityEngine.GameObject UIController::connectionsButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___connectionsButton_23;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> UIController::navList
+	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___navList_24;
+	// UnityEngine.GameObject UIController::usernameIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___usernameIcon_25;
+	// UnityEngine.GameObject UIController::personalIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___personalIcon_26;
+	// UnityEngine.GameObject UIController::financialIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___financialIcon_27;
+	// UnityEngine.GameObject UIController::interestsIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___interestsIcon_28;
+	// UnityEngine.GameObject UIController::connectionsIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___connectionsIcon_29;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> UIController::iconList
+	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___iconList_30;
 
 public:
-	inline static int32_t get_offset_of_mainUI_4() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___mainUI_4)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_mainUI_4() const { return ___mainUI_4; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_mainUI_4() { return &___mainUI_4; }
-	inline void set_mainUI_4(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_categoryViewTime_4() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___categoryViewTime_4)); }
+	inline float get_categoryViewTime_4() const { return ___categoryViewTime_4; }
+	inline float* get_address_of_categoryViewTime_4() { return &___categoryViewTime_4; }
+	inline void set_categoryViewTime_4(float value)
 	{
-		___mainUI_4 = value;
-		Il2CppCodeGenWriteBarrier((&___mainUI_4), value);
+		___categoryViewTime_4 = value;
 	}
 
-	inline static int32_t get_offset_of_viewList_5() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___viewList_5)); }
-	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_viewList_5() const { return ___viewList_5; }
-	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_viewList_5() { return &___viewList_5; }
-	inline void set_viewList_5(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	inline static int32_t get_offset_of_mainUI_5() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___mainUI_5)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_mainUI_5() const { return ___mainUI_5; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_mainUI_5() { return &___mainUI_5; }
+	inline void set_mainUI_5(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___viewList_5 = value;
-		Il2CppCodeGenWriteBarrier((&___viewList_5), value);
+		___mainUI_5 = value;
+		Il2CppCodeGenWriteBarrier((&___mainUI_5), value);
 	}
 
-	inline static int32_t get_offset_of_currentView_6() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___currentView_6)); }
-	inline int32_t get_currentView_6() const { return ___currentView_6; }
-	inline int32_t* get_address_of_currentView_6() { return &___currentView_6; }
-	inline void set_currentView_6(int32_t value)
+	inline static int32_t get_offset_of_facePane_6() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___facePane_6)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_facePane_6() const { return ___facePane_6; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_facePane_6() { return &___facePane_6; }
+	inline void set_facePane_6(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___currentView_6 = value;
+		___facePane_6 = value;
+		Il2CppCodeGenWriteBarrier((&___facePane_6), value);
 	}
 
-	inline static int32_t get_offset_of_categoryViewTime_7() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___categoryViewTime_7)); }
-	inline float get_categoryViewTime_7() const { return ___categoryViewTime_7; }
-	inline float* get_address_of_categoryViewTime_7() { return &___categoryViewTime_7; }
-	inline void set_categoryViewTime_7(float value)
+	inline static int32_t get_offset_of_centerFacePane_7() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___centerFacePane_7)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_centerFacePane_7() const { return ___centerFacePane_7; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_centerFacePane_7() { return &___centerFacePane_7; }
+	inline void set_centerFacePane_7(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___categoryViewTime_7 = value;
+		___centerFacePane_7 = value;
+		Il2CppCodeGenWriteBarrier((&___centerFacePane_7), value);
+	}
+
+	inline static int32_t get_offset_of_rightScoreFacePane_8() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___rightScoreFacePane_8)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_rightScoreFacePane_8() const { return ___rightScoreFacePane_8; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_rightScoreFacePane_8() { return &___rightScoreFacePane_8; }
+	inline void set_rightScoreFacePane_8(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___rightScoreFacePane_8 = value;
+		Il2CppCodeGenWriteBarrier((&___rightScoreFacePane_8), value);
+	}
+
+	inline static int32_t get_offset_of_navBar_9() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___navBar_9)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_navBar_9() const { return ___navBar_9; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_navBar_9() { return &___navBar_9; }
+	inline void set_navBar_9(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___navBar_9 = value;
+		Il2CppCodeGenWriteBarrier((&___navBar_9), value);
+	}
+
+	inline static int32_t get_offset_of_backgroundScreen_10() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___backgroundScreen_10)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_backgroundScreen_10() const { return ___backgroundScreen_10; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_backgroundScreen_10() { return &___backgroundScreen_10; }
+	inline void set_backgroundScreen_10(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___backgroundScreen_10 = value;
+		Il2CppCodeGenWriteBarrier((&___backgroundScreen_10), value);
+	}
+
+	inline static int32_t get_offset_of_categoryView_11() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___categoryView_11)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_categoryView_11() const { return ___categoryView_11; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_categoryView_11() { return &___categoryView_11; }
+	inline void set_categoryView_11(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___categoryView_11 = value;
+		Il2CppCodeGenWriteBarrier((&___categoryView_11), value);
+	}
+
+	inline static int32_t get_offset_of_usernameView_12() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___usernameView_12)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_usernameView_12() const { return ___usernameView_12; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_usernameView_12() { return &___usernameView_12; }
+	inline void set_usernameView_12(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___usernameView_12 = value;
+		Il2CppCodeGenWriteBarrier((&___usernameView_12), value);
+	}
+
+	inline static int32_t get_offset_of_personalView_13() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___personalView_13)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_personalView_13() const { return ___personalView_13; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_personalView_13() { return &___personalView_13; }
+	inline void set_personalView_13(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___personalView_13 = value;
+		Il2CppCodeGenWriteBarrier((&___personalView_13), value);
+	}
+
+	inline static int32_t get_offset_of_financialView_14() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___financialView_14)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_financialView_14() const { return ___financialView_14; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_financialView_14() { return &___financialView_14; }
+	inline void set_financialView_14(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___financialView_14 = value;
+		Il2CppCodeGenWriteBarrier((&___financialView_14), value);
+	}
+
+	inline static int32_t get_offset_of_interestsView_15() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___interestsView_15)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_interestsView_15() const { return ___interestsView_15; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_interestsView_15() { return &___interestsView_15; }
+	inline void set_interestsView_15(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___interestsView_15 = value;
+		Il2CppCodeGenWriteBarrier((&___interestsView_15), value);
+	}
+
+	inline static int32_t get_offset_of_connectionsView_16() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___connectionsView_16)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_connectionsView_16() const { return ___connectionsView_16; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_connectionsView_16() { return &___connectionsView_16; }
+	inline void set_connectionsView_16(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___connectionsView_16 = value;
+		Il2CppCodeGenWriteBarrier((&___connectionsView_16), value);
+	}
+
+	inline static int32_t get_offset_of_viewList_17() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___viewList_17)); }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_viewList_17() const { return ___viewList_17; }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_viewList_17() { return &___viewList_17; }
+	inline void set_viewList_17(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	{
+		___viewList_17 = value;
+		Il2CppCodeGenWriteBarrier((&___viewList_17), value);
+	}
+
+	inline static int32_t get_offset_of_categoryButton_18() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___categoryButton_18)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_categoryButton_18() const { return ___categoryButton_18; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_categoryButton_18() { return &___categoryButton_18; }
+	inline void set_categoryButton_18(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___categoryButton_18 = value;
+		Il2CppCodeGenWriteBarrier((&___categoryButton_18), value);
+	}
+
+	inline static int32_t get_offset_of_usernameButton_19() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___usernameButton_19)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_usernameButton_19() const { return ___usernameButton_19; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_usernameButton_19() { return &___usernameButton_19; }
+	inline void set_usernameButton_19(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___usernameButton_19 = value;
+		Il2CppCodeGenWriteBarrier((&___usernameButton_19), value);
+	}
+
+	inline static int32_t get_offset_of_personalButton_20() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___personalButton_20)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_personalButton_20() const { return ___personalButton_20; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_personalButton_20() { return &___personalButton_20; }
+	inline void set_personalButton_20(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___personalButton_20 = value;
+		Il2CppCodeGenWriteBarrier((&___personalButton_20), value);
+	}
+
+	inline static int32_t get_offset_of_financialButton_21() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___financialButton_21)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_financialButton_21() const { return ___financialButton_21; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_financialButton_21() { return &___financialButton_21; }
+	inline void set_financialButton_21(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___financialButton_21 = value;
+		Il2CppCodeGenWriteBarrier((&___financialButton_21), value);
+	}
+
+	inline static int32_t get_offset_of_interestsButton_22() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___interestsButton_22)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_interestsButton_22() const { return ___interestsButton_22; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_interestsButton_22() { return &___interestsButton_22; }
+	inline void set_interestsButton_22(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___interestsButton_22 = value;
+		Il2CppCodeGenWriteBarrier((&___interestsButton_22), value);
+	}
+
+	inline static int32_t get_offset_of_connectionsButton_23() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___connectionsButton_23)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_connectionsButton_23() const { return ___connectionsButton_23; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_connectionsButton_23() { return &___connectionsButton_23; }
+	inline void set_connectionsButton_23(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___connectionsButton_23 = value;
+		Il2CppCodeGenWriteBarrier((&___connectionsButton_23), value);
+	}
+
+	inline static int32_t get_offset_of_navList_24() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___navList_24)); }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_navList_24() const { return ___navList_24; }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_navList_24() { return &___navList_24; }
+	inline void set_navList_24(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	{
+		___navList_24 = value;
+		Il2CppCodeGenWriteBarrier((&___navList_24), value);
+	}
+
+	inline static int32_t get_offset_of_usernameIcon_25() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___usernameIcon_25)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_usernameIcon_25() const { return ___usernameIcon_25; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_usernameIcon_25() { return &___usernameIcon_25; }
+	inline void set_usernameIcon_25(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___usernameIcon_25 = value;
+		Il2CppCodeGenWriteBarrier((&___usernameIcon_25), value);
+	}
+
+	inline static int32_t get_offset_of_personalIcon_26() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___personalIcon_26)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_personalIcon_26() const { return ___personalIcon_26; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_personalIcon_26() { return &___personalIcon_26; }
+	inline void set_personalIcon_26(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___personalIcon_26 = value;
+		Il2CppCodeGenWriteBarrier((&___personalIcon_26), value);
+	}
+
+	inline static int32_t get_offset_of_financialIcon_27() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___financialIcon_27)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_financialIcon_27() const { return ___financialIcon_27; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_financialIcon_27() { return &___financialIcon_27; }
+	inline void set_financialIcon_27(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___financialIcon_27 = value;
+		Il2CppCodeGenWriteBarrier((&___financialIcon_27), value);
+	}
+
+	inline static int32_t get_offset_of_interestsIcon_28() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___interestsIcon_28)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_interestsIcon_28() const { return ___interestsIcon_28; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_interestsIcon_28() { return &___interestsIcon_28; }
+	inline void set_interestsIcon_28(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___interestsIcon_28 = value;
+		Il2CppCodeGenWriteBarrier((&___interestsIcon_28), value);
+	}
+
+	inline static int32_t get_offset_of_connectionsIcon_29() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___connectionsIcon_29)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_connectionsIcon_29() const { return ___connectionsIcon_29; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_connectionsIcon_29() { return &___connectionsIcon_29; }
+	inline void set_connectionsIcon_29(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___connectionsIcon_29 = value;
+		Il2CppCodeGenWriteBarrier((&___connectionsIcon_29), value);
+	}
+
+	inline static int32_t get_offset_of_iconList_30() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___iconList_30)); }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_iconList_30() const { return ___iconList_30; }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_iconList_30() { return &___iconList_30; }
+	inline void set_iconList_30(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	{
+		___iconList_30 = value;
+		Il2CppCodeGenWriteBarrier((&___iconList_30), value);
 	}
 };
 
@@ -11408,6 +11674,8 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_mD7829C7E8C
 extern "C" IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m38B1099DDAD7EEDE2F4CDAB11C095AC784AC2E34_gshared (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
 extern "C" IL2CPP_METHOD_ATTR void Enumerator_Dispose_m94D0DAE031619503CDA6E53C5C3CC78AF3139472_gshared (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method);
+// System.Int32 System.Collections.Generic.List`1<System.Object>::IndexOf(!0)
+extern "C" IL2CPP_METHOD_ATTR int32_t List_1_IndexOf_m98E4245F46A6D90AE3E96EFF3880D50ED6E2C728_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, RuntimeObject * p0, const RuntimeMethod* method);
 
 // System.Void RadialProgress::Begin(System.Single)
 extern "C" IL2CPP_METHOD_ATTR void RadialProgress_Begin_m11198B3006DDA5237A7B362496A97A66AA59D497 (RadialProgress_tC5735CDB2719B8CFC3BF89917C13DE616DCE679A * __this, float ___s0, const RuntimeMethod* method);
@@ -11707,6 +11975,12 @@ inline Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * Component_GetComponent_T
 extern "C" IL2CPP_METHOD_ATTR Sprite_tCA09498D612D08DE668653AF1E9C12BF53434198 * TopFriendsController_ImportImage_mEE06D0FCCFB8717402403804C9C28414A09AC987 (TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3 * __this, String_t* ___imagePath0, const RuntimeMethod* method);
 // System.Void UnityEngine.MonoBehaviour::Invoke(System.String,System.Single)
 extern "C" IL2CPP_METHOD_ATTR void MonoBehaviour_Invoke_m979EDEF812D4630882E2E8346776B6CA5A9176BF (MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429 * __this, String_t* p0, float p1, const RuntimeMethod* method);
+// System.Void UIController::DeactivateAllViews()
+extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method);
+// System.Void UIController::DeactivateAllNavButtons()
+extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllNavButtons_m4B4531DA35CC83A60F96291356C6DD1B54B5882B (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method);
+// System.Void UIController::DeactivateAllNavIcons()
+extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllNavIcons_m8D9BB2B2760DA8B18805244F93A6B605BBD72339 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method);
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.GameObject>::GetEnumerator()
 inline Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053  List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B (List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * __this, const RuntimeMethod* method)
 {
@@ -11727,10 +12001,21 @@ inline void Enumerator_Dispose_m0C9F007B48F37CD7F09430C3C1B407ACE6213812 (Enumer
 {
 	((  void (*) (Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *, const RuntimeMethod*))Enumerator_Dispose_m94D0DAE031619503CDA6E53C5C3CC78AF3139472_gshared)(__this, method);
 }
-// System.Void UIController::DeactivateAllViews()
-extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method);
+// System.Int32 System.Collections.Generic.List`1<UnityEngine.GameObject>::IndexOf(!0)
+inline int32_t List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B (List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * __this, GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * p0, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 *, GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))List_1_IndexOf_m98E4245F46A6D90AE3E96EFF3880D50ED6E2C728_gshared)(__this, p0, method);
+}
 // System.Void UIController::ActivateView(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, int32_t ___viewNum0, const RuntimeMethod* method);
+// System.Void UIController::DeactivateAll()
+extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAll_m8AB6786CAFADD0C939724E58DA194CA09F09BE67 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method);
+// System.Void UIController::ActivateAllNavButtons()
+extern "C" IL2CPP_METHOD_ATTR void UIController_ActivateAllNavButtons_mC41988154639997D531390157103CB92637AFF63 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method);
+// System.Void UIController::DeactivateNavButton(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateNavButton_m4F8A7FFCA081F1A46F7EF21AC3EC438874B4D9AD (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, int32_t ___btnNum0, const RuntimeMethod* method);
+// System.Void UIController::ActivateIcon(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void UIController_ActivateIcon_mC040550C2D2A8E2E9C20D38B722E391E2C7CA989 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, int32_t ___iconNum0, const RuntimeMethod* method);
 // System.Void UsernameController::loadUsernames()
 extern "C" IL2CPP_METHOD_ATTR void UsernameController_loadUsernames_m622C0A1AA0150793CBA1B96BC0E6738B4B6FCF58 (UsernameController_tA1F127FC624B39B349EC5ABD2B2D5939321CAE06 * __this, const RuntimeMethod* method);
 // UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
@@ -11947,67 +12232,41 @@ extern "C" IL2CPP_METHOD_ATTR void FacePaneController_OnTriggerEnter_m8AEDB688D7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (col.gameObject.name == "TopCollider"){
+		// if (col.gameObject.name == "LeftCollider"){
 		Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * L_0 = ___col0;
 		NullCheck(L_0);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_0, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		String_t* L_2 = Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE(L_1, /*hidden argument*/NULL);
-		bool L_3 = String_op_Equality_m139F0E4195AE2F856019E63B241F36F016997FCE(L_2, _stringLiteralAAB03F7C7C5F55684470A259A8D0708E0C2A30F6, /*hidden argument*/NULL);
+		bool L_3 = String_op_Equality_m139F0E4195AE2F856019E63B241F36F016997FCE(L_2, _stringLiteral7FE80403354BDA7FB596B0F9608845E4DA306DDC, /*hidden argument*/NULL);
 		if (!L_3)
 		{
-			goto IL_0031;
+			goto IL_004e;
 		}
 	}
 	{
-		// rb.constraints |= RigidbodyConstraints.FreezePositionY;
+		// rb.constraints |= RigidbodyConstraints.FreezeAll;
 		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_4 = __this->get_rb_11();
 		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_5 = L_4;
 		NullCheck(L_5);
 		int32_t L_6 = Rigidbody_get_constraints_mC644C1F579B4B475BF174953564217123411EE64(L_5, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		Rigidbody_set_constraints_m6E6AACB03165E54952E7CFE13C07188205A7061F(L_5, ((int32_t)((int32_t)L_6|(int32_t)4)), /*hidden argument*/NULL);
-		// nextMove = true;
-		__this->set_nextMove_15((bool)1);
-	}
-
-IL_0031:
-	{
-		// if (col.gameObject.name == "LeftCollider"){
-		Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * L_7 = ___col0;
-		NullCheck(L_7);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_8 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_7, /*hidden argument*/NULL);
-		NullCheck(L_8);
-		String_t* L_9 = Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE(L_8, /*hidden argument*/NULL);
-		bool L_10 = String_op_Equality_m139F0E4195AE2F856019E63B241F36F016997FCE(L_9, _stringLiteral7FE80403354BDA7FB596B0F9608845E4DA306DDC, /*hidden argument*/NULL);
-		if (!L_10)
-		{
-			goto IL_007f;
-		}
-	}
-	{
-		// rb.constraints |= RigidbodyConstraints.FreezeAll;
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_11 = __this->get_rb_11();
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_12 = L_11;
-		NullCheck(L_12);
-		int32_t L_13 = Rigidbody_get_constraints_mC644C1F579B4B475BF174953564217123411EE64(L_12, /*hidden argument*/NULL);
-		NullCheck(L_12);
-		Rigidbody_set_constraints_m6E6AACB03165E54952E7CFE13C07188205A7061F(L_12, ((int32_t)((int32_t)L_13|(int32_t)((int32_t)126))), /*hidden argument*/NULL);
+		Rigidbody_set_constraints_m6E6AACB03165E54952E7CFE13C07188205A7061F(L_5, ((int32_t)((int32_t)L_6|(int32_t)((int32_t)126))), /*hidden argument*/NULL);
 		// nameText.SetActive(true);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_14 = __this->get_nameText_5();
-		NullCheck(L_14);
-		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_14, (bool)1, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = __this->get_nameText_5();
+		NullCheck(L_7);
+		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_7, (bool)1, /*hidden argument*/NULL);
 		// screen.SetActive(true);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_15 = __this->get_screen_6();
-		NullCheck(L_15);
-		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_15, (bool)1, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_8 = __this->get_screen_6();
+		NullCheck(L_8);
+		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_8, (bool)1, /*hidden argument*/NULL);
 		// Destroy(rb);
-		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_16 = __this->get_rb_11();
+		Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * L_9 = __this->get_rb_11();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
-		Object_Destroy_m23B4562495BA35A74266D4372D45368F8C05109A(L_16, /*hidden argument*/NULL);
+		Object_Destroy_m23B4562495BA35A74266D4372D45368F8C05109A(L_9, /*hidden argument*/NULL);
 	}
 
-IL_007f:
+IL_004e:
 	{
 		// }
 		return;
@@ -15831,7 +16090,118 @@ extern "C" IL2CPP_METHOD_ATTR void TransactionData__ctor_m796BA3BFCCC04875059ABC
 // System.Void UIController::Start()
 extern "C" IL2CPP_METHOD_ATTR void UIController_Start_m15E91565B003DEB2B4898F1FF002EDD1B7554D9B (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_method (UIController_Start_m15E91565B003DEB2B4898F1FF002EDD1B7554D9B_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// viewList.Add(facePane);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = __this->get_facePane_6();
+		NullCheck(L_0);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_0, L_1, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// viewList.Add(centerFacePane);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_2 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_3 = __this->get_centerFacePane_7();
+		NullCheck(L_2);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_2, L_3, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// viewList.Add(rightScoreFacePane);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_4 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_5 = __this->get_rightScoreFacePane_8();
+		NullCheck(L_4);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_4, L_5, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// viewList.Add(navBar);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_6 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = __this->get_navBar_9();
+		NullCheck(L_6);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_6, L_7, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// viewList.Add(categoryView);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_8 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_9 = __this->get_categoryView_11();
+		NullCheck(L_8);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_8, L_9, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// viewList.Add(usernameView);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_10 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_11 = __this->get_usernameView_12();
+		NullCheck(L_10);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_10, L_11, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// viewList.Add(personalView);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_12 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = __this->get_personalView_13();
+		NullCheck(L_12);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_12, L_13, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// viewList.Add(financialView);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_14 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_15 = __this->get_financialView_14();
+		NullCheck(L_14);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_14, L_15, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// viewList.Add(interestsView);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_16 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_17 = __this->get_interestsView_15();
+		NullCheck(L_16);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_16, L_17, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// viewList.Add(connectionsView);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_18 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_19 = __this->get_connectionsView_16();
+		NullCheck(L_18);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_18, L_19, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// navList.Add(categoryButton);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_20 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_21 = __this->get_categoryButton_18();
+		NullCheck(L_20);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_20, L_21, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// navList.Add(usernameButton);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_22 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_23 = __this->get_usernameButton_19();
+		NullCheck(L_22);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_22, L_23, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// navList.Add(personalButton);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_24 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_25 = __this->get_personalButton_20();
+		NullCheck(L_24);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_24, L_25, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// navList.Add(financialButton);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_26 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_27 = __this->get_financialButton_21();
+		NullCheck(L_26);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_26, L_27, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// navList.Add(interestsButton);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_28 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_29 = __this->get_interestsButton_22();
+		NullCheck(L_28);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_28, L_29, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// navList.Add(connectionsButton);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_30 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_31 = __this->get_connectionsButton_23();
+		NullCheck(L_30);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_30, L_31, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// iconList.Add(usernameIcon);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_32 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_33 = __this->get_usernameIcon_25();
+		NullCheck(L_32);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_32, L_33, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// iconList.Add(personalIcon);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_34 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_35 = __this->get_personalIcon_26();
+		NullCheck(L_34);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_34, L_35, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// iconList.Add(financialIcon);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_36 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_37 = __this->get_financialIcon_27();
+		NullCheck(L_36);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_36, L_37, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// iconList.Add(interestsIcon);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_38 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_39 = __this->get_interestsIcon_28();
+		NullCheck(L_38);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_38, L_39, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
+		// iconList.Add(connectionsIcon);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_40 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_41 = __this->get_connectionsIcon_29();
+		NullCheck(L_40);
+		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_40, L_41, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
 		// }
 		return;
 	}
@@ -15847,8 +16217,22 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_CategoryViewFromButton_mDFBBC199
 	}
 	{
 		// Invoke("MainView", categoryViewTime);
-		float L_0 = __this->get_categoryViewTime_7();
+		float L_0 = __this->get_categoryViewTime_4();
 		MonoBehaviour_Invoke_m979EDEF812D4630882E2E8346776B6CA5A9176BF(__this, _stringLiteralAF7B4002C27D41F25DFD348FBA4AF31F70089378, L_0, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void UIController::DeactivateAll()
+extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAll_m8AB6786CAFADD0C939724E58DA194CA09F09BE67 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
+{
+	{
+		// DeactivateAllViews();
+		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
+		// DeactivateAllNavButtons();
+		UIController_DeactivateAllNavButtons_m4B4531DA35CC83A60F96291356C6DD1B54B5882B(__this, /*hidden argument*/NULL);
+		// DeactivateAllNavIcons();
+		UIController_DeactivateAllNavIcons_m8D9BB2B2760DA8B18805244F93A6B605BBD72339(__this, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -15873,7 +16257,7 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllViews_mD4964BBC63BB
 	NO_UNUSED_WARNING (__leave_targets);
 	{
 		// foreach (GameObject obj in viewList){
-		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_5();
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_17();
 		NullCheck(L_0);
 		Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053  L_1 = List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B(L_0, /*hidden argument*/List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B_RuntimeMethod_var);
 		V_0 = L_1;
@@ -15933,6 +16317,166 @@ IL_0034:
 		return;
 	}
 }
+// System.Void UIController::DeactivateAllNavButtons()
+extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllNavButtons_m4B4531DA35CC83A60F96291356C6DD1B54B5882B (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UIController_DeactivateAllNavButtons_m4B4531DA35CC83A60F96291356C6DD1B54B5882B_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	void* __leave_targets_storage = alloca(sizeof(int32_t) * 1);
+	il2cpp::utils::LeaveTargetStack __leave_targets(__leave_targets_storage);
+	NO_UNUSED_WARNING (__leave_targets);
+	{
+		// foreach (GameObject obj in navList){
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_navList_24();
+		NullCheck(L_0);
+		Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053  L_1 = List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B(L_0, /*hidden argument*/List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_001b;
+		}
+
+IL_000e:
+		{
+			// foreach (GameObject obj in navList){
+			GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_2 = Enumerator_get_Current_m6C0BE2971AF7991C469272BC300664B8BAF8D800((Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *)(&V_0), /*hidden argument*/Enumerator_get_Current_m6C0BE2971AF7991C469272BC300664B8BAF8D800_RuntimeMethod_var);
+			// obj.SetActive(false);
+			NullCheck(L_2);
+			GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_2, (bool)0, /*hidden argument*/NULL);
+		}
+
+IL_001b:
+		{
+			// foreach (GameObject obj in navList){
+			bool L_3 = Enumerator_MoveNext_m774CA65723516595B6E22D200D19ADBE8C3E7969((Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *)(&V_0), /*hidden argument*/Enumerator_MoveNext_m774CA65723516595B6E22D200D19ADBE8C3E7969_RuntimeMethod_var);
+			if (L_3)
+			{
+				goto IL_000e;
+			}
+		}
+
+IL_0024:
+		{
+			IL2CPP_LEAVE(0x34, FINALLY_0026);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0026;
+	}
+
+FINALLY_0026:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m0C9F007B48F37CD7F09430C3C1B407ACE6213812((Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *)(&V_0), /*hidden argument*/Enumerator_Dispose_m0C9F007B48F37CD7F09430C3C1B407ACE6213812_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(38)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(38)
+	{
+		IL2CPP_JUMP_TBL(0x34, IL_0034)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0034:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UIController::DeactivateAllNavIcons()
+extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllNavIcons_m8D9BB2B2760DA8B18805244F93A6B605BBD72339 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UIController_DeactivateAllNavIcons_m8D9BB2B2760DA8B18805244F93A6B605BBD72339_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	void* __leave_targets_storage = alloca(sizeof(int32_t) * 1);
+	il2cpp::utils::LeaveTargetStack __leave_targets(__leave_targets_storage);
+	NO_UNUSED_WARNING (__leave_targets);
+	{
+		// foreach (GameObject obj in iconList){
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_iconList_30();
+		NullCheck(L_0);
+		Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053  L_1 = List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B(L_0, /*hidden argument*/List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_001b;
+		}
+
+IL_000e:
+		{
+			// foreach (GameObject obj in iconList){
+			GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_2 = Enumerator_get_Current_m6C0BE2971AF7991C469272BC300664B8BAF8D800((Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *)(&V_0), /*hidden argument*/Enumerator_get_Current_m6C0BE2971AF7991C469272BC300664B8BAF8D800_RuntimeMethod_var);
+			// obj.SetActive(false);
+			NullCheck(L_2);
+			GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_2, (bool)0, /*hidden argument*/NULL);
+		}
+
+IL_001b:
+		{
+			// foreach (GameObject obj in iconList){
+			bool L_3 = Enumerator_MoveNext_m774CA65723516595B6E22D200D19ADBE8C3E7969((Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *)(&V_0), /*hidden argument*/Enumerator_MoveNext_m774CA65723516595B6E22D200D19ADBE8C3E7969_RuntimeMethod_var);
+			if (L_3)
+			{
+				goto IL_000e;
+			}
+		}
+
+IL_0024:
+		{
+			IL2CPP_LEAVE(0x34, FINALLY_0026);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0026;
+	}
+
+FINALLY_0026:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m0C9F007B48F37CD7F09430C3C1B407ACE6213812((Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *)(&V_0), /*hidden argument*/Enumerator_Dispose_m0C9F007B48F37CD7F09430C3C1B407ACE6213812_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(38)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(38)
+	{
+		IL2CPP_JUMP_TBL(0x34, IL_0034)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0034:
+	{
+		// }
+		return;
+	}
+}
 // System.Void UIController::ActivateView(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, int32_t ___viewNum0, const RuntimeMethod* method)
 {
@@ -15944,27 +16488,134 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_ActivateView_mB13C3505F6DBE566CA
 	}
 	{
 		// viewList[viewNum].SetActive(true);
-		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_5();
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_17();
 		int32_t L_1 = ___viewNum0;
 		NullCheck(L_0);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_2 = List_1_get_Item_m7E9242F4E09BA130375174050CE83F9A3C3296E8(L_0, L_1, /*hidden argument*/List_1_get_Item_m7E9242F4E09BA130375174050CE83F9A3C3296E8_RuntimeMethod_var);
 		NullCheck(L_2);
 		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_2, (bool)1, /*hidden argument*/NULL);
-		// if (viewNum != 1){
-		int32_t L_3 = ___viewNum0;
-		if ((((int32_t)L_3) == ((int32_t)1)))
-		{
-			goto IL_001d;
-		}
+		// }
+		return;
 	}
+}
+// System.Void UIController::ActivateAllNavButtons()
+extern "C" IL2CPP_METHOD_ATTR void UIController_ActivateAllNavButtons_mC41988154639997D531390157103CB92637AFF63 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// currentView = viewNum;
-		int32_t L_4 = ___viewNum0;
-		__this->set_currentView_6(L_4);
+		il2cpp_codegen_initialize_method (UIController_ActivateAllNavButtons_mC41988154639997D531390157103CB92637AFF63_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	void* __leave_targets_storage = alloca(sizeof(int32_t) * 1);
+	il2cpp::utils::LeaveTargetStack __leave_targets(__leave_targets_storage);
+	NO_UNUSED_WARNING (__leave_targets);
+	{
+		// foreach (GameObject obj in navList){
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_navList_24();
+		NullCheck(L_0);
+		Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053  L_1 = List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B(L_0, /*hidden argument*/List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B_RuntimeMethod_var);
+		V_0 = L_1;
 	}
 
-IL_001d:
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_001b;
+		}
+
+IL_000e:
+		{
+			// foreach (GameObject obj in navList){
+			GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_2 = Enumerator_get_Current_m6C0BE2971AF7991C469272BC300664B8BAF8D800((Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *)(&V_0), /*hidden argument*/Enumerator_get_Current_m6C0BE2971AF7991C469272BC300664B8BAF8D800_RuntimeMethod_var);
+			// obj.SetActive(true);
+			NullCheck(L_2);
+			GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_2, (bool)1, /*hidden argument*/NULL);
+		}
+
+IL_001b:
+		{
+			// foreach (GameObject obj in navList){
+			bool L_3 = Enumerator_MoveNext_m774CA65723516595B6E22D200D19ADBE8C3E7969((Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *)(&V_0), /*hidden argument*/Enumerator_MoveNext_m774CA65723516595B6E22D200D19ADBE8C3E7969_RuntimeMethod_var);
+			if (L_3)
+			{
+				goto IL_000e;
+			}
+		}
+
+IL_0024:
+		{
+			IL2CPP_LEAVE(0x34, FINALLY_0026);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
 	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_0026;
+	}
+
+FINALLY_0026:
+	{ // begin finally (depth: 1)
+		Enumerator_Dispose_m0C9F007B48F37CD7F09430C3C1B407ACE6213812((Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053 *)(&V_0), /*hidden argument*/Enumerator_Dispose_m0C9F007B48F37CD7F09430C3C1B407ACE6213812_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(38)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(38)
+	{
+		IL2CPP_JUMP_TBL(0x34, IL_0034)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+	}
+
+IL_0034:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UIController::DeactivateNavButton(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateNavButton_m4F8A7FFCA081F1A46F7EF21AC3EC438874B4D9AD (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, int32_t ___btnNum0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UIController_DeactivateNavButton_m4F8A7FFCA081F1A46F7EF21AC3EC438874B4D9AD_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// navList[btnNum].SetActive(false);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_navList_24();
+		int32_t L_1 = ___btnNum0;
+		NullCheck(L_0);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_2 = List_1_get_Item_m7E9242F4E09BA130375174050CE83F9A3C3296E8(L_0, L_1, /*hidden argument*/List_1_get_Item_m7E9242F4E09BA130375174050CE83F9A3C3296E8_RuntimeMethod_var);
+		NullCheck(L_2);
+		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_2, (bool)0, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void UIController::ActivateIcon(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void UIController_ActivateIcon_mC040550C2D2A8E2E9C20D38B722E391E2C7CA989 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, int32_t ___iconNum0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UIController_ActivateIcon_mC040550C2D2A8E2E9C20D38B722E391E2C7CA989_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// iconList[iconNum].SetActive(true);
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_iconList_30();
+		int32_t L_1 = ___iconNum0;
+		NullCheck(L_0);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_2 = List_1_get_Item_m7E9242F4E09BA130375174050CE83F9A3C3296E8(L_0, L_1, /*hidden argument*/List_1_get_Item_m7E9242F4E09BA130375174050CE83F9A3C3296E8_RuntimeMethod_var);
+		NullCheck(L_2);
+		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_2, (bool)1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -15972,13 +16623,27 @@ IL_001d:
 // System.Void UIController::MainView()
 extern "C" IL2CPP_METHOD_ATTR void UIController_MainView_mC741491CFC9FA0518D36C00B66CC5754C9D7D0B1 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (UIController_MainView_mC741491CFC9FA0518D36C00B66CC5754C9D7D0B1_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
 	{
 		// DeactivateAllViews();
 		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
-		// ActivateView(0);
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 0, /*hidden argument*/NULL);
-		// ActivateView(7); //temp
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 7, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(categoryView));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = __this->get_categoryView_11();
+		NullCheck(L_0);
+		int32_t L_2 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_0, L_1, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_2, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(facePane));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_3 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = __this->get_facePane_6();
+		NullCheck(L_3);
+		int32_t L_5 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_3, L_4, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_5, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -15986,13 +16651,47 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_MainView_mC741491CFC9FA0518D36C0
 // System.Void UIController::UsernameView()
 extern "C" IL2CPP_METHOD_ATTR void UIController_UsernameView_m5D0E46F230BAC437A4F1D741E3CACFAA5E09401B (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// DeactivateAllViews();
-		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
-		// ActivateView(1);
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 1, /*hidden argument*/NULL);
-		// ActivateView(6); //temp
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
+		il2cpp_codegen_initialize_method (UIController_UsernameView_m5D0E46F230BAC437A4F1D741E3CACFAA5E09401B_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// DeactivateAll();
+		UIController_DeactivateAll_m8AB6786CAFADD0C939724E58DA194CA09F09BE67(__this, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(usernameView));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = __this->get_usernameView_12();
+		NullCheck(L_0);
+		int32_t L_2 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_0, L_1, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_2, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(centerFacePane));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_3 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = __this->get_centerFacePane_7();
+		NullCheck(L_3);
+		int32_t L_5 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_3, L_4, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_5, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(navBar));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_6 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = __this->get_navBar_9();
+		NullCheck(L_6);
+		int32_t L_8 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_6, L_7, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_8, /*hidden argument*/NULL);
+		// ActivateAllNavButtons();
+		UIController_ActivateAllNavButtons_mC41988154639997D531390157103CB92637AFF63(__this, /*hidden argument*/NULL);
+		// DeactivateNavButton(navList.IndexOf(usernameButton));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_9 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_10 = __this->get_usernameButton_19();
+		NullCheck(L_9);
+		int32_t L_11 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_9, L_10, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_DeactivateNavButton_m4F8A7FFCA081F1A46F7EF21AC3EC438874B4D9AD(__this, L_11, /*hidden argument*/NULL);
+		// ActivateIcon(iconList.IndexOf(usernameIcon));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_12 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = __this->get_usernameIcon_25();
+		NullCheck(L_12);
+		int32_t L_14 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_12, L_13, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateIcon_mC040550C2D2A8E2E9C20D38B722E391E2C7CA989(__this, L_14, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -16000,13 +16699,47 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_UsernameView_m5D0E46F230BAC437A4
 // System.Void UIController::PersonalView()
 extern "C" IL2CPP_METHOD_ATTR void UIController_PersonalView_m005F2FA65837D9FC8E932513EFEA5D98884A3F41 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// DeactivateAllViews();
-		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
-		// ActivateView(2);
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 2, /*hidden argument*/NULL);
-		// ActivateView(6); //temp
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
+		il2cpp_codegen_initialize_method (UIController_PersonalView_m005F2FA65837D9FC8E932513EFEA5D98884A3F41_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// DeactivateAll();
+		UIController_DeactivateAll_m8AB6786CAFADD0C939724E58DA194CA09F09BE67(__this, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(personalView));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = __this->get_personalView_13();
+		NullCheck(L_0);
+		int32_t L_2 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_0, L_1, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_2, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(centerFacePane));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_3 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = __this->get_centerFacePane_7();
+		NullCheck(L_3);
+		int32_t L_5 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_3, L_4, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_5, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(navBar));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_6 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = __this->get_navBar_9();
+		NullCheck(L_6);
+		int32_t L_8 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_6, L_7, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_8, /*hidden argument*/NULL);
+		// ActivateAllNavButtons();
+		UIController_ActivateAllNavButtons_mC41988154639997D531390157103CB92637AFF63(__this, /*hidden argument*/NULL);
+		// DeactivateNavButton(navList.IndexOf(personalButton));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_9 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_10 = __this->get_personalButton_20();
+		NullCheck(L_9);
+		int32_t L_11 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_9, L_10, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_DeactivateNavButton_m4F8A7FFCA081F1A46F7EF21AC3EC438874B4D9AD(__this, L_11, /*hidden argument*/NULL);
+		// ActivateIcon(iconList.IndexOf(personalIcon));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_12 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = __this->get_personalIcon_26();
+		NullCheck(L_12);
+		int32_t L_14 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_12, L_13, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateIcon_mC040550C2D2A8E2E9C20D38B722E391E2C7CA989(__this, L_14, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -16014,13 +16747,47 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_PersonalView_m005F2FA65837D9FC8E
 // System.Void UIController::FinancialView()
 extern "C" IL2CPP_METHOD_ATTR void UIController_FinancialView_m39AFD524E940FD0FF16BD156EC26C216B5F689CB (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// DeactivateAllViews();
-		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
-		// ActivateView(3);
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 3, /*hidden argument*/NULL);
-		// ActivateView(6); //temp
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
+		il2cpp_codegen_initialize_method (UIController_FinancialView_m39AFD524E940FD0FF16BD156EC26C216B5F689CB_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// DeactivateAll();
+		UIController_DeactivateAll_m8AB6786CAFADD0C939724E58DA194CA09F09BE67(__this, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(financialView));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = __this->get_financialView_14();
+		NullCheck(L_0);
+		int32_t L_2 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_0, L_1, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_2, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(centerFacePane));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_3 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = __this->get_centerFacePane_7();
+		NullCheck(L_3);
+		int32_t L_5 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_3, L_4, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_5, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(navBar));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_6 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = __this->get_navBar_9();
+		NullCheck(L_6);
+		int32_t L_8 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_6, L_7, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_8, /*hidden argument*/NULL);
+		// ActivateAllNavButtons();
+		UIController_ActivateAllNavButtons_mC41988154639997D531390157103CB92637AFF63(__this, /*hidden argument*/NULL);
+		// DeactivateNavButton(navList.IndexOf(financialButton));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_9 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_10 = __this->get_financialButton_21();
+		NullCheck(L_9);
+		int32_t L_11 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_9, L_10, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_DeactivateNavButton_m4F8A7FFCA081F1A46F7EF21AC3EC438874B4D9AD(__this, L_11, /*hidden argument*/NULL);
+		// ActivateIcon(iconList.IndexOf(financialIcon));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_12 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = __this->get_financialIcon_27();
+		NullCheck(L_12);
+		int32_t L_14 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_12, L_13, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateIcon_mC040550C2D2A8E2E9C20D38B722E391E2C7CA989(__this, L_14, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -16028,13 +16795,47 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_FinancialView_m39AFD524E940FD0FF
 // System.Void UIController::InterestsView()
 extern "C" IL2CPP_METHOD_ATTR void UIController_InterestsView_mF212BD90509EE12B4E9593F15C3AD82A1452B242 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// DeactivateAllViews();
-		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
-		// ActivateView(4);
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 4, /*hidden argument*/NULL);
-		// ActivateView(6); //temp
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
+		il2cpp_codegen_initialize_method (UIController_InterestsView_mF212BD90509EE12B4E9593F15C3AD82A1452B242_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// DeactivateAll();
+		UIController_DeactivateAll_m8AB6786CAFADD0C939724E58DA194CA09F09BE67(__this, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(interestsView));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = __this->get_interestsView_15();
+		NullCheck(L_0);
+		int32_t L_2 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_0, L_1, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_2, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(centerFacePane));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_3 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = __this->get_centerFacePane_7();
+		NullCheck(L_3);
+		int32_t L_5 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_3, L_4, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_5, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(navBar));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_6 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = __this->get_navBar_9();
+		NullCheck(L_6);
+		int32_t L_8 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_6, L_7, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_8, /*hidden argument*/NULL);
+		// ActivateAllNavButtons();
+		UIController_ActivateAllNavButtons_mC41988154639997D531390157103CB92637AFF63(__this, /*hidden argument*/NULL);
+		// DeactivateNavButton(navList.IndexOf(interestsButton));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_9 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_10 = __this->get_interestsButton_22();
+		NullCheck(L_9);
+		int32_t L_11 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_9, L_10, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_DeactivateNavButton_m4F8A7FFCA081F1A46F7EF21AC3EC438874B4D9AD(__this, L_11, /*hidden argument*/NULL);
+		// ActivateIcon(iconList.IndexOf(interestsIcon));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_12 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = __this->get_interestsIcon_28();
+		NullCheck(L_12);
+		int32_t L_14 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_12, L_13, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateIcon_mC040550C2D2A8E2E9C20D38B722E391E2C7CA989(__this, L_14, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -16042,28 +16843,47 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_InterestsView_mF212BD90509EE12B4
 // System.Void UIController::ConnectionsView()
 extern "C" IL2CPP_METHOD_ATTR void UIController_ConnectionsView_mF2CA9C72B7F57CABFEF6BE71AB845530685C5350 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// DeactivateAllViews();
-		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
-		// ActivateView(5);
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 5, /*hidden argument*/NULL);
-		// ActivateView(6); //temp
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
-		// }
-		return;
+		il2cpp_codegen_initialize_method (UIController_ConnectionsView_mF2CA9C72B7F57CABFEF6BE71AB845530685C5350_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
 	}
-}
-// System.Void UIController::UsernamePreviousView()
-extern "C" IL2CPP_METHOD_ATTR void UIController_UsernamePreviousView_m84BB977414FB5786955E37C1FB8804A523FDAD36 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
-{
 	{
-		// DeactivateAllViews();
-		UIController_DeactivateAllViews_mD4964BBC63BB7C30A720816E7351532EF1E84EC8(__this, /*hidden argument*/NULL);
-		// ActivateView(currentView);
-		int32_t L_0 = __this->get_currentView_6();
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_0, /*hidden argument*/NULL);
-		// ActivateView(6); //temp
-		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, 6, /*hidden argument*/NULL);
+		// DeactivateAll();
+		UIController_DeactivateAll_m8AB6786CAFADD0C939724E58DA194CA09F09BE67(__this, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(connectionsView));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = __this->get_connectionsView_16();
+		NullCheck(L_0);
+		int32_t L_2 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_0, L_1, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_2, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(rightScoreFacePane));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_3 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = __this->get_rightScoreFacePane_8();
+		NullCheck(L_3);
+		int32_t L_5 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_3, L_4, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_5, /*hidden argument*/NULL);
+		// ActivateView(viewList.IndexOf(navBar));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_6 = __this->get_viewList_17();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_7 = __this->get_navBar_9();
+		NullCheck(L_6);
+		int32_t L_8 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_6, L_7, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_8, /*hidden argument*/NULL);
+		// ActivateAllNavButtons();
+		UIController_ActivateAllNavButtons_mC41988154639997D531390157103CB92637AFF63(__this, /*hidden argument*/NULL);
+		// DeactivateNavButton(navList.IndexOf(connectionsButton));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_9 = __this->get_navList_24();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_10 = __this->get_connectionsButton_23();
+		NullCheck(L_9);
+		int32_t L_11 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_9, L_10, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_DeactivateNavButton_m4F8A7FFCA081F1A46F7EF21AC3EC438874B4D9AD(__this, L_11, /*hidden argument*/NULL);
+		// ActivateIcon(iconList.IndexOf(connectionsIcon));
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_12 = __this->get_iconList_30();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = __this->get_connectionsIcon_29();
+		NullCheck(L_12);
+		int32_t L_14 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_12, L_13, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
+		UIController_ActivateIcon_mC040550C2D2A8E2E9C20D38B722E391E2C7CA989(__this, L_14, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -16073,7 +16893,7 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_SaveResults_m15C0AA855C0AD6FED3E
 {
 	{
 		// mainUI.SetActive(false);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_mainUI_4();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_mainUI_5();
 		NullCheck(L_0);
 		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_0, (bool)0, /*hidden argument*/NULL);
 		// }
@@ -16085,7 +16905,7 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_DiscardResults_m29C61A2994FE2026
 {
 	{
 		// mainUI.SetActive(false);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_mainUI_4();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_mainUI_5();
 		NullCheck(L_0);
 		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_0, (bool)0, /*hidden argument*/NULL);
 		// }
@@ -16102,12 +16922,18 @@ extern "C" IL2CPP_METHOD_ATTR void UIController__ctor_m2957FB6041970C1305D4DED3E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// public List<GameObject> viewList = new List<GameObject>();
+		// List<GameObject> viewList = new List<GameObject>();
 		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_0 = (List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 *)il2cpp_codegen_object_new(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0_il2cpp_TypeInfo_var);
 		List_1__ctor_m70B8A20433AEEDEB942CD3EEC229497AB693E9D6(L_0, /*hidden argument*/List_1__ctor_m70B8A20433AEEDEB942CD3EEC229497AB693E9D6_RuntimeMethod_var);
-		__this->set_viewList_5(L_0);
-		// int currentView = -1;
-		__this->set_currentView_6((-1));
+		__this->set_viewList_17(L_0);
+		// List<GameObject> navList = new List<GameObject>();
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_1 = (List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 *)il2cpp_codegen_object_new(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0_il2cpp_TypeInfo_var);
+		List_1__ctor_m70B8A20433AEEDEB942CD3EEC229497AB693E9D6(L_1, /*hidden argument*/List_1__ctor_m70B8A20433AEEDEB942CD3EEC229497AB693E9D6_RuntimeMethod_var);
+		__this->set_navList_24(L_1);
+		// List<GameObject> iconList = new List<GameObject>();
+		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_2 = (List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 *)il2cpp_codegen_object_new(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0_il2cpp_TypeInfo_var);
+		List_1__ctor_m70B8A20433AEEDEB942CD3EEC229497AB693E9D6(L_2, /*hidden argument*/List_1__ctor_m70B8A20433AEEDEB942CD3EEC229497AB693E9D6_RuntimeMethod_var);
+		__this->set_iconList_30(L_2);
 		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
 		return;
 	}

@@ -1742,48 +1742,302 @@ public:
 struct  UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
-	// UnityEngine.GameObject UIController::mainUI
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___mainUI_4;
-	// System.Collections.Generic.List`1<UnityEngine.GameObject> UIController::viewList
-	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___viewList_5;
-	// System.Int32 UIController::currentView
-	int32_t ___currentView_6;
 	// System.Single UIController::categoryViewTime
-	float ___categoryViewTime_7;
+	float ___categoryViewTime_4;
+	// UnityEngine.GameObject UIController::mainUI
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___mainUI_5;
+	// UnityEngine.GameObject UIController::facePane
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___facePane_6;
+	// UnityEngine.GameObject UIController::centerFacePane
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___centerFacePane_7;
+	// UnityEngine.GameObject UIController::rightScoreFacePane
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___rightScoreFacePane_8;
+	// UnityEngine.GameObject UIController::navBar
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___navBar_9;
+	// UnityEngine.GameObject UIController::backgroundScreen
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___backgroundScreen_10;
+	// UnityEngine.GameObject UIController::categoryView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___categoryView_11;
+	// UnityEngine.GameObject UIController::usernameView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___usernameView_12;
+	// UnityEngine.GameObject UIController::personalView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___personalView_13;
+	// UnityEngine.GameObject UIController::financialView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___financialView_14;
+	// UnityEngine.GameObject UIController::interestsView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___interestsView_15;
+	// UnityEngine.GameObject UIController::connectionsView
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___connectionsView_16;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> UIController::viewList
+	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___viewList_17;
+	// UnityEngine.GameObject UIController::categoryButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___categoryButton_18;
+	// UnityEngine.GameObject UIController::usernameButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___usernameButton_19;
+	// UnityEngine.GameObject UIController::personalButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___personalButton_20;
+	// UnityEngine.GameObject UIController::financialButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___financialButton_21;
+	// UnityEngine.GameObject UIController::interestsButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___interestsButton_22;
+	// UnityEngine.GameObject UIController::connectionsButton
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___connectionsButton_23;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> UIController::navList
+	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___navList_24;
+	// UnityEngine.GameObject UIController::usernameIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___usernameIcon_25;
+	// UnityEngine.GameObject UIController::personalIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___personalIcon_26;
+	// UnityEngine.GameObject UIController::financialIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___financialIcon_27;
+	// UnityEngine.GameObject UIController::interestsIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___interestsIcon_28;
+	// UnityEngine.GameObject UIController::connectionsIcon
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___connectionsIcon_29;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> UIController::iconList
+	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___iconList_30;
 
 public:
-	inline static int32_t get_offset_of_mainUI_4() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___mainUI_4)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_mainUI_4() const { return ___mainUI_4; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_mainUI_4() { return &___mainUI_4; }
-	inline void set_mainUI_4(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_categoryViewTime_4() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___categoryViewTime_4)); }
+	inline float get_categoryViewTime_4() const { return ___categoryViewTime_4; }
+	inline float* get_address_of_categoryViewTime_4() { return &___categoryViewTime_4; }
+	inline void set_categoryViewTime_4(float value)
 	{
-		___mainUI_4 = value;
-		Il2CppCodeGenWriteBarrier((&___mainUI_4), value);
+		___categoryViewTime_4 = value;
 	}
 
-	inline static int32_t get_offset_of_viewList_5() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___viewList_5)); }
-	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_viewList_5() const { return ___viewList_5; }
-	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_viewList_5() { return &___viewList_5; }
-	inline void set_viewList_5(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	inline static int32_t get_offset_of_mainUI_5() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___mainUI_5)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_mainUI_5() const { return ___mainUI_5; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_mainUI_5() { return &___mainUI_5; }
+	inline void set_mainUI_5(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___viewList_5 = value;
-		Il2CppCodeGenWriteBarrier((&___viewList_5), value);
+		___mainUI_5 = value;
+		Il2CppCodeGenWriteBarrier((&___mainUI_5), value);
 	}
 
-	inline static int32_t get_offset_of_currentView_6() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___currentView_6)); }
-	inline int32_t get_currentView_6() const { return ___currentView_6; }
-	inline int32_t* get_address_of_currentView_6() { return &___currentView_6; }
-	inline void set_currentView_6(int32_t value)
+	inline static int32_t get_offset_of_facePane_6() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___facePane_6)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_facePane_6() const { return ___facePane_6; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_facePane_6() { return &___facePane_6; }
+	inline void set_facePane_6(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___currentView_6 = value;
+		___facePane_6 = value;
+		Il2CppCodeGenWriteBarrier((&___facePane_6), value);
 	}
 
-	inline static int32_t get_offset_of_categoryViewTime_7() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___categoryViewTime_7)); }
-	inline float get_categoryViewTime_7() const { return ___categoryViewTime_7; }
-	inline float* get_address_of_categoryViewTime_7() { return &___categoryViewTime_7; }
-	inline void set_categoryViewTime_7(float value)
+	inline static int32_t get_offset_of_centerFacePane_7() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___centerFacePane_7)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_centerFacePane_7() const { return ___centerFacePane_7; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_centerFacePane_7() { return &___centerFacePane_7; }
+	inline void set_centerFacePane_7(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___categoryViewTime_7 = value;
+		___centerFacePane_7 = value;
+		Il2CppCodeGenWriteBarrier((&___centerFacePane_7), value);
+	}
+
+	inline static int32_t get_offset_of_rightScoreFacePane_8() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___rightScoreFacePane_8)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_rightScoreFacePane_8() const { return ___rightScoreFacePane_8; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_rightScoreFacePane_8() { return &___rightScoreFacePane_8; }
+	inline void set_rightScoreFacePane_8(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___rightScoreFacePane_8 = value;
+		Il2CppCodeGenWriteBarrier((&___rightScoreFacePane_8), value);
+	}
+
+	inline static int32_t get_offset_of_navBar_9() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___navBar_9)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_navBar_9() const { return ___navBar_9; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_navBar_9() { return &___navBar_9; }
+	inline void set_navBar_9(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___navBar_9 = value;
+		Il2CppCodeGenWriteBarrier((&___navBar_9), value);
+	}
+
+	inline static int32_t get_offset_of_backgroundScreen_10() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___backgroundScreen_10)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_backgroundScreen_10() const { return ___backgroundScreen_10; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_backgroundScreen_10() { return &___backgroundScreen_10; }
+	inline void set_backgroundScreen_10(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___backgroundScreen_10 = value;
+		Il2CppCodeGenWriteBarrier((&___backgroundScreen_10), value);
+	}
+
+	inline static int32_t get_offset_of_categoryView_11() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___categoryView_11)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_categoryView_11() const { return ___categoryView_11; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_categoryView_11() { return &___categoryView_11; }
+	inline void set_categoryView_11(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___categoryView_11 = value;
+		Il2CppCodeGenWriteBarrier((&___categoryView_11), value);
+	}
+
+	inline static int32_t get_offset_of_usernameView_12() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___usernameView_12)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_usernameView_12() const { return ___usernameView_12; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_usernameView_12() { return &___usernameView_12; }
+	inline void set_usernameView_12(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___usernameView_12 = value;
+		Il2CppCodeGenWriteBarrier((&___usernameView_12), value);
+	}
+
+	inline static int32_t get_offset_of_personalView_13() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___personalView_13)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_personalView_13() const { return ___personalView_13; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_personalView_13() { return &___personalView_13; }
+	inline void set_personalView_13(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___personalView_13 = value;
+		Il2CppCodeGenWriteBarrier((&___personalView_13), value);
+	}
+
+	inline static int32_t get_offset_of_financialView_14() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___financialView_14)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_financialView_14() const { return ___financialView_14; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_financialView_14() { return &___financialView_14; }
+	inline void set_financialView_14(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___financialView_14 = value;
+		Il2CppCodeGenWriteBarrier((&___financialView_14), value);
+	}
+
+	inline static int32_t get_offset_of_interestsView_15() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___interestsView_15)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_interestsView_15() const { return ___interestsView_15; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_interestsView_15() { return &___interestsView_15; }
+	inline void set_interestsView_15(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___interestsView_15 = value;
+		Il2CppCodeGenWriteBarrier((&___interestsView_15), value);
+	}
+
+	inline static int32_t get_offset_of_connectionsView_16() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___connectionsView_16)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_connectionsView_16() const { return ___connectionsView_16; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_connectionsView_16() { return &___connectionsView_16; }
+	inline void set_connectionsView_16(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___connectionsView_16 = value;
+		Il2CppCodeGenWriteBarrier((&___connectionsView_16), value);
+	}
+
+	inline static int32_t get_offset_of_viewList_17() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___viewList_17)); }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_viewList_17() const { return ___viewList_17; }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_viewList_17() { return &___viewList_17; }
+	inline void set_viewList_17(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	{
+		___viewList_17 = value;
+		Il2CppCodeGenWriteBarrier((&___viewList_17), value);
+	}
+
+	inline static int32_t get_offset_of_categoryButton_18() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___categoryButton_18)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_categoryButton_18() const { return ___categoryButton_18; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_categoryButton_18() { return &___categoryButton_18; }
+	inline void set_categoryButton_18(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___categoryButton_18 = value;
+		Il2CppCodeGenWriteBarrier((&___categoryButton_18), value);
+	}
+
+	inline static int32_t get_offset_of_usernameButton_19() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___usernameButton_19)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_usernameButton_19() const { return ___usernameButton_19; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_usernameButton_19() { return &___usernameButton_19; }
+	inline void set_usernameButton_19(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___usernameButton_19 = value;
+		Il2CppCodeGenWriteBarrier((&___usernameButton_19), value);
+	}
+
+	inline static int32_t get_offset_of_personalButton_20() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___personalButton_20)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_personalButton_20() const { return ___personalButton_20; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_personalButton_20() { return &___personalButton_20; }
+	inline void set_personalButton_20(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___personalButton_20 = value;
+		Il2CppCodeGenWriteBarrier((&___personalButton_20), value);
+	}
+
+	inline static int32_t get_offset_of_financialButton_21() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___financialButton_21)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_financialButton_21() const { return ___financialButton_21; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_financialButton_21() { return &___financialButton_21; }
+	inline void set_financialButton_21(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___financialButton_21 = value;
+		Il2CppCodeGenWriteBarrier((&___financialButton_21), value);
+	}
+
+	inline static int32_t get_offset_of_interestsButton_22() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___interestsButton_22)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_interestsButton_22() const { return ___interestsButton_22; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_interestsButton_22() { return &___interestsButton_22; }
+	inline void set_interestsButton_22(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___interestsButton_22 = value;
+		Il2CppCodeGenWriteBarrier((&___interestsButton_22), value);
+	}
+
+	inline static int32_t get_offset_of_connectionsButton_23() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___connectionsButton_23)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_connectionsButton_23() const { return ___connectionsButton_23; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_connectionsButton_23() { return &___connectionsButton_23; }
+	inline void set_connectionsButton_23(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___connectionsButton_23 = value;
+		Il2CppCodeGenWriteBarrier((&___connectionsButton_23), value);
+	}
+
+	inline static int32_t get_offset_of_navList_24() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___navList_24)); }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_navList_24() const { return ___navList_24; }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_navList_24() { return &___navList_24; }
+	inline void set_navList_24(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	{
+		___navList_24 = value;
+		Il2CppCodeGenWriteBarrier((&___navList_24), value);
+	}
+
+	inline static int32_t get_offset_of_usernameIcon_25() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___usernameIcon_25)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_usernameIcon_25() const { return ___usernameIcon_25; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_usernameIcon_25() { return &___usernameIcon_25; }
+	inline void set_usernameIcon_25(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___usernameIcon_25 = value;
+		Il2CppCodeGenWriteBarrier((&___usernameIcon_25), value);
+	}
+
+	inline static int32_t get_offset_of_personalIcon_26() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___personalIcon_26)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_personalIcon_26() const { return ___personalIcon_26; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_personalIcon_26() { return &___personalIcon_26; }
+	inline void set_personalIcon_26(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___personalIcon_26 = value;
+		Il2CppCodeGenWriteBarrier((&___personalIcon_26), value);
+	}
+
+	inline static int32_t get_offset_of_financialIcon_27() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___financialIcon_27)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_financialIcon_27() const { return ___financialIcon_27; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_financialIcon_27() { return &___financialIcon_27; }
+	inline void set_financialIcon_27(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___financialIcon_27 = value;
+		Il2CppCodeGenWriteBarrier((&___financialIcon_27), value);
+	}
+
+	inline static int32_t get_offset_of_interestsIcon_28() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___interestsIcon_28)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_interestsIcon_28() const { return ___interestsIcon_28; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_interestsIcon_28() { return &___interestsIcon_28; }
+	inline void set_interestsIcon_28(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___interestsIcon_28 = value;
+		Il2CppCodeGenWriteBarrier((&___interestsIcon_28), value);
+	}
+
+	inline static int32_t get_offset_of_connectionsIcon_29() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___connectionsIcon_29)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_connectionsIcon_29() const { return ___connectionsIcon_29; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_connectionsIcon_29() { return &___connectionsIcon_29; }
+	inline void set_connectionsIcon_29(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___connectionsIcon_29 = value;
+		Il2CppCodeGenWriteBarrier((&___connectionsIcon_29), value);
+	}
+
+	inline static int32_t get_offset_of_iconList_30() { return static_cast<int32_t>(offsetof(UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE, ___iconList_30)); }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_iconList_30() const { return ___iconList_30; }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_iconList_30() { return &___iconList_30; }
+	inline void set_iconList_30(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	{
+		___iconList_30 = value;
+		Il2CppCodeGenWriteBarrier((&___iconList_30), value);
 	}
 };
 
@@ -1997,12 +2251,35 @@ extern const int32_t g_FieldOffsetTable5618[3] =
 	TransactionData_t0EDA406D91CF35E2E5D734196635B1FA9CB706B2::get_offset_of_date_2(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5619 = { sizeof (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5619[4] = 
+extern const int32_t g_FieldOffsetTable5619[27] = 
 {
-	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_mainUI_4(),
-	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_viewList_5(),
-	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_currentView_6(),
-	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_categoryViewTime_7(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_categoryViewTime_4(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_mainUI_5(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_facePane_6(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_centerFacePane_7(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_rightScoreFacePane_8(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_navBar_9(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_backgroundScreen_10(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_categoryView_11(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_usernameView_12(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_personalView_13(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_financialView_14(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_interestsView_15(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_connectionsView_16(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_viewList_17(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_categoryButton_18(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_usernameButton_19(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_personalButton_20(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_financialButton_21(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_interestsButton_22(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_connectionsButton_23(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_navList_24(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_usernameIcon_25(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_personalIcon_26(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_financialIcon_27(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_interestsIcon_28(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_connectionsIcon_29(),
+	UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE::get_offset_of_iconList_30(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5620 = { sizeof (UsernameController_tA1F127FC624B39B349EC5ABD2B2D5939321CAE06), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable5620[2] = 
