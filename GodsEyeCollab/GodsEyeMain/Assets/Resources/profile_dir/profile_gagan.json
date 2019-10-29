@@ -1,6 +1,6 @@
 ﻿{
-    "id": "gagan",
-    "first_name": "Gagan",
+    "id": "gagan_vasudev",
+    "first_name": "Sidak",
     "last_name": "Vasudev",
 
     "personal_info": {
@@ -30,7 +30,7 @@
             "city": "Los Angeles",
             "state": "CA",
             "country": "USA",
-            "zipcode": 90031,
+            "zipcode": 90007,
             "latitude": 34.029631,
             "longitude": -118.287778
         },
@@ -50,6 +50,7 @@
         "position": "Software Developer",
         "location": "Seattle, WA",
         "salary": 120000,
+        "salary_string": "120,000",
         "venmo_tx": [
             {
                 "amount": "$20",
@@ -60,18 +61,6 @@
             {
                 "amount": "$50",
                 "recipient": "Yatin Gupta",
-                "payer": "Gagan",
-                "date": "11th Oct 2019"
-            },
-			{
-                "amount": "$150",
-                "recipient": "Yash Patel",
-                "payer": "Gagan",
-                "date": "11th Oct 2019"
-            },
-			{
-                "amount": "$90",
-                "recipient": "Victor",
                 "payer": "Gagan",
                 "date": "11th Oct 2019"
             }
@@ -92,10 +81,22 @@
             }
         ],
         "social_media_friends": [
-            "Jack Smith",
-            "John Robert",
-            "Ram Yadav",
-            "lizzy Bennete"
+            {
+                "name": "Jack Smith",
+                "url": "https://www.imdb.com/name/nm0705356/mediaviewer/rm2542132992"
+            },
+            {
+                "name": "John Robert",
+                "url": "https://www.imdb.com/name/nm0705356/mediaviewer/rm2542132992"
+            },
+            {
+                "name": "JRam Yadav",
+                "url": "https://www.imdb.com/name/nm0705356/mediaviewer/rm2542132992"
+            },
+            {
+                "name": "lizzy Bennete",
+                "url": "https://www.imdb.com/name/nm1083271/mediaviewer/rm2289928448"
+            }
         ]
     },
 
@@ -131,17 +132,22 @@
                 "time": "20:00"
             },
             {
-                "location": "Universal Studio, LA",
-                "date": "13th Oct 2019",
+                "location": "Santa Monica",
+                "date": "27th Oct 2019",
                 "time": "14:45"
             },
             {
-                "location": "The Grove, LA",
-                "date": "18th Oct 2019",
-                "time": "20:00"
+                "location": "Cinematic Arts",
+                "date": "28th Oct 2019",
+                "time": "14:00"
             }
+        ],
+        "recent_likes": [
+            "University of Southern California",
+            "Universal Studios",
+            "Batman: The Dark Knight",
+            "Apple Macbook Pro"
         ]
     }
 
 }
-

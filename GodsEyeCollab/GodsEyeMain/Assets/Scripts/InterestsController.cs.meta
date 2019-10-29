@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4c025399846364b61afebc1ab7de6dab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - checkinsPrefab: {fileID: 468697549095764243, guid: ff1a9882dc09ffe45b501e6928f23f7d,
+      type: 3}
+  - checkinlocation: {instanceID: 0}
+  - likesPrefab: {instanceID: 0}
+  - likesLocation: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1985,6 +1985,21 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5294414319296391786, guid: 6ff51a6c0a1178c4e8345f2daa7a6ed4,
+        type: 3}
+      propertyPath: m_TagString
+      value: CompanyName
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584523986194816891, guid: 6ff51a6c0a1178c4e8345f2daa7a6ed4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Salary
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912682740468289201, guid: 6ff51a6c0a1178c4e8345f2daa7a6ed4,
+        type: 3}
+      propertyPath: m_TagString
+      value: CompanyPosition
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff51a6c0a1178c4e8345f2daa7a6ed4, type: 3}
 --- !u!4 &530347891 stripped
@@ -3269,6 +3284,12 @@ Transform:
   m_Father: {fileID: 1384397862}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &648964853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6922060550532441844, guid: 70518bbba5e9f534da014b7ca7aac948,
+    type: 3}
+  m_PrefabInstance: {fileID: 1184648203}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &654951793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,6 +3424,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4861840672676402709}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1109534299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6922060550333897188, guid: 70518bbba5e9f534da014b7ca7aac948,
+    type: 3}
+  m_PrefabInstance: {fileID: 1184648203}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1158248292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3485,7 +3512,7 @@ PrefabInstance:
     - target: {fileID: 6922060548908307079, guid: 70518bbba5e9f534da014b7ca7aac948,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 872769595307491375, guid: 70518bbba5e9f534da014b7ca7aac948,
         type: 3}
@@ -7094,6 +7121,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1184648203}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1726396917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726396916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c025399846364b61afebc1ab7de6dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkinsPrefab: {fileID: 468697549095764243, guid: ff1a9882dc09ffe45b501e6928f23f7d,
+    type: 3}
+  checkinlocation: {fileID: 648964853}
+  likesPrefab: {fileID: 468697549095764243, guid: 5c181a779b27df04a806a8ba51fa10c2,
+    type: 3}
+  likesLocation: {fileID: 1109534299}
 --- !u!1 &1741454216 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 318590081828966820, guid: 2b76b98d2f1b2f14ba7abe486651a061,
