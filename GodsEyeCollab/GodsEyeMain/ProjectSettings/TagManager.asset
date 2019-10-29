@@ -11,6 +11,7 @@ TagManager:
   - CompanyName
   - CompanyPosition
   - Salary
+  - RelationshipStatus
   layers:
   - Default
   - TransparentFX

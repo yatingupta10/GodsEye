@@ -485,7 +485,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jane S. Doe
+  m_text: JRam Yadav
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1cf3304555552546a7e0c07d375e8f9, type: 2}
   m_sharedMaterial: {fileID: 21304987100871110, guid: f1cf3304555552546a7e0c07d375e8f9,
@@ -602,7 +602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8680839362990324440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2339574398759801942}

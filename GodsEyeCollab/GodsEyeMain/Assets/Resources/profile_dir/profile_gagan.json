@@ -68,34 +68,41 @@
     },
 
     "connections": {
-        "relationshit_status": "Married",
+        "relationship_status": "Married",
         "no_of_dependents": 2,
         "family_members": [
             {
                 "name": "Daniel",
-                "relation": "brother"
+                "relation": "brother",
+                "url": "daniel"
             },
             {
                 "name": "megan",
-                "relation": "wife"
+                "relation": "wife",
+                "url": "megan"
+            },
+            {
+                "name": "Amy",
+                "relation": "sister",
+                "url": "amy"
             }
         ],
         "social_media_friends": [
             {
                 "name": "Jack Smith",
-                "url": "https://www.imdb.com/name/nm0705356/mediaviewer/rm2542132992"
+                "url": "jack"
             },
             {
                 "name": "John Robert",
-                "url": "https://www.imdb.com/name/nm0705356/mediaviewer/rm2542132992"
+                "url": "john"
             },
             {
                 "name": "JRam Yadav",
-                "url": "https://www.imdb.com/name/nm0705356/mediaviewer/rm2542132992"
+                "url": "jram"
             },
             {
                 "name": "lizzy Bennete",
-                "url": "https://www.imdb.com/name/nm1083271/mediaviewer/rm2289928448"
+                "url": "jack"
             }
         ]
     },
