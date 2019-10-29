@@ -107,6 +107,10 @@ public class RecentTransactionsController : MonoBehaviour
         for (int k = 1; k < lowerLocation.transform.childCount; k++){
             lowerLocation.transform.GetChild(k).gameObject.SetActive(false);
         }
+
+        if (numTransactions < 3){
+            toggleDownButton(false);
+        }
     }
 
     //display the next transaction and move the bottom one to the top

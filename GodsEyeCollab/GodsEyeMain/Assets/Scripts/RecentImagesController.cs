@@ -62,6 +62,10 @@ public class RecentImagesController : MonoBehaviour
                 ImageBaseLocation.transform.GetChild(i).gameObject.SetActive(false);
             }
         }
+
+        if (numImages < 2){
+            toggleForwardButton(false);
+        }
     }
 
     //display the next image in the sequence
