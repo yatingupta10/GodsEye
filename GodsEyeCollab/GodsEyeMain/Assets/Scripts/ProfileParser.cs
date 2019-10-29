@@ -68,6 +68,7 @@ class ProfileParser
         public string position { get; set; }
         public string location { get; set; }
         public int salary { get; set; }
+        public string salary_string { get; set; }
         public List<VenmoTx> venmo_tx { get; set; }
     }
 
@@ -75,14 +76,21 @@ class ProfileParser
     {
         public string name { get; set; }
         public string relation { get; set; }
+        public string url { get; set; }
+    }
+
+    public class SocialMediaFriend
+    {
+        public string name { get; set; }
+        public string url { get; set; }
     }
 
     public class Connections
     {
-        public string relationshit_status { get; set; }
+        public string relationship_status { get; set; }
         public int no_of_dependents { get; set; }
         public List<FamilyMember> family_members { get; set; }
-        public List<string> social_media_friends { get; set; }
+        public List<SocialMediaFriend> social_media_friends { get; set; }
     }
 
     public class Facebook
@@ -127,6 +135,7 @@ class ProfileParser
     public class InterestsInfo
     {
         public List<Checkin> checkins { get; set; }
+        public List<string> recent_likes { get; set; }
     }
 
     public class RootObject
@@ -235,12 +244,12 @@ class ProfileParser
         //using (StreamReader r = new StreamReader("Assets/Resources/profile_dir/profile_" + id + ".json"))
         //using (StreamReader r = new StreamReader(path))
         //{
-            //var json = r.ReadToEnd();
-               
-            var items = JsonConvert.DeserializeObject<RootObject>(text);
-            int vulScore = calVulnerabilityScore(items.personal_info.residence.zipcode, items.financial_info.salary, items.connections.no_of_dependents, items.interests_info.checkins, items.personal_info.age);
-            ProfileParser profileObj = new ProfileParser(items, vulScore);
-            return profileObj;
+        //var json = r.ReadToEnd();
+
+        var items = JsonConvert.DeserializeObject<RootObject>(text);
+        int vulScore = calVulnerabilityScore(items.personal_info.residence.zipcode, items.financial_info.salary, items.connections.no_of_dependents, items.interests_info.checkins, items.personal_info.age);
+        ProfileParser profileObj = new ProfileParser(items, vulScore);
+        return profileObj;
         //}
 
     }
