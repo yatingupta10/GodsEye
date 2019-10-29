@@ -52,6 +52,8 @@ struct FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2;
 struct JustRotate_tA09BAC50803D27A61F4527DAAC81F4AB4CA2E7E7;
 // LogoController
 struct LogoController_tE44B091262297EF668FBA7D4DFBF9FE5F6B34487;
+// Microsoft.MixedReality.Toolkit.Input.WorldCursor
+struct WorldCursor_tEFAEE798317ECE8A76C791B92505665A90378979;
 // PressedBtn
 struct PressedBtn_t149EE9384CD3224CE2555F621268EC3C6E2A0568;
 // ProfileParser
@@ -7524,6 +7526,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // LOGOCONTROLLER_TE44B091262297EF668FBA7D4DFBF9FE5F6B34487_H
+#ifndef WORLDCURSOR_TEFAEE798317ECE8A76C791B92505665A90378979_H
+#define WORLDCURSOR_TEFAEE798317ECE8A76C791B92505665A90378979_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Microsoft.MixedReality.Toolkit.Input.WorldCursor
+struct  WorldCursor_tEFAEE798317ECE8A76C791B92505665A90378979  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // WORLDCURSOR_TEFAEE798317ECE8A76C791B92505665A90378979_H
 #ifndef PRESSEDBTN_T149EE9384CD3224CE2555F621268EC3C6E2A0568_H
 #define PRESSEDBTN_T149EE9384CD3224CE2555F621268EC3C6E2A0568_H
 #ifdef __clang__
@@ -11944,10 +11966,10 @@ inline VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41 * List_1_get_Item_m8C51
 {
 	return ((  VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41 * (*) (List_1_tED14DFE76D6EF01686BB7AE828F2576343E0C28E *, int32_t, const RuntimeMethod*))List_1_get_Item_mFDB8AD680C600072736579BBF5F38F7416396588_gshared)(__this, p0, method);
 }
-// System.String ProfileParser/VenmoTx::get_date()
-extern "C" IL2CPP_METHOD_ATTR String_t* VenmoTx_get_date_mF041A669BFE7F0C36155C7C4C5151EDCB85B2D5E (VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41 * __this, const RuntimeMethod* method);
 // System.String ProfileParser/VenmoTx::get_amount()
 extern "C" IL2CPP_METHOD_ATTR String_t* VenmoTx_get_amount_m1CC0C1D40F81C4B1ED1247FC568FBC025CA60D00 (VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41 * __this, const RuntimeMethod* method);
+// System.String ProfileParser/VenmoTx::get_date()
+extern "C" IL2CPP_METHOD_ATTR String_t* VenmoTx_get_date_mF041A669BFE7F0C36155C7C4C5151EDCB85B2D5E (VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41 * __this, const RuntimeMethod* method);
 // System.String ProfileParser/VenmoTx::get_recipient()
 extern "C" IL2CPP_METHOD_ATTR String_t* VenmoTx_get_recipient_m92C7A6BEE62EB13C538B994F360D62D6511F1C17 (VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41 * __this, const RuntimeMethod* method);
 // System.Void RecentTransactionsController::toggleDownButton(System.Boolean)
@@ -11981,6 +12003,8 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllViews_mD4964BBC63BB
 extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllNavButtons_m4B4531DA35CC83A60F96291356C6DD1B54B5882B (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method);
 // System.Void UIController::DeactivateAllNavIcons()
 extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAllNavIcons_m8D9BB2B2760DA8B18805244F93A6B605BBD72339 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method);
+// System.Void UIController::UnFocusAllButtons()
+extern "C" IL2CPP_METHOD_ATTR void UIController_UnFocusAllButtons_m52EB4C648144ACD431AB5FD15A07E23EEAF50C91 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method);
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.GameObject>::GetEnumerator()
 inline Enumerator_t9EFA6071D21C1230CBB2E56045AD75472BC48053  List_1_GetEnumerator_m3E7042AE58561530C10A47E4F39B8368CFCB693B (List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * __this, const RuntimeMethod* method)
 {
@@ -12655,6 +12679,38 @@ extern "C" IL2CPP_METHOD_ATTR void LogoController__ctor_m93DF617EC59C5F5CB18E33E
 	{
 		// public string recentImageDir = "Testing/EmployerLogo";
 		__this->set_recentImageDir_5(_stringLiteralBDE7EAA94433CD949257752CA936E958FAF03E4C);
+		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Microsoft.MixedReality.Toolkit.Input.WorldCursor::Start()
+extern "C" IL2CPP_METHOD_ATTR void WorldCursor_Start_mD14ED80C8357F46250B67CAF188956E91A4CE28D (WorldCursor_tEFAEE798317ECE8A76C791B92505665A90378979 * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void Microsoft.MixedReality.Toolkit.Input.WorldCursor::Update()
+extern "C" IL2CPP_METHOD_ATTR void WorldCursor_Update_mE9DF9C64163647299ADB0DCFC6456F0841A38E82 (WorldCursor_tEFAEE798317ECE8A76C791B92505665A90378979 * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void Microsoft.MixedReality.Toolkit.Input.WorldCursor::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void WorldCursor__ctor_m6F57D6287607499821FE1E71E03BAC69B60F5197 (WorldCursor_tEFAEE798317ECE8A76C791B92505665A90378979 * __this, const RuntimeMethod* method)
+{
+	{
 		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -15267,7 +15323,7 @@ IL_00a7:
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_30 = __this->get_transactionDataPrefab_4();
 		NullCheck(L_29);
 		List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112(L_29, L_30, /*hidden argument*/List_1_Add_m94A913D452C8522AD16D2EB42D46016D83D86112_RuntimeMethod_var);
-		// recentTransactions[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].date;
+		// recentTransactions[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].amount;
 		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_31 = __this->get_recentTransactions_12();
 		int32_t L_32 = V_1;
 		NullCheck(L_31);
@@ -15283,10 +15339,10 @@ IL_00a7:
 		NullCheck(L_37);
 		VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41 * L_39 = List_1_get_Item_m8C51D3A2E429FCD4DBEEA48BA3CAD7DD6C8B889B(L_37, L_38, /*hidden argument*/List_1_get_Item_m8C51D3A2E429FCD4DBEEA48BA3CAD7DD6C8B889B_RuntimeMethod_var);
 		NullCheck(L_39);
-		String_t* L_40 = VenmoTx_get_date_mF041A669BFE7F0C36155C7C4C5151EDCB85B2D5E(L_39, /*hidden argument*/NULL);
+		String_t* L_40 = VenmoTx_get_amount_m1CC0C1D40F81C4B1ED1247FC568FBC025CA60D00(L_39, /*hidden argument*/NULL);
 		NullCheck(L_36);
 		TMP_Text_set_text_m079B767F4E146B6F9150EC2208B5C2736207251A(L_36, L_40, /*hidden argument*/NULL);
-		// recentTransactions[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].amount;
+		// recentTransactions[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].date;
 		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_41 = __this->get_recentTransactions_12();
 		int32_t L_42 = V_1;
 		NullCheck(L_41);
@@ -15302,7 +15358,7 @@ IL_00a7:
 		NullCheck(L_47);
 		VenmoTx_tD409C89C591E7AA257B175A9286AE336A8961F41 * L_49 = List_1_get_Item_m8C51D3A2E429FCD4DBEEA48BA3CAD7DD6C8B889B(L_47, L_48, /*hidden argument*/List_1_get_Item_m8C51D3A2E429FCD4DBEEA48BA3CAD7DD6C8B889B_RuntimeMethod_var);
 		NullCheck(L_49);
-		String_t* L_50 = VenmoTx_get_amount_m1CC0C1D40F81C4B1ED1247FC568FBC025CA60D00(L_49, /*hidden argument*/NULL);
+		String_t* L_50 = VenmoTx_get_date_mF041A669BFE7F0C36155C7C4C5151EDCB85B2D5E(L_49, /*hidden argument*/NULL);
 		NullCheck(L_46);
 		TMP_Text_set_text_m079B767F4E146B6F9150EC2208B5C2736207251A(L_46, L_50, /*hidden argument*/NULL);
 		// recentTransactions[i].transform.GetChild(2).GetComponent<TextMeshPro>().text = transactionData[i].recipient;
@@ -16233,6 +16289,8 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_DeactivateAll_m8AB6786CAFADD0C93
 		UIController_DeactivateAllNavButtons_m4B4531DA35CC83A60F96291356C6DD1B54B5882B(__this, /*hidden argument*/NULL);
 		// DeactivateAllNavIcons();
 		UIController_DeactivateAllNavIcons_m8D9BB2B2760DA8B18805244F93A6B605BBD72339(__this, /*hidden argument*/NULL);
+		// UnFocusAllButtons();
+		UIController_UnFocusAllButtons_m52EB4C648144ACD431AB5FD15A07E23EEAF50C91(__this, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -16477,6 +16535,14 @@ IL_0034:
 		return;
 	}
 }
+// System.Void UIController::UnFocusAllButtons()
+extern "C" IL2CPP_METHOD_ATTR void UIController_UnFocusAllButtons_m52EB4C648144ACD431AB5FD15A07E23EEAF50C91 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
 // System.Void UIController::ActivateView(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8 (UIController_t06FB25185FB9B776EF16705D93C83EE95CE1D1EE * __this, int32_t ___viewNum0, const RuntimeMethod* method)
 {
@@ -16714,9 +16780,9 @@ extern "C" IL2CPP_METHOD_ATTR void UIController_PersonalView_m005F2FA65837D9FC8E
 		NullCheck(L_0);
 		int32_t L_2 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_0, L_1, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
 		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_2, /*hidden argument*/NULL);
-		// ActivateView(viewList.IndexOf(centerFacePane));
+		// ActivateView(viewList.IndexOf(rightScoreFacePane));
 		List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * L_3 = __this->get_viewList_17();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = __this->get_centerFacePane_7();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = __this->get_rightScoreFacePane_8();
 		NullCheck(L_3);
 		int32_t L_5 = List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B(L_3, L_4, /*hidden argument*/List_1_IndexOf_m9F7F6206F384B51E590B7621EB4A7F323AC0236B_RuntimeMethod_var);
 		UIController_ActivateView_mB13C3505F6DBE566CA4CDD63B54FD31B727E48C8(__this, L_5, /*hidden argument*/NULL);

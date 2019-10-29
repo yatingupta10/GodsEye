@@ -163,8 +163,7 @@ public class UIController : MonoBehaviour
         DeactivateAll();
 
         ActivateView(viewList.IndexOf(personalView));
-        ActivateView(viewList.IndexOf(centerFacePane));
-        //will probably change this to rightScoreFacePane
+        ActivateView(viewList.IndexOf(rightScoreFacePane));
 
         ActivateView(viewList.IndexOf(navBar));
 

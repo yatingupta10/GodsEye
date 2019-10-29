@@ -1195,6 +1195,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // JUSTROTATE_TA09BAC50803D27A61F4527DAAC81F4AB4CA2E7E7_H
+#ifndef WORLDCURSOR_TEFAEE798317ECE8A76C791B92505665A90378979_H
+#define WORLDCURSOR_TEFAEE798317ECE8A76C791B92505665A90378979_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Microsoft.MixedReality.Toolkit.Input.WorldCursor
+struct  WorldCursor_tEFAEE798317ECE8A76C791B92505665A90378979  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // WORLDCURSOR_TEFAEE798317ECE8A76C791B92505665A90378979_H
 #ifndef PRESSEDBTN_T149EE9384CD3224CE2555F621268EC3C6E2A0568_H
 #define PRESSEDBTN_T149EE9384CD3224CE2555F621268EC3C6E2A0568_H
 #ifdef __clang__
@@ -2299,6 +2319,7 @@ extern const int32_t g_FieldOffsetTable5623[1] =
 {
 	SliderValuePass_tA162B7D507B9D080FA95CBE75538D41444C2D605::get_offset_of_progress_4(),
 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5624 = { sizeof (WorldCursor_tEFAEE798317ECE8A76C791B92505665A90378979), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
