@@ -68,6 +68,7 @@ class ProfileParser
         public string position { get; set; }
         public string location { get; set; }
         public int salary { get; set; }
+        public string salary_string { get; set; }
         public List<VenmoTx> venmo_tx { get; set; }
     }
 
@@ -134,6 +135,7 @@ class ProfileParser
     public class InterestsInfo
     {
         public List<Checkin> checkins { get; set; }
+        public List<string> recent_likes { get; set; }
     }
 
     public class RootObject

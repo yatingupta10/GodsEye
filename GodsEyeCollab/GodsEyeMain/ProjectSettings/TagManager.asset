@@ -8,6 +8,8 @@ TagManager:
   - InstagramUsername
   - LinkedinUsername
   - TwitterUsername
+  - CompanyName
+  - company_name
   layers:
   - Default
   - TransparentFX

@@ -47,7 +47,8 @@
 		"company_logo":"amazon.png",
 		"position":"Software Developer",
 		"location":"Seattle, WA",
-		"salary":120000,
+        "salary": 120000,
+        "salary_string": "120,000",
 		"venmo_tx":[
 			{
 				"amount":"$20",
@@ -117,18 +118,34 @@
 	},
 
 	"interests_info":{
-		"checkins":[
-			{
-				"location":"Universal Studio, LA",
-				"date":"7th Oct 2019",
-				"time":"14:45"
-			},
-			{
-				"location":"The Grove, LA",
-				"date":"10th Oct 2019",
-				"time":"20:00"
-			}
-		]
+        "checkins": [
+            {
+                "location": "Universal Studio, LA",
+                "date": "7th Oct 2019",
+                "time": "14:45"
+            },
+            {
+                "location": "The Grove, LA",
+                "date": "10th Oct 2019",
+                "time": "20:00"
+            },
+            {
+                "location": "Santa Monica",
+                "date": "27th Oct 2019",
+                "time": "14:45"
+            },
+            {
+                "location": "Cinematic Arts",
+                "date": "28th Oct 2019",
+                "time": "14:00"
+            }
+        ],
+        "recent_likes": [
+            "University of Southern California",
+            "Universal Studios",
+            "Batman: The Dark Knight",
+            "Apple Macbook Pro"
+        ]
 	}
 
 }

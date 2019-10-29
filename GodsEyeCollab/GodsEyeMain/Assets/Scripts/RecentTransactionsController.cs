@@ -6,6 +6,7 @@ using System;
 using static ProfileParser;
 
 //controller for showing recent venmo transactions in the financial view
+[DefaultExecutionOrder(20)]
 public class RecentTransactionsController : MonoBehaviour
 {
     public GameObject transactionDataPrefab;
@@ -63,7 +64,7 @@ public class RecentTransactionsController : MonoBehaviour
         numTransactions = currentProf.profile.financial_info.venmo_tx.Count;
         transactionData = currentProf.profile.financial_info.venmo_tx;
         Debug.Log("Imported " + numTransactions + " recent transactions.");
-
+        GameObject.FindGameObjectWithTag("company_name").GetComponent<TextMeshPro>().text = currentProf.profile.financial_info.current_company;
         for (int i = 0; i < numTransactions; i++){
             recentTransactions.Add(transactionDataPrefab);
 
