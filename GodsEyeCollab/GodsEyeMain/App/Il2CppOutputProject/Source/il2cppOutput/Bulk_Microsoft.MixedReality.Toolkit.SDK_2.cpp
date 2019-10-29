@@ -182,6 +182,8 @@ struct TwoHandMoveLogic_t63FDC3E1A4AACC5AF4CA1472954044F6C74373C1;
 struct TwoHandRotateLogic_tFF0AF9F6C78D032F0D899590124BBBAF473BFED2;
 // Microsoft.MixedReality.Toolkit.Physics.TwoHandScaleLogic
 struct TwoHandScaleLogic_t8C483BCDD95F7E293D0DA81D1E7ED65D724ED603;
+// Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime
+struct ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B;
 // Microsoft.MixedReality.Toolkit.UI.IInteractableHandler
 struct IInteractableHandler_t8E0C2D2F5A241D87D54F2FA92D46666BAF8E22EF;
 // Microsoft.MixedReality.Toolkit.UI.IToolTipBackground
@@ -928,6 +930,7 @@ extern const RuntimeMethod* GameObject_AddComponent_TisAudioSource_t5196F862B4E6
 extern const RuntimeMethod* GameObject_GetComponentInChildren_TisAudioSource_t5196F862B4E60F404613361C90D87FBDD041E93C_m2D7383000E3D5650D2BBD2966EE1CCD58A4EE9EC_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisAnimator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A_m9904EA7E80165F7771F8AB3967F417D7C2B09996_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisBaseMixedRealityLineDataProvider_tBDC1C0137D794157BB9AA6DDB6838067D790AFB4_mCEB7A0F06EB084C4AB66D1C8FCD0C5CB8A1653B8_RuntimeMethod_var;
+extern const RuntimeMethod* GameObject_GetComponent_TisButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_mAC317ABD952B7EF7ADE2222A3BF5A3CDD6EDBE9E_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisRenderer_t0556D67DD582620D1F495627EDE30D03284151F4_mD65E2552CCFED4D0EC506EE90DE51215D90AEF85_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisTextMeshPro_t6FF60D9DCAF295045FE47C014CC855C5784752E2_m5BDF9DA818C4FA36198D59D899B250EEABEDD4E1_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisTextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A_m6548CB329DD537D824051D169084C7FB1CD251D8_RuntimeMethod_var;
@@ -1095,6 +1098,7 @@ extern const uint32_t InteractableOffsetTheme_GetProperty_m2AA06753500D67667CAC2
 extern const uint32_t InteractableOffsetTheme_SetValue_m1561F60B6BF34B52AAAA785A54801933598AF62E_MetadataUsageId;
 extern const uint32_t InteractableOffsetTheme__ctor_m02659949277A61967A2928003898F6C0639CC502_MetadataUsageId;
 extern const uint32_t InteractableOnClickReceiver__ctor_m9676F89A51A119C1560BEF52166444F2B6127957_MetadataUsageId;
+extern const uint32_t InteractableOnFocusReceiver_OnUpdate_m3B331C867EA4BCFA845431236423B334ED984693_MetadataUsageId;
 extern const uint32_t InteractableOnFocusReceiver__ctor_mA2A3D48BD8144320B79A9D286A20D083A5E57011_MetadataUsageId;
 extern const uint32_t InteractableOnHoldReceiver__ctor_m9A838D371206A03C6B812FDD199C219D1E72182A_MetadataUsageId;
 extern const uint32_t InteractableOnPressReceiver__ctor_mB5E5243DD2ADB3838EEB1E999DEBCE77D989CB93_MetadataUsageId;
@@ -5275,6 +5279,8 @@ public:
 	bool ___hadFocus_5;
 	// Microsoft.MixedReality.Toolkit.UI.State Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver::lastState
 	State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * ___lastState_6;
+	// System.Single Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver::focusTimer
+	float ___focusTimer_7;
 
 public:
 	inline static int32_t get_offset_of_OnFocusOff_4() { return static_cast<int32_t>(offsetof(InteractableOnFocusReceiver_tA3F240D9FB685DB9BBCFA694293F64E0353A954C, ___OnFocusOff_4)); }
@@ -5301,6 +5307,14 @@ public:
 	{
 		___lastState_6 = value;
 		Il2CppCodeGenWriteBarrier((&___lastState_6), value);
+	}
+
+	inline static int32_t get_offset_of_focusTimer_7() { return static_cast<int32_t>(offsetof(InteractableOnFocusReceiver_tA3F240D9FB685DB9BBCFA694293F64E0353A954C, ___focusTimer_7)); }
+	inline float get_focusTimer_7() const { return ___focusTimer_7; }
+	inline float* get_address_of_focusTimer_7() { return &___focusTimer_7; }
+	inline void set_focusTimer_7(float value)
+	{
+		___focusTimer_7 = value;
 	}
 };
 
@@ -15586,6 +15600,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // NEARINTERACTIONTOUCHABLE_TB7716978F1AE59139B326587193866812A79053A_H
+#ifndef BUTTONFOCUSTIME_T1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_H
+#define BUTTONFOCUSTIME_T1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime
+struct  ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+	// System.Single Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime::focusTime
+	float ___focusTime_4;
+
+public:
+	inline static int32_t get_offset_of_focusTime_4() { return static_cast<int32_t>(offsetof(ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B, ___focusTime_4)); }
+	inline float get_focusTime_4() const { return ___focusTime_4; }
+	inline float* get_address_of_focusTime_4() { return &___focusTime_4; }
+	inline void set_focusTime_4(float value)
+	{
+		___focusTime_4 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // BUTTONFOCUSTIME_T1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_H
 #ifndef INTERACTABLE_TFCF652AFB3CEBDA8D19104D012B65BD505F2C05C_H
 #define INTERACTABLE_TFCF652AFB3CEBDA8D19104D012B65BD505F2C05C_H
 #ifdef __clang__
@@ -22932,8 +22975,17 @@ extern "C" IL2CPP_METHOD_ATTR void UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE5
 extern "C" IL2CPP_METHOD_ATTR void UnityEvent__ctor_m2F8C02F28E289CA65598FF4FA8EAB84D955FF028 (UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * __this, const RuntimeMethod* method);
 // Microsoft.MixedReality.Toolkit.UI.State Microsoft.MixedReality.Toolkit.UI.InteractableStates::GetState(Microsoft.MixedReality.Toolkit.UI.InteractableStates/InteractableStateEnum)
 extern "C" IL2CPP_METHOD_ATTR State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * InteractableStates_GetState_mFD27740DC07D8ACE6D5D422EBCC0553D0FC155B0 (InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * __this, int32_t ___state0, const RuntimeMethod* method);
+// !!0 UnityEngine.GameObject::GetComponent<Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime>()
+inline ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B * GameObject_GetComponent_TisButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_mAC317ABD952B7EF7ADE2222A3BF5A3CDD6EDBE9E (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
+{
+	return ((  ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_mE03C66715289D7957CA068A675826B7EE0887BE3_gshared)(__this, method);
+}
+// System.Single Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime::GetFocusTime()
+extern "C" IL2CPP_METHOD_ATTR float ButtonFocusTime_GetFocusTime_m8E489620E4CF09575AF75F009C7239EE65909AA0 (ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B * __this, const RuntimeMethod* method);
 // System.Single UnityEngine.Time::get_deltaTime()
 extern "C" IL2CPP_METHOD_ATTR float Time_get_deltaTime_m16F98FC9BA931581236008C288E3B25CBCB7C81E (const RuntimeMethod* method);
+// System.Void Microsoft.MixedReality.Toolkit.UI.Interactable::SetState(Microsoft.MixedReality.Toolkit.UI.InteractableStates/InteractableStateEnum,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Interactable_SetState_m8657048416D7018E36C0DB64C05694DE99CC3399 (Interactable_tFCF652AFB3CEBDA8D19104D012B65BD505F2C05C * __this, int32_t ___state0, bool ___value1, const RuntimeMethod* method);
 // System.Int32 Microsoft.MixedReality.Toolkit.UI.Interactable::GetDimensionIndex()
 extern "C" IL2CPP_METHOD_ATTR int32_t Interactable_GetDimensionIndex_mEB5A86F9DA185C5107A4621170464668C54CFB93 (Interactable_tFCF652AFB3CEBDA8D19104D012B65BD505F2C05C * __this, const RuntimeMethod* method);
 // !0 System.Nullable`1<System.Boolean>::GetValueOrDefault()
@@ -27293,66 +27345,127 @@ extern "C" IL2CPP_METHOD_ATTR void InteractableOnFocusReceiver__ctor_mA2A3D48BD8
 // System.Void Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver::OnUpdate(Microsoft.MixedReality.Toolkit.UI.InteractableStates,Microsoft.MixedReality.Toolkit.UI.Interactable)
 extern "C" IL2CPP_METHOD_ATTR void InteractableOnFocusReceiver_OnUpdate_m3B331C867EA4BCFA845431236423B334ED984693 (InteractableOnFocusReceiver_tA3F240D9FB685DB9BBCFA694293F64E0353A954C * __this, InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * ___state0, Interactable_tFCF652AFB3CEBDA8D19104D012B65BD505F2C05C * ___source1, const RuntimeMethod* method)
 {
-	bool V_0 = false;
-	bool V_1 = false;
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// bool changed = state.CurrentState() != lastState;
+		il2cpp_codegen_initialize_method (InteractableOnFocusReceiver_OnUpdate_m3B331C867EA4BCFA845431236423B334ED984693_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	bool V_2 = false;
+	{
+		// bool hasFocus = state.GetState(InteractableStates.InteractableStateEnum.Focus).Value > 0;
 		InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * L_0 = ___state0;
 		NullCheck(L_0);
-		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_1 = VirtFuncInvoker0< State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * >::Invoke(9 /* Microsoft.MixedReality.Toolkit.UI.State Microsoft.MixedReality.Toolkit.UI.InteractableStateModel::CurrentState() */, L_0);
-		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_2 = __this->get_lastState_6();
-		V_0 = (bool)((((int32_t)((((RuntimeObject*)(State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 *)L_1) == ((RuntimeObject*)(State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 *)L_2))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		// bool hasFocus = state.GetState(InteractableStates.InteractableStateEnum.Focus).Value > 0;
-		InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * L_3 = ___state0;
+		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_1 = InteractableStates_GetState_mFD27740DC07D8ACE6D5D422EBCC0553D0FC155B0(L_0, 1, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		int32_t L_2 = L_1->get_Value_3();
+		V_0 = (bool)((((int32_t)L_2) > ((int32_t)0))? 1 : 0);
+		// float focusTime = source.gameObject.GetComponent<ButtonFocusTime>().GetFocusTime();
+		Interactable_tFCF652AFB3CEBDA8D19104D012B65BD505F2C05C * L_3 = ___source1;
 		NullCheck(L_3);
-		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_4 = InteractableStates_GetState_mFD27740DC07D8ACE6D5D422EBCC0553D0FC155B0(L_3, 1, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_4 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_3, /*hidden argument*/NULL);
 		NullCheck(L_4);
-		int32_t L_5 = L_4->get_Value_3();
-		V_1 = (bool)((((int32_t)L_5) > ((int32_t)0))? 1 : 0);
-		// if (hadFocus != hasFocus && changed)
-		bool L_6 = __this->get_hadFocus_5();
-		bool L_7 = V_1;
-		bool L_8 = V_0;
-		if (!((int32_t)((int32_t)((((int32_t)((((int32_t)L_6) == ((int32_t)L_7))? 1 : 0)) == ((int32_t)0))? 1 : 0)&(int32_t)L_8)))
+		ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B * L_5 = GameObject_GetComponent_TisButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_mAC317ABD952B7EF7ADE2222A3BF5A3CDD6EDBE9E(L_4, /*hidden argument*/GameObject_GetComponent_TisButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_mAC317ABD952B7EF7ADE2222A3BF5A3CDD6EDBE9E_RuntimeMethod_var);
+		NullCheck(L_5);
+		float L_6 = ButtonFocusTime_GetFocusTime_m8E489620E4CF09575AF75F009C7239EE65909AA0(L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		// if (hasFocus && focusTimer < focusTime){
+		bool L_7 = V_0;
+		if (!L_7)
 		{
-			goto IL_004d;
+			goto IL_0052;
+		}
+	}
+	{
+		float L_8 = __this->get_focusTimer_7();
+		float L_9 = V_1;
+		if ((!(((float)L_8) < ((float)L_9))))
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		// focusTimer += Time.deltaTime;
+		float L_10 = __this->get_focusTimer_7();
+		float L_11 = Time_get_deltaTime_m16F98FC9BA931581236008C288E3B25CBCB7C81E(/*hidden argument*/NULL);
+		__this->set_focusTimer_7(((float)il2cpp_codegen_add((float)L_10, (float)L_11)));
+		// if (focusTimer >= focusTime){
+		float L_12 = __this->get_focusTimer_7();
+		float L_13 = V_1;
+		if ((!(((float)L_12) >= ((float)L_13))))
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		// source.SetState(InteractableStates.InteractableStateEnum.Focus, false);
+		Interactable_tFCF652AFB3CEBDA8D19104D012B65BD505F2C05C * L_14 = ___source1;
+		NullCheck(L_14);
+		Interactable_SetState_m8657048416D7018E36C0DB64C05694DE99CC3399(L_14, 1, (bool)0, /*hidden argument*/NULL);
+		// } else {
+		goto IL_005d;
+	}
+
+IL_0052:
+	{
+		// focusTimer = 0;
+		__this->set_focusTimer_7((0.0f));
+	}
+
+IL_005d:
+	{
+		// bool changed = state.CurrentState() != lastState;
+		InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * L_15 = ___state0;
+		NullCheck(L_15);
+		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_16 = VirtFuncInvoker0< State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * >::Invoke(9 /* Microsoft.MixedReality.Toolkit.UI.State Microsoft.MixedReality.Toolkit.UI.InteractableStateModel::CurrentState() */, L_15);
+		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_17 = __this->get_lastState_6();
+		V_2 = (bool)((((int32_t)((((RuntimeObject*)(State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 *)L_16) == ((RuntimeObject*)(State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 *)L_17))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		// if (hadFocus != hasFocus && changed)
+		bool L_18 = __this->get_hadFocus_5();
+		bool L_19 = V_0;
+		bool L_20 = V_2;
+		if (!((int32_t)((int32_t)((((int32_t)((((int32_t)L_18) == ((int32_t)L_19))? 1 : 0)) == ((int32_t)0))? 1 : 0)&(int32_t)L_20)))
+		{
+			goto IL_009a;
 		}
 	}
 	{
 		// if (hasFocus)
-		bool L_9 = V_1;
-		if (!L_9)
+		bool L_21 = V_0;
+		if (!L_21)
 		{
-			goto IL_0042;
+			goto IL_008f;
 		}
 	}
 	{
 		// uEvent.Invoke();
-		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_10 = ((ReceiverBase_tFF95CDCA35CCFD88FCC5EC183AB2F237CB2092E4 *)__this)->get_uEvent_2();
-		NullCheck(L_10);
-		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_10, /*hidden argument*/NULL);
+		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_22 = ((ReceiverBase_tFF95CDCA35CCFD88FCC5EC183AB2F237CB2092E4 *)__this)->get_uEvent_2();
+		NullCheck(L_22);
+		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_22, /*hidden argument*/NULL);
 		// }
-		goto IL_004d;
+		goto IL_009a;
 	}
 
-IL_0042:
+IL_008f:
 	{
 		// OnFocusOff.Invoke();
-		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_11 = __this->get_OnFocusOff_4();
-		NullCheck(L_11);
-		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_11, /*hidden argument*/NULL);
+		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_23 = __this->get_OnFocusOff_4();
+		NullCheck(L_23);
+		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_23, /*hidden argument*/NULL);
 	}
 
-IL_004d:
+IL_009a:
 	{
 		// hadFocus = hasFocus;
-		bool L_12 = V_1;
-		__this->set_hadFocus_5(L_12);
+		bool L_24 = V_0;
+		__this->set_hadFocus_5(L_24);
 		// lastState = state.CurrentState();
-		InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * L_13 = ___state0;
-		NullCheck(L_13);
-		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_14 = VirtFuncInvoker0< State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * >::Invoke(9 /* Microsoft.MixedReality.Toolkit.UI.State Microsoft.MixedReality.Toolkit.UI.InteractableStateModel::CurrentState() */, L_13);
-		__this->set_lastState_6(L_14);
+		InteractableStates_t651679B6A87EA9EDBEE781EB64EEF7D896302680 * L_25 = ___state0;
+		NullCheck(L_25);
+		State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * L_26 = VirtFuncInvoker0< State_t90DC5046717BB89ABE7C1A57513448C8A4AF7552 * >::Invoke(9 /* Microsoft.MixedReality.Toolkit.UI.State Microsoft.MixedReality.Toolkit.UI.InteractableStateModel::CurrentState() */, L_25);
+		__this->set_lastState_6(L_26);
 		// }
 		return;
 	}

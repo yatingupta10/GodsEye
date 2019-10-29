@@ -36,7 +36,6 @@ namespace Microsoft.MixedReality.Toolkit.UI
                 focusTimer += Time.deltaTime;
 
                 if (focusTimer >= focusTime){
-                    Debug.Log("focus time has been spent");
                     source.SetState(InteractableStates.InteractableStateEnum.Focus, false);
                 }
             } else {
