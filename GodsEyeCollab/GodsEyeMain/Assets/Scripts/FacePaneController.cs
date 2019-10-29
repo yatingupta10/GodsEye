@@ -15,6 +15,8 @@ public class FacePaneController : MonoBehaviour
     public Transform leftPosition;
 
     public GameObject colliderCollection;
+
+    public GameObject score;
     
 
     Rigidbody rb;
@@ -69,6 +71,8 @@ public class FacePaneController : MonoBehaviour
             //buttonCollection.SetActive(true);
             screen.SetActive(true);
             colliderCollection.SetActive(false);
+            score.transform.localPosition = new Vector3(0.3f, 0.35f, 0.0f);
+
             Destroy(rb);
         }
     }
