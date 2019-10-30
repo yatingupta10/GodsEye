@@ -60,13 +60,7 @@ public class ImageCapture : MonoBehaviour
         tapsCount++;
         Debug.Log(tapsCount);
 
-        //only for midterm demo
-        //this should work when the app is actually deployed
-        FaceRecName.instance.Begin();
-
-
-
-        // ExecuteImageCaptureAndAnalysis();
+        ExecuteImageCaptureAndAnalysis();
 
         
     }

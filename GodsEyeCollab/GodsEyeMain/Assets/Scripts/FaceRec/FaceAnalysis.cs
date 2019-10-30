@@ -137,7 +137,7 @@ public class FaceAnalysis : MonoBehaviour
                 }
             } catch (System.Exception e)
             {
-                
+                FaceRecName.instance.displayText.text = "No Face Found";
             }
         }
     }
@@ -197,11 +197,13 @@ public class FaceAnalysis : MonoBehaviour
             { 
                 if (candidateRO.candidates.Count > 0)
                 {
+                    // Delay the next "GetPerson" call, so all faces candidate are displayed properly
+                    yield return new WaitForSeconds(3);
                     StartCoroutine(GetPerson(candidateRO.candidates[0].personId));
+                } else
+                {
+                    FaceRecName.instance.displayText.text = "Face Not Identified";
                 }
-
-                // Delay the next "GetPerson" call, so all faces candidate are displayed properly
-                yield return new WaitForSeconds(3);
             }
         }
     }
@@ -231,6 +233,7 @@ public class FaceAnalysis : MonoBehaviour
             //tempText.text = identifiedPerson_RootObject.name + " | " + identifiedPerson_RootObject.personId;
 
             FaceRecName.instance.recName = identifiedPerson_RootObject.name;
+            FaceRecName.instance.displayText.text = "Face Found:\n" + identifiedPerson_RootObject.name;
             FaceRecName.instance.Begin();
         }
     }

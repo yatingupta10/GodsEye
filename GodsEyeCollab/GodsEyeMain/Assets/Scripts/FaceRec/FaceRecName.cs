@@ -1,17 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FaceRecName : MonoBehaviour
 {
     public static FaceRecName instance;
 
+    [HideInInspector]
     public string recName;
 
-
-    public GameObject mainUI;
-    public GameObject cameraRectangle;
-
+    public Text displayText;
+    public float delay;
 
 
     // Start is called before the first frame update
@@ -32,18 +32,20 @@ public class FaceRecName : MonoBehaviour
         //only for testing in unity editor
         if (Input.GetKeyDown(KeyCode.X))
         {
+            displayText.text = "Found Face:\nTESTING";
             Begin();
+            recName = "Victor Zamarian";
         }
     }
 
     public void Begin()
     {
-        Invoke("DelayedBegin", 2.0f);
+        Invoke("DelayedBegin", delay);
     }
 
     void DelayedBegin()
     {
-        mainUI.SetActive(true);
-        cameraRectangle.SetActive(false);
+        displayText.text = "";
+        MainDataController.instance.InsertData();
     }
 }
