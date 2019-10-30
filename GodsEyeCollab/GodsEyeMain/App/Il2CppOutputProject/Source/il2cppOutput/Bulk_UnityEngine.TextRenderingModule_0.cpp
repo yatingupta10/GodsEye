@@ -1911,6 +1911,35 @@ struct Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshaled_com
 	intptr_t ___m_CachedPtr_0;
 };
 #endif // OBJECT_TAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_H
+#ifndef TEXTALIGNMENT_TA36C2DBDF8DD4897D7725320F6E5CDBB58185FBD_H
+#define TEXTALIGNMENT_TA36C2DBDF8DD4897D7725320F6E5CDBB58185FBD_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.TextAlignment
+struct  TextAlignment_tA36C2DBDF8DD4897D7725320F6E5CDBB58185FBD 
+{
+public:
+	// System.Int32 UnityEngine.TextAlignment::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(TextAlignment_tA36C2DBDF8DD4897D7725320F6E5CDBB58185FBD, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TEXTALIGNMENT_TA36C2DBDF8DD4897D7725320F6E5CDBB58185FBD_H
 #ifndef TEXTANCHOR_TEC19034D476659A5E05366C63564F34DD30E7C57_H
 #define TEXTANCHOR_TEC19034D476659A5E05366C63564F34DD30E7C57_H
 #ifdef __clang__
@@ -3681,6 +3710,14 @@ extern "C" IL2CPP_METHOD_ATTR void FontTextureRebuildCallback_EndInvoke_m8EEDB96
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // Conversion methods for marshalling of: UnityEngine.TextGenerationSettings
 extern "C" void TextGenerationSettings_t37703542535A1638D2A08F41DB629A483616AF68_marshal_pinvoke(const TextGenerationSettings_t37703542535A1638D2A08F41DB629A483616AF68& unmarshaled, TextGenerationSettings_t37703542535A1638D2A08F41DB629A483616AF68_marshaled_pinvoke& marshaled)
 {
@@ -4972,6 +5009,15 @@ extern "C" IL2CPP_METHOD_ATTR int32_t TextMesh_get_fontStyle_mFB54E0326F711208B2
 	int32_t retVal = _il2cpp_icall_func(__this);
 	return retVal;
 }
+// System.Void UnityEngine.TextMesh::set_alignment(UnityEngine.TextAlignment)
+extern "C" IL2CPP_METHOD_ATTR void TextMesh_set_alignment_mC79810263A381B2CD7ECAB76D4399E18D928F82E (TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	typedef void (*TextMesh_set_alignment_mC79810263A381B2CD7ECAB76D4399E18D928F82E_ftn) (TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A *, int32_t);
+	static TextMesh_set_alignment_mC79810263A381B2CD7ECAB76D4399E18D928F82E_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TextMesh_set_alignment_mC79810263A381B2CD7ECAB76D4399E18D928F82E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TextMesh::set_alignment(UnityEngine.TextAlignment)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 // System.Void UnityEngine.TextMesh::set_anchor(UnityEngine.TextAnchor)
 extern "C" IL2CPP_METHOD_ATTR void TextMesh_set_anchor_m013CFCFA46AB8478ADD1C4818FAAD90596BF4E15 (TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * __this, int32_t ___value0, const RuntimeMethod* method)
 {
@@ -4990,6 +5036,15 @@ extern "C" IL2CPP_METHOD_ATTR float TextMesh_get_characterSize_mA9E10AD8BA0E9D9A
 	_il2cpp_icall_func = (TextMesh_get_characterSize_mA9E10AD8BA0E9D9AC2709FCDAEFB5F37E2C1E8BC_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TextMesh::get_characterSize()");
 	float retVal = _il2cpp_icall_func(__this);
 	return retVal;
+}
+// System.Void UnityEngine.TextMesh::set_tabSize(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void TextMesh_set_tabSize_mC389576A00C1651FFD089559F61E9AC1F5484A8B (TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*TextMesh_set_tabSize_mC389576A00C1651FFD089559F61E9AC1F5484A8B_ftn) (TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A *, float);
+	static TextMesh_set_tabSize_mC389576A00C1651FFD089559F61E9AC1F5484A8B_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (TextMesh_set_tabSize_mC389576A00C1651FFD089559F61E9AC1F5484A8B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TextMesh::set_tabSize(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.TextMesh::set_richText(System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR void TextMesh_set_richText_mEA6ACA489617BC48D2317385C92C542C5EFD15CA (TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * __this, bool ___value0, const RuntimeMethod* method)

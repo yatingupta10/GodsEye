@@ -73,6 +73,17 @@ struct VirtActionInvoker4
 		((Action)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
 	}
 };
+template <typename R>
+struct VirtFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
 template <typename T1>
 struct GenericVirtActionInvoker1
 {
@@ -294,12 +305,16 @@ struct Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12;
 struct ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1;
 // System.ArgumentNullException
 struct ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD;
+// System.ArgumentOutOfRangeException
+struct ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA;
 // System.AsyncCallback
 struct AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4;
 // System.Byte[]
 struct ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821;
 // System.Char[]
 struct CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2;
+// System.Collections.Generic.IEnumerable`1<UnityEngine.Resolution>
+struct IEnumerable_1_t7C9C3BE7A9D4489FD7F54FDCD3BC1513098EEA8B;
 // System.Collections.Generic.List`1<UnityEngine.Vector3>
 struct List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5;
 // System.Collections.IDictionary
@@ -314,6 +329,8 @@ struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86;
 struct StackTraceU5BU5D_t855F09649EA34DEE7C1B6F088E0538E3CCC3F196;
 // System.IAsyncResult
 struct IAsyncResult_t8E194308510B375B42432981AE5E7488C458D598;
+// System.IO.FileInfo
+struct FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C;
 // System.Int32[]
 struct Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83;
 // System.IntPtr[]
@@ -332,6 +349,8 @@ struct MeshCollider_t60EB55ADE92499FE8D1AA206D2BD96E65B2766DE;
 struct MeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0;
 // UnityEngine.Object
 struct Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0;
+// UnityEngine.Resolution[]
+struct ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A;
 // UnityEngine.Vector3[]
 struct Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28;
 // UnityEngine.XR.WSA.Input.GestureRecognizer
@@ -442,10 +461,12 @@ extern RuntimeClass* Action_1_tEAD62A4E2B757ADC9D11D8A3CCB8E2CF8792F64C_il2cpp_T
 extern RuntimeClass* Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12_il2cpp_TypeInfo_var;
 extern RuntimeClass* ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1_il2cpp_TypeInfo_var;
 extern RuntimeClass* ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_il2cpp_TypeInfo_var;
+extern RuntimeClass* ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var;
 extern RuntimeClass* Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var;
 extern RuntimeClass* Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890_il2cpp_TypeInfo_var;
 extern RuntimeClass* DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132_il2cpp_TypeInfo_var;
 extern RuntimeClass* Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var;
+extern RuntimeClass* FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C_il2cpp_TypeInfo_var;
 extern RuntimeClass* GC_tC1D7BD74E8F44ECCEF5CD2B5D84BFF9AAE02D01D_il2cpp_TypeInfo_var;
 extern RuntimeClass* GestureErrorDelegate_tFA3E7E6A9E25ADFB4D2FF30E7CD521937F795084_il2cpp_TypeInfo_var;
 extern RuntimeClass* HoldCanceledEventDelegate_t5073A875A657B659A55D9111BF52AFA5E8FA22C2_il2cpp_TypeInfo_var;
@@ -468,6 +489,7 @@ extern RuntimeClass* NavigationStartedEventDelegate_tC56D514B35B7270BBE8D21E15C4
 extern RuntimeClass* NavigationUpdatedEventDelegate_t5802B4B5608A4D915714D70A5A51C82C6E34C69A_il2cpp_TypeInfo_var;
 extern RuntimeClass* Nullable_1_t2BAE7F2F24CA3009C8A4626DF50D64CBD4A00FBE_il2cpp_TypeInfo_var;
 extern RuntimeClass* Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var;
+extern RuntimeClass* Path_t0B99A4B924A6FDF08814FFA8DD4CD121ED1A0752_il2cpp_TypeInfo_var;
 extern RuntimeClass* PhotoCaptureFrame_t6DDF938CC10AEDEC6E1FAD80BE5DD2849E479858_il2cpp_TypeInfo_var;
 extern RuntimeClass* PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC_il2cpp_TypeInfo_var;
 extern RuntimeClass* PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var;
@@ -489,12 +511,22 @@ extern RuntimeClass* WorldAnchorStore_tD361F689FE6F087AD3F38BA8724398992434E225_
 extern RuntimeClass* WorldAnchorTransferBatch_t7BF25F7D67684AD6C02C3162A81797BC9045BF96_il2cpp_TypeInfo_var;
 extern RuntimeClass* WorldManager_t92F845DF2530AD354D4805170141AFE73AFFA863_il2cpp_TypeInfo_var;
 extern RuntimeClass* XRDevice_t392FCA3D1DCEB95FF500C8F374C88B034C31DF4A_il2cpp_TypeInfo_var;
+extern String_t* _stringLiteral08534F33C201A45017B502E90A800F1B708EBCB3;
+extern String_t* _stringLiteral08DEAE8D9EA9BC0B84F94475D868351830E9F7E7;
+extern String_t* _stringLiteral14A1541FD53B391A86A2A03C81D6FC3078CAB375;
 extern String_t* _stringLiteral1B7E24A34E3C718C6E030105031D2E93711662C5;
 extern String_t* _stringLiteral28C5FB757402CF2F69498F95C00B41713A73EE31;
 extern String_t* _stringLiteral2E763654A4843C914AD2EFF973F7278CCDF78F9B;
+extern String_t* _stringLiteral316A02D34C87F718E96126D9CE9A380209FEEFB2;
+extern String_t* _stringLiteral3CAD0D71FDDA2B55F3425731D845DA1E994C99AD;
+extern String_t* _stringLiteral42099B4AF021E53FD8FD4E056C2568D7C2E3FFA8;
 extern String_t* _stringLiteral589875DC4FFF7DFB0B1533B09C9B338A9ED0909A;
+extern String_t* _stringLiteral62AAB0CEDF634B77EF0822402DAC02E3026C36AC;
 extern String_t* _stringLiteral7A28117916490821638320A59586D6D23372F1C5;
+extern String_t* _stringLiteral824934BFD5DE6966397FB0BFCE1CA98194269C51;
 extern String_t* _stringLiteral88E6995E626DB3204B27CE44EE5E11B194653566;
+extern String_t* _stringLiteral8C0F0CE733F3CC8F7A21F0FE1A03368F92EB1612;
+extern String_t* _stringLiteral918F8F1CFBA6FE7DFEE87CE4239C91D2270F5DB1;
 extern String_t* _stringLiteralB782D9835143821E697B67407CCFB082FE6322A9;
 extern String_t* _stringLiteralE56BDFDA02CDB1AF069D764166DBFD5EF4DC1A56;
 extern String_t* _stringLiteralED0A81780A3ACBDFBB61618D731769D527A0C1DE;
@@ -525,6 +557,9 @@ extern const RuntimeMethod* InteractionManager_OnSourceEvent_mC853244D8689197F06
 extern const RuntimeMethod* List_1_Clear_m3404CB77C90B3ECBBB13FC24DF98040FFEEB6CFF_RuntimeMethod_var;
 extern const RuntimeMethod* Nullable_1_get_HasValue_mF3EA958D645F2DA73A25D6BA98D8CDF83ADD532D_RuntimeMethod_var;
 extern const RuntimeMethod* Nullable_1_get_Value_m2164B0E14FD6D71E914E108D3046E1F3D048890B_RuntimeMethod_var;
+extern const RuntimeMethod* PhotoCapture_CreateAsync_m8061C10C1D31CB0774298D3F5FD0D7D9CC61087A_RuntimeMethod_var;
+extern const RuntimeMethod* PhotoCapture_StartPhotoModeAsync_m99D2E175D4E0BA02C7D405506B842D35FBEC837E_RuntimeMethod_var;
+extern const RuntimeMethod* PhotoCapture_TakePhotoAsync_mD16F274D4512DE8256CBBDB867C8FEEB15001C07_RuntimeMethod_var;
 extern const RuntimeMethod* SurfaceObserver_RequestMeshAsync_mF7815161E179CE34FBB9FC52127DAE4B39FEBE95_RuntimeMethod_var;
 extern const uint32_t Boundary_TryGetGeometry_mE516ABC521F94493B6D911938A953FBF44CC8B0F_MetadataUsageId;
 extern const uint32_t DeserializationCompleteDelegate_BeginInvoke_m9910723A46FB34B3B07F0DC4A36338761DBC789C_MetadataUsageId;
@@ -557,6 +592,7 @@ extern const uint32_t GestureRecognizer_add_NavigationCanceled_m457599DCA92748E9
 extern const uint32_t GestureRecognizer_add_NavigationCompleted_mD39CFD50E1AD8B673AB866EA8EAB7E22F2DBDCB3_MetadataUsageId;
 extern const uint32_t GestureRecognizer_add_NavigationStarted_mB4E1B0FCB384F37BD9A9309C7C5B0AFADFA3EB1C_MetadataUsageId;
 extern const uint32_t GestureRecognizer_add_NavigationUpdated_mA509F2737D18188204C6E04154B1A1070F8E711C_MetadataUsageId;
+extern const uint32_t GestureRecognizer_add_Tapped_mD5587B3F0115F9AC0599D555E2988E63136DA3EC_MetadataUsageId;
 extern const uint32_t GestureRecognizer_remove_HoldCanceled_m276406624CF43814FBD0B59FC280721F9894A15E_MetadataUsageId;
 extern const uint32_t GestureRecognizer_remove_HoldCompleted_mAF760AB2059BE3437C0B7325162997ED050C3826_MetadataUsageId;
 extern const uint32_t GestureRecognizer_remove_HoldStarted_m959F935D157277CFFD2CC9EE6135EFD8F9819CB4_MetadataUsageId;
@@ -568,6 +604,7 @@ extern const uint32_t GestureRecognizer_remove_NavigationCanceled_m7F24255B9515A
 extern const uint32_t GestureRecognizer_remove_NavigationCompleted_m549BC4069ABD075D8077660FB94C32235306AA03_MetadataUsageId;
 extern const uint32_t GestureRecognizer_remove_NavigationStarted_m2456D056E789D6F4FC6BB8477658352C1550E8FF_MetadataUsageId;
 extern const uint32_t GestureRecognizer_remove_NavigationUpdated_m279E228CE0E46516F24A472998BC0F5B854EF4E8_MetadataUsageId;
+extern const uint32_t GestureRecognizer_remove_Tapped_mB7FCD101CEEA7DF998931E64E4358F734A06F840_MetadataUsageId;
 extern const uint32_t GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE_com_FromNativeMethodDefinition_MetadataUsageId;
 extern const uint32_t GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
 extern const uint32_t HoldCanceledEventDelegate_BeginInvoke_mB7C6B86BCBD192C46E0DB0CC76536B659DE914B7_MetadataUsageId;
@@ -605,6 +642,7 @@ extern const uint32_t OnVideoModeStoppedCallback_BeginInvoke_mEF5B566774D7F29807
 extern const uint32_t PhotoCaptureFrame_Cleanup_m725D9C5D4FF978325BCE08FF4DF0612AF8F98721_MetadataUsageId;
 extern const uint32_t PhotoCaptureFrame_Dispose_m1B8A252069B6130135A6429E60B32EC94DAAD01C_MetadataUsageId;
 extern const uint32_t PhotoCaptureFrame__ctor_m7D08F4FA37B9B867BA2EFE2A1D099A221FC60731_MetadataUsageId;
+extern const uint32_t PhotoCapture_CreateAsync_m8061C10C1D31CB0774298D3F5FD0D7D9CC61087A_MetadataUsageId;
 extern const uint32_t PhotoCapture_Dispose_m7A77C521109C0A6355702E48C06F52E98751D439_MetadataUsageId;
 extern const uint32_t PhotoCapture_Finalize_m4454CEB3A488D483EBD154BEDDE1432B52CFA056_MetadataUsageId;
 extern const uint32_t PhotoCapture_InvokeOnCapturedPhotoToDiskDelegate_m86E362FE51AD70EE06F4EA1C7EFF2E5A26C4DFBF_MetadataUsageId;
@@ -613,7 +651,10 @@ extern const uint32_t PhotoCapture_InvokeOnCreatedResourceDelegate_m6FBE2E778124
 extern const uint32_t PhotoCapture_InvokeOnPhotoModeStartedDelegate_m3E00364E54C4613ED8715EC6B0912A88F1511745_MetadataUsageId;
 extern const uint32_t PhotoCapture_InvokeOnPhotoModeStoppedDelegate_mCAB94A96A2DF3841227130505BC274CEA5274D2F_MetadataUsageId;
 extern const uint32_t PhotoCapture_MakeCaptureResult_m040E0FBD9B6C69A45CF412BF6B902E8140EE2207_MetadataUsageId;
+extern const uint32_t PhotoCapture_StartPhotoModeAsync_m99D2E175D4E0BA02C7D405506B842D35FBEC837E_MetadataUsageId;
+extern const uint32_t PhotoCapture_TakePhotoAsync_mD16F274D4512DE8256CBBDB867C8FEEB15001C07_MetadataUsageId;
 extern const uint32_t PhotoCapture__cctor_m1E5FBDB0B6F5FDB6EA81DC66B7CD06314DD60D64_MetadataUsageId;
+extern const uint32_t PhotoCapture_get_SupportedResolutions_m1351F10EB4818657DF38696269352058F507B80D_MetadataUsageId;
 extern const uint32_t RecognitionEndedEventDelegate_BeginInvoke_mF3478908780F05C95ABBED5BFA17151A74981F8D_MetadataUsageId;
 extern const uint32_t RecognitionStartedEventDelegate_BeginInvoke_m51C50FCE97EB51769763374DD3DFB4FD38EA8F54_MetadataUsageId;
 extern const uint32_t SerializationCompleteDelegate_BeginInvoke_m92A655FC6A647A2B89EBEB1113FB5AD2376B18A2_MetadataUsageId;
@@ -664,6 +705,7 @@ struct WorldAnchorTransferBatch_t7BF25F7D67684AD6C02C3162A81797BC9045BF96_marsha
 
 struct ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821;
 struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86;
+struct ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A;
 struct InteractionSourceStateU5BU5D_tB8FF9D808295324B506769A009A5BD2C5CD671EA;
 
 
@@ -1031,6 +1073,46 @@ struct Exception_t_marshaled_com
 	intptr_t* ___native_trace_ips_15;
 };
 #endif // EXCEPTION_T_H
+#ifndef MARSHALBYREFOBJECT_TC4577953D0A44D0AB8597CFA868E01C858B1C9AF_H
+#define MARSHALBYREFOBJECT_TC4577953D0A44D0AB8597CFA868E01C858B1C9AF_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.MarshalByRefObject
+struct  MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E01C858B1C9AF  : public RuntimeObject
+{
+public:
+	// System.Object System.MarshalByRefObject::_identity
+	RuntimeObject * ____identity_0;
+
+public:
+	inline static int32_t get_offset_of__identity_0() { return static_cast<int32_t>(offsetof(MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E01C858B1C9AF, ____identity_0)); }
+	inline RuntimeObject * get__identity_0() const { return ____identity_0; }
+	inline RuntimeObject ** get_address_of__identity_0() { return &____identity_0; }
+	inline void set__identity_0(RuntimeObject * value)
+	{
+		____identity_0 = value;
+		Il2CppCodeGenWriteBarrier((&____identity_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Native definition for P/Invoke marshalling of System.MarshalByRefObject
+struct MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E01C858B1C9AF_marshaled_pinvoke
+{
+	Il2CppIUnknown* ____identity_0;
+};
+// Native definition for COM marshalling of System.MarshalByRefObject
+struct MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E01C858B1C9AF_marshaled_com
+{
+	Il2CppIUnknown* ____identity_0;
+};
+#endif // MARSHALBYREFOBJECT_TC4577953D0A44D0AB8597CFA868E01C858B1C9AF_H
 #ifndef STRING_T_H
 #define STRING_T_H
 #ifdef __clang__
@@ -1924,6 +2006,55 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // QUATERNION_T319F3319A7D43FFA5D819AD6C0A98851F0095357_H
+#ifndef RESOLUTION_T350D132B8526B5211E0BF8B22782F20D55994A90_H
+#define RESOLUTION_T350D132B8526B5211E0BF8B22782F20D55994A90_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Resolution
+struct  Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90 
+{
+public:
+	// System.Int32 UnityEngine.Resolution::m_Width
+	int32_t ___m_Width_0;
+	// System.Int32 UnityEngine.Resolution::m_Height
+	int32_t ___m_Height_1;
+	// System.Int32 UnityEngine.Resolution::m_RefreshRate
+	int32_t ___m_RefreshRate_2;
+
+public:
+	inline static int32_t get_offset_of_m_Width_0() { return static_cast<int32_t>(offsetof(Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90, ___m_Width_0)); }
+	inline int32_t get_m_Width_0() const { return ___m_Width_0; }
+	inline int32_t* get_address_of_m_Width_0() { return &___m_Width_0; }
+	inline void set_m_Width_0(int32_t value)
+	{
+		___m_Width_0 = value;
+	}
+
+	inline static int32_t get_offset_of_m_Height_1() { return static_cast<int32_t>(offsetof(Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90, ___m_Height_1)); }
+	inline int32_t get_m_Height_1() const { return ___m_Height_1; }
+	inline int32_t* get_address_of_m_Height_1() { return &___m_Height_1; }
+	inline void set_m_Height_1(int32_t value)
+	{
+		___m_Height_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_RefreshRate_2() { return static_cast<int32_t>(offsetof(Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90, ___m_RefreshRate_2)); }
+	inline int32_t get_m_RefreshRate_2() const { return ___m_RefreshRate_2; }
+	inline int32_t* get_address_of_m_RefreshRate_2() { return &___m_RefreshRate_2; }
+	inline void set_m_RefreshRate_2(int32_t value)
+	{
+		___m_RefreshRate_2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RESOLUTION_T350D132B8526B5211E0BF8B22782F20D55994A90_H
 #ifndef VECTOR2_TA85D2DD88578276CA8A8796756458277E72D073D_H
 #define VECTOR2_TA85D2DD88578276CA8A8796756458277E72D073D_H
 #ifdef __clang__
@@ -2478,6 +2609,35 @@ struct Delegate_t_marshaled_com
 	int32_t ___method_is_virtual_10;
 };
 #endif // DELEGATE_T_H
+#ifndef FILEATTRIBUTES_T224B42F6F82954C94B51791913857C005C559876_H
+#define FILEATTRIBUTES_T224B42F6F82954C94B51791913857C005C559876_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.IO.FileAttributes
+struct  FileAttributes_t224B42F6F82954C94B51791913857C005C559876 
+{
+public:
+	// System.Int32 System.IO.FileAttributes::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(FileAttributes_t224B42F6F82954C94B51791913857C005C559876, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FILEATTRIBUTES_T224B42F6F82954C94B51791913857C005C559876_H
 #ifndef BOUNDS_TA2716F5212749C61B0E7B7B77E0CD3D79B742890_H
 #define BOUNDS_TA2716F5212749C61B0E7B7B77E0CD3D79B742890_H
 #ifdef __clang__
@@ -3784,16 +3944,27 @@ public:
 struct PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields
 {
 public:
+	// UnityEngine.Resolution[] UnityEngine.XR.WSA.WebCam.PhotoCapture::s_SupportedResolutions
+	ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* ___s_SupportedResolutions_1;
 	// System.Int64 UnityEngine.XR.WSA.WebCam.PhotoCapture::HR_SUCCESS
-	int64_t ___HR_SUCCESS_1;
+	int64_t ___HR_SUCCESS_2;
 
 public:
-	inline static int32_t get_offset_of_HR_SUCCESS_1() { return static_cast<int32_t>(offsetof(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields, ___HR_SUCCESS_1)); }
-	inline int64_t get_HR_SUCCESS_1() const { return ___HR_SUCCESS_1; }
-	inline int64_t* get_address_of_HR_SUCCESS_1() { return &___HR_SUCCESS_1; }
-	inline void set_HR_SUCCESS_1(int64_t value)
+	inline static int32_t get_offset_of_s_SupportedResolutions_1() { return static_cast<int32_t>(offsetof(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields, ___s_SupportedResolutions_1)); }
+	inline ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* get_s_SupportedResolutions_1() const { return ___s_SupportedResolutions_1; }
+	inline ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A** get_address_of_s_SupportedResolutions_1() { return &___s_SupportedResolutions_1; }
+	inline void set_s_SupportedResolutions_1(ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* value)
 	{
-		___HR_SUCCESS_1 = value;
+		___s_SupportedResolutions_1 = value;
+		Il2CppCodeGenWriteBarrier((&___s_SupportedResolutions_1), value);
+	}
+
+	inline static int32_t get_offset_of_HR_SUCCESS_2() { return static_cast<int32_t>(offsetof(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields, ___HR_SUCCESS_2)); }
+	inline int64_t get_HR_SUCCESS_2() const { return ___HR_SUCCESS_2; }
+	inline int64_t* get_address_of_HR_SUCCESS_2() { return &___HR_SUCCESS_2; }
+	inline void set_HR_SUCCESS_2(int64_t value)
+	{
+		___HR_SUCCESS_2 = value;
 	}
 };
 
@@ -3840,6 +4011,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // CAPTURERESULTTYPE_T6558EC085D1F5804260CE9BAE4754D4F1D55C657_H
+#ifndef PHOTOCAPTUREFILEOUTPUTFORMAT_T10EA03CB8C51B58D2D7B36F75FCD2FB705BEDA5E_H
+#define PHOTOCAPTUREFILEOUTPUTFORMAT_T10EA03CB8C51B58D2D7B36F75FCD2FB705BEDA5E_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.XR.WSA.WebCam.PhotoCaptureFileOutputFormat
+struct  PhotoCaptureFileOutputFormat_t10EA03CB8C51B58D2D7B36F75FCD2FB705BEDA5E 
+{
+public:
+	// System.Int32 UnityEngine.XR.WSA.WebCam.PhotoCaptureFileOutputFormat::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(PhotoCaptureFileOutputFormat_t10EA03CB8C51B58D2D7B36F75FCD2FB705BEDA5E, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PHOTOCAPTUREFILEOUTPUTFORMAT_T10EA03CB8C51B58D2D7B36F75FCD2FB705BEDA5E_H
 #ifndef VIDEOCAPTURE_T5AE8BEBF2D63554F6A0E5A3FCF13578934120FFA_H
 #define VIDEOCAPTURE_T5AE8BEBF2D63554F6A0E5A3FCF13578934120FFA_H
 #ifdef __clang__
@@ -3944,6 +4144,122 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ARGUMENTNULLEXCEPTION_T581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_H
+#ifndef ARGUMENTOUTOFRANGEEXCEPTION_T94D19DF918A54511AEDF4784C9A08741BAD1DEDA_H
+#define ARGUMENTOUTOFRANGEEXCEPTION_T94D19DF918A54511AEDF4784C9A08741BAD1DEDA_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.ArgumentOutOfRangeException
+struct  ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA  : public ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1
+{
+public:
+	// System.Object System.ArgumentOutOfRangeException::m_actualValue
+	RuntimeObject * ___m_actualValue_19;
+
+public:
+	inline static int32_t get_offset_of_m_actualValue_19() { return static_cast<int32_t>(offsetof(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA, ___m_actualValue_19)); }
+	inline RuntimeObject * get_m_actualValue_19() const { return ___m_actualValue_19; }
+	inline RuntimeObject ** get_address_of_m_actualValue_19() { return &___m_actualValue_19; }
+	inline void set_m_actualValue_19(RuntimeObject * value)
+	{
+		___m_actualValue_19 = value;
+		Il2CppCodeGenWriteBarrier((&___m_actualValue_19), value);
+	}
+};
+
+struct ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_StaticFields
+{
+public:
+	// System.String modreq(System.Runtime.CompilerServices.IsVolatile) System.ArgumentOutOfRangeException::_rangeMessage
+	String_t* ____rangeMessage_18;
+
+public:
+	inline static int32_t get_offset_of__rangeMessage_18() { return static_cast<int32_t>(offsetof(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_StaticFields, ____rangeMessage_18)); }
+	inline String_t* get__rangeMessage_18() const { return ____rangeMessage_18; }
+	inline String_t** get_address_of__rangeMessage_18() { return &____rangeMessage_18; }
+	inline void set__rangeMessage_18(String_t* value)
+	{
+		____rangeMessage_18 = value;
+		Il2CppCodeGenWriteBarrier((&____rangeMessage_18), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ARGUMENTOUTOFRANGEEXCEPTION_T94D19DF918A54511AEDF4784C9A08741BAD1DEDA_H
+#ifndef MONOIOSTAT_T819C03DA1902AA493BDBF4B55E76DCE6FB16A124_H
+#define MONOIOSTAT_T819C03DA1902AA493BDBF4B55E76DCE6FB16A124_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.IO.MonoIOStat
+struct  MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124 
+{
+public:
+	// System.IO.FileAttributes System.IO.MonoIOStat::fileAttributes
+	int32_t ___fileAttributes_0;
+	// System.Int64 System.IO.MonoIOStat::Length
+	int64_t ___Length_1;
+	// System.Int64 System.IO.MonoIOStat::CreationTime
+	int64_t ___CreationTime_2;
+	// System.Int64 System.IO.MonoIOStat::LastAccessTime
+	int64_t ___LastAccessTime_3;
+	// System.Int64 System.IO.MonoIOStat::LastWriteTime
+	int64_t ___LastWriteTime_4;
+
+public:
+	inline static int32_t get_offset_of_fileAttributes_0() { return static_cast<int32_t>(offsetof(MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124, ___fileAttributes_0)); }
+	inline int32_t get_fileAttributes_0() const { return ___fileAttributes_0; }
+	inline int32_t* get_address_of_fileAttributes_0() { return &___fileAttributes_0; }
+	inline void set_fileAttributes_0(int32_t value)
+	{
+		___fileAttributes_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Length_1() { return static_cast<int32_t>(offsetof(MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124, ___Length_1)); }
+	inline int64_t get_Length_1() const { return ___Length_1; }
+	inline int64_t* get_address_of_Length_1() { return &___Length_1; }
+	inline void set_Length_1(int64_t value)
+	{
+		___Length_1 = value;
+	}
+
+	inline static int32_t get_offset_of_CreationTime_2() { return static_cast<int32_t>(offsetof(MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124, ___CreationTime_2)); }
+	inline int64_t get_CreationTime_2() const { return ___CreationTime_2; }
+	inline int64_t* get_address_of_CreationTime_2() { return &___CreationTime_2; }
+	inline void set_CreationTime_2(int64_t value)
+	{
+		___CreationTime_2 = value;
+	}
+
+	inline static int32_t get_offset_of_LastAccessTime_3() { return static_cast<int32_t>(offsetof(MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124, ___LastAccessTime_3)); }
+	inline int64_t get_LastAccessTime_3() const { return ___LastAccessTime_3; }
+	inline int64_t* get_address_of_LastAccessTime_3() { return &___LastAccessTime_3; }
+	inline void set_LastAccessTime_3(int64_t value)
+	{
+		___LastAccessTime_3 = value;
+	}
+
+	inline static int32_t get_offset_of_LastWriteTime_4() { return static_cast<int32_t>(offsetof(MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124, ___LastWriteTime_4)); }
+	inline int64_t get_LastWriteTime_4() const { return ___LastWriteTime_4; }
+	inline int64_t* get_address_of_LastWriteTime_4() { return &___LastWriteTime_4; }
+	inline void set_LastWriteTime_4(int64_t value)
+	{
+		___LastWriteTime_4 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MONOIOSTAT_T819C03DA1902AA493BDBF4B55E76DCE6FB16A124_H
 #ifndef MULTICASTDELEGATE_T_H
 #define MULTICASTDELEGATE_T_H
 #ifdef __clang__
@@ -4192,6 +4508,75 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INTERACTIONSOURCEPOSE_T249CD43F634426269571F0E4689428ACC8C54F73_H
+#ifndef CAMERAPARAMETERS_TC09BEA593340D022EA8B650A7F192952AD418D0D_H
+#define CAMERAPARAMETERS_TC09BEA593340D022EA8B650A7F192952AD418D0D_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.XR.WSA.WebCam.CameraParameters
+struct  CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D 
+{
+public:
+	// System.Single UnityEngine.XR.WSA.WebCam.CameraParameters::m_HologramOpacity
+	float ___m_HologramOpacity_0;
+	// System.Single UnityEngine.XR.WSA.WebCam.CameraParameters::m_FrameRate
+	float ___m_FrameRate_1;
+	// System.Int32 UnityEngine.XR.WSA.WebCam.CameraParameters::m_CameraResolutionWidth
+	int32_t ___m_CameraResolutionWidth_2;
+	// System.Int32 UnityEngine.XR.WSA.WebCam.CameraParameters::m_CameraResolutionHeight
+	int32_t ___m_CameraResolutionHeight_3;
+	// UnityEngine.XR.WSA.WebCam.CapturePixelFormat UnityEngine.XR.WSA.WebCam.CameraParameters::m_PixelFormat
+	int32_t ___m_PixelFormat_4;
+
+public:
+	inline static int32_t get_offset_of_m_HologramOpacity_0() { return static_cast<int32_t>(offsetof(CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D, ___m_HologramOpacity_0)); }
+	inline float get_m_HologramOpacity_0() const { return ___m_HologramOpacity_0; }
+	inline float* get_address_of_m_HologramOpacity_0() { return &___m_HologramOpacity_0; }
+	inline void set_m_HologramOpacity_0(float value)
+	{
+		___m_HologramOpacity_0 = value;
+	}
+
+	inline static int32_t get_offset_of_m_FrameRate_1() { return static_cast<int32_t>(offsetof(CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D, ___m_FrameRate_1)); }
+	inline float get_m_FrameRate_1() const { return ___m_FrameRate_1; }
+	inline float* get_address_of_m_FrameRate_1() { return &___m_FrameRate_1; }
+	inline void set_m_FrameRate_1(float value)
+	{
+		___m_FrameRate_1 = value;
+	}
+
+	inline static int32_t get_offset_of_m_CameraResolutionWidth_2() { return static_cast<int32_t>(offsetof(CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D, ___m_CameraResolutionWidth_2)); }
+	inline int32_t get_m_CameraResolutionWidth_2() const { return ___m_CameraResolutionWidth_2; }
+	inline int32_t* get_address_of_m_CameraResolutionWidth_2() { return &___m_CameraResolutionWidth_2; }
+	inline void set_m_CameraResolutionWidth_2(int32_t value)
+	{
+		___m_CameraResolutionWidth_2 = value;
+	}
+
+	inline static int32_t get_offset_of_m_CameraResolutionHeight_3() { return static_cast<int32_t>(offsetof(CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D, ___m_CameraResolutionHeight_3)); }
+	inline int32_t get_m_CameraResolutionHeight_3() const { return ___m_CameraResolutionHeight_3; }
+	inline int32_t* get_address_of_m_CameraResolutionHeight_3() { return &___m_CameraResolutionHeight_3; }
+	inline void set_m_CameraResolutionHeight_3(int32_t value)
+	{
+		___m_CameraResolutionHeight_3 = value;
+	}
+
+	inline static int32_t get_offset_of_m_PixelFormat_4() { return static_cast<int32_t>(offsetof(CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D, ___m_PixelFormat_4)); }
+	inline int32_t get_m_PixelFormat_4() const { return ___m_PixelFormat_4; }
+	inline int32_t* get_address_of_m_PixelFormat_4() { return &___m_PixelFormat_4; }
+	inline void set_m_PixelFormat_4(int32_t value)
+	{
+		___m_PixelFormat_4 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // CAMERAPARAMETERS_TC09BEA593340D022EA8B650A7F192952AD418D0D_H
 #ifndef PHOTOCAPTURERESULT_TB8F50F3F223E84B961166C1536336C2BC2C921AC_H
 #define PHOTOCAPTURERESULT_TB8F50F3F223E84B961166C1536336C2BC2C921AC_H
 #ifdef __clang__
@@ -4389,6 +4774,78 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ASYNCCALLBACK_T3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4_H
+#ifndef FILESYSTEMINFO_T6831B76FBA37F7181E4A5AEB28194730EB356A3D_H
+#define FILESYSTEMINFO_T6831B76FBA37F7181E4A5AEB28194730EB356A3D_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.IO.FileSystemInfo
+struct  FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D  : public MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E01C858B1C9AF
+{
+public:
+	// System.IO.MonoIOStat System.IO.FileSystemInfo::_data
+	MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124  ____data_1;
+	// System.Int32 System.IO.FileSystemInfo::_dataInitialised
+	int32_t ____dataInitialised_2;
+	// System.String System.IO.FileSystemInfo::FullPath
+	String_t* ___FullPath_3;
+	// System.String System.IO.FileSystemInfo::OriginalPath
+	String_t* ___OriginalPath_4;
+	// System.String System.IO.FileSystemInfo::_displayPath
+	String_t* ____displayPath_5;
+
+public:
+	inline static int32_t get_offset_of__data_1() { return static_cast<int32_t>(offsetof(FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D, ____data_1)); }
+	inline MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124  get__data_1() const { return ____data_1; }
+	inline MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124 * get_address_of__data_1() { return &____data_1; }
+	inline void set__data_1(MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124  value)
+	{
+		____data_1 = value;
+	}
+
+	inline static int32_t get_offset_of__dataInitialised_2() { return static_cast<int32_t>(offsetof(FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D, ____dataInitialised_2)); }
+	inline int32_t get__dataInitialised_2() const { return ____dataInitialised_2; }
+	inline int32_t* get_address_of__dataInitialised_2() { return &____dataInitialised_2; }
+	inline void set__dataInitialised_2(int32_t value)
+	{
+		____dataInitialised_2 = value;
+	}
+
+	inline static int32_t get_offset_of_FullPath_3() { return static_cast<int32_t>(offsetof(FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D, ___FullPath_3)); }
+	inline String_t* get_FullPath_3() const { return ___FullPath_3; }
+	inline String_t** get_address_of_FullPath_3() { return &___FullPath_3; }
+	inline void set_FullPath_3(String_t* value)
+	{
+		___FullPath_3 = value;
+		Il2CppCodeGenWriteBarrier((&___FullPath_3), value);
+	}
+
+	inline static int32_t get_offset_of_OriginalPath_4() { return static_cast<int32_t>(offsetof(FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D, ___OriginalPath_4)); }
+	inline String_t* get_OriginalPath_4() const { return ___OriginalPath_4; }
+	inline String_t** get_address_of_OriginalPath_4() { return &___OriginalPath_4; }
+	inline void set_OriginalPath_4(String_t* value)
+	{
+		___OriginalPath_4 = value;
+		Il2CppCodeGenWriteBarrier((&___OriginalPath_4), value);
+	}
+
+	inline static int32_t get_offset_of__displayPath_5() { return static_cast<int32_t>(offsetof(FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D, ____displayPath_5)); }
+	inline String_t* get__displayPath_5() const { return ____displayPath_5; }
+	inline String_t** get_address_of__displayPath_5() { return &____displayPath_5; }
+	inline void set__displayPath_5(String_t* value)
+	{
+		____displayPath_5 = value;
+		Il2CppCodeGenWriteBarrier((&____displayPath_5), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FILESYSTEMINFO_T6831B76FBA37F7181E4A5AEB28194730EB356A3D_H
 #ifndef NULLABLE_1_T2BAE7F2F24CA3009C8A4626DF50D64CBD4A00FBE_H
 #define NULLABLE_1_T2BAE7F2F24CA3009C8A4626DF50D64CBD4A00FBE_H
 #ifdef __clang__
@@ -6223,6 +6680,36 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ACTION_1_TF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12_H
+#ifndef FILEINFO_TF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C_H
+#define FILEINFO_TF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.IO.FileInfo
+struct  FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C  : public FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D
+{
+public:
+	// System.String System.IO.FileInfo::_name
+	String_t* ____name_6;
+
+public:
+	inline static int32_t get_offset_of__name_6() { return static_cast<int32_t>(offsetof(FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C, ____name_6)); }
+	inline String_t* get__name_6() const { return ____name_6; }
+	inline String_t** get_address_of__name_6() { return &____name_6; }
+	inline void set__name_6(String_t* value)
+	{
+		____name_6 = value;
+		Il2CppCodeGenWriteBarrier((&____name_6), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FILEINFO_TF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C_H
 #ifndef MESHCOLLIDER_T60EB55ADE92499FE8D1AA206D2BD96E65B2766DE_H
 #define MESHCOLLIDER_T60EB55ADE92499FE8D1AA206D2BD96E65B2766DE_H
 #ifdef __clang__
@@ -6724,6 +7211,41 @@ public:
 		m_Items[index] = value;
 	}
 };
+// UnityEngine.Resolution[]
+struct ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90  m_Items[1];
+
+public:
+	inline Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90  GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90 * GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90  value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90  GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Resolution_t350D132B8526B5211E0BF8B22782F20D55994A90  value)
+	{
+		m_Items[index] = value;
+	}
+};
 
 extern "C" void WorldAnchorStore_tD361F689FE6F087AD3F38BA8724398992434E225_marshal_pinvoke(const WorldAnchorStore_tD361F689FE6F087AD3F38BA8724398992434E225& unmarshaled, WorldAnchorStore_tD361F689FE6F087AD3F38BA8724398992434E225_marshaled_pinvoke& marshaled);
 extern "C" void WorldAnchorStore_tD361F689FE6F087AD3F38BA8724398992434E225_marshal_pinvoke_back(const WorldAnchorStore_tD361F689FE6F087AD3F38BA8724398992434E225_marshaled_pinvoke& marshaled, WorldAnchorStore_tD361F689FE6F087AD3F38BA8724398992434E225& unmarshaled);
@@ -7158,18 +7680,54 @@ extern "C" IL2CPP_METHOD_ATTR void ArgumentException__ctor_m26DC3463C6F3C98BF33E
 extern "C" IL2CPP_METHOD_ATTR bool SurfaceObserver_Internal_AddToWorkQueue_mA53AA2E479B092B14AE8B26B05D2E18197CE445D (int32_t ___observer0, SurfaceDataReadyDelegate_t612948BD68C321AF19136CC76F4F94B778B20092 * ___onDataReady1, int32_t ___surfaceId2, MeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0 * ___filter3, WorldAnchor_tD6275232D14415769601A3BD6AE1E7D5622F96EE * ___wa4, MeshCollider_t60EB55ADE92499FE8D1AA206D2BD96E65B2766DE * ___mc5, float ___trisPerCubicMeter6, bool ___createColliderData7, const RuntimeMethod* method);
 // System.Void UnityEngine.Debug::LogError(System.Object)
 extern "C" IL2CPP_METHOD_ATTR void Debug_LogError_m3BCF9B78263152261565DCA9DB7D55F0C391ED29 (RuntimeObject * p0, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.WSA.WebCam.CameraParameters::set_hologramOpacity(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void CameraParameters_set_hologramOpacity_m8268D5851CA451AE44442024ED83BB476DFEBC25 (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, float ___value0, const RuntimeMethod* method);
+// System.Int32 UnityEngine.XR.WSA.WebCam.CameraParameters::get_cameraResolutionWidth()
+extern "C" IL2CPP_METHOD_ATTR int32_t CameraParameters_get_cameraResolutionWidth_m9BAB3D4EED6C7A069D262FB8F1D1B40885C07378 (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.WSA.WebCam.CameraParameters::set_cameraResolutionWidth(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void CameraParameters_set_cameraResolutionWidth_m6B43E55FCA812EB0AF9EDEA46D334BC00AB39C2E (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, int32_t ___value0, const RuntimeMethod* method);
+// System.Int32 UnityEngine.XR.WSA.WebCam.CameraParameters::get_cameraResolutionHeight()
+extern "C" IL2CPP_METHOD_ATTR int32_t CameraParameters_get_cameraResolutionHeight_mF17952C0552E141661922313A0F2EF6AB357B0C6 (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.WSA.WebCam.CameraParameters::set_cameraResolutionHeight(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void CameraParameters_set_cameraResolutionHeight_m70586C371D51770F9F87AFA3CB04BBE875CC40D7 (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, int32_t ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.WSA.WebCam.CameraParameters::set_pixelFormat(UnityEngine.XR.WSA.WebCam.CapturePixelFormat)
+extern "C" IL2CPP_METHOD_ATTR void CameraParameters_set_pixelFormat_m66FBBBEA7661456F0CEC2A6D2948BDF9CAA86DFA (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, int32_t ___value0, const RuntimeMethod* method);
+// UnityEngine.Resolution[] UnityEngine.XR.WSA.WebCam.PhotoCapture::GetSupportedResolutions_Internal()
+extern "C" IL2CPP_METHOD_ATTR ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* PhotoCapture_GetSupportedResolutions_Internal_mC543269046B182AC7ABAAA3F11EC6A058B4A7925 (const RuntimeMethod* method);
+// System.IntPtr UnityEngine.XR.WSA.WebCam.PhotoCapture::Instantiate_Internal(System.Boolean,UnityEngine.XR.WSA.WebCam.PhotoCapture/OnCaptureResourceCreatedCallback)
+extern "C" IL2CPP_METHOD_ATTR intptr_t PhotoCapture_Instantiate_Internal_m12D07D0D8254BCA82EED8A285827CD67167BE3A6 (bool ___showHolograms0, OnCaptureResourceCreatedCallback_t2C031B8432401E472889526CAF2CA987AC99D5D1 * ___onCreatedCallback1, const RuntimeMethod* method);
 // System.Boolean System.IntPtr::op_Equality(System.IntPtr,System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR bool IntPtr_op_Equality_mEE8D9FD2DFE312BBAA8B4ED3BF7976B3142A5934 (intptr_t p0, intptr_t p1, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture/OnCaptureResourceCreatedCallback::Invoke(UnityEngine.XR.WSA.WebCam.PhotoCapture)
 extern "C" IL2CPP_METHOD_ATTR void OnCaptureResourceCreatedCallback_Invoke_mD4531195F8FE3931F7E809A26CD4EB53FD9D4E2E (OnCaptureResourceCreatedCallback_t2C031B8432401E472889526CAF2CA987AC99D5D1 * __this, PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * ___captureObject0, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::.ctor(System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR void PhotoCapture__ctor_mE11D76F28D9CFB54A2619A8459A91781C843E590 (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, intptr_t ___nativeCaptureObject0, const RuntimeMethod* method);
+// System.Void System.ArgumentOutOfRangeException::.ctor(System.String,System.String)
+extern "C" IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_m300CE4D04A068C209FD858101AC361C1B600B5AE (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * __this, String_t* p0, String_t* p1, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::StartPhotoMode_Internal(UnityEngine.XR.WSA.WebCam.CameraParameters,UnityEngine.XR.WSA.WebCam.PhotoCapture/OnPhotoModeStartedCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_StartPhotoMode_Internal_mA12C93B37EE2C41BE7A3BCB6B86A39A885784024 (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D  ___setupParams0, OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * ___onPhotoModeStartedCallback1, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::StartPhotoMode_Internal_Injected(UnityEngine.XR.WSA.WebCam.CameraParameters&,UnityEngine.XR.WSA.WebCam.PhotoCapture/OnPhotoModeStartedCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_StartPhotoMode_Internal_Injected_m2131FEE1DF2335813FF37EB8DCE2E4DAF5F4C966 (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * ___setupParams0, OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * ___onPhotoModeStartedCallback1, const RuntimeMethod* method);
 // UnityEngine.XR.WSA.WebCam.PhotoCapture/PhotoCaptureResult UnityEngine.XR.WSA.WebCam.PhotoCapture::MakeCaptureResult(System.Int64)
 extern "C" IL2CPP_METHOD_ATTR PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC  PhotoCapture_MakeCaptureResult_m040E0FBD9B6C69A45CF412BF6B902E8140EE2207 (int64_t ___hResult0, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture/OnPhotoModeStartedCallback::Invoke(UnityEngine.XR.WSA.WebCam.PhotoCapture/PhotoCaptureResult)
 extern "C" IL2CPP_METHOD_ATTR void OnPhotoModeStartedCallback_Invoke_m243EF1BEA4A7ED007D21E1FF0DD7CFD584814C15 (OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * __this, PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC  ___result0, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture/OnPhotoModeStoppedCallback::Invoke(UnityEngine.XR.WSA.WebCam.PhotoCapture/PhotoCaptureResult)
 extern "C" IL2CPP_METHOD_ATTR void OnPhotoModeStoppedCallback_Invoke_m86BD8A1BC55CCEE1B13CBD9CF9A01021149AD92E (OnPhotoModeStoppedCallback_t80B25F7611051F3335A92707211B540F04E08592 * __this, PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC  ___result0, const RuntimeMethod* method);
+// System.Boolean System.String::IsNullOrEmpty(System.String)
+extern "C" IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_m06A85A206AC2106D1982826C5665B9BD35324229 (String_t* p0, const RuntimeMethod* method);
+// System.String System.String::Replace(System.String,System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* String_Replace_m970DFB0A280952FA7D3BA20AB7A8FB9F80CF6470 (String_t* __this, String_t* p0, String_t* p1, const RuntimeMethod* method);
+// System.String System.IO.Path::GetDirectoryName(System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* Path_GetDirectoryName_m61922AA6D7B48EACBA36FF41A1B28F506CFB8A97 (String_t* p0, const RuntimeMethod* method);
+// System.Boolean System.IO.Directory::Exists(System.String)
+extern "C" IL2CPP_METHOD_ATTR bool Directory_Exists_mB77956D89305E16FEFCBDFC55CCC98F03AEE4D84 (String_t* p0, const RuntimeMethod* method);
+// System.Void System.IO.FileInfo::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void FileInfo__ctor_m77D19A494A542C924C36FDD8AE5CDBEA97CE68B8 (FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C * __this, String_t* p0, const RuntimeMethod* method);
+// System.Boolean System.IO.FileInfo::get_IsReadOnly()
+extern "C" IL2CPP_METHOD_ATTR bool FileInfo_get_IsReadOnly_m6F79CC5BBEFEA852BABC670B70D17B0C2A944C37 (FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::CapturePhotoToDisk_Internal(System.String,UnityEngine.XR.WSA.WebCam.PhotoCaptureFileOutputFormat,UnityEngine.XR.WSA.WebCam.PhotoCapture/OnCapturedToDiskCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_CapturePhotoToDisk_Internal_mB21D46372BD58BDB8EBD0B3F72C0A0C23E96246E (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, String_t* ___filename0, int32_t ___fileOutputFormat1, OnCapturedToDiskCallback_tAC3EFE8F816D568DFACBDCAAC2102ACC8F7927DA * ___onCapturedPhotoToDiskCallback2, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture/OnCapturedToDiskCallback::Invoke(UnityEngine.XR.WSA.WebCam.PhotoCapture/PhotoCaptureResult)
 extern "C" IL2CPP_METHOD_ATTR void OnCapturedToDiskCallback_Invoke_m3817A930596E68ACFB7E1CCAD9255294DBE62F69 (OnCapturedToDiskCallback_tAC3EFE8F816D568DFACBDCAAC2102ACC8F7927DA * __this, PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC  ___result0, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCaptureFrame::.ctor(System.IntPtr)
@@ -7831,6 +8389,82 @@ IL_0007:
 		Action_1_t9A7EBE66F02FBEEDDB83D150DBABC2F2728C7F8E * L_8 = V_0;
 		Action_1_t9A7EBE66F02FBEEDDB83D150DBABC2F2728C7F8E * L_9 = V_1;
 		if ((!(((RuntimeObject*)(Action_1_t9A7EBE66F02FBEEDDB83D150DBABC2F2728C7F8E *)L_8) == ((RuntimeObject*)(Action_1_t9A7EBE66F02FBEEDDB83D150DBABC2F2728C7F8E *)L_9))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::add_Tapped(System.Action`1<UnityEngine.XR.WSA.Input.TappedEventArgs>)
+extern "C" IL2CPP_METHOD_ATTR void GestureRecognizer_add_Tapped_mD5587B3F0115F9AC0599D555E2988E63136DA3EC (GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * __this, Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GestureRecognizer_add_Tapped_mD5587B3F0115F9AC0599D555E2988E63136DA3EC_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * V_0 = NULL;
+	Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * V_1 = NULL;
+	{
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_0 = __this->get_Tapped_4();
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_1 = V_0;
+		V_1 = L_1;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 ** L_2 = __this->get_address_of_Tapped_4();
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_3 = V_1;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_4 = ___value0;
+		Delegate_t * L_5 = Delegate_Combine_mC25D2F7DECAFBA6D9A2F9EBA8A77063F0658ECF1(L_3, L_4, /*hidden argument*/NULL);
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_6 = V_0;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_7 = InterlockedCompareExchangeImpl<Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 *>((Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 **)L_2, ((Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 *)CastclassSealed((RuntimeObject*)L_5, Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12_il2cpp_TypeInfo_var)), L_6);
+		V_0 = L_7;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_8 = V_0;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_9 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 *)L_8) == ((RuntimeObject*)(Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 *)L_9))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.WSA.Input.GestureRecognizer::remove_Tapped(System.Action`1<UnityEngine.XR.WSA.Input.TappedEventArgs>)
+extern "C" IL2CPP_METHOD_ATTR void GestureRecognizer_remove_Tapped_mB7FCD101CEEA7DF998931E64E4358F734A06F840 (GestureRecognizer_tE4A3B36C495289B1DF1011E12394116A91E361DE * __this, Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GestureRecognizer_remove_Tapped_mB7FCD101CEEA7DF998931E64E4358F734A06F840_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * V_0 = NULL;
+	Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * V_1 = NULL;
+	{
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_0 = __this->get_Tapped_4();
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_1 = V_0;
+		V_1 = L_1;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 ** L_2 = __this->get_address_of_Tapped_4();
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_3 = V_1;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_4 = ___value0;
+		Delegate_t * L_5 = Delegate_Remove_m0B0DB7D1B3AF96B71AFAA72BA0EFE32FBBC2932D(L_3, L_4, /*hidden argument*/NULL);
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_6 = V_0;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_7 = InterlockedCompareExchangeImpl<Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 *>((Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 **)L_2, ((Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 *)CastclassSealed((RuntimeObject*)L_5, Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12_il2cpp_TypeInfo_var)), L_6);
+		V_0 = L_7;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_8 = V_0;
+		Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 * L_9 = V_1;
+		if ((!(((RuntimeObject*)(Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 *)L_8) == ((RuntimeObject*)(Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12 *)L_9))))
 		{
 			goto IL_0007;
 		}
@@ -16869,6 +17503,112 @@ extern "C" IL2CPP_METHOD_ATTR void SurfaceDataReadyDelegate_EndInvoke_m84CAA2A8F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.XR.WSA.WebCam.CameraParameters::set_hologramOpacity(System.Single)
+extern "C" IL2CPP_METHOD_ATTR void CameraParameters_set_hologramOpacity_m8268D5851CA451AE44442024ED83BB476DFEBC25 (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, float ___value0, const RuntimeMethod* method)
+{
+	{
+		float L_0 = ___value0;
+		__this->set_m_HologramOpacity_0(L_0);
+		return;
+	}
+}
+extern "C"  void CameraParameters_set_hologramOpacity_m8268D5851CA451AE44442024ED83BB476DFEBC25_AdjustorThunk (RuntimeObject * __this, float ___value0, const RuntimeMethod* method)
+{
+	CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * _thisAdjusted = reinterpret_cast<CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *>(__this + 1);
+	CameraParameters_set_hologramOpacity_m8268D5851CA451AE44442024ED83BB476DFEBC25(_thisAdjusted, ___value0, method);
+}
+// System.Int32 UnityEngine.XR.WSA.WebCam.CameraParameters::get_cameraResolutionWidth()
+extern "C" IL2CPP_METHOD_ATTR int32_t CameraParameters_get_cameraResolutionWidth_m9BAB3D4EED6C7A069D262FB8F1D1B40885C07378 (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_m_CameraResolutionWidth_2();
+		V_0 = L_0;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  int32_t CameraParameters_get_cameraResolutionWidth_m9BAB3D4EED6C7A069D262FB8F1D1B40885C07378_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * _thisAdjusted = reinterpret_cast<CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *>(__this + 1);
+	return CameraParameters_get_cameraResolutionWidth_m9BAB3D4EED6C7A069D262FB8F1D1B40885C07378(_thisAdjusted, method);
+}
+// System.Void UnityEngine.XR.WSA.WebCam.CameraParameters::set_cameraResolutionWidth(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void CameraParameters_set_cameraResolutionWidth_m6B43E55FCA812EB0AF9EDEA46D334BC00AB39C2E (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_m_CameraResolutionWidth_2(L_0);
+		return;
+	}
+}
+extern "C"  void CameraParameters_set_cameraResolutionWidth_m6B43E55FCA812EB0AF9EDEA46D334BC00AB39C2E_AdjustorThunk (RuntimeObject * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * _thisAdjusted = reinterpret_cast<CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *>(__this + 1);
+	CameraParameters_set_cameraResolutionWidth_m6B43E55FCA812EB0AF9EDEA46D334BC00AB39C2E(_thisAdjusted, ___value0, method);
+}
+// System.Int32 UnityEngine.XR.WSA.WebCam.CameraParameters::get_cameraResolutionHeight()
+extern "C" IL2CPP_METHOD_ATTR int32_t CameraParameters_get_cameraResolutionHeight_mF17952C0552E141661922313A0F2EF6AB357B0C6 (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_m_CameraResolutionHeight_3();
+		V_0 = L_0;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  int32_t CameraParameters_get_cameraResolutionHeight_mF17952C0552E141661922313A0F2EF6AB357B0C6_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * _thisAdjusted = reinterpret_cast<CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *>(__this + 1);
+	return CameraParameters_get_cameraResolutionHeight_mF17952C0552E141661922313A0F2EF6AB357B0C6(_thisAdjusted, method);
+}
+// System.Void UnityEngine.XR.WSA.WebCam.CameraParameters::set_cameraResolutionHeight(System.Int32)
+extern "C" IL2CPP_METHOD_ATTR void CameraParameters_set_cameraResolutionHeight_m70586C371D51770F9F87AFA3CB04BBE875CC40D7 (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_m_CameraResolutionHeight_3(L_0);
+		return;
+	}
+}
+extern "C"  void CameraParameters_set_cameraResolutionHeight_m70586C371D51770F9F87AFA3CB04BBE875CC40D7_AdjustorThunk (RuntimeObject * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * _thisAdjusted = reinterpret_cast<CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *>(__this + 1);
+	CameraParameters_set_cameraResolutionHeight_m70586C371D51770F9F87AFA3CB04BBE875CC40D7(_thisAdjusted, ___value0, method);
+}
+// System.Void UnityEngine.XR.WSA.WebCam.CameraParameters::set_pixelFormat(UnityEngine.XR.WSA.WebCam.CapturePixelFormat)
+extern "C" IL2CPP_METHOD_ATTR void CameraParameters_set_pixelFormat_m66FBBBEA7661456F0CEC2A6D2948BDF9CAA86DFA (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->set_m_PixelFormat_4(L_0);
+		return;
+	}
+}
+extern "C"  void CameraParameters_set_pixelFormat_m66FBBBEA7661456F0CEC2A6D2948BDF9CAA86DFA_AdjustorThunk (RuntimeObject * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * _thisAdjusted = reinterpret_cast<CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *>(__this + 1);
+	CameraParameters_set_pixelFormat_m66FBBBEA7661456F0CEC2A6D2948BDF9CAA86DFA(_thisAdjusted, ___value0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -16937,7 +17677,7 @@ extern "C" IL2CPP_METHOD_ATTR PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C
 		il2cpp_codegen_initobj((&V_0), sizeof(PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC ));
 		int64_t L_0 = ___hResult0;
 		IL2CPP_RUNTIME_CLASS_INIT(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var);
-		int64_t L_1 = ((PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields*)il2cpp_codegen_static_fields_for(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var))->get_HR_SUCCESS_1();
+		int64_t L_1 = ((PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields*)il2cpp_codegen_static_fields_for(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var))->get_HR_SUCCESS_2();
 		if ((!(((uint64_t)L_0) == ((uint64_t)L_1))))
 		{
 			goto IL_001d;
@@ -16969,6 +17709,95 @@ IL_0038:
 		PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC  L_5 = V_2;
 		return L_5;
 	}
+}
+// System.Collections.Generic.IEnumerable`1<UnityEngine.Resolution> UnityEngine.XR.WSA.WebCam.PhotoCapture::get_SupportedResolutions()
+extern "C" IL2CPP_METHOD_ATTR RuntimeObject* PhotoCapture_get_SupportedResolutions_m1351F10EB4818657DF38696269352058F507B80D (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PhotoCapture_get_SupportedResolutions_m1351F10EB4818657DF38696269352058F507B80D_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var);
+		ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* L_0 = ((PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields*)il2cpp_codegen_static_fields_for(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var))->get_s_SupportedResolutions_1();
+		if (L_0)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var);
+		ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* L_1 = PhotoCapture_GetSupportedResolutions_Internal_mC543269046B182AC7ABAAA3F11EC6A058B4A7925(/*hidden argument*/NULL);
+		((PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields*)il2cpp_codegen_static_fields_for(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var))->set_s_SupportedResolutions_1(L_1);
+	}
+
+IL_0017:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var);
+		ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* L_2 = ((PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields*)il2cpp_codegen_static_fields_for(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var))->get_s_SupportedResolutions_1();
+		V_0 = (RuntimeObject*)L_2;
+		goto IL_0022;
+	}
+
+IL_0022:
+	{
+		RuntimeObject* L_3 = V_0;
+		return L_3;
+	}
+}
+// UnityEngine.Resolution[] UnityEngine.XR.WSA.WebCam.PhotoCapture::GetSupportedResolutions_Internal()
+extern "C" IL2CPP_METHOD_ATTR ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* PhotoCapture_GetSupportedResolutions_Internal_mC543269046B182AC7ABAAA3F11EC6A058B4A7925 (const RuntimeMethod* method)
+{
+	typedef ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* (*PhotoCapture_GetSupportedResolutions_Internal_mC543269046B182AC7ABAAA3F11EC6A058B4A7925_ftn) ();
+	static PhotoCapture_GetSupportedResolutions_Internal_mC543269046B182AC7ABAAA3F11EC6A058B4A7925_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PhotoCapture_GetSupportedResolutions_Internal_mC543269046B182AC7ABAAA3F11EC6A058B4A7925_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.WSA.WebCam.PhotoCapture::GetSupportedResolutions_Internal()");
+	ResolutionU5BU5D_t7B0EB2421A00B22819A02FE474A7F747845BED9A* retVal = _il2cpp_icall_func();
+	return retVal;
+}
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::CreateAsync(System.Boolean,UnityEngine.XR.WSA.WebCam.PhotoCapture_OnCaptureResourceCreatedCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_CreateAsync_m8061C10C1D31CB0774298D3F5FD0D7D9CC61087A (bool ___showHolograms0, OnCaptureResourceCreatedCallback_t2C031B8432401E472889526CAF2CA987AC99D5D1 * ___onCreatedCallback1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PhotoCapture_CreateAsync_m8061C10C1D31CB0774298D3F5FD0D7D9CC61087A_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		OnCaptureResourceCreatedCallback_t2C031B8432401E472889526CAF2CA987AC99D5D1 * L_0 = ___onCreatedCallback1;
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD * L_1 = (ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD *)il2cpp_codegen_object_new(ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_mEE0C0D6FCB2D08CD7967DBB1329A0854BBED49ED(L_1, _stringLiteral8C0F0CE733F3CC8F7A21F0FE1A03368F92EB1612, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, PhotoCapture_CreateAsync_m8061C10C1D31CB0774298D3F5FD0D7D9CC61087A_RuntimeMethod_var);
+	}
+
+IL_0013:
+	{
+		bool L_2 = ___showHolograms0;
+		OnCaptureResourceCreatedCallback_t2C031B8432401E472889526CAF2CA987AC99D5D1 * L_3 = ___onCreatedCallback1;
+		IL2CPP_RUNTIME_CLASS_INIT(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var);
+		PhotoCapture_Instantiate_Internal_m12D07D0D8254BCA82EED8A285827CD67167BE3A6(L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.IntPtr UnityEngine.XR.WSA.WebCam.PhotoCapture::Instantiate_Internal(System.Boolean,UnityEngine.XR.WSA.WebCam.PhotoCapture_OnCaptureResourceCreatedCallback)
+extern "C" IL2CPP_METHOD_ATTR intptr_t PhotoCapture_Instantiate_Internal_m12D07D0D8254BCA82EED8A285827CD67167BE3A6 (bool ___showHolograms0, OnCaptureResourceCreatedCallback_t2C031B8432401E472889526CAF2CA987AC99D5D1 * ___onCreatedCallback1, const RuntimeMethod* method)
+{
+	typedef intptr_t (*PhotoCapture_Instantiate_Internal_m12D07D0D8254BCA82EED8A285827CD67167BE3A6_ftn) (bool, OnCaptureResourceCreatedCallback_t2C031B8432401E472889526CAF2CA987AC99D5D1 *);
+	static PhotoCapture_Instantiate_Internal_m12D07D0D8254BCA82EED8A285827CD67167BE3A6_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PhotoCapture_Instantiate_Internal_m12D07D0D8254BCA82EED8A285827CD67167BE3A6_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.WSA.WebCam.PhotoCapture::Instantiate_Internal(System.Boolean,UnityEngine.XR.WSA.WebCam.PhotoCapture/OnCaptureResourceCreatedCallback)");
+	intptr_t retVal = _il2cpp_icall_func(___showHolograms0, ___onCreatedCallback1);
+	return retVal;
 }
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::InvokeOnCreatedResourceDelegate(UnityEngine.XR.WSA.WebCam.PhotoCapture_OnCaptureResourceCreatedCallback,System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_InvokeOnCreatedResourceDelegate_m6FBE2E778124A9EB2A8A427F1AA9C6E971494311 (OnCaptureResourceCreatedCallback_t2C031B8432401E472889526CAF2CA987AC99D5D1 * ___callback0, intptr_t ___nativePtr1, const RuntimeMethod* method)
@@ -17009,6 +17838,68 @@ IL_002d:
 		return;
 	}
 }
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::StartPhotoModeAsync(UnityEngine.XR.WSA.WebCam.CameraParameters,UnityEngine.XR.WSA.WebCam.PhotoCapture_OnPhotoModeStartedCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_StartPhotoModeAsync_m99D2E175D4E0BA02C7D405506B842D35FBEC837E (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D  ___setupParams0, OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * ___onPhotoModeStartedCallback1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PhotoCapture_StartPhotoModeAsync_m99D2E175D4E0BA02C7D405506B842D35FBEC837E_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * L_0 = ___onPhotoModeStartedCallback1;
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 * L_1 = (ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 *)il2cpp_codegen_object_new(ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m9A85EF7FEFEC21DDD525A67E831D77278E5165B7(L_1, _stringLiteral62AAB0CEDF634B77EF0822402DAC02E3026C36AC, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, PhotoCapture_StartPhotoModeAsync_m99D2E175D4E0BA02C7D405506B842D35FBEC837E_RuntimeMethod_var);
+	}
+
+IL_0013:
+	{
+		int32_t L_2 = CameraParameters_get_cameraResolutionWidth_m9BAB3D4EED6C7A069D262FB8F1D1B40885C07378((CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *)(&___setupParams0), /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		int32_t L_3 = CameraParameters_get_cameraResolutionHeight_mF17952C0552E141661922313A0F2EF6AB357B0C6((CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *)(&___setupParams0), /*hidden argument*/NULL);
+		if (L_3)
+		{
+			goto IL_003c;
+		}
+	}
+
+IL_002b:
+	{
+		ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * L_4 = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m300CE4D04A068C209FD858101AC361C1B600B5AE(L_4, _stringLiteral3CAD0D71FDDA2B55F3425731D845DA1E994C99AD, _stringLiteral918F8F1CFBA6FE7DFEE87CE4239C91D2270F5DB1, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, NULL, PhotoCapture_StartPhotoModeAsync_m99D2E175D4E0BA02C7D405506B842D35FBEC837E_RuntimeMethod_var);
+	}
+
+IL_003c:
+	{
+		CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D  L_5 = ___setupParams0;
+		OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * L_6 = ___onPhotoModeStartedCallback1;
+		PhotoCapture_StartPhotoMode_Internal_mA12C93B37EE2C41BE7A3BCB6B86A39A885784024(__this, L_5, L_6, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::StartPhotoMode_Internal(UnityEngine.XR.WSA.WebCam.CameraParameters,UnityEngine.XR.WSA.WebCam.PhotoCapture_OnPhotoModeStartedCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_StartPhotoMode_Internal_mA12C93B37EE2C41BE7A3BCB6B86A39A885784024 (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D  ___setupParams0, OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * ___onPhotoModeStartedCallback1, const RuntimeMethod* method)
+{
+	{
+		OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * L_0 = ___onPhotoModeStartedCallback1;
+		PhotoCapture_StartPhotoMode_Internal_Injected_m2131FEE1DF2335813FF37EB8DCE2E4DAF5F4C966(__this, (CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *)(&___setupParams0), L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::InvokeOnPhotoModeStartedDelegate(UnityEngine.XR.WSA.WebCam.PhotoCapture_OnPhotoModeStartedCallback,System.Int64)
 extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_InvokeOnPhotoModeStartedDelegate_m3E00364E54C4613ED8715EC6B0912A88F1511745 (OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * ___callback0, int64_t ___hResult1, const RuntimeMethod* method)
 {
@@ -17028,6 +17919,15 @@ extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_InvokeOnPhotoModeStartedDelegate
 		return;
 	}
 }
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::StopPhotoModeAsync(UnityEngine.XR.WSA.WebCam.PhotoCapture_OnPhotoModeStoppedCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_StopPhotoModeAsync_mC5347F1461550A9360FB97254B67709017C959B3 (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, OnPhotoModeStoppedCallback_t80B25F7611051F3335A92707211B540F04E08592 * ___onPhotoModeStoppedCallback0, const RuntimeMethod* method)
+{
+	typedef void (*PhotoCapture_StopPhotoModeAsync_mC5347F1461550A9360FB97254B67709017C959B3_ftn) (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 *, OnPhotoModeStoppedCallback_t80B25F7611051F3335A92707211B540F04E08592 *);
+	static PhotoCapture_StopPhotoModeAsync_mC5347F1461550A9360FB97254B67709017C959B3_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PhotoCapture_StopPhotoModeAsync_mC5347F1461550A9360FB97254B67709017C959B3_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.WSA.WebCam.PhotoCapture::StopPhotoModeAsync(UnityEngine.XR.WSA.WebCam.PhotoCapture/OnPhotoModeStoppedCallback)");
+	_il2cpp_icall_func(__this, ___onPhotoModeStoppedCallback0);
+}
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::InvokeOnPhotoModeStoppedDelegate(UnityEngine.XR.WSA.WebCam.PhotoCapture_OnPhotoModeStoppedCallback,System.Int64)
 extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_InvokeOnPhotoModeStoppedDelegate_mCAB94A96A2DF3841227130505BC274CEA5274D2F (OnPhotoModeStoppedCallback_t80B25F7611051F3335A92707211B540F04E08592 * ___callback0, int64_t ___hResult1, const RuntimeMethod* method)
 {
@@ -17046,6 +17946,123 @@ extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_InvokeOnPhotoModeStoppedDelegate
 		OnPhotoModeStoppedCallback_Invoke_m86BD8A1BC55CCEE1B13CBD9CF9A01021149AD92E(L_0, L_2, /*hidden argument*/NULL);
 		return;
 	}
+}
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::TakePhotoAsync(System.String,UnityEngine.XR.WSA.WebCam.PhotoCaptureFileOutputFormat,UnityEngine.XR.WSA.WebCam.PhotoCapture_OnCapturedToDiskCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_TakePhotoAsync_mD16F274D4512DE8256CBBDB867C8FEEB15001C07 (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, String_t* ___filename0, int32_t ___fileOutputFormat1, OnCapturedToDiskCallback_tAC3EFE8F816D568DFACBDCAAC2102ACC8F7927DA * ___onCapturedPhotoToDiskCallback2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PhotoCapture_TakePhotoAsync_mD16F274D4512DE8256CBBDB867C8FEEB15001C07_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C * V_1 = NULL;
+	{
+		OnCapturedToDiskCallback_tAC3EFE8F816D568DFACBDCAAC2102ACC8F7927DA * L_0 = ___onCapturedPhotoToDiskCallback2;
+		if (L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD * L_1 = (ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD *)il2cpp_codegen_object_new(ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_mEE0C0D6FCB2D08CD7967DBB1329A0854BBED49ED(L_1, _stringLiteral14A1541FD53B391A86A2A03C81D6FC3078CAB375, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, NULL, PhotoCapture_TakePhotoAsync_mD16F274D4512DE8256CBBDB867C8FEEB15001C07_RuntimeMethod_var);
+	}
+
+IL_0013:
+	{
+		String_t* L_2 = ___filename0;
+		bool L_3 = String_IsNullOrEmpty_m06A85A206AC2106D1982826C5665B9BD35324229(L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD * L_4 = (ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD *)il2cpp_codegen_object_new(ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_mEE0C0D6FCB2D08CD7967DBB1329A0854BBED49ED(L_4, _stringLiteral08DEAE8D9EA9BC0B84F94475D868351830E9F7E7, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, NULL, PhotoCapture_TakePhotoAsync_mD16F274D4512DE8256CBBDB867C8FEEB15001C07_RuntimeMethod_var);
+	}
+
+IL_002a:
+	{
+		String_t* L_5 = ___filename0;
+		NullCheck(L_5);
+		String_t* L_6 = String_Replace_m970DFB0A280952FA7D3BA20AB7A8FB9F80CF6470(L_5, _stringLiteral42099B4AF021E53FD8FD4E056C2568D7C2E3FFA8, _stringLiteral08534F33C201A45017B502E90A800F1B708EBCB3, /*hidden argument*/NULL);
+		___filename0 = L_6;
+		String_t* L_7 = ___filename0;
+		IL2CPP_RUNTIME_CLASS_INIT(Path_t0B99A4B924A6FDF08814FFA8DD4CD121ED1A0752_il2cpp_TypeInfo_var);
+		String_t* L_8 = Path_GetDirectoryName_m61922AA6D7B48EACBA36FF41A1B28F506CFB8A97(L_7, /*hidden argument*/NULL);
+		V_0 = L_8;
+		String_t* L_9 = V_0;
+		bool L_10 = String_IsNullOrEmpty_m06A85A206AC2106D1982826C5665B9BD35324229(L_9, /*hidden argument*/NULL);
+		if (L_10)
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		String_t* L_11 = V_0;
+		bool L_12 = Directory_Exists_mB77956D89305E16FEFCBDFC55CCC98F03AEE4D84(L_11, /*hidden argument*/NULL);
+		if (L_12)
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 * L_13 = (ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 *)il2cpp_codegen_object_new(ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m26DC3463C6F3C98BF33EA39598DD2B32F0249CA8(L_13, _stringLiteral316A02D34C87F718E96126D9CE9A380209FEEFB2, _stringLiteral08DEAE8D9EA9BC0B84F94475D868351830E9F7E7, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_13, NULL, PhotoCapture_TakePhotoAsync_mD16F274D4512DE8256CBBDB867C8FEEB15001C07_RuntimeMethod_var);
+	}
+
+IL_006a:
+	{
+		String_t* L_14 = ___filename0;
+		FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C * L_15 = (FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C *)il2cpp_codegen_object_new(FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C_il2cpp_TypeInfo_var);
+		FileInfo__ctor_m77D19A494A542C924C36FDD8AE5CDBEA97CE68B8(L_15, L_14, /*hidden argument*/NULL);
+		V_1 = L_15;
+		FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C * L_16 = V_1;
+		NullCheck(L_16);
+		bool L_17 = VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.IO.FileSystemInfo::get_Exists() */, L_16);
+		if (!L_17)
+		{
+			goto IL_0098;
+		}
+	}
+	{
+		FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C * L_18 = V_1;
+		NullCheck(L_18);
+		bool L_19 = FileInfo_get_IsReadOnly_m6F79CC5BBEFEA852BABC670B70D17B0C2A944C37(L_18, /*hidden argument*/NULL);
+		if (!L_19)
+		{
+			goto IL_0098;
+		}
+	}
+	{
+		ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 * L_20 = (ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1 *)il2cpp_codegen_object_new(ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m26DC3463C6F3C98BF33EA39598DD2B32F0249CA8(L_20, _stringLiteral824934BFD5DE6966397FB0BFCE1CA98194269C51, _stringLiteral08DEAE8D9EA9BC0B84F94475D868351830E9F7E7, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_20, NULL, PhotoCapture_TakePhotoAsync_mD16F274D4512DE8256CBBDB867C8FEEB15001C07_RuntimeMethod_var);
+	}
+
+IL_0098:
+	{
+		String_t* L_21 = ___filename0;
+		int32_t L_22 = ___fileOutputFormat1;
+		OnCapturedToDiskCallback_tAC3EFE8F816D568DFACBDCAAC2102ACC8F7927DA * L_23 = ___onCapturedPhotoToDiskCallback2;
+		PhotoCapture_CapturePhotoToDisk_Internal_mB21D46372BD58BDB8EBD0B3F72C0A0C23E96246E(__this, L_21, L_22, L_23, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::CapturePhotoToDisk_Internal(System.String,UnityEngine.XR.WSA.WebCam.PhotoCaptureFileOutputFormat,UnityEngine.XR.WSA.WebCam.PhotoCapture_OnCapturedToDiskCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_CapturePhotoToDisk_Internal_mB21D46372BD58BDB8EBD0B3F72C0A0C23E96246E (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, String_t* ___filename0, int32_t ___fileOutputFormat1, OnCapturedToDiskCallback_tAC3EFE8F816D568DFACBDCAAC2102ACC8F7927DA * ___onCapturedPhotoToDiskCallback2, const RuntimeMethod* method)
+{
+	typedef void (*PhotoCapture_CapturePhotoToDisk_Internal_mB21D46372BD58BDB8EBD0B3F72C0A0C23E96246E_ftn) (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 *, String_t*, int32_t, OnCapturedToDiskCallback_tAC3EFE8F816D568DFACBDCAAC2102ACC8F7927DA *);
+	static PhotoCapture_CapturePhotoToDisk_Internal_mB21D46372BD58BDB8EBD0B3F72C0A0C23E96246E_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PhotoCapture_CapturePhotoToDisk_Internal_mB21D46372BD58BDB8EBD0B3F72C0A0C23E96246E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.WSA.WebCam.PhotoCapture::CapturePhotoToDisk_Internal(System.String,UnityEngine.XR.WSA.WebCam.PhotoCaptureFileOutputFormat,UnityEngine.XR.WSA.WebCam.PhotoCapture/OnCapturedToDiskCallback)");
+	_il2cpp_icall_func(__this, ___filename0, ___fileOutputFormat1, ___onCapturedPhotoToDiskCallback2);
 }
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::InvokeOnCapturedPhotoToDiskDelegate(UnityEngine.XR.WSA.WebCam.PhotoCapture_OnCapturedToDiskCallback,System.Int64)
 extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_InvokeOnCapturedPhotoToDiskDelegate_m86E362FE51AD70EE06F4EA1C7EFF2E5A26C4DFBF (OnCapturedToDiskCallback_tAC3EFE8F816D568DFACBDCAAC2102ACC8F7927DA * ___callback0, int64_t ___hResult1, const RuntimeMethod* method)
@@ -17225,9 +18242,18 @@ extern "C" IL2CPP_METHOD_ATTR void PhotoCapture__cctor_m1E5FBDB0B6F5FDB6EA81DC66
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		((PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields*)il2cpp_codegen_static_fields_for(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var))->set_HR_SUCCESS_1((((int64_t)((int64_t)0))));
+		((PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_StaticFields*)il2cpp_codegen_static_fields_for(PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307_il2cpp_TypeInfo_var))->set_HR_SUCCESS_2((((int64_t)((int64_t)0))));
 		return;
 	}
+}
+// System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::StartPhotoMode_Internal_Injected(UnityEngine.XR.WSA.WebCam.CameraParametersU26,UnityEngine.XR.WSA.WebCam.PhotoCapture_OnPhotoModeStartedCallback)
+extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_StartPhotoMode_Internal_Injected_m2131FEE1DF2335813FF37EB8DCE2E4DAF5F4C966 (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D * ___setupParams0, OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 * ___onPhotoModeStartedCallback1, const RuntimeMethod* method)
+{
+	typedef void (*PhotoCapture_StartPhotoMode_Internal_Injected_m2131FEE1DF2335813FF37EB8DCE2E4DAF5F4C966_ftn) (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 *, CameraParameters_tC09BEA593340D022EA8B650A7F192952AD418D0D *, OnPhotoModeStartedCallback_t3E74AEAE0C3BAF1711BF4C3F423A4B8272C6A456 *);
+	static PhotoCapture_StartPhotoMode_Internal_Injected_m2131FEE1DF2335813FF37EB8DCE2E4DAF5F4C966_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PhotoCapture_StartPhotoMode_Internal_Injected_m2131FEE1DF2335813FF37EB8DCE2E4DAF5F4C966_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.WSA.WebCam.PhotoCapture::StartPhotoMode_Internal_Injected(UnityEngine.XR.WSA.WebCam.CameraParameters&,UnityEngine.XR.WSA.WebCam.PhotoCapture/OnPhotoModeStartedCallback)");
+	_il2cpp_icall_func(__this, ___setupParams0, ___onPhotoModeStartedCallback1);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -18166,6 +19192,14 @@ extern "C" IL2CPP_METHOD_ATTR void OnPhotoModeStoppedCallback_EndInvoke_mB715B0F
 {
 	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -31916,13 +31916,23 @@ extern "C" IL2CPP_METHOD_ATTR void JsonSerializerProxy_set_Context_m952ACB651714
 		return;
 	}
 }
+// Newtonsoft.Json.Formatting Newtonsoft.Json.Serialization.JsonSerializerProxy::get_Formatting()
+extern "C" IL2CPP_METHOD_ATTR int32_t JsonSerializerProxy_get_Formatting_m25A489B28743337EA9F86FAE974F81F8EF25A605 (JsonSerializerProxy_t6D455EB811A66C7B8471A2911C84354FDB2A80E2 * __this, const RuntimeMethod* method)
+{
+	{
+		JsonSerializer_t22D7DE9C2207B3F59CE86171E843ADA94B898623 * L_0 = __this->get__serializer_33();
+		NullCheck(L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(28 /* Newtonsoft.Json.Formatting Newtonsoft.Json.JsonSerializer::get_Formatting() */, L_0);
+		return L_1;
+	}
+}
 // System.Boolean Newtonsoft.Json.Serialization.JsonSerializerProxy::get_CheckAdditionalContent()
 extern "C" IL2CPP_METHOD_ATTR bool JsonSerializerProxy_get_CheckAdditionalContent_m6BCE8348625B83057D22C01E5F4F77D8224104F8 (JsonSerializerProxy_t6D455EB811A66C7B8471A2911C84354FDB2A80E2 * __this, const RuntimeMethod* method)
 {
 	{
 		JsonSerializer_t22D7DE9C2207B3F59CE86171E843ADA94B898623 * L_0 = __this->get__serializer_33();
 		NullCheck(L_0);
-		bool L_1 = VirtFuncInvoker0< bool >::Invoke(28 /* System.Boolean Newtonsoft.Json.JsonSerializer::get_CheckAdditionalContent() */, L_0);
+		bool L_1 = VirtFuncInvoker0< bool >::Invoke(29 /* System.Boolean Newtonsoft.Json.JsonSerializer::get_CheckAdditionalContent() */, L_0);
 		return L_1;
 	}
 }
@@ -31933,7 +31943,7 @@ extern "C" IL2CPP_METHOD_ATTR void JsonSerializerProxy_set_CheckAdditionalConten
 		JsonSerializer_t22D7DE9C2207B3F59CE86171E843ADA94B898623 * L_0 = __this->get__serializer_33();
 		bool L_1 = ___value0;
 		NullCheck(L_0);
-		VirtActionInvoker1< bool >::Invoke(29 /* System.Void Newtonsoft.Json.JsonSerializer::set_CheckAdditionalContent(System.Boolean) */, L_0, L_1);
+		VirtActionInvoker1< bool >::Invoke(30 /* System.Void Newtonsoft.Json.JsonSerializer::set_CheckAdditionalContent(System.Boolean) */, L_0, L_1);
 		return;
 	}
 }

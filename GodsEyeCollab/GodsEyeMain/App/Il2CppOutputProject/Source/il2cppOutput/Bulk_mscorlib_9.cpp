@@ -14597,6 +14597,12 @@ extern "C" IL2CPP_METHOD_ATTR String_t* SerializationInfo_GetString_m06805A4E368
 extern "C" IL2CPP_METHOD_ATTR String_t* Path_GetFullPathInternal_m4FA3EA56940FB51BFEBA5C117FC3F2E2F0993CD4 (String_t* ___path0, const RuntimeMethod* method);
 // System.Int32 System.IO.File::FillAttributeInfo(System.String,System.IO.MonoIOStat&,System.Boolean,System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR int32_t File_FillAttributeInfo_m8FF0F8B5A94968B8C87E54850DF60D3825EEAD53 (String_t* ___path0, MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124 * ___data1, bool ___tryagain2, bool ___returnErrorOnNotFound3, const RuntimeMethod* method);
+// System.Void System.IO.FileSystemInfo::Refresh()
+extern "C" IL2CPP_METHOD_ATTR void FileSystemInfo_Refresh_m2A291853AC8436A6A23A35B8D00C9CC33F351979 (FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D * __this, const RuntimeMethod* method);
+// System.String System.IO.FileSystemInfo::get_DisplayPath()
+extern "C" IL2CPP_METHOD_ATTR String_t* FileSystemInfo_get_DisplayPath_m9A14D10849FCBD74D3854A8B12D9407E007258FF (FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D * __this, const RuntimeMethod* method);
+// System.Void System.IO.__Error::WinIOError(System.Int32,System.String)
+extern "C" IL2CPP_METHOD_ATTR void __Error_WinIOError_mDA34FD0DC2ED957492B470B48E69838BB4E68A4B (int32_t ___errorCode0, String_t* ___maybeFullPath1, const RuntimeMethod* method);
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
 extern "C" IL2CPP_METHOD_ATTR Type_t * Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6 (RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  ___handle0, const RuntimeMethod* method);
 // System.Void System.Runtime.Serialization.SerializationInfo::AddValue(System.String,System.Object,System.Type)
@@ -16482,6 +16488,41 @@ extern "C" IL2CPP_METHOD_ATTR void FileSystemInfo_Refresh_m2A291853AC8436A6A23A3
 		int32_t L_2 = File_FillAttributeInfo_m8FF0F8B5A94968B8C87E54850DF60D3825EEAD53(L_0, (MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124 *)L_1, (bool)0, (bool)0, /*hidden argument*/NULL);
 		__this->set__dataInitialised_2(L_2);
 		return;
+	}
+}
+// System.IO.FileAttributes System.IO.FileSystemInfo::get_Attributes()
+extern "C" IL2CPP_METHOD_ATTR int32_t FileSystemInfo_get_Attributes_m8AF36160958F9F46AC2764F95C4EDF7261C00A06 (FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get__dataInitialised_2();
+		if ((!(((uint32_t)L_0) == ((uint32_t)(-1)))))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		FileSystemInfo_Refresh_m2A291853AC8436A6A23A35B8D00C9CC33F351979(__this, /*hidden argument*/NULL);
+	}
+
+IL_000f:
+	{
+		int32_t L_1 = __this->get__dataInitialised_2();
+		if (!L_1)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		int32_t L_2 = __this->get__dataInitialised_2();
+		String_t* L_3 = FileSystemInfo_get_DisplayPath_m9A14D10849FCBD74D3854A8B12D9407E007258FF(__this, /*hidden argument*/NULL);
+		__Error_WinIOError_mDA34FD0DC2ED957492B470B48E69838BB4E68A4B(L_2, L_3, /*hidden argument*/NULL);
+	}
+
+IL_0028:
+	{
+		MonoIOStat_t819C03DA1902AA493BDBF4B55E76DCE6FB16A124 * L_4 = __this->get_address_of__data_1();
+		int32_t L_5 = L_4->get_fileAttributes_0();
+		return L_5;
 	}
 }
 // System.Void System.IO.FileSystemInfo::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)

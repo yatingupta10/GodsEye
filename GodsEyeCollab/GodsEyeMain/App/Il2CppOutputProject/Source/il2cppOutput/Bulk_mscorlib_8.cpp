@@ -16502,6 +16502,8 @@ extern "C" IL2CPP_METHOD_ATTR String_t* Path_GetFullPathInternal_m4FA3EA56940FB5
 extern "C" IL2CPP_METHOD_ATTR String_t* FileInfo_GetDisplayPath_m71C4AA466A1B1DCED99D6034B0461461B941F1F7 (FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C * __this, String_t* ___originalPath0, const RuntimeMethod* method);
 // System.Void System.IO.FileSystemInfo::set_DisplayPath(System.String)
 extern "C" IL2CPP_METHOD_ATTR void FileSystemInfo_set_DisplayPath_m7CAD47FB30F989161D7E8147D627F42B6FB81777 (FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.IO.FileAttributes System.IO.FileSystemInfo::get_Attributes()
+extern "C" IL2CPP_METHOD_ATTR int32_t FileSystemInfo_get_Attributes_m8AF36160958F9F46AC2764F95C4EDF7261C00A06 (FileSystemInfo_t6831B76FBA37F7181E4A5AEB28194730EB356A3D * __this, const RuntimeMethod* method);
 // System.Void System.IO.StreamWriter::.ctor(System.String,System.Boolean)
 extern "C" IL2CPP_METHOD_ATTR void StreamWriter__ctor_m32098CA4FF10C9A69DBAF4863325AB83434E08CE (StreamWriter_t989B894EF3BFCDF6FF5F5F068402A4F835FC8E8E * __this, String_t* ___path0, bool ___append1, const RuntimeMethod* method);
 // System.String System.IO.FileSystemInfo::get_DisplayPath()
@@ -39301,6 +39303,14 @@ extern "C" IL2CPP_METHOD_ATTR String_t* FileInfo_get_Name_mD8F54471113AA97C04B5B
 	{
 		String_t* L_0 = __this->get__name_6();
 		return L_0;
+	}
+}
+// System.Boolean System.IO.FileInfo::get_IsReadOnly()
+extern "C" IL2CPP_METHOD_ATTR bool FileInfo_get_IsReadOnly_m6F79CC5BBEFEA852BABC670B70D17B0C2A944C37 (FileInfo_tF8C1D41E1ABDAC19BF4F76A491DD28DD8DBEE35C * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = FileSystemInfo_get_Attributes_m8AF36160958F9F46AC2764F95C4EDF7261C00A06(__this, /*hidden argument*/NULL);
+		return (bool)((!(((uint32_t)((int32_t)((int32_t)L_0&(int32_t)1))) <= ((uint32_t)0)))? 1 : 0);
 	}
 }
 // System.IO.StreamWriter System.IO.FileInfo::CreateText()

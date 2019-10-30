@@ -74,7 +74,6 @@ public class UIController : MonoBehaviour
         iconList.Add(connectionsIcon);
     }
 
-
     public void CategoryViewFromButton(){
         Invoke("MainView", categoryViewTime);
     }
@@ -84,7 +83,6 @@ public class UIController : MonoBehaviour
         DeactivateAllViews();
         DeactivateAllNavButtons();
         DeactivateAllNavIcons();
-        UnFocusAllButtons();
     }
     
     //disable all views
@@ -107,10 +105,6 @@ public class UIController : MonoBehaviour
         foreach (GameObject obj in iconList){
             obj.SetActive(false);
         }
-    }
-
-    void UnFocusAllButtons(){
-
     }
 
 
