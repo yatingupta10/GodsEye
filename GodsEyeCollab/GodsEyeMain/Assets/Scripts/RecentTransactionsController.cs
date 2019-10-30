@@ -65,21 +65,6 @@ public class RecentTransactionsController : MonoBehaviour
         transactionData = currentProf.profile.financial_info.venmo_tx;
         Debug.Log("Imported " + numTransactions + " recent transactions.");
 
-        if (GameObject.FindGameObjectWithTag("CompanyName"))
-        {
-            GameObject.FindGameObjectWithTag("CompanyName").GetComponent<TextMeshPro>().text = currentProf.profile.financial_info.current_company;
-        }
-
-        if (GameObject.FindGameObjectWithTag("CompanyPosition"))
-        {
-            GameObject.FindGameObjectWithTag("CompanyPosition").GetComponent<TextMeshPro>().text = currentProf.profile.financial_info.position;
-        }
-
-        if (GameObject.FindGameObjectWithTag("Salary"))
-        {
-            GameObject.FindGameObjectWithTag("Salary").GetComponent<TextMeshPro>().text = currentProf.profile.financial_info.salary_string;
-        }
-
         for (int i = 0; i < numTransactions; i++){
             recentTransactions.Add(transactionDataPrefab);
 

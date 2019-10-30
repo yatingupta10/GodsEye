@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 6753887351343719841}
   m_Layer: 0
   m_Name: Score Text
-  m_TagString: Untagged
+  m_TagString: FacePaneScore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1251,6 +1251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4377928642120060604}
+  - component: {fileID: 3821546397062958156}
   m_Layer: 0
   m_Name: ClickedFacePane
   m_TagString: Untagged
@@ -1275,6 +1276,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3821546397062958156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4377928642120060814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33ccbd1c681b8d41aa752976218be6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4377928642120060896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,7 +2094,7 @@ GameObject:
   - component: {fileID: 4447615945227379544}
   m_Layer: 0
   m_Name: Name
-  m_TagString: Untagged
+  m_TagString: FullNameTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

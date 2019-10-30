@@ -127,28 +127,29 @@
     },
 
     "interests_info": {
-        "checkins": [
-            {
-                "location": "Universal Studio, LA",
-                "date": "7th Oct 2019",
-                "time": "14:45"
-            },
-            {
-                "location": "The Grove, LA",
-                "date": "10th Oct 2019",
-                "time": "20:00"
-            },
-            {
-                "location": "Santa Monica",
-                "date": "27th Oct 2019",
-                "time": "14:45"
-            },
-            {
-                "location": "Cinematic Arts",
-                "date": "28th Oct 2019",
-                "time": "14:00"
-            }
-        ],
+      "checkins": [
+        {
+          "location": "Cinematic Arts",
+          "date": "28th Oct 2019",
+          "time": "14:00"
+        },
+        {
+          "location": "Santa Monica",
+          "date": "27th Oct 2019",
+          "time": "14:45"
+        },
+        {
+          "location": "The Grove, LA",
+          "date": "10th Oct 2019",
+          "time": "20:00"
+        },
+        {
+          "location": "Universal Studio, LA",
+          "date": "7th Oct 2019",
+          "time": "14:45"
+        }
+
+      ],
         "recent_likes": [
             "University of Southern California",
             "Universal Studios",

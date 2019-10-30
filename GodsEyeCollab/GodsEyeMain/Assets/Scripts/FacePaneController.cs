@@ -7,7 +7,7 @@ using static ProfileParser;
 public class FacePaneController : MonoBehaviour
 {
     public GameObject faceButton;
-    GameObject nameText;
+    public GameObject nameText;
     public GameObject screen;
 
     public float upForceScale;
@@ -31,30 +31,6 @@ public class FacePaneController : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
-        TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
-
-        ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
-        int score = currentProf.score;
-        string firstName = currentProf.profile.first_name;
-        string lastName = currentProf.profile.last_name;
-        Debug.Log("Score : " + score.ToString());
-        Debug.Log("FirstName : " + firstName);
-        Debug.Log("LastName : " + lastName);
-
-        if (GameObject.FindGameObjectWithTag("FacePaneScore"))
-        {
-            GameObject.FindGameObjectWithTag("FacePaneScore").GetComponent<TextMeshPro>().text = score.ToString();
-        }
-        if (GameObject.FindGameObjectWithTag("FullNameTag"))
-        {
-            GameObject.FindGameObjectWithTag("FullNameTag").GetComponent<TextMeshPro>().text = firstName+" "+lastName;
-        }
-        //GameObject.FindGameObjectWithTag("FullNameTag").GetComponent<TextMeshPro>().text = firstName + " " + lastName;
-        //if (GameObject.FindGameObjectWithTag("LastNameTag"))
-        //{
-        //    GameObject.FindGameObjectWithTag("LastNameTag").GetComponent<TextMeshPro>().text = lastName;
-        //}
-
     }
 
     // Update is called once per frame
