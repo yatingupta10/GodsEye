@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5364588847600034832}
   m_Layer: 0
   m_Name: ResidenceState
-  m_TagString: Untagged
+  m_TagString: ResidenceState
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 42029914224810143}
   m_Layer: 0
   m_Name: ResidenceStreet
-  m_TagString: Untagged
+  m_TagString: ResidenceStreet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 654006288950664202}
   m_Layer: 0
   m_Name: ResidenceCity
-  m_TagString: Untagged
+  m_TagString: ResidenceCity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1384,7 +1384,7 @@ GameObject:
   - component: {fileID: 345577465391677778}
   m_Layer: 0
   m_Name: Edu1TextMajor
-  m_TagString: Untagged
+  m_TagString: Edu1TextMajor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3234,7 +3234,7 @@ GameObject:
   - component: {fileID: 5137425145017866382}
   m_Layer: 0
   m_Name: Edu1TextDegree
-  m_TagString: Untagged
+  m_TagString: Edu1TextDegree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3513,7 +3513,7 @@ GameObject:
   - component: {fileID: 3240141852483705862}
   m_Layer: 0
   m_Name: Edu2TextMajor
-  m_TagString: Untagged
+  m_TagString: Edu2TextMajor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3794,7 +3794,7 @@ GameObject:
   - component: {fileID: 871838490716834947}
   m_Layer: 0
   m_Name: AgeText
-  m_TagString: Untagged
+  m_TagString: AgeTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4030,7 +4030,7 @@ GameObject:
   - component: {fileID: 7467450887040953030}
   m_Layer: 0
   m_Name: Edu2TextDegree
-  m_TagString: Untagged
+  m_TagString: Edu2TextDegree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4232,7 +4232,7 @@ GameObject:
   - component: {fileID: 2294606829584349427}
   m_Layer: 0
   m_Name: Edu2TextTenure
-  m_TagString: Untagged
+  m_TagString: Edu2TextTenure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5505,7 +5505,7 @@ GameObject:
   - component: {fileID: 1075945265623412353}
   m_Layer: 0
   m_Name: Edu1TextTenure
-  m_TagString: Untagged
+  m_TagString: Edu1TextTenure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5816,7 +5816,7 @@ GameObject:
   - component: {fileID: 430795024210812373}
   m_Layer: 0
   m_Name: EmailText
-  m_TagString: Untagged
+  m_TagString: EmailTextTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6097,7 +6097,7 @@ GameObject:
   - component: {fileID: 6288022093696192296}
   m_Layer: 0
   m_Name: PhoneText
-  m_TagString: Untagged
+  m_TagString: PhoneTextTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6829,6 +6829,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2991948829133354678}
     m_Modifications:
+    - target: {fileID: 6713949576519516977, guid: 2a86fd889fa72e84e9c12bafcbccc834,
+        type: 3}
+      propertyPath: m_Name
+      value: BackButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6713949576519516977, guid: 2a86fd889fa72e84e9c12bafcbccc834,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6713949575999948240, guid: 2a86fd889fa72e84e9c12bafcbccc834,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6882,16 +6892,6 @@ PrefabInstance:
     - target: {fileID: 6713949575999948240, guid: 2a86fd889fa72e84e9c12bafcbccc834,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6713949576519516977, guid: 2a86fd889fa72e84e9c12bafcbccc834,
-        type: 3}
-      propertyPath: m_Name
-      value: BackButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 6713949576519516977, guid: 2a86fd889fa72e84e9c12bafcbccc834,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2468221699242233963, guid: 2a86fd889fa72e84e9c12bafcbccc834,

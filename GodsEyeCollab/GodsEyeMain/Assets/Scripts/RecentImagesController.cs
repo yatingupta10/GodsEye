@@ -21,7 +21,7 @@ public class RecentImagesController : MonoBehaviour
     public GameObject forwardButton; //next button
 
     //recent social media images will be stored in this directory when pulling in user data
-    public string recentImageDir = "Testing/RecentImages";
+    string recentImageDir = "gagan_recent";
 
 
     // Start is called before the first frame update

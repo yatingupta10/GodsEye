@@ -12,6 +12,23 @@ TagManager:
   - CompanyPosition
   - Salary
   - AnimCollider
+  - RelationshipStatus
+  - AgeTag
+  - ResidenceStreet
+  - ResidenceCity
+  - ResidenceState
+  - Edu1TextDegree
+  - Edu1TextMajor
+  - Edu1TextTenure
+  - Edu2TextDegree
+  - Edu2TextMajor
+  - Edu2TextTenure
+  - EmailTextTag
+  - PhoneTextTag
+  - FacePaneScore
+  - FirstNameTag
+  - LastNameTag
+  - FullNameTag
   layers:
   - Default
   - TransparentFX
