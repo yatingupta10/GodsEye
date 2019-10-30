@@ -11,7 +11,7 @@ TagManager:
   - CompanyName
   - CompanyPosition
   - Salary
-  - RelationshipStatus
+  - AnimCollider
   layers:
   - Default
   - TransparentFX

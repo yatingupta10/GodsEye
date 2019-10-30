@@ -13,6 +13,8 @@ public class FacePaneController : MonoBehaviour
 
     public Transform topPosition;
     public Transform leftPosition;
+
+    public GameObject colliderCollection;
     
 
     Rigidbody rb;
@@ -66,6 +68,7 @@ public class FacePaneController : MonoBehaviour
             //scoreText.SetActive(true);
             //buttonCollection.SetActive(true);
             screen.SetActive(true);
+            colliderCollection.SetActive(false);
             Destroy(rb);
         }
     }

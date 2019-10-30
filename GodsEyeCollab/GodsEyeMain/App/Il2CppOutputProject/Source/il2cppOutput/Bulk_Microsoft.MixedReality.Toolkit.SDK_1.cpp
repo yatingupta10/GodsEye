@@ -376,6 +376,8 @@ struct ButtonBackgroundSizeOffset_tBAB48B47140D6938243B94B22EB00D9C69210F91;
 struct ButtonBorder_tC4A7B75A9677217ABF09422696E02346B4145637;
 // Microsoft.MixedReality.Toolkit.UI.ButtonCollider
 struct ButtonCollider_t95C8C7963805A1600D1D501C6FBCECF7CE4F048C;
+// Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime
+struct ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B;
 // Microsoft.MixedReality.Toolkit.UI.ButtonLayout
 struct ButtonLayout_tF5CD5E7DEE428DBFA1B3B253B479E6D5E921F0B9;
 // Microsoft.MixedReality.Toolkit.UI.ButtonSize
@@ -14753,6 +14755,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // BUTTONCOLLIDER_T95C8C7963805A1600D1D501C6FBCECF7CE4F048C_H
+#ifndef BUTTONFOCUSTIME_T1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_H
+#define BUTTONFOCUSTIME_T1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime
+struct  ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+	// System.Single Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime::focusTime
+	float ___focusTime_4;
+
+public:
+	inline static int32_t get_offset_of_focusTime_4() { return static_cast<int32_t>(offsetof(ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B, ___focusTime_4)); }
+	inline float get_focusTime_4() const { return ___focusTime_4; }
+	inline float* get_address_of_focusTime_4() { return &___focusTime_4; }
+	inline void set_focusTime_4(float value)
+	{
+		___focusTime_4 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // BUTTONFOCUSTIME_T1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B_H
 #ifndef BUTTONLAYOUT_TF5CD5E7DEE428DBFA1B3B253B479E6D5E921F0B9_H
 #define BUTTONLAYOUT_TF5CD5E7DEE428DBFA1B3B253B479E6D5E921F0B9_H
 #ifdef __clang__
@@ -39964,6 +39995,31 @@ extern "C" IL2CPP_METHOD_ATTR void ButtonCollider__ctor_m867173A31CE61E0A0B39ACA
 		// public Vector3 Expand = Vector3.zero;
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_1 = Vector3_get_zero_m3CDDCAE94581DF3BB16C4B40A100E28E9C6649C2(/*hidden argument*/NULL);
 		__this->set_Expand_6(L_1);
+		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Single Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime::GetFocusTime()
+extern "C" IL2CPP_METHOD_ATTR float ButtonFocusTime_GetFocusTime_m8E489620E4CF09575AF75F009C7239EE65909AA0 (ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B * __this, const RuntimeMethod* method)
+{
+	{
+		// return focusTime;
+		float L_0 = __this->get_focusTime_4();
+		return L_0;
+	}
+}
+// System.Void Microsoft.MixedReality.Toolkit.UI.ButtonFocusTime::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void ButtonFocusTime__ctor_m22A978DC8D9162B212AF6C59AA24FC5D8FA187B9 (ButtonFocusTime_t1EBD6D47C72DAD1CA4B903D9BD5B610EFBB5965B * __this, const RuntimeMethod* method)
+{
+	{
 		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
 		return;
 	}

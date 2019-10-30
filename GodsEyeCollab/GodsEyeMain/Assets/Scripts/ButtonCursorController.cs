@@ -8,7 +8,7 @@ public class ButtonCursorController : MonoBehaviour
     public void BeginLoadingCursor(float speed){
         RadialProgress.instance.Begin(speed);
     }
-    
+
     public void EndLoadingCursor(){
         RadialProgress.instance.End();
     }
