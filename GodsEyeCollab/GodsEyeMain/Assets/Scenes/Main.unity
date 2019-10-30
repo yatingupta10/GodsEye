@@ -409,9 +409,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325e73dc200b5c1408948b0d0288dde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseMemberPrefab: {fileID: 2783756060022780572, guid: 0918e7c926a773e48bc9e2b8c2fd9d85,
+  familyMemberPrefab: {fileID: 2783756060022780572, guid: 0918e7c926a773e48bc9e2b8c2fd9d85,
     type: 3}
-  familyMemberImagesDir: Testing/FamilyMembers
+  familyMemberLocation: {fileID: 1983179336}
 --- !u!4 &314676965
 Transform:
   m_ObjectHideFlags: 0
@@ -3460,24 +3460,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1376338277}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &770101004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770101003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c1abfb2afd069942833dd24dd2e4858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  friendPrefab: {fileID: 8680839362990324440, guid: ad05d6877b192a84a99885c5b23de531,
-    type: 3}
-  friendLocation: {fileID: 1086782654}
-  familyMemberPrefab: {fileID: 2783756060022780572, guid: 0918e7c926a773e48bc9e2b8c2fd9d85,
-    type: 3}
-  familyMemberLocation: {fileID: 1983179336}
 --- !u!1 &797433425 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4861840672097536068, guid: a08c1e735ea9eae4cbda8d679ecae94b,
@@ -5970,9 +5952,6 @@ MonoBehaviour:
   friendPrefab: {fileID: 8680839362990324440, guid: ad05d6877b192a84a99885c5b23de531,
     type: 3}
   friendLocation: {fileID: 1086782654}
-  familyMemberPrefab: {fileID: 2783756060022780572, guid: 0918e7c926a773e48bc9e2b8c2fd9d85,
-    type: 3}
-  familyMemberLocation: {fileID: 1983179336}
 --- !u!4 &1574600591
 Transform:
   m_ObjectHideFlags: 0
@@ -10354,6 +10333,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CameraRect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499375340095464612, guid: 4431ff47f1bbfc64db34f3ddcc1933cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6499375340095464603, guid: 4431ff47f1bbfc64db34f3ddcc1933cc,
         type: 3}

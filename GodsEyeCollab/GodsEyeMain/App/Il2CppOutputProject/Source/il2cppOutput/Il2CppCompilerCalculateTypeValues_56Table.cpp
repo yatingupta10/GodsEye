@@ -2244,79 +2244,80 @@ public:
 struct  FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
-	// UnityEngine.GameObject FamilyMembersController::baseMemberPrefab
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___baseMemberPrefab_4;
-	// System.Int32 FamilyMembersController::currentMember
-	int32_t ___currentMember_5;
 	// UnityEngine.Vector3 FamilyMembersController::member1Pos
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___member1Pos_6;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___member1Pos_4;
 	// UnityEngine.Vector3 FamilyMembersController::member2Pos
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___member2Pos_7;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___member2Pos_5;
 	// UnityEngine.Vector3 FamilyMembersController::member3Pos
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___member3Pos_8;
-	// System.Collections.Generic.List`1<UnityEngine.GameObject> FamilyMembersController::memberPrefabs
-	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___memberPrefabs_9;
-	// System.String FamilyMembersController::familyMemberImagesDir
-	String_t* ___familyMemberImagesDir_10;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___member3Pos_6;
+	// UnityEngine.GameObject FamilyMembersController::familyMemberPrefab
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___familyMemberPrefab_7;
+	// UnityEngine.GameObject FamilyMembersController::familyMemberLocation
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___familyMemberLocation_8;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> FamilyMembersController::familyMembersPrefabs
+	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___familyMembersPrefabs_9;
+	// System.String FamilyMembersController::familyImagesDir
+	String_t* ___familyImagesDir_10;
 
 public:
-	inline static int32_t get_offset_of_baseMemberPrefab_4() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___baseMemberPrefab_4)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_baseMemberPrefab_4() const { return ___baseMemberPrefab_4; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_baseMemberPrefab_4() { return &___baseMemberPrefab_4; }
-	inline void set_baseMemberPrefab_4(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_member1Pos_4() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___member1Pos_4)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_member1Pos_4() const { return ___member1Pos_4; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_member1Pos_4() { return &___member1Pos_4; }
+	inline void set_member1Pos_4(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
 	{
-		___baseMemberPrefab_4 = value;
-		Il2CppCodeGenWriteBarrier((&___baseMemberPrefab_4), value);
+		___member1Pos_4 = value;
 	}
 
-	inline static int32_t get_offset_of_currentMember_5() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___currentMember_5)); }
-	inline int32_t get_currentMember_5() const { return ___currentMember_5; }
-	inline int32_t* get_address_of_currentMember_5() { return &___currentMember_5; }
-	inline void set_currentMember_5(int32_t value)
+	inline static int32_t get_offset_of_member2Pos_5() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___member2Pos_5)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_member2Pos_5() const { return ___member2Pos_5; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_member2Pos_5() { return &___member2Pos_5; }
+	inline void set_member2Pos_5(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
 	{
-		___currentMember_5 = value;
+		___member2Pos_5 = value;
 	}
 
-	inline static int32_t get_offset_of_member1Pos_6() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___member1Pos_6)); }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_member1Pos_6() const { return ___member1Pos_6; }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_member1Pos_6() { return &___member1Pos_6; }
-	inline void set_member1Pos_6(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	inline static int32_t get_offset_of_member3Pos_6() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___member3Pos_6)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_member3Pos_6() const { return ___member3Pos_6; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_member3Pos_6() { return &___member3Pos_6; }
+	inline void set_member3Pos_6(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
 	{
-		___member1Pos_6 = value;
+		___member3Pos_6 = value;
 	}
 
-	inline static int32_t get_offset_of_member2Pos_7() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___member2Pos_7)); }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_member2Pos_7() const { return ___member2Pos_7; }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_member2Pos_7() { return &___member2Pos_7; }
-	inline void set_member2Pos_7(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	inline static int32_t get_offset_of_familyMemberPrefab_7() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___familyMemberPrefab_7)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_familyMemberPrefab_7() const { return ___familyMemberPrefab_7; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_familyMemberPrefab_7() { return &___familyMemberPrefab_7; }
+	inline void set_familyMemberPrefab_7(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___member2Pos_7 = value;
+		___familyMemberPrefab_7 = value;
+		Il2CppCodeGenWriteBarrier((&___familyMemberPrefab_7), value);
 	}
 
-	inline static int32_t get_offset_of_member3Pos_8() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___member3Pos_8)); }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_member3Pos_8() const { return ___member3Pos_8; }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_member3Pos_8() { return &___member3Pos_8; }
-	inline void set_member3Pos_8(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	inline static int32_t get_offset_of_familyMemberLocation_8() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___familyMemberLocation_8)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_familyMemberLocation_8() const { return ___familyMemberLocation_8; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_familyMemberLocation_8() { return &___familyMemberLocation_8; }
+	inline void set_familyMemberLocation_8(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___member3Pos_8 = value;
+		___familyMemberLocation_8 = value;
+		Il2CppCodeGenWriteBarrier((&___familyMemberLocation_8), value);
 	}
 
-	inline static int32_t get_offset_of_memberPrefabs_9() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___memberPrefabs_9)); }
-	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_memberPrefabs_9() const { return ___memberPrefabs_9; }
-	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_memberPrefabs_9() { return &___memberPrefabs_9; }
-	inline void set_memberPrefabs_9(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	inline static int32_t get_offset_of_familyMembersPrefabs_9() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___familyMembersPrefabs_9)); }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_familyMembersPrefabs_9() const { return ___familyMembersPrefabs_9; }
+	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_familyMembersPrefabs_9() { return &___familyMembersPrefabs_9; }
+	inline void set_familyMembersPrefabs_9(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
 	{
-		___memberPrefabs_9 = value;
-		Il2CppCodeGenWriteBarrier((&___memberPrefabs_9), value);
+		___familyMembersPrefabs_9 = value;
+		Il2CppCodeGenWriteBarrier((&___familyMembersPrefabs_9), value);
 	}
 
-	inline static int32_t get_offset_of_familyMemberImagesDir_10() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___familyMemberImagesDir_10)); }
-	inline String_t* get_familyMemberImagesDir_10() const { return ___familyMemberImagesDir_10; }
-	inline String_t** get_address_of_familyMemberImagesDir_10() { return &___familyMemberImagesDir_10; }
-	inline void set_familyMemberImagesDir_10(String_t* value)
+	inline static int32_t get_offset_of_familyImagesDir_10() { return static_cast<int32_t>(offsetof(FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2, ___familyImagesDir_10)); }
+	inline String_t* get_familyImagesDir_10() const { return ___familyImagesDir_10; }
+	inline String_t** get_address_of_familyImagesDir_10() { return &___familyImagesDir_10; }
+	inline void set_familyImagesDir_10(String_t* value)
 	{
-		___familyMemberImagesDir_10 = value;
-		Il2CppCodeGenWriteBarrier((&___familyMemberImagesDir_10), value);
+		___familyImagesDir_10 = value;
+		Il2CppCodeGenWriteBarrier((&___familyImagesDir_10), value);
 	}
 };
 
@@ -3173,26 +3174,18 @@ public:
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___friendLocation_5;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> TopFriendsController::friendPrefabs
 	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___friendPrefabs_6;
-	// UnityEngine.GameObject TopFriendsController::familyMemberPrefab
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___familyMemberPrefab_7;
-	// UnityEngine.GameObject TopFriendsController::familyMemberLocation
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___familyMemberLocation_8;
-	// System.Collections.Generic.List`1<UnityEngine.GameObject> TopFriendsController::familyMembersPrefabs
-	List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * ___familyMembersPrefabs_9;
 	// UnityEngine.Vector3 TopFriendsController::friend1Pos
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___friend1Pos_10;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___friend1Pos_7;
 	// UnityEngine.Vector3 TopFriendsController::friend2Pos
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___friend2Pos_11;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___friend2Pos_8;
 	// UnityEngine.Vector3 TopFriendsController::friend3Pos
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___friend3Pos_12;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___friend3Pos_9;
 	// System.String TopFriendsController::friendsImagesDir
-	String_t* ___friendsImagesDir_13;
-	// System.String TopFriendsController::familyImagesDir
-	String_t* ___familyImagesDir_14;
+	String_t* ___friendsImagesDir_10;
 	// System.String TopFriendsController::json_path
-	String_t* ___json_path_15;
+	String_t* ___json_path_11;
 	// System.String TopFriendsController::fileName
-	String_t* ___fileName_16;
+	String_t* ___fileName_12;
 
 public:
 	inline static int32_t get_offset_of_friendPrefab_4() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___friendPrefab_4)); }
@@ -3222,91 +3215,55 @@ public:
 		Il2CppCodeGenWriteBarrier((&___friendPrefabs_6), value);
 	}
 
-	inline static int32_t get_offset_of_familyMemberPrefab_7() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___familyMemberPrefab_7)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_familyMemberPrefab_7() const { return ___familyMemberPrefab_7; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_familyMemberPrefab_7() { return &___familyMemberPrefab_7; }
-	inline void set_familyMemberPrefab_7(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_friend1Pos_7() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___friend1Pos_7)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_friend1Pos_7() const { return ___friend1Pos_7; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_friend1Pos_7() { return &___friend1Pos_7; }
+	inline void set_friend1Pos_7(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
 	{
-		___familyMemberPrefab_7 = value;
-		Il2CppCodeGenWriteBarrier((&___familyMemberPrefab_7), value);
+		___friend1Pos_7 = value;
 	}
 
-	inline static int32_t get_offset_of_familyMemberLocation_8() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___familyMemberLocation_8)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_familyMemberLocation_8() const { return ___familyMemberLocation_8; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_familyMemberLocation_8() { return &___familyMemberLocation_8; }
-	inline void set_familyMemberLocation_8(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_friend2Pos_8() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___friend2Pos_8)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_friend2Pos_8() const { return ___friend2Pos_8; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_friend2Pos_8() { return &___friend2Pos_8; }
+	inline void set_friend2Pos_8(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
 	{
-		___familyMemberLocation_8 = value;
-		Il2CppCodeGenWriteBarrier((&___familyMemberLocation_8), value);
+		___friend2Pos_8 = value;
 	}
 
-	inline static int32_t get_offset_of_familyMembersPrefabs_9() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___familyMembersPrefabs_9)); }
-	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * get_familyMembersPrefabs_9() const { return ___familyMembersPrefabs_9; }
-	inline List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 ** get_address_of_familyMembersPrefabs_9() { return &___familyMembersPrefabs_9; }
-	inline void set_familyMembersPrefabs_9(List_1_t99909CDEDA6D21189884AEA74B1FD99FC9C6A4C0 * value)
+	inline static int32_t get_offset_of_friend3Pos_9() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___friend3Pos_9)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_friend3Pos_9() const { return ___friend3Pos_9; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_friend3Pos_9() { return &___friend3Pos_9; }
+	inline void set_friend3Pos_9(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
 	{
-		___familyMembersPrefabs_9 = value;
-		Il2CppCodeGenWriteBarrier((&___familyMembersPrefabs_9), value);
+		___friend3Pos_9 = value;
 	}
 
-	inline static int32_t get_offset_of_friend1Pos_10() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___friend1Pos_10)); }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_friend1Pos_10() const { return ___friend1Pos_10; }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_friend1Pos_10() { return &___friend1Pos_10; }
-	inline void set_friend1Pos_10(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	inline static int32_t get_offset_of_friendsImagesDir_10() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___friendsImagesDir_10)); }
+	inline String_t* get_friendsImagesDir_10() const { return ___friendsImagesDir_10; }
+	inline String_t** get_address_of_friendsImagesDir_10() { return &___friendsImagesDir_10; }
+	inline void set_friendsImagesDir_10(String_t* value)
 	{
-		___friend1Pos_10 = value;
+		___friendsImagesDir_10 = value;
+		Il2CppCodeGenWriteBarrier((&___friendsImagesDir_10), value);
 	}
 
-	inline static int32_t get_offset_of_friend2Pos_11() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___friend2Pos_11)); }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_friend2Pos_11() const { return ___friend2Pos_11; }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_friend2Pos_11() { return &___friend2Pos_11; }
-	inline void set_friend2Pos_11(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	inline static int32_t get_offset_of_json_path_11() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___json_path_11)); }
+	inline String_t* get_json_path_11() const { return ___json_path_11; }
+	inline String_t** get_address_of_json_path_11() { return &___json_path_11; }
+	inline void set_json_path_11(String_t* value)
 	{
-		___friend2Pos_11 = value;
+		___json_path_11 = value;
+		Il2CppCodeGenWriteBarrier((&___json_path_11), value);
 	}
 
-	inline static int32_t get_offset_of_friend3Pos_12() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___friend3Pos_12)); }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_friend3Pos_12() const { return ___friend3Pos_12; }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_friend3Pos_12() { return &___friend3Pos_12; }
-	inline void set_friend3Pos_12(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	inline static int32_t get_offset_of_fileName_12() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___fileName_12)); }
+	inline String_t* get_fileName_12() const { return ___fileName_12; }
+	inline String_t** get_address_of_fileName_12() { return &___fileName_12; }
+	inline void set_fileName_12(String_t* value)
 	{
-		___friend3Pos_12 = value;
-	}
-
-	inline static int32_t get_offset_of_friendsImagesDir_13() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___friendsImagesDir_13)); }
-	inline String_t* get_friendsImagesDir_13() const { return ___friendsImagesDir_13; }
-	inline String_t** get_address_of_friendsImagesDir_13() { return &___friendsImagesDir_13; }
-	inline void set_friendsImagesDir_13(String_t* value)
-	{
-		___friendsImagesDir_13 = value;
-		Il2CppCodeGenWriteBarrier((&___friendsImagesDir_13), value);
-	}
-
-	inline static int32_t get_offset_of_familyImagesDir_14() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___familyImagesDir_14)); }
-	inline String_t* get_familyImagesDir_14() const { return ___familyImagesDir_14; }
-	inline String_t** get_address_of_familyImagesDir_14() { return &___familyImagesDir_14; }
-	inline void set_familyImagesDir_14(String_t* value)
-	{
-		___familyImagesDir_14 = value;
-		Il2CppCodeGenWriteBarrier((&___familyImagesDir_14), value);
-	}
-
-	inline static int32_t get_offset_of_json_path_15() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___json_path_15)); }
-	inline String_t* get_json_path_15() const { return ___json_path_15; }
-	inline String_t** get_address_of_json_path_15() { return &___json_path_15; }
-	inline void set_json_path_15(String_t* value)
-	{
-		___json_path_15 = value;
-		Il2CppCodeGenWriteBarrier((&___json_path_15), value);
-	}
-
-	inline static int32_t get_offset_of_fileName_16() { return static_cast<int32_t>(offsetof(TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3, ___fileName_16)); }
-	inline String_t* get_fileName_16() const { return ___fileName_16; }
-	inline String_t** get_address_of_fileName_16() { return &___fileName_16; }
-	inline void set_fileName_16(String_t* value)
-	{
-		___fileName_16 = value;
-		Il2CppCodeGenWriteBarrier((&___fileName_16), value);
+		___fileName_12 = value;
+		Il2CppCodeGenWriteBarrier((&___fileName_12), value);
 	}
 };
 
@@ -3801,13 +3758,13 @@ extern const int32_t g_FieldOffsetTable5611[2] =
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5612 = { sizeof (FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable5612[7] = 
 {
-	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_baseMemberPrefab_4(),
-	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_currentMember_5(),
-	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_member1Pos_6(),
-	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_member2Pos_7(),
-	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_member3Pos_8(),
-	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_memberPrefabs_9(),
-	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_familyMemberImagesDir_10(),
+	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_member1Pos_4(),
+	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_member2Pos_5(),
+	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_member3Pos_6(),
+	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_familyMemberPrefab_7(),
+	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_familyMemberLocation_8(),
+	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_familyMembersPrefabs_9(),
+	FamilyMembersController_tB8AC0003C989875C5E2DE72EA4E9B4F76F06ECC2::get_offset_of_familyImagesDir_10(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5613 = { sizeof (FinancialController_t09C4C36E8DF958FF164ACE319FD097ECE5BD231E), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5614 = { sizeof (InterestsController_t6DE239C8EF31131FAB8A2ED76847DA8A4BA2CEE2), -1, 0, 0 };
@@ -4026,21 +3983,17 @@ extern const int32_t g_FieldOffsetTable5638[2] =
 	RotateAnimation_t2B51BDF77BF25DF67B1AA3350BE4A277C9CBCF7A::get_offset_of_RotateStep_5(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5639 = { sizeof (TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5639[13] = 
+extern const int32_t g_FieldOffsetTable5639[9] = 
 {
 	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friendPrefab_4(),
 	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friendLocation_5(),
 	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friendPrefabs_6(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_familyMemberPrefab_7(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_familyMemberLocation_8(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_familyMembersPrefabs_9(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friend1Pos_10(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friend2Pos_11(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friend3Pos_12(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friendsImagesDir_13(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_familyImagesDir_14(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_json_path_15(),
-	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_fileName_16(),
+	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friend1Pos_7(),
+	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friend2Pos_8(),
+	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friend3Pos_9(),
+	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_friendsImagesDir_10(),
+	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_json_path_11(),
+	TopFriendsController_t0C5590C10E525B9B242C1730814CB84BF45240C3::get_offset_of_fileName_12(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5640 = { sizeof (Transaction_tC049852BEF32F12E4A637B64BA0F18B3E43688CF), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable5640[1] = 

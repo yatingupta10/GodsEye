@@ -12,18 +12,11 @@ public class TopFriendsController : MonoBehaviour
     public GameObject friendLocation;
     List<GameObject> friendPrefabs = new List<GameObject>();
 
-    public GameObject familyMemberPrefab;
-    public GameObject familyMemberLocation;
-    List<GameObject> familyMembersPrefabs = new List<GameObject>();
-
     Vector3 friend1Pos = new Vector3(0.0f, 0.2f, 0.0f);
     Vector3 friend2Pos = new Vector3(0.0f, 0.0f, 0.0f);
     Vector3 friend3Pos = new Vector3(0.0f, -0.2f, 0.0f);
 
-    
-
     string friendsImagesDir = "gagan_friends";
-    string familyImagesDir = "gagan_family";
 
     string json_path = "profile_dir/";
     string fileName = "profile_gagan.json";
@@ -49,7 +42,6 @@ public class TopFriendsController : MonoBehaviour
 
         TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
         ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
-        List<FamilyMember> familyMembers = currentProf.profile.connections.family_members;
         List<SocialMediaFriend> friends = currentProf.profile.connections.social_media_friends;
 
         if (GameObject.FindGameObjectWithTag("RelationshipStatus"))
@@ -61,8 +53,6 @@ public class TopFriendsController : MonoBehaviour
         {
             friendPrefabs.Add(friendPrefab);
 
-            familyMembersPrefabs.Add(familyMemberPrefab);
-
             //string friendImageName = "test.jpg";
             Sprite friendImage = ImportImage(friendsImagesDir+"/"+ friends[i].url);
 
@@ -73,66 +63,20 @@ public class TopFriendsController : MonoBehaviour
             //setting same images for family
             //need to chnage this
             //resource.load not working for me
-            
-
-            Sprite familyImage = ImportImage(familyImagesDir + "/" + familyMembers[i].url);
-            familyMembersPrefabs[i].GetComponentInChildren<Image>().sprite = familyImage;
-            familyMembersPrefabs[i].GetComponentInChildren<Image>().preserveAspect = true;
-
-            familyMembersPrefabs[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = familyMembers[i].name;
-            familyMembersPrefabs[i].transform.GetChild(2).GetComponent<TextMeshPro>().text = familyMembers[i].relation;
 
             if (i == 0)
             {
                 friendPrefabs[i].transform.position = friend1Pos;
-                familyMembersPrefabs[i].transform.position = friend1Pos;
-
             }
             else if (i == 1)
             {
                 friendPrefabs[i].transform.position = friend2Pos;
-                familyMembersPrefabs[i].transform.position = friend2Pos;
             }
             else if (i == 2)
             {
                 friendPrefabs[i].transform.position = friend3Pos;
-                familyMembersPrefabs[i].transform.position = friend3Pos;
             }
             Instantiate(friendPrefabs[i], friendLocation.transform);
-            Instantiate(familyMembersPrefabs[i], familyMemberLocation.transform);
         }
-
-        //for (int i = 0; i < friends.Count; i++)
-        //{
-
-        //    Vector3 spawnPos = Vector3.zero;
-
-        //    switch (i)
-        //    {
-        //        case 0:
-        //            spawnPos = friend1Pos;
-        //            break;
-        //        case 1:
-        //            spawnPos = friend2Pos;
-        //            break;
-        //        case 2:
-        //            spawnPos = friend3Pos;
-        //            break;
-        //    }
-
-
-        //    //example for element 0 of the top friend list:
-        //    friendPrefabs.Add(friendPrefab);
-        //    Debug.Log("name of friend : " + friends[i].name);
-        //    friendPrefabs[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = friends[i].name;
-
-        //    //string friendImageName = "test.jpg";
-        //    //Sprite friendImage = ImportImage(friendsImagesDir + "/" + friends[i].url);
-
-        //    //friendPrefabs[i].GetComponentInChildren<Image>().sprite = friendImage;
-        //    //friendPrefabs[i].GetComponentInChildren<Image>().preserveAspect = true;
-
-        //    Instantiate(friendPrefabs[i], spawnPos, Quaternion.identity);
-        //}
     }
 }
