@@ -16,7 +16,7 @@ public class LogoController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
-        ImportCompanyLogo();
+        //ImportCompanyLogo();
     }
 
     void ImportCompanyLogo(){
@@ -30,5 +30,9 @@ public class LogoController : MonoBehaviour
 
         companyLogo.GetComponentInChildren<Image>().sprite = logo;
         companyLogo.GetComponentInChildren<Image>().preserveAspect = true;
+    }
+
+    public void Begin(){
+        ImportCompanyLogo();
     }
 }

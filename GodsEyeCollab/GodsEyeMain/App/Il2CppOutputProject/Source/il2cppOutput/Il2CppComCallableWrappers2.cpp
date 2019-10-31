@@ -39,6 +39,8 @@ struct InterfaceFuncInvoker1
 
 // FaceAnalysis
 struct FaceAnalysis_t499F3E2050A41D36D690EE2D54C6B5BE1A170699;
+// FaceAnalysis/Candidate_RootObject
+struct Candidate_RootObject_tC116326BAE702C49FBD84D0E00C675E58EE90003;
 // FaceAnalysis/Candidate_RootObject[]
 struct Candidate_RootObjectU5BU5D_tACE26484C76764DF3A8FC41E82B293219DC0F676;
 // Microsoft.MixedReality.Toolkit.BaseMixedRealityProfile
@@ -1218,6 +1220,8 @@ public:
 	Candidate_RootObjectU5BU5D_tACE26484C76764DF3A8FC41E82B293219DC0F676* ___U3CU3E7__wrap2_5;
 	// System.Int32 FaceAnalysis_<IdentifyFaces>d__12::<>7__wrap3
 	int32_t ___U3CU3E7__wrap3_6;
+	// FaceAnalysis_Candidate_RootObject FaceAnalysis_<IdentifyFaces>d__12::<candidateRO>5__5
+	Candidate_RootObject_tC116326BAE702C49FBD84D0E00C675E58EE90003 * ___U3CcandidateROU3E5__5_7;
 
 public:
 	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CIdentifyFacesU3Ed__12_t1A92F581DC51EBBDAE55605811EF16598C4FF688, ___U3CU3E1__state_0)); }
@@ -1279,6 +1283,15 @@ public:
 	inline void set_U3CU3E7__wrap3_6(int32_t value)
 	{
 		___U3CU3E7__wrap3_6 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CcandidateROU3E5__5_7() { return static_cast<int32_t>(offsetof(U3CIdentifyFacesU3Ed__12_t1A92F581DC51EBBDAE55605811EF16598C4FF688, ___U3CcandidateROU3E5__5_7)); }
+	inline Candidate_RootObject_tC116326BAE702C49FBD84D0E00C675E58EE90003 * get_U3CcandidateROU3E5__5_7() const { return ___U3CcandidateROU3E5__5_7; }
+	inline Candidate_RootObject_tC116326BAE702C49FBD84D0E00C675E58EE90003 ** get_address_of_U3CcandidateROU3E5__5_7() { return &___U3CcandidateROU3E5__5_7; }
+	inline void set_U3CcandidateROU3E5__5_7(Candidate_RootObject_tC116326BAE702C49FBD84D0E00C675E58EE90003 * value)
+	{
+		___U3CcandidateROU3E5__5_7 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CcandidateROU3E5__5_7), value);
 	}
 };
 

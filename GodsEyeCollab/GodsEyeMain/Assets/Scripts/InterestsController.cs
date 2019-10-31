@@ -36,7 +36,7 @@ public class InterestsController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
+        /*TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
         ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
         List<Checkin> checkins = currentProf.profile.interests_info.checkins;
         List<string> likes = currentProf.profile.interests_info.recent_likes;
@@ -94,13 +94,70 @@ public class InterestsController : MonoBehaviour
             }
             Instantiate(likesPrefabsList[i], likesLocation.transform);
         }
-
+        */
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void Begin(){
+        //TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
+        //ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
+
+
+        List<Checkin> checkins = MainDataController.instance.currentProf.profile.interests_info.checkins;
+        List<string> likes = MainDataController.instance.currentProf.profile.interests_info.recent_likes;
+
+        //Debug.Log("count of checkins  : " + checkins.Count.ToString());
+        for (int i = 0; i < checkins.Count; i++)
+        {
+            checkinsPrefabsList.Add(checkinsPrefab);
+
+            //set the text values for each transaction
+            checkinsPrefabsList[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = checkins[i].location;
+            checkinsPrefabsList[i].transform.GetChild(2).GetComponent<TextMeshPro>().text = checkins[i].date;
+            if (i == 0)
+            {
+                checkinsPrefabsList[i].transform.position = friend1Pos;
+            }
+            else if (i == 1)
+            {
+                checkinsPrefabsList[i].transform.position = friend2Pos;
+            }
+            else if (i == 2)
+            {
+                checkinsPrefabsList[i].transform.position = friend3Pos;
+            }
+            else if (i == 3)
+            {
+                checkinsPrefabsList[i].transform.position = friend4Pos;
+            }
+            Instantiate(checkinsPrefabsList[i], checkinlocation.transform);
+        }
+
+
+        //Debug.Log("count of likes  : " + likes.Count.ToString());
+        for (int i = 0; i < likes.Count; i++)
+        {
+            likesPrefabsList.Add(likesPrefab);
+
+            //set the text values for each transaction
+            likesPrefabsList[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = likes[i];
+            if (i == 0)
+            {
+                likesPrefabsList[i].transform.position = likes1Pos;
+            }
+            else if (i == 1)
+            {
+                likesPrefabsList[i].transform.position = likes2Pos;
+            }
+            else if (i == 2)
+            {
+                likesPrefabsList[i].transform.position = likes3Pos;
+            }
+            else if (i == 3)
+            {
+                likesPrefabsList[i].transform.position = likes4Pos;
+            }
+            Instantiate(likesPrefabsList[i], likesLocation.transform);
+        }
     }
 }

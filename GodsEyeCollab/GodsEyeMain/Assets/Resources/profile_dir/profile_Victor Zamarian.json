@@ -4,7 +4,7 @@
     "last_name": "Zamarian",
 
     "personal_info": {
-        "age": 27,
+        "age": 23,
         "education": [
             {
                 "school": "USC",
@@ -19,18 +19,18 @@
                 "tenure": "2011-2015"
             }
         ],
-        "email": "gagan@gmail.com",
+        "email": "victor@gmail.com",
         "contact_info": {
-            "mobile": "+1-2132453274",
+            "mobile": "+1-2578888888",
             "home": "+1-2134567890"
         },
 
         "residence": {
-            "apt": "2717 orchard Ave",
-            "city": "Los Angeles",
-            "state": "CA",
+            "apt": "2717 Blossom Ave",
+            "city": "Seattle",
+            "state": "WA",
             "country": "USA",
-            "zipcode": 90007,
+            "zipcode": 90031,
             "latitude": 34.029631,
             "longitude": -118.287778
         },
@@ -47,10 +47,10 @@
 
         "current_company": "Amazon",
         "company_logo": "amazon.png",
-        "position": "Software Developer",
+        "position": "Software Engineer Lvl 2",
         "location": "Seattle, WA",
-        "salary": 120000,
-        "salary_string": "120,000",
+        "salary": 1500000,
+        "salary_string": "150,000",
         "venmo_tx": [
             {
                 "amount": "$20",
@@ -59,46 +59,52 @@
                 "date": "11th Oct 2019"
             },
             {
-                "amount": "$50",
-                "recipient": "Yatin Gupta",
-                "payer": "Gagan",
-                "date": "11th Oct 2019"
+              "amount": "$50",
+              "recipient": "Yatin Gupta",
+              "payer": "Gagan",
+              "date": "11th Oct 2019"
+            },
+            {
+              "amount": "$5",
+              "recipient": "Yatin Gupta",
+              "payer": "Gagan",
+              "date": "7th Oct 2019"
             }
         ]
     },
 
     "connections": {
-        "relationship_status": "Married",
+        "relationship_status": "Single",
         "no_of_dependents": 2,
-        "family_members": [
+      "family_members": [
             {
-                "name": "Daniel",
-                "relation": "brother",
-                "url": "daniel"
+              "name": "megan",
+              "relation": "wife",
+              "url": "megan"
             },
             {
-                "name": "megan",
-                "relation": "wife",
-                "url": "megan"
+              "name": "Daniel",
+              "relation": "brother",
+              "url": "daniel"
             },
             {
-                "name": "Amy",
-                "relation": "sister",
-                "url": "amy"
+              "name": "Amy",
+              "relation": "sister",
+              "url": "amy"
             }
-        ],
+      ],
         "social_media_friends": [
             {
-                "name": "Jack Smith",
-                "url": "jack"
+              "name": "Jack Smith",
+              "url": "jack"
+            },
+            {
+              "name": "JRam Yadav",
+              "url": "jram"
             },
             {
                 "name": "John Robert",
                 "url": "john"
-            },
-            {
-                "name": "JRam Yadav",
-                "url": "jram"
             },
             {
                 "name": "lizzy Bennete",
@@ -109,19 +115,19 @@
 
     "social_media_info": {
         "facebook": {
-            "username": "vasudev.gags",
+            "username": "v.zamarian",
             "url": "https://www.facebook.com/vasudev.gags"
         },
         "instagram": {
-            "username": "devilgags",
+            "username": "v-zamarian",
             "url": "https://www.instagram.com/devilgags"
         },
         "linkedin": {
-            "username": "gagan.vasudev",
+            "username": "victor.zamarian",
             "url": "https://www.linkedin.com/in/gaganvasudev/"
         },
         "twitter": {
-            "username": "gaganvasudev",
+            "username": "zamarian",
             "url": "https://twitter.com/gagan_vasudev"
         }
     },
@@ -139,23 +145,23 @@
           "time": "14:45"
         },
         {
-          "location": "The Grove, LA",
+          "location": "Universal Studio, LA",
           "date": "10th Oct 2019",
-          "time": "20:00"
+          "time": "14:45"
         },
         {
-          "location": "Universal Studio, LA",
+          "location": "The Grove, LA",
           "date": "7th Oct 2019",
-          "time": "14:45"
+          "time": "20:00"
         }
-
       ],
-        "recent_likes": [
-            "University of Southern California",
-            "Universal Studios",
-            "Batman: The Dark Knight",
-            "Apple Macbook Pro"
-        ]
+      "recent_likes": [
+          "Apple Macbook Pro",
+          "University of Southern California",
+          "Universal Studios",
+          "Batman: The Dark Knight"
+
+      ]
     }
 
 }

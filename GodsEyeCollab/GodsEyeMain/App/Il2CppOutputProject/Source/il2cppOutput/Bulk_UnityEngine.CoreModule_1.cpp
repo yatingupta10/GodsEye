@@ -1045,7 +1045,6 @@ extern const uint32_t RenderTextureDescriptor_get_depthBufferBits_m51E82C47A0CA0
 extern const uint32_t RenderTexture_ValidateRenderTextureDesc_mE4BA319BF91FCA90B517EF080E84EE395A4EAD01_MetadataUsageId;
 extern const uint32_t RenderTexture__ctor_m3B3534A6C9696C5CB12ADC78F922237F69CEA33A_MetadataUsageId;
 extern const uint32_t Resolution_ToString_m42289CE0FC4ED41A9DC62B398F46F7954BC52F04_MetadataUsageId;
-extern const uint32_t Resources_LoadAll_mA3D4B21BEDA17DAD9D216D86EFE1187B879A7E18_MetadataUsageId;
 extern const uint32_t Resources_Load_mDBE6B83A74A52A1A6F5A68F7E5BC112DBB81B3C1_MetadataUsageId;
 extern const uint32_t SceneManager_Internal_ActiveSceneChanged_mE9AB93D6979594CFCED5B3696F727B7D5E6B25F5_MetadataUsageId;
 extern const uint32_t SceneManager_Internal_SceneLoaded_m800F5F7F7B30D5206913EF65548FD7F8DE9EF718_MetadataUsageId;
@@ -14037,8 +14036,6 @@ extern "C" IL2CPP_METHOD_ATTR String_t* Resolution_ToString_m42289CE0FC4ED41A9DC
 extern "C" IL2CPP_METHOD_ATTR Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * Resources_Load_mF0FA033BF566CDDA6A0E69BB97283B44C40726E7 (String_t* ___path0, Type_t * ___systemTypeInstance1, const RuntimeMethod* method);
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
 extern "C" IL2CPP_METHOD_ATTR Type_t * Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6 (RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  p0, const RuntimeMethod* method);
-// UnityEngine.Object[] UnityEngine.Resources::LoadAll(System.String,System.Type)
-extern "C" IL2CPP_METHOD_ATTR ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A981AB9* Resources_LoadAll_mCBF6F93023EF2F09957B7193D9966EF3AB374C9E (String_t* ___path0, Type_t * ___systemTypeInstance1, const RuntimeMethod* method);
 // System.Void UnityEngine.Scripting.PreserveAttribute::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void PreserveAttribute__ctor_mD842EE86496947B39FE0FBC67393CE4401AC53AA (PreserveAttribute_t864F9DAA4DBF2524206AD57CE51AEB955702AA3F * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.RuntimeInitializeOnLoadMethodAttribute::set_loadType(UnityEngine.RuntimeInitializeLoadType)
@@ -25128,6 +25125,16 @@ IL_0018:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.Object[] UnityEngine.Resources::FindObjectsOfTypeAll(System.Type)
+extern "C" IL2CPP_METHOD_ATTR ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A981AB9* Resources_FindObjectsOfTypeAll_mFFDC0207FEBD620424377896FC1B67307DB42520 (Type_t * ___type0, const RuntimeMethod* method)
+{
+	typedef ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A981AB9* (*Resources_FindObjectsOfTypeAll_mFFDC0207FEBD620424377896FC1B67307DB42520_ftn) (Type_t *);
+	static Resources_FindObjectsOfTypeAll_mFFDC0207FEBD620424377896FC1B67307DB42520_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Resources_FindObjectsOfTypeAll_mFFDC0207FEBD620424377896FC1B67307DB42520_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Resources::FindObjectsOfTypeAll(System.Type)");
+	ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A981AB9* retVal = _il2cpp_icall_func(___type0);
+	return retVal;
+}
 // UnityEngine.Object UnityEngine.Resources::Load(System.String)
 extern "C" IL2CPP_METHOD_ATTR Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * Resources_Load_mDBE6B83A74A52A1A6F5A68F7E5BC112DBB81B3C1 (String_t* ___path0, const RuntimeMethod* method)
 {
@@ -25173,32 +25180,6 @@ extern "C" IL2CPP_METHOD_ATTR ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A98
 	_il2cpp_icall_func = (Resources_LoadAll_mCBF6F93023EF2F09957B7193D9966EF3AB374C9E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Resources::LoadAll(System.String,System.Type)");
 	ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A981AB9* retVal = _il2cpp_icall_func(___path0, ___systemTypeInstance1);
 	return retVal;
-}
-// UnityEngine.Object[] UnityEngine.Resources::LoadAll(System.String)
-extern "C" IL2CPP_METHOD_ATTR ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A981AB9* Resources_LoadAll_mA3D4B21BEDA17DAD9D216D86EFE1187B879A7E18 (String_t* ___path0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Resources_LoadAll_mA3D4B21BEDA17DAD9D216D86EFE1187B879A7E18_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A981AB9* V_0 = NULL;
-	{
-		String_t* L_0 = ___path0;
-		RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  L_1 = { reinterpret_cast<intptr_t> (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_0_0_0_var) };
-		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
-		Type_t * L_2 = Type_GetTypeFromHandle_m9DC58ADF0512987012A8A016FB64B068F3B1AFF6(L_1, /*hidden argument*/NULL);
-		ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A981AB9* L_3 = Resources_LoadAll_mCBF6F93023EF2F09957B7193D9966EF3AB374C9E(L_0, L_2, /*hidden argument*/NULL);
-		V_0 = L_3;
-		goto IL_0017;
-	}
-
-IL_0017:
-	{
-		ObjectU5BU5D_tE519E5BBCA48F8FEAE68926638261BD14A981AB9* L_4 = V_0;
-		return L_4;
-	}
 }
 // UnityEngine.Object UnityEngine.Resources::GetBuiltinResource(System.Type,System.String)
 extern "C" IL2CPP_METHOD_ATTR Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 * Resources_GetBuiltinResource_m73DDAC485E1E06C925628AA7285AC63D0797BD0A (Type_t * ___type0, String_t* ___path1, const RuntimeMethod* method)

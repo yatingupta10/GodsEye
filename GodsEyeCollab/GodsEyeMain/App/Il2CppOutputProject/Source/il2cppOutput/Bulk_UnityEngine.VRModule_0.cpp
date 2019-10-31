@@ -7738,6 +7738,8 @@ extern "C" IL2CPP_METHOD_ATTR void OnCapturedToMemoryCallback_Invoke_m27564001AF
 extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_Dispose_Internal_mAA2C61CD8C2213EDE2EBADE3173465335FEF66A9 (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCapture::DisposeThreaded_Internal()
 extern "C" IL2CPP_METHOD_ATTR void PhotoCapture_DisposeThreaded_Internal_m28BF0EB965B1D419B511D2DD15187B9C28C8F563 (PhotoCapture_tC694C9CC6FC59F3D9B74984A47CB594502FAB307 * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.XR.WSA.WebCam.PhotoCapture/PhotoCaptureResult::get_success()
+extern "C" IL2CPP_METHOD_ATTR bool PhotoCaptureResult_get_success_m8E6FCF91090603CE3AED721151539B64044545F3 (PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.XR.WSA.WebCam.PhotoCaptureFrame::GetDataLength()
 extern "C" IL2CPP_METHOD_ATTR int32_t PhotoCaptureFrame_GetDataLength_m2269CB960C50D53AAD3CD5243CBA915F188956E3 (PhotoCaptureFrame_t6DDF938CC10AEDEC6E1FAD80BE5DD2849E479858 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.XR.WSA.WebCam.PhotoCaptureFrame::set_dataLength(System.Int32)
@@ -19200,6 +19202,27 @@ extern "C" IL2CPP_METHOD_ATTR void OnPhotoModeStoppedCallback_EndInvoke_mB715B0F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Boolean UnityEngine.XR.WSA.WebCam.PhotoCapture_PhotoCaptureResult::get_success()
+extern "C" IL2CPP_METHOD_ATTR bool PhotoCaptureResult_get_success_m8E6FCF91090603CE3AED721151539B64044545F3 (PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC * __this, const RuntimeMethod* method)
+{
+	bool V_0 = false;
+	{
+		int32_t L_0 = __this->get_resultType_0();
+		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		bool L_1 = V_0;
+		return L_1;
+	}
+}
+extern "C"  bool PhotoCaptureResult_get_success_m8E6FCF91090603CE3AED721151539B64044545F3_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC * _thisAdjusted = reinterpret_cast<PhotoCaptureResult_tB8F50F3F223E84B961166C1536336C2BC2C921AC *>(__this + 1);
+	return PhotoCaptureResult_get_success_m8E6FCF91090603CE3AED721151539B64044545F3(_thisAdjusted, method);
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

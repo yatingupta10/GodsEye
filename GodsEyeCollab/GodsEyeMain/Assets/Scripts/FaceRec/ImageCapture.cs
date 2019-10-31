@@ -60,7 +60,14 @@ public class ImageCapture : MonoBehaviour
         tapsCount++;
         Debug.Log(tapsCount);
 
-        ExecuteImageCaptureAndAnalysis();
+        //FaceRecName.instance.displayText.text = "recognized a tap";
+
+        if (FaceRecName.instance.recName == ""){
+            FaceRecName.instance.recName = "gagan";
+            FaceRecName.instance.Begin();
+        }
+        
+        // ExecuteImageCaptureAndAnalysis();
 
         
     }
@@ -94,6 +101,8 @@ public class ImageCapture : MonoBehaviour
                 // Set the image path on the FaceAnalysis class
                 FaceAnalysis.Instance.imagePath = filePath;
 
+                FaceRecName.instance.displayText.text = filePath;
+
                 photoCaptureObject.TakePhotoAsync
                 (filePath, PhotoCaptureFileOutputFormat.JPG, OnCapturedPhotoToDisk);
             });
@@ -105,7 +114,16 @@ public class ImageCapture : MonoBehaviour
     /// </summary>
     void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
     {
-        photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
+        if (result.success)
+        {
+            FaceRecName.instance.displayText.text = "Took a picture";
+            photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
+        }
+        else
+        {
+            FaceRecName.instance.displayText.text = "Failed to take\na picture";
+        }
+        
     }
 
     /// <summary>

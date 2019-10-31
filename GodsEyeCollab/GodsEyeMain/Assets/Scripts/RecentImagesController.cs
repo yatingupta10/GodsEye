@@ -26,8 +26,14 @@ public class RecentImagesController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
-        CreateImageArrays();
+        //CreateImageArrays();
 
+        //toggleBackButton(false);
+    }
+
+    public void Begin()
+    {
+        CreateImageArrays();
         toggleBackButton(false);
     }
 

@@ -58,12 +58,24 @@
                 "payer": "Gagan",
                 "date": "11th Oct 2019"
             },
-            {
-                "amount": "$50",
-                "recipient": "Yatin Gupta",
-                "payer": "Gagan",
-                "date": "11th Oct 2019"
-            }
+          {
+            "amount": "$50",
+            "recipient": "Yatin Gupta",
+            "payer": "Gagan",
+            "date": "10th Oct 2019"
+          },
+          {
+            "amount": "$3.33",
+            "recipient": "Victor Zamarian",
+            "payer": "Gagan",
+            "date": "2nd Oct 2019"
+          },
+          {
+            "amount": "$1000",
+            "recipient": "Bill Gates",
+            "payer": "Gagan",
+            "date": "20th Sep 2019"
+          }
         ]
     },
 

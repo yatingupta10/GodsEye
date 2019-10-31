@@ -26,6 +26,7 @@ public class FacePaneController : MonoBehaviour
 
     bool moveStart = false;
     bool nextMove = false;
+    bool inactive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,15 @@ public class FacePaneController : MonoBehaviour
             rb.AddForce(leftForce);
         }
 
+        gameObject.GetComponent<BoxCollider>().isTrigger = inactive;
+        colliderCollection.transform.GetChild(2).GetComponent<BoxCollider>().isTrigger = inactive;
+        colliderCollection.transform.GetChild(3).GetComponent<BoxCollider>().isTrigger = inactive;
+    }
+
+    public void setActive()
+    {
+        inactive = false;
+        gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
     }
 
     public void BeginMove()

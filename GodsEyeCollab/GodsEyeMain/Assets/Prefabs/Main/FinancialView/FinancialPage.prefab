@@ -116,7 +116,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 14, y: 3}
+  m_SizeDelta: {x: 13, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &601407231482459975
 MeshRenderer:
@@ -495,7 +495,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4782788580062396505}
-  - component: {fileID: 6889933238673906950}
   m_Layer: 0
   m_Name: FinancialPage
   m_TagString: Untagged
@@ -519,18 +518,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6889933238673906950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4782788580062396504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2951c09982adf94098d4e841ca81a6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4782788580117299419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2923,7 +2910,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 14, y: 3}
+  m_SizeDelta: {x: 13, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &431061717020913398
 MeshRenderer:
@@ -3631,7 +3618,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 14, y: 3}
+  m_SizeDelta: {x: 13, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &2302782998339594790
 MeshRenderer:

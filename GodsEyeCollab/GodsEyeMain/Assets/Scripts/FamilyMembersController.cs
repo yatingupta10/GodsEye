@@ -21,6 +21,10 @@ public class FamilyMembersController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
+        //CreateMemberArrays();
+    }
+
+    public void Begin(){
         CreateMemberArrays();
     }
 
@@ -30,10 +34,11 @@ public class FamilyMembersController : MonoBehaviour
     }
 
     void CreateMemberArrays(){
-        TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
-        ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
-        List<FamilyMember> familyMembers = currentProf.profile.connections.family_members;
+        //TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
+        //ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
 
+
+        List<FamilyMember> familyMembers = MainDataController.instance.currentProf.profile.connections.family_members;
 
         for (int i = 0; i < 3; i++)
         {

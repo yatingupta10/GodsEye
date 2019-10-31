@@ -2238,6 +2238,15 @@ extern "C" IL2CPP_METHOD_ATTR Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A
 	Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5 * retVal = _il2cpp_icall_func(__this);
 	return retVal;
 }
+// System.Void UnityEngine.Collider::set_isTrigger(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void Collider_set_isTrigger_mD9EB1E99EA96B08398D68188F2DEB2434C1890C5 (Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * __this, bool ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Collider_set_isTrigger_mD9EB1E99EA96B08398D68188F2DEB2434C1890C5_ftn) (Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF *, bool);
+	static Collider_set_isTrigger_mD9EB1E99EA96B08398D68188F2DEB2434C1890C5_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Collider_set_isTrigger_mD9EB1E99EA96B08398D68188F2DEB2434C1890C5_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Collider::set_isTrigger(System.Boolean)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 // UnityEngine.Vector3 UnityEngine.Collider::ClosestPoint(UnityEngine.Vector3)
 extern "C" IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Collider_ClosestPoint_mA3CF53B6EE9CEEDB3BF2BCCE19E511CA659672B7 (Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___position0, const RuntimeMethod* method)
 {

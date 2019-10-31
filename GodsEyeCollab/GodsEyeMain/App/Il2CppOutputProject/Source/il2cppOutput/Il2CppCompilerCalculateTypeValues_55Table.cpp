@@ -5974,6 +5974,8 @@ public:
 	bool ___moveStart_16;
 	// System.Boolean FacePaneController::nextMove
 	bool ___nextMove_17;
+	// System.Boolean FacePaneController::inactive
+	bool ___inactive_18;
 
 public:
 	inline static int32_t get_offset_of_faceButton_4() { return static_cast<int32_t>(offsetof(FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF, ___faceButton_4)); }
@@ -6094,6 +6096,14 @@ public:
 	inline void set_nextMove_17(bool value)
 	{
 		___nextMove_17 = value;
+	}
+
+	inline static int32_t get_offset_of_inactive_18() { return static_cast<int32_t>(offsetof(FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF, ___inactive_18)); }
+	inline bool get_inactive_18() const { return ___inactive_18; }
+	inline bool* get_address_of_inactive_18() { return &___inactive_18; }
+	inline void set_inactive_18(bool value)
+	{
+		___inactive_18 = value;
 	}
 };
 
@@ -10868,7 +10878,7 @@ extern const int32_t g_FieldOffsetTable5593[1] =
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5594 = { sizeof (U3CModuleU3E_t6CDDDF959E7E18A6744E43B613F41CDAC780256A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5595 = { sizeof (ButtonCursorController_t74132024D9BE62558F3E60EBCD3F37559984D850), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5596 = { sizeof (FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5596[14] = 
+extern const int32_t g_FieldOffsetTable5596[15] = 
 {
 	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_faceButton_4(),
 	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_nameText_5(),
@@ -10884,6 +10894,7 @@ extern const int32_t g_FieldOffsetTable5596[14] =
 	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_leftForce_15(),
 	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_moveStart_16(),
 	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_nextMove_17(),
+	FacePaneController_t5C0276D966E07DB4E013E80D8478300943EF36EF::get_offset_of_inactive_18(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5597 = { sizeof (FacePaneDataController_t61A1FEA0A69E9BAEA603FBB38DE414EA6A075E7B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5598 = { sizeof (FaceAnalysis_t499F3E2050A41D36D690EE2D54C6B5BE1A170699), -1, sizeof(FaceAnalysis_t499F3E2050A41D36D690EE2D54C6B5BE1A170699_StaticFields), 0 };

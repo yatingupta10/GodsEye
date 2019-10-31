@@ -626,7 +626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00
+  m_text: 36
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31933a8cc8999674993edfa6a0251af7, type: 2}
   m_sharedMaterial: {fileID: 21396770757108362, guid: 31933a8cc8999674993edfa6a0251af7,
@@ -1251,7 +1251,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4377928642120060604}
-  - component: {fileID: 3821546397062958156}
   m_Layer: 0
   m_Name: ClickedFacePane
   m_TagString: Untagged
@@ -1276,18 +1275,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3821546397062958156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4377928642120060814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c33ccbd1c681b8d41aa752976218be6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4377928642120060896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,7 +2176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: first_name last_name
+  m_text: Victor Zamarian
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31933a8cc8999674993edfa6a0251af7, type: 2}
   m_sharedMaterial: {fileID: 21396770757108362, guid: 31933a8cc8999674993edfa6a0251af7,

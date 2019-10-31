@@ -33,12 +33,17 @@ public class RecentTransactionsController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
-        CreateTransactionsArrays();
+        //CreateTransactionsArrays();
        
 
-        toggleUpButton(false);
+        //toggleUpButton(false);
 
         
+    }
+
+    public void Begin(){
+        CreateTransactionsArrays();
+        toggleUpButton(false);
     }
 
     //void ImportTransactionData(){
@@ -56,13 +61,16 @@ public class RecentTransactionsController : MonoBehaviour
 
 
     void CreateTransactionsArrays(){
-        TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
+        /*TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
 
-        ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
-        Debug.Log(currentProf.profile.financial_info.venmo_tx);
-        Debug.Log(currentProf.profile.financial_info.venmo_tx.Count);
-        numTransactions = currentProf.profile.financial_info.venmo_tx.Count;
-        transactionData = currentProf.profile.financial_info.venmo_tx;
+        ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);*/
+
+
+        /*Debug.Log(currentProf.profile.financial_info.venmo_tx);
+        Debug.Log(currentProf.profile.financial_info.venmo_tx.Count);*/
+
+        numTransactions = MainDataController.instance.currentProf.profile.financial_info.venmo_tx.Count;
+        transactionData = MainDataController.instance.currentProf.profile.financial_info.venmo_tx;
         Debug.Log("Imported " + numTransactions + " recent transactions.");
 
         for (int i = 0; i < numTransactions; i++){

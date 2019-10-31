@@ -24,6 +24,7 @@ public class FaceRecName : MonoBehaviour
         }
 
         //Begin();
+        recName = "";
     }
 
     // Update is called once per frame
@@ -34,7 +35,7 @@ public class FaceRecName : MonoBehaviour
         {
             displayText.text = "Found Face:\nTESTING";
             Begin();
-            recName = "Victor Zamarian";
+            recName = "gagan";
         }
     }
 
