@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Microsoft.MixedReality.Toolkit.Utilities.Solvers;
 
 public class MainDataController : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class MainDataController : MonoBehaviour
         } else if (instance != this){
             Destroy(gameObject);
         }
+
+        mainUI.transform.parent = Camera.main.transform;
     }
 
     //parse the json here
@@ -61,7 +64,10 @@ public class MainDataController : MonoBehaviour
 
     void Display()
     {
+        mainUI.GetComponent<RadialView>().enabled = true;
+        mainUI.transform.parent = null;
         mainUI.SetActive(true);
+
         initialFacePane.GetComponent<FacePaneController>().setActive();
         cameraRectangle.SetActive(false);
     }
