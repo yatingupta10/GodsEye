@@ -9,7 +9,7 @@ public class LogoController : MonoBehaviour
     public GameObject companyLogo;
 
     //target's company logo will be stored in this directory when pulling in user data
-    public string recentImageDir = "gagan_company";
+    string companyLogoDirBase = "company_logos/";
 
     Sprite logo;
 
@@ -20,7 +20,9 @@ public class LogoController : MonoBehaviour
     }
 
     void ImportCompanyLogo(){
-        Texture2D tex = Resources.LoadAll(recentImageDir)[0] as Texture2D;
+        string logoDir = MainDataController.instance.currentProf.profile.financial_info.company_logo;
+
+        Texture2D tex = Resources.LoadAll(companyLogoDirBase + logoDir)[0] as Texture2D;
         logo = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.zero);
 
         companyLogo.GetComponentInChildren<Image>().sprite = logo;

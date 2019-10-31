@@ -223,12 +223,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5222266652972561386, guid: 8bf29e00119a66e4cbc16cf1732769fa,
+    - target: {fileID: 5222266652433770694, guid: 8bf29e00119a66e4cbc16cf1732769fa,
         type: 3}
-      propertyPath: m_Mesh
-      value: 
+      propertyPath: m_Name
+      value: BackToCameraButton
       objectReference: {fileID: 0}
-    - target: {fileID: 5222266652982901343, guid: 8bf29e00119a66e4cbc16cf1732769fa,
+    - target: {fileID: 5222266652972561386, guid: 8bf29e00119a66e4cbc16cf1732769fa,
         type: 3}
       propertyPath: m_Mesh
       value: 
@@ -272,6 +272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222266652982901343, guid: 8bf29e00119a66e4cbc16cf1732769fa,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bf29e00119a66e4cbc16cf1732769fa, type: 3}

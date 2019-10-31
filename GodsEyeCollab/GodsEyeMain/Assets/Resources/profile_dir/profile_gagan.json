@@ -35,18 +35,14 @@
             "longitude": -118.287778
         },
 
-        "recent_images": [
-            "gagan1.jpeg",
-            "gagan2.jpeg",
-            "gagan3.jpeg"
-        ]
+        "recent_images": "gagan_recent"
     },
 
 
     "financial_info": {
 
         "current_company": "Amazon",
-        "company_logo": "amazon.png",
+        "company_logo": "gagan_company",
         "position": "Software Developer",
         "location": "Seattle, WA",
         "salary": 120000,
@@ -82,23 +78,25 @@
     "connections": {
         "relationship_status": "Married",
         "no_of_dependents": 2,
+        "family_members_images_dir":  "gagan_family",
         "family_members": [
-            {
-                "name": "Daniel",
-                "relation": "brother",
-                "url": "daniel"
-            },
-            {
-                "name": "megan",
-                "relation": "wife",
-                "url": "megan"
-            },
-            {
-                "name": "Amy",
-                "relation": "sister",
-                "url": "amy"
-            }
+          {
+            "name": "Daniel",
+            "relation": "brother",
+            "url": "daniel"
+          },
+          {
+            "name": "megan",
+            "relation": "wife",
+            "url": "megan"
+          },
+          {
+            "name": "Amy",
+            "relation": "sister",
+            "url": "amy"
+          }
         ],
+        "social_media_friends_images_dir":  "gagan_friends",
         "social_media_friends": [
             {
                 "name": "Jack Smith",

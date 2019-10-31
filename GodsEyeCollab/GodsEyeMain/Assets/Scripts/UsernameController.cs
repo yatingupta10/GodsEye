@@ -8,10 +8,6 @@ using static ProfileParser;
 //controller for showing recent venmo transactions in the financial view
 public class UsernameController : MonoBehaviour
 {
-	
-	string json_path = "profile_dir/";
-	string fileName = "profile_gagan.json";
-
 	// Start is called before the first frame update
 	void Start()
     {

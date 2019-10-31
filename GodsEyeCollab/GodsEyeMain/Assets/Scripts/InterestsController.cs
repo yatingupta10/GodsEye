@@ -7,11 +7,6 @@ using static ProfileParser;
 
 public class InterestsController : MonoBehaviour
 {
-
-
-    string json_path = "profile_dir/";
-    string fileName = "profile_gagan.json";
-
     public GameObject checkinsPrefab;
     public GameObject checkinlocation;
     List<GameObject> checkinsPrefabsList = new List<GameObject>();

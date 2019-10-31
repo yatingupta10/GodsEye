@@ -16,7 +16,7 @@ public class FamilyMembersController : MonoBehaviour
     public GameObject familyMemberLocation;
     List<GameObject> familyMembersPrefabs = new List<GameObject>();
 
-    string familyImagesDir = "gagan_family";
+    string familyImagesDirBase = "family_pictures/";
 
 
     // Start is called before the first frame update
@@ -40,11 +40,13 @@ public class FamilyMembersController : MonoBehaviour
 
         List<FamilyMember> familyMembers = MainDataController.instance.currentProf.profile.connections.family_members;
 
+        string familyImagesDir = MainDataController.instance.currentProf.profile.connections.family_members_images_dir;
+
         for (int i = 0; i < 3; i++)
         {
             familyMembersPrefabs.Add(familyMemberPrefab);
 
-            Sprite familyImage = ImportImage(familyImagesDir + "/" + familyMembers[i].url);
+            Sprite familyImage = ImportImage(familyImagesDirBase + familyImagesDir + "/" + familyMembers[i].url);
             familyMembersPrefabs[i].GetComponentInChildren<Image>().sprite = familyImage;
             familyMembersPrefabs[i].GetComponentInChildren<Image>().preserveAspect = true;
 

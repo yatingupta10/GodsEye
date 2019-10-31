@@ -7,12 +7,6 @@ using static ProfileParser;
 
 public class PersonalController : MonoBehaviour
 {
-
-	string json_path = "profile_dir/";
-	string fileName = "profile_gagan.json";
-
-
-
 	// Start is called before the first frame update
 	void Start()
     {

@@ -50,7 +50,7 @@ public class ProfileParser
         public string email { get; set; }
         public ContactInfo contact_info { get; set; }
         public Residence residence { get; set; }
-        public List<string> recent_images { get; set; }
+        public string recent_images { get; set; }
     }
 
     public class VenmoTx
@@ -89,7 +89,9 @@ public class ProfileParser
     {
         public string relationship_status { get; set; }
         public int no_of_dependents { get; set; }
+        public string family_members_images_dir { get; set; }
         public List<FamilyMember> family_members { get; set; }
+        public string social_media_friends_images_dir { get; set; }
         public List<SocialMediaFriend> social_media_friends { get; set; }
     }
 

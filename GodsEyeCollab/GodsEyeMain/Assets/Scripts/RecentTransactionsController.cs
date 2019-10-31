@@ -23,14 +23,6 @@ public class RecentTransactionsController : MonoBehaviour
     List<GameObject> recentTransactions = new List<GameObject>();
 
 
-    //recent transaction data can be stored in this directory when pulling in user data
-    public string recentTransactionDir = "Testing/RecentTransactions";
-    string json_path = "profile_dir/";
-    string fileName = "profile_gagan.json";
-
-    //TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
-
-
     // Start is called before the first frame update
     void Start(){
         //CreateTransactionsArrays();

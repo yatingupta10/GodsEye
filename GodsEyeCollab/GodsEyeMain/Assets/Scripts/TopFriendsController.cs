@@ -16,10 +16,7 @@ public class TopFriendsController : MonoBehaviour
     Vector3 friend2Pos = new Vector3(0.0f, 0.0f, 0.0f);
     Vector3 friend3Pos = new Vector3(0.0f, -0.2f, 0.0f);
 
-    string friendsImagesDir = "gagan_friends";
-
-    string json_path = "profile_dir/";
-    string fileName = "profile_gagan.json";
+    string friendsImagesDirBase = "friend_pictures/";
 
 
     // Start is called before the first frame update
@@ -63,12 +60,14 @@ public class TopFriendsController : MonoBehaviour
             GameObject.FindGameObjectWithTag("RelationshipStatus").GetComponent<TextMeshPro>().text = currentProf.profile.connections.relationship_status;
         }*/
 
+        string friendsImagesDir = MainDataController.instance.currentProf.profile.connections.social_media_friends_images_dir;
+
         for (int i = 0; i < 3; i++)
         {
             friendPrefabs.Add(friendPrefab);
 
             //string friendImageName = "test.jpg";
-            Sprite friendImage = ImportImage(friendsImagesDir+"/"+ friends[i].url);
+            Sprite friendImage = ImportImage(friendsImagesDirBase + friendsImagesDir + "/" + friends[i].url);
 
             friendPrefabs[i].GetComponentInChildren<Image>().sprite = friendImage;
             friendPrefabs[i].GetComponentInChildren<Image>().preserveAspect = true;

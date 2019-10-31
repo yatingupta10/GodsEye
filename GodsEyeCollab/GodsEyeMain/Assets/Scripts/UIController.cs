@@ -206,13 +206,14 @@ public class UIController : MonoBehaviour
     }
 
 
-    //accept button
+    //save results and go back to camera
     public void SaveResults(){
-        mainUI.SetActive(false);
+        //save the results to the camera scene here
+        BackToCamera();
     }
 
-    //reject button
-    public void DiscardResults(){
+    //go back to camera
+    public void BackToCamera(){
         mainUI.SetActive(false);
     }
 }

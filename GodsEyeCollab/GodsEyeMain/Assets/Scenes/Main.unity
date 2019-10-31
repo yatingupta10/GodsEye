@@ -156,7 +156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   companyLogo: {fileID: 530347892}
-  recentImageDir: Testing/EmployerLogo
 --- !u!1 &91685137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,11 +2913,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2199581754755640200, guid: 2f4c23614183bb04a8ffc253d8a8bcaf,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3229012235896456548, guid: 2f4c23614183bb04a8ffc253d8a8bcaf,
         type: 3}
       propertyPath: m_IsActive
@@ -3277,7 +3271,7 @@ PrefabInstance:
     - target: {fileID: 4016457197431726074, guid: 2f4c23614183bb04a8ffc253d8a8bcaf,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DiscardResults
+      value: BackToCamera
       objectReference: {fileID: 0}
     - target: {fileID: 4016457197431726074, guid: 2f4c23614183bb04a8ffc253d8a8bcaf,
         type: 3}
@@ -3382,7 +3376,7 @@ PrefabInstance:
     - target: {fileID: 4016457197431726074, guid: 2f4c23614183bb04a8ffc253d8a8bcaf,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DiscardResults
+      value: BackToCamera
       objectReference: {fileID: 0}
     - target: {fileID: 4016457197431726074, guid: 2f4c23614183bb04a8ffc253d8a8bcaf,
         type: 3}
@@ -3453,6 +3447,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016457197431726054, guid: 2f4c23614183bb04a8ffc253d8a8bcaf,
+        type: 3}
+      propertyPath: m_Name
+      value: BackToCameraButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f4c23614183bb04a8ffc253d8a8bcaf, type: 3}
@@ -7740,7 +7739,6 @@ MonoBehaviour:
   lowerLocation: {fileID: 530347895}
   upButton: {fileID: 530347894}
   downButton: {fileID: 530347893}
-  recentTransactionDir: Testing/RecentTransactions
 --- !u!1 &1726396916 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6922060548908307079, guid: 70518bbba5e9f534da014b7ca7aac948,

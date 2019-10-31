@@ -21,7 +21,7 @@ public class RecentImagesController : MonoBehaviour
     public GameObject forwardButton; //next button
 
     //recent social media images will be stored in this directory when pulling in user data
-    string recentImageDir = "gagan_recent";
+    string recentImagesDirBase = "recent_images/";
 
 
     // Start is called before the first frame update
@@ -38,11 +38,13 @@ public class RecentImagesController : MonoBehaviour
     }
 
     void ImportImages(){
-        Object[] images = Resources.LoadAll(recentImageDir, typeof(Texture2D));
+        string profileImages = MainDataController.instance.currentProf.profile.personal_info.recent_images;
+
+        Object[] images = Resources.LoadAll(recentImagesDirBase + profileImages);
 
         //for all images in the directory, create a sprite for them
         foreach (Object obj in images){
-            Texture2D tex = (Texture2D) obj;
+            Texture2D tex = (Texture2D)obj;
             RecentImages.Add(Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.zero));
         }
 
@@ -62,7 +64,7 @@ public class RecentImagesController : MonoBehaviour
             RecentImagesPrefabs[i].GetComponentInChildren<Image>().preserveAspect = true;
 
             //add the image prefab to the scene inside the recent images data element
-            Instantiate((GameObject)RecentImagesPrefabs[i], ImageBaseLocation.transform);
+            Instantiate(RecentImagesPrefabs[i], ImageBaseLocation.transform);
 
             if (i != 0){ //hide all other images except the first one
                 ImageBaseLocation.transform.GetChild(i).gameObject.SetActive(false);
