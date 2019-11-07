@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 2755105295843188267}
   m_Layer: 0
   m_Name: FaceImg
-  m_TagString: Untagged
+  m_TagString: FacePane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -763,10 +763,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 997931270592305962}
-    characterCount: 20
+    characterCount: 15
     spriteCount: 0
     spaceCount: 1
-    wordCount: 4
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1

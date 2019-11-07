@@ -29,6 +29,7 @@ TagManager:
   - FirstNameTag
   - LastNameTag
   - FullNameTag
+  - FacePane
   layers:
   - Default
   - TransparentFX

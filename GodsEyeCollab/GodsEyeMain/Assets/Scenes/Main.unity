@@ -8287,12 +8287,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6284745212924646606, guid: 3d5fd350afda72f46a64e247a9ce69d8,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 599e14f58bcb44d408434a1cfa27636a,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d5fd350afda72f46a64e247a9ce69d8, type: 3}
 --- !u!1001 &3257283110949364056
@@ -8487,12 +8481,6 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7230903780967955602, guid: 87bc726c8a5cb6447a3374b504401031,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 599e14f58bcb44d408434a1cfa27636a,
-        type: 3}
     - target: {fileID: 8747131785036203637, guid: 87bc726c8a5cb6447a3374b504401031,
         type: 3}
       propertyPath: m_IsActive
@@ -8717,12 +8705,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2449074506603443477, guid: 2b76b98d2f1b2f14ba7abe486651a061,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 599e14f58bcb44d408434a1cfa27636a,
-        type: 3}
     - target: {fileID: 1888105169692271485, guid: 2b76b98d2f1b2f14ba7abe486651a061,
         type: 3}
       propertyPath: m_IsActive

@@ -145,6 +145,7 @@ public class ProfileParser
         public string id { get; set; }
         public string first_name { get; set; }
         public string last_name { get; set; }
+        public string face_image { get; set; }
         public PersonalInfo personal_info { get; set; }
         public FinancialInfo financial_info { get; set; }
         public Connections connections { get; set; }
