@@ -58,12 +58,12 @@ public class ImageCapture : MonoBehaviour
     /// </summary>
     private void TapHandler(TappedEventArgs obj)
     {
-        tapsCount++;
-        Debug.Log(tapsCount);
-
-        ExecuteImageCaptureAndAnalysis();
-
-        
+        if (FaceRecName.instance.recName == "")
+        {
+            tapsCount++;
+            Debug.Log(tapsCount);
+            ExecuteImageCaptureAndAnalysis();
+        }
     }
 
     /// <summary>
