@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 7217657601389530232}
   m_Layer: 0
   m_Name: StatusText
-  m_TagString: Untagged
+  m_TagString: RelationshipStatus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
