@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Salary
+  - CompanyName
+  - CompanyPosition
+  - FacebookUsername
+  - InstagramUsername
+  - TwitterUsername
+  - LinkedinUsername
+  - FacePane
+  - FacePaneScore
+  - FullNameTag
+  - AnimCollider
   layers:
   - Default
   - TransparentFX

@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FaceRecScene.unity
-    guid: c982b8f28017cf14490cbac69cc77be5
+    path: Assets/Scenes/Main.unity
+    guid: e5e50b7fd29c4774bb505871ebd98dde
   m_configObjects: {}
