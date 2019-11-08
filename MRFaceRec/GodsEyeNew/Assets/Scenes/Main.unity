@@ -464,6 +464,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 704425393}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &147310227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147310219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1
 --- !u!1 &157149158
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +663,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 851021650}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &381876640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381876639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1 &394075082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1103,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 851021650}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &645242993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 49142439222242674, guid: ad9d50b3363995447864d60d5caa414f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1307071200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &645243001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645242993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1001 &668891722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1148,6 +1193,406 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 58921342}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: previousTransaction
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788580274840458, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 58921342}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: nextTransaction
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782788581045751156, guid: 8569daa9f312bc646a33faf6abef12a9,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1873582273545252984, guid: 8569daa9f312bc646a33faf6abef12a9,
         type: 3}
@@ -1249,12 +1694,37 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 704425393}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &692215606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692215605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1
 --- !u!1 &699387373 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8747131785036203529, guid: 6f354315ead78b64085391837622cbe3,
     type: 3}
   m_PrefabInstance: {fileID: 373698}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &699387374 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 895111255389013800, guid: 6f354315ead78b64085391837622cbe3,
+    type: 3}
+  m_PrefabInstance: {fileID: 373698}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699387373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07878496088f55f4696da723e540fadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &704425393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1327,6 +1797,206 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1323941944}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PreviousImage
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991948828491631668, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4760971497874888900, guid: de30581fdc9b5cc418deddd98b8900a0,
         type: 3}
       propertyPath: m_Mesh
@@ -1351,6 +2021,206 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1323941944}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextImage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3343086906630138060, guid: de30581fdc9b5cc418deddd98b8900a0,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7074632174321821101, guid: de30581fdc9b5cc418deddd98b8900a0,
         type: 3}
@@ -1755,6 +2625,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 704425393}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &706828088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8102643285173892019, guid: ad9d50b3363995447864d60d5caa414f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1307071200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &706828096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706828088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1 &737388829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,6 +2842,406 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SaveResults
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545466948878, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackToCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140183545558501069, guid: 4eaba76552f46a24dbdca3200bfd7247,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eaba76552f46a24dbdca3200bfd7247, type: 3}
@@ -2156,67 +3445,87 @@ PrefabInstance:
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Name
-      value: OnFocus
+      value: OnHold
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BeginLoadingCursor
+      value: ConnectionsView
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].ClassName
-      value: InteractableOnFocusReceiver
+      value: InteractableOnHoldReceiver
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].AssemblyQualifiedName
-      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
-      value: On Focus Off
+      value: Hold Time
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
-      value: OnFocusOff
+      value: HoldTime
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
-      value: Focus has left the object
+      value: The amount of time to press before triggering event
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
@@ -2238,6 +3547,101 @@ PrefabInstance:
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840672021212772, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2246,67 +3650,87 @@ PrefabInstance:
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Name
-      value: OnFocus
+      value: OnHold
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BeginLoadingCursor
+      value: UsernameView
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].ClassName
-      value: InteractableOnFocusReceiver
+      value: InteractableOnHoldReceiver
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].AssemblyQualifiedName
-      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
-      value: On Focus Off
+      value: Hold Time
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
-      value: OnFocusOff
+      value: HoldTime
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
-      value: Focus has left the object
+      value: The amount of time to press before triggering event
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
@@ -2328,15 +3752,110 @@ PrefabInstance:
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840672358549802, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
@@ -2345,58 +3864,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
       propertyPath: Events.Array.data[0].Name
-      value: OnFocus
+      value: OnHold
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BeginLoadingCursor
+      value: MainView
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].ClassName
-      value: InteractableOnFocusReceiver
+      value: InteractableOnHoldReceiver
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].AssemblyQualifiedName
-      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
-      value: On Focus Off
+      value: Hold Time
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
-      value: OnFocusOff
+      value: HoldTime
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
-      value: Focus has left the object
+      value: The amount of time to press before triggering event
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
@@ -2418,6 +3957,101 @@ PrefabInstance:
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840673346483605, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2426,67 +4060,87 @@ PrefabInstance:
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Name
-      value: OnFocus
+      value: OnHold
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BeginLoadingCursor
+      value: PersonalView
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].ClassName
-      value: InteractableOnFocusReceiver
+      value: InteractableOnHoldReceiver
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].AssemblyQualifiedName
-      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
-      value: On Focus Off
+      value: Hold Time
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
-      value: OnFocusOff
+      value: HoldTime
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
-      value: Focus has left the object
+      value: The amount of time to press before triggering event
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
@@ -2508,6 +4162,101 @@ PrefabInstance:
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840673427892738, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2516,67 +4265,87 @@ PrefabInstance:
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Name
-      value: OnFocus
+      value: OnHold
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BeginLoadingCursor
+      value: FinancialView
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].ClassName
-      value: InteractableOnFocusReceiver
+      value: InteractableOnHoldReceiver
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].AssemblyQualifiedName
-      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
-      value: On Focus Off
+      value: Hold Time
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
-      value: OnFocusOff
+      value: HoldTime
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
-      value: Focus has left the object
+      value: The amount of time to press before triggering event
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
@@ -2598,6 +4367,101 @@ PrefabInstance:
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840673798581655, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2606,67 +4470,87 @@ PrefabInstance:
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Name
-      value: OnFocus
+      value: OnHold
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BeginLoadingCursor
+      value: InterestsView
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].ClassName
-      value: InteractableOnFocusReceiver
+      value: InteractableOnHoldReceiver
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].AssemblyQualifiedName
-      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
-      value: On Focus Off
+      value: Hold Time
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
-      value: OnFocusOff
+      value: HoldTime
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
-      value: Focus has left the object
+      value: The amount of time to press before triggering event
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
@@ -2688,6 +4572,101 @@ PrefabInstance:
       propertyPath: Events.Array.data[0].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 4861840674001365823, guid: 2c4d4adb8037f93408da48c07d23b9dc,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
     - target: {fileID: 4861840672461173983, guid: 2c4d4adb8037f93408da48c07d23b9dc,
         type: 3}
       propertyPath: m_Mesh
@@ -2869,12 +4848,38 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 851021650}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1046388672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046388664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1 &1059384038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4861840673798581611, guid: 2c4d4adb8037f93408da48c07d23b9dc,
     type: 3}
   m_PrefabInstance: {fileID: 851021650}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1059384046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059384038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1 &1066500120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3219,12 +5224,57 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 851021650}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1156140718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156140710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
+--- !u!1 &1166388242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1140183545558501073, guid: 4eaba76552f46a24dbdca3200bfd7247,
+    type: 3}
+  m_PrefabInstance: {fileID: 782258744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1166388250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166388242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 2
 --- !u!1 &1186294035 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4861840674001365811, guid: 2c4d4adb8037f93408da48c07d23b9dc,
     type: 3}
   m_PrefabInstance: {fileID: 851021650}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1186294043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186294035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1 &1189164022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3402,6 +5452,206 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UsernameView
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 838144843794967048, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1861266990168201640, guid: ad9d50b3363995447864d60d5caa414f,
         type: 3}
       propertyPath: m_Mesh
@@ -3426,6 +5676,406 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FinancialView
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935973637565510751, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InterestsView
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087081258224385918, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2806867987665261169, guid: ad9d50b3363995447864d60d5caa414f,
         type: 3}
@@ -3526,6 +6176,406 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConnectionsView
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 753823818540322545, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PersonalView
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671213342196161808, guid: ad9d50b3363995447864d60d5caa414f,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad9d50b3363995447864d60d5caa414f, type: 3}
@@ -3716,6 +6766,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 1.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1336637292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7869220429243850834, guid: ad9d50b3363995447864d60d5caa414f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1307071200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1336637300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336637292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1 &1416946939
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,6 +6942,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 851021650}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1418381365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418381357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1 &1439574498
 GameObject:
   m_ObjectHideFlags: 0
@@ -4382,7 +7464,7 @@ PrefabInstance:
     - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
         type: 3}
       propertyPath: Events.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
         type: 3}
@@ -4391,9 +7473,214 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
         type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CategoryViewFromButton
       objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CategoryViewFromButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Name
+      value: OnHold
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].ClassName
+      value: InteractableOnHoldReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnHoldReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Label
+      value: Hold Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Name
+      value: HoldTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].Tooltip
+      value: The amount of time to press before triggering event
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Settings.Array.data[0].FloatValue
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].HideUnityEvents
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Name
+      value: OnFocus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].ClassName
+      value: InteractableOnFocusReceiver
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].AssemblyQualifiedName
+      value: Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Type
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Label
+      value: On Focus Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Name
+      value: OnFocusOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].Tooltip
+      value: Focus has left the object
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].FloatValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BeginLoadingCursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 66.66667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CategoryViewFromButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 699387374}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1774516188}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
+    - target: {fileID: 7959230776373558084, guid: 05c06f4d99536a943a804a672f354667,
+        type: 3}
+      propertyPath: Events.Array.data[1].Settings.Array.data[0].EventValue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 772384354}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05c06f4d99536a943a804a672f354667, type: 3}
 --- !u!4 &1509736102 stripped
@@ -4420,6 +7707,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 668891722}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1627574325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627574324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1
 --- !u!1 &1661112329 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4555804561325801956, guid: 1fbca4eed9de75a40baf58a61e55da69,
@@ -4458,6 +7758,25 @@ Transform:
   m_Father: {fileID: 1115407283}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1683155249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1140183545466948882, guid: 4eaba76552f46a24dbdca3200bfd7247,
+    type: 3}
+  m_PrefabInstance: {fileID: 782258744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1683155257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683155249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 2
 --- !u!1 &1700544107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8767673456086006258, guid: 6f354315ead78b64085391837622cbe3,
@@ -4960,12 +8279,44 @@ MonoBehaviour:
   financialIcon: {fileID: 562559569}
   interestsIcon: {fileID: 2111369014}
   connectionsIcon: {fileID: 1293632023}
+--- !u!1 &1795036042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1826426042480480733, guid: ad9d50b3363995447864d60d5caa414f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1307071200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1795036050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795036042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1 &1816609462 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4782788581045751160, guid: 8569daa9f312bc646a33faf6abef12a9,
     type: 3}
   m_PrefabInstance: {fileID: 668891722}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1816609470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816609462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1
 --- !u!1 &1846971020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4782788580062396504, guid: 8569daa9f312bc646a33faf6abef12a9,
@@ -5143,6 +8494,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1467146444}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2096103648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 505124210823158524, guid: ad9d50b3363995447864d60d5caa414f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1307071200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2096103656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096103648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e51e0cb3a3a18d4f9db24b9f2b3730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusTime: 1.5
 --- !u!1 &2111369014 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4861840672097536068, guid: 2c4d4adb8037f93408da48c07d23b9dc,
