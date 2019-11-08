@@ -47,6 +47,6 @@ public class FaceRecName : MonoBehaviour
     void DelayedBegin()
     {
         displayText.text = "";
-        //MainDataController.instance.InsertData();
+        MainDataController.instance.InsertData();
     }
 }
