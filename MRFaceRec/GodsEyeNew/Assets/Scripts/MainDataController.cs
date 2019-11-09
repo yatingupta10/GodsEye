@@ -8,7 +8,7 @@ public class MainDataController : MonoBehaviour
     public static MainDataController instance;
 
     public GameObject mainUI;
-    public GameObject cameraRectangle;
+    public GameObject cameraUI;
 
     public GameObject initialFacePane;
 
@@ -38,6 +38,9 @@ public class MainDataController : MonoBehaviour
         }
 
         mainUI.transform.parent = Camera.main.transform;
+
+        //this is temporary, probably won't have the UI be linked directly to the camera
+        cameraUI.transform.parent = Camera.main.transform;
     }
 
     //parse the json here
@@ -69,6 +72,6 @@ public class MainDataController : MonoBehaviour
         mainUI.SetActive(true);
 
         initialFacePane.GetComponent<FacePaneController>().setActive();
-        cameraRectangle.SetActive(false);
+        cameraUI.SetActive(false);
     }
 }

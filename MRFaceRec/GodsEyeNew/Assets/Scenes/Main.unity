@@ -6617,6 +6617,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6499375340095464603, guid: badc3b0db82c3de4881f45e8c0c694f7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: badc3b0db82c3de4881f45e8c0c694f7, type: 3}
 --- !u!4 &1311096088 stripped
@@ -7827,7 +7832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainUI: {fileID: 1066500120}
-  cameraRectangle: {fileID: 1482691484}
+  cameraUI: {fileID: 1482691484}
   initialFacePane: {fileID: 699387373}
   FaceData: {fileID: 504033168}
   UsernameData: {fileID: 1272632328}
@@ -8257,6 +8262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categoryViewTime: 1.25
   mainUI: {fileID: 1066500120}
+  cameraUI: {fileID: 1482691484}
   facePane: {fileID: 699387373}
   centerFacePane: {fileID: 1846993079}
   rightScoreFacePane: {fileID: 792001899}
@@ -8449,7 +8455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944328142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
 
     [Header("All Views")]
     public GameObject mainUI;
+    public GameObject cameraUI;
 
     public GameObject facePane;
     public GameObject centerFacePane;
@@ -214,6 +215,14 @@ public class UIController : MonoBehaviour
 
     //go back to camera
     public void BackToCamera(){
+        FaceRecName.instance.RemoveName();
+
+        DeactivateAll();
+        facePane.GetComponent<FacePaneController>().Reset();
+
+        MainDataController.instance.mainUI.transform.parent = Camera.main.transform;
+
         mainUI.SetActive(false);
+        cameraUI.SetActive(true);
     }
 }

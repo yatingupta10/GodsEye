@@ -44,6 +44,8 @@ public class ImageCapture : MonoBehaviour
     /// </summary>
     void Start()
     {
+        //comment this out when the voice commands work
+
         // Initialises user gestures capture 
         recognizer = new GestureRecognizer();
         recognizer.SetRecognizableGestures(GestureSettings.Tap);
@@ -58,8 +60,13 @@ public class ImageCapture : MonoBehaviour
     /// </summary>
     private void TapHandler(TappedEventArgs obj)
     {
-        if (FaceRecName.instance.recName == "")
-        {
+        TakePicture();
+    }
+
+    //this method will be invoked by a voice command, it will replace the TapHandler
+    public void TakePicture(){
+        //only take a picture if a face has not been recognized yet
+        if (FaceRecName.instance.recName == ""){
             tapsCount++;
             Debug.Log(tapsCount);
             ExecuteImageCaptureAndAnalysis();

@@ -28,6 +28,7 @@ public class FacePaneController : MonoBehaviour
     bool nextMove = false;
     bool inactive = true;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,13 +38,6 @@ public class FacePaneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moveStart)
-        {
-            moveStart = false;
-            upForce = upForceScale * Vector3.Normalize(topPosition.position - gameObject.transform.position);
-            rb.AddForce(upForce);
-        }
-
         if (nextMove)
         {
             nextMove = false;
@@ -64,22 +58,12 @@ public class FacePaneController : MonoBehaviour
 
     public void BeginMove()
     {
-        //rb.constraints = RigidbodyConstraints.FreezeRotation;
-
-        //moveStart = true;
         nextMove = true;
-        //scoreBubble.SetActive(false);
         faceButton.SetActive(false);
     }
 
     void OnTriggerEnter(Collider col)
     {
-        //collided with top collider, now move left
-        /*if (col.gameObject.name == "TopCollider"){
-            rb.constraints |= RigidbodyConstraints.FreezePositionY;
-            nextMove = true;
-        }*/
-
         //collided with left collider, now stop moving
         if (col.gameObject.name == "LeftCollider")
         {
@@ -90,8 +74,18 @@ public class FacePaneController : MonoBehaviour
             screen.SetActive(true);
             colliderCollection.SetActive(false);
             score.transform.localPosition = new Vector3(0.3f, 0.35f, 0.0f);
-
-            Destroy(rb);
+            nextMove = false;
         }
+    }
+
+    public void Reset()
+    {
+        transform.localPosition = Vector3.zero;
+        score.transform.localPosition = new Vector3(0.0f, 0.35f, 0.0f);
+        nameText.SetActive(false);
+        screen.SetActive(false);
+        colliderCollection.SetActive(true);
+        faceButton.SetActive(true);
+        gameObject.SetActive(true);
     }
 }

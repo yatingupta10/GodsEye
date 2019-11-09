@@ -15,8 +15,7 @@ public class FaceRecName : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         if (instance == null){
             instance = this;
         } else if (instance != this) {
@@ -28,25 +27,25 @@ public class FaceRecName : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         //only for testing in unity editor
-        if (Input.GetKeyDown(KeyCode.X))
-        {
+        if (Input.GetKeyDown(KeyCode.X)){
             displayText.text = "Found Face:\nTESTING";
             Begin();
             recName = "gagan";
         }
     }
 
-    public void Begin()
-    {
+    public void Begin(){
         Invoke("DelayedBegin", delay);
     }
 
-    void DelayedBegin()
-    {
+    void DelayedBegin(){
         displayText.text = "";
         MainDataController.instance.InsertData();
+    }
+
+    public void RemoveName(){
+        recName = "";
     }
 }
