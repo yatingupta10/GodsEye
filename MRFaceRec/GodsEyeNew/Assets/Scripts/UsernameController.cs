@@ -8,6 +8,12 @@ using static ProfileParser;
 //controller for showing recent venmo transactions in the financial view
 public class UsernameController : MonoBehaviour
 {
+    string facebookURL;
+    string instagramURL;
+    string twitterURL;
+    string linkedinURL;
+
+
 	// Start is called before the first frame update
 	void Start()
     {
@@ -44,6 +50,11 @@ public class UsernameController : MonoBehaviour
             }
         }
 
+        facebookURL = MainDataController.instance.currentProf.profile.social_media_info.facebook.url;
+        instagramURL = MainDataController.instance.currentProf.profile.social_media_info.instagram.url;
+        twitterURL = MainDataController.instance.currentProf.profile.social_media_info.twitter.url;
+        linkedinURL = MainDataController.instance.currentProf.profile.social_media_info.linkedin.url;
+
 
         //GameObject.FindGameObjectWithTag("FacebookUsername").GetComponent<TextMeshPro>().text = 
         //    MainDataController.instance.currentProf.profile.social_media_info.facebook.username;
@@ -58,4 +69,20 @@ public class UsernameController : MonoBehaviour
         //    MainDataController.instance.currentProf.profile.social_media_info.twitter.username;
     }
 
+
+    public void OpenFacebook(){
+        Application.OpenURL(facebookURL);
+    }
+
+    public void OpenInstagram(){
+        Application.OpenURL(instagramURL);
+    }
+
+    public void OpenTwitter(){
+        Application.OpenURL(twitterURL);
+    }
+
+    public void OpenLinkedIn(){
+        Application.OpenURL(linkedinURL);
+    }
 }
