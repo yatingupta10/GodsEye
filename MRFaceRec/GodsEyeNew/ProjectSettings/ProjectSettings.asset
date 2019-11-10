@@ -651,6 +651,8 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -671,10 +673,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 7b193ab1-0391-4dcb-a56c-843dd4044b49
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: GodsEye
+  organizationId: santhosh_narayanan
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
