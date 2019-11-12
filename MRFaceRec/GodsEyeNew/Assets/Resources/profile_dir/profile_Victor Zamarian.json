@@ -9,13 +9,13 @@
         "education": [
             {
                 "school": "USC",
-                "degree": "masters",
+                "degree": "Masters at USC",
                 "major": "Computer Science",
                 "tenure": "2018-2020"
             },
             {
                 "school": "MAIT",
-                "degree": "bachelors",
+                "degree": "Bachelors at MAIT",
                 "major": "Computer Science",
                 "tenure": "2011-2015"
             }
@@ -27,7 +27,7 @@
         },
 
         "residence": {
-            "apt": "2717 orchard Ave",
+            "apt": "2717 Orchard Ave",
             "city": "Los Angeles",
             "state": "CA",
             "country": "USA",
