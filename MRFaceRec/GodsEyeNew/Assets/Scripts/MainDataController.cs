@@ -65,13 +65,12 @@ public class MainDataController : MonoBehaviour
         TopFriendData.GetComponent<TopFriendsController>().Begin();
     }
 
-    void Display()
-    {
+    void Display(){
         mainUI.GetComponent<RadialView>().enabled = true;
         mainUI.transform.parent = null;
         mainUI.SetActive(true);
 
-        initialFacePane.GetComponent<FacePaneController>().setActive();
+        initialFacePane.GetComponent<FacePaneController>().Activate();
         cameraUI.SetActive(false);
     }
 }

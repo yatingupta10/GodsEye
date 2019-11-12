@@ -50,7 +50,7 @@ public class FacePaneController : MonoBehaviour
         colliderCollection.transform.GetChild(3).GetComponent<BoxCollider>().isTrigger = inactive;
     }
 
-    public void setActive()
+    public void Activate()
     {
         inactive = false;
         gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
