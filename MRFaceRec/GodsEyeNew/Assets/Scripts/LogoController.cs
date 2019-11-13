@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LogoController : MonoBehaviour
 {
     public GameObject companyLogo;
+    public GameObject companyLogoBackground;
 
     //target's company logo will be stored in this directory when pulling in user data
     string companyLogoDirBase = "company_logos/";
@@ -20,6 +21,9 @@ public class LogoController : MonoBehaviour
     }
 
     void ImportCompanyLogo(){
+        companyLogo.SetActive(true);
+        companyLogoBackground.SetActive(true);
+
         string logoDir = MainDataController.instance.currentProf.profile.financial_info.company_logo;
 
         Texture2D tex = Resources.LoadAll(companyLogoDirBase + logoDir)[0] as Texture2D;
@@ -30,6 +34,12 @@ public class LogoController : MonoBehaviour
     }
 
     public void Begin(){
-        ImportCompanyLogo();
+        //only import the company logo if the target has a job
+        if (MainDataController.instance.currentProf.profile.financial_info.current_company != "N/A"){
+            ImportCompanyLogo();
+        } else {
+            companyLogo.SetActive(false);
+            companyLogoBackground.SetActive(false);
+        }
     }
 }

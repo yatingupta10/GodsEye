@@ -13,23 +13,24 @@ public class UsernameController : MonoBehaviour
     string twitterURL;
     string linkedinURL;
 
+    public GameObject facebookButton;
+    public GameObject instagramButton;
+    public GameObject twitterButton;
+    public GameObject linkedinButton;
 
-	// Start is called before the first frame update
-	void Start()
-    {
-        //loadUsernames();
-    }
 
     public void Begin()
     {
+        facebookButton.SetActive(true);
+        instagramButton.SetActive(true);
+        twitterButton.SetActive(true);
+        linkedinButton.SetActive(true);
+
         loadUsernames();
     }
 
 	void loadUsernames()
 	{
-        //TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
-        //ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
-
         GameObject[] allObjects = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
 
         foreach (GameObject obj in allObjects){
@@ -55,18 +56,21 @@ public class UsernameController : MonoBehaviour
         twitterURL = MainDataController.instance.currentProf.profile.social_media_info.twitter.url;
         linkedinURL = MainDataController.instance.currentProf.profile.social_media_info.linkedin.url;
 
+        if (facebookURL == ""){
+            facebookButton.SetActive(false);
+        }
 
-        //GameObject.FindGameObjectWithTag("FacebookUsername").GetComponent<TextMeshPro>().text = 
-        //    MainDataController.instance.currentProf.profile.social_media_info.facebook.username;
-        
-        //GameObject.FindGameObjectWithTag("InstagramUsername").GetComponent<TextMeshPro>().text =
-        //    MainDataController.instance.currentProf.profile.social_media_info.instagram.username;
-        
-        //GameObject.FindGameObjectWithTag("LinkedinUsername").GetComponent<TextMeshPro>().text =
-        //    MainDataController.instance.currentProf.profile.social_media_info.linkedin.username;
-        
-        //GameObject.FindGameObjectWithTag("TwitterUsername").GetComponent<TextMeshPro>().text =
-        //    MainDataController.instance.currentProf.profile.social_media_info.twitter.username;
+        if (instagramURL == ""){
+            instagramButton.SetActive(false);
+        }
+
+        if (twitterURL == ""){
+            twitterButton.SetActive(false);
+        }
+
+        if (linkedinURL == ""){
+            linkedinButton.SetActive(false);
+        }
     }
 
 

@@ -12,8 +12,7 @@ public class RecentImagesController : MonoBehaviour
 
     int numImages = 0;
 
-    List<Sprite> RecentImages = new List<Sprite>();
-    List<GameObject> RecentImagesPrefabs = new List<GameObject>(); //image prefabs will be instantiated for each image
+    List<Sprite> RecentImages;
 
     int currentImage = 0;
 
@@ -38,6 +37,8 @@ public class RecentImagesController : MonoBehaviour
     }
 
     void ImportImages(){
+        RecentImages = new List<Sprite>();
+
         string profileImages = MainDataController.instance.currentProf.profile.personal_info.recent_images;
 
         Object[] images = Resources.LoadAll(recentImagesDirBase + profileImages);
@@ -55,17 +56,16 @@ public class RecentImagesController : MonoBehaviour
 
     void CreateImageArrays(){
         ImportImages();
+        currentImage = 0;
 
         for (int i = 0; i < numImages; i++){
-            RecentImagesPrefabs.Add(BaseImagePrefab);
+            //add the image prefab to the scene inside the recent images data element
+            GameObject imageCopy = Instantiate(BaseImagePrefab, ImageBaseLocation.transform);
 
             //set the sprite
-            RecentImagesPrefabs[i].GetComponentInChildren<Image>().sprite = RecentImages[i];
-            RecentImagesPrefabs[i].GetComponentInChildren<Image>().preserveAspect = true;
-
-            //add the image prefab to the scene inside the recent images data element
-            Instantiate(RecentImagesPrefabs[i], ImageBaseLocation.transform);
-
+            imageCopy.GetComponentInChildren<Image>().sprite = RecentImages[i];
+            imageCopy.GetComponentInChildren<Image>().preserveAspect = true;
+           
             if (i != 0){ //hide all other images except the first one
                 ImageBaseLocation.transform.GetChild(i).gameObject.SetActive(false);
             }
@@ -73,6 +73,8 @@ public class RecentImagesController : MonoBehaviour
 
         if (numImages < 2){
             toggleForwardButton(false);
+        } else {
+            toggleForwardButton(true);
         }
     }
 
@@ -106,19 +108,17 @@ public class RecentImagesController : MonoBehaviour
 
     //turn the back button on/off
     void toggleBackButton(bool state){
-        /*backButton.GetComponent<Interactable>().Enabled = state;
-        backButton.transform.GetChild(0).GetChild(0).GetComponent<MeshRenderer>().enabled = state;
-        backButton.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<MeshRenderer>().enabled = state;*/
-
         backButton.SetActive(state);
     }
 
     //turn the forward button on/off
     void toggleForwardButton(bool state){
-        /*forwardButton.GetComponent<Interactable>().Enabled = state;
-        forwardButton.transform.GetChild(0).GetChild(0).GetComponent<MeshRenderer>().enabled = state;
-        forwardButton.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<MeshRenderer>().enabled = state;*/
-
         forwardButton.SetActive(state);
+    }
+
+    public void Reset(){
+        foreach (Transform t in ImageBaseLocation.transform){
+            GameObject.Destroy(t.gameObject);
+        }
     }
 }

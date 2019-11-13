@@ -14,15 +14,9 @@ public class FamilyMembersController : MonoBehaviour
 
     public GameObject familyMemberPrefab;
     public GameObject familyMemberLocation;
-    List<GameObject> familyMembersPrefabs = new List<GameObject>();
 
     string familyImagesDirBase = "family_pictures/";
 
-
-    // Start is called before the first frame update
-    void Start(){
-        //CreateMemberArrays();
-    }
 
     public void Begin(){
         CreateMemberArrays();
@@ -34,40 +28,41 @@ public class FamilyMembersController : MonoBehaviour
     }
 
     void CreateMemberArrays(){
-        //TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
-        //ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
-
+        //familyMembersPrefabs = new List<GameObject>();
 
         List<FamilyMember> familyMembers = MainDataController.instance.currentProf.profile.connections.family_members;
+        int numFamilyMembers = Mathf.Min(familyMembers.Count, 3);
 
         string familyImagesDir = MainDataController.instance.currentProf.profile.connections.family_members_images_dir;
 
-        for (int i = 0; i < 3; i++)
-        {
-            familyMembersPrefabs.Add(familyMemberPrefab);
-
-            Sprite familyImage = ImportImage(familyImagesDirBase + familyImagesDir + "/" + familyMembers[i].url);
-            familyMembersPrefabs[i].GetComponentInChildren<Image>().sprite = familyImage;
-            familyMembersPrefabs[i].GetComponentInChildren<Image>().preserveAspect = true;
-
-            familyMembersPrefabs[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = familyMembers[i].name;
-            familyMembersPrefabs[i].transform.GetChild(2).GetComponent<TextMeshPro>().text = familyMembers[i].relation;
+        for (int i = 0; i < numFamilyMembers; i++){
+            GameObject memberCopy = Instantiate(familyMemberPrefab, familyMemberLocation.transform);
 
             if (i == 0)
             {
-                familyMembersPrefabs[i].transform.position = member1Pos;
-
+                memberCopy.transform.localPosition = member1Pos;
             }
             else if (i == 1)
             {
-                familyMembersPrefabs[i].transform.position = member2Pos;
+                memberCopy.transform.localPosition = member2Pos;
             }
             else if (i == 2)
             {
-                familyMembersPrefabs[i].transform.position = member3Pos;
+                memberCopy.transform.localPosition = member3Pos;
             }
 
-            Instantiate(familyMembersPrefabs[i], familyMemberLocation.transform);
+            Sprite familyImage = ImportImage(familyImagesDirBase + familyImagesDir + "/" + familyMembers[i].url);
+            memberCopy.GetComponentInChildren<Image>().sprite = familyImage;
+            memberCopy.GetComponentInChildren<Image>().preserveAspect = true;
+
+            memberCopy.transform.GetChild(1).GetComponent<TextMeshPro>().text = familyMembers[i].name;
+            memberCopy.transform.GetChild(2).GetComponent<TextMeshPro>().text = familyMembers[i].relation;
+        }
+    }
+
+    public void Reset(){
+        foreach (Transform t in familyMemberLocation.transform){
+            GameObject.Destroy(t.gameObject);
         }
     }
 }

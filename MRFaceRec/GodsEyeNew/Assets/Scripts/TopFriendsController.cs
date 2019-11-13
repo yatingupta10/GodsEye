@@ -19,11 +19,6 @@ public class TopFriendsController : MonoBehaviour
     string friendsImagesDirBase = "friend_pictures/";
 
 
-    // Start is called before the first frame update
-    void Start(){
-        //CreateFriendArrays();
-    }
-
     public void Begin(){
         CreateFriendArrays();
     }
@@ -36,15 +31,8 @@ public class TopFriendsController : MonoBehaviour
     }
 
     void CreateFriendArrays(){
-        //go through top friend list and create a base prefab for each friend (up to 3)
-        //set the name text in the prefabs with the text from the friend object
-        //import the image that is specified in the friend object and add that to the prefab
-        //increment numFriend after each prefab is finished (its highest value is 3)
-
-        //TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
-        //ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);
-
         List<SocialMediaFriend> friends = MainDataController.instance.currentProf.profile.connections.social_media_friends;
+        int numFriends = Mathf.Min(friends.Count, 3);
 
         GameObject[] allObjects = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
 
@@ -55,41 +43,35 @@ public class TopFriendsController : MonoBehaviour
             }
         }
 
-        /*if (GameObject.FindGameObjectWithTag("RelationshipStatus"))
-        {
-            GameObject.FindGameObjectWithTag("RelationshipStatus").GetComponent<TextMeshPro>().text = currentProf.profile.connections.relationship_status;
-        }*/
-
         string friendsImagesDir = MainDataController.instance.currentProf.profile.connections.social_media_friends_images_dir;
 
-        for (int i = 0; i < 3; i++)
-        {
-            friendPrefabs.Add(friendPrefab);
-
-            //string friendImageName = "test.jpg";
-            Sprite friendImage = ImportImage(friendsImagesDirBase + friendsImagesDir + "/" + friends[i].url);
-
-            friendPrefabs[i].GetComponentInChildren<Image>().sprite = friendImage;
-            friendPrefabs[i].GetComponentInChildren<Image>().preserveAspect = true;
-            friendPrefabs[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = friends[i].name;
-
-            //setting same images for family
-            //need to chnage this
-            //resource.load not working for me
+        for (int i = 0; i < numFriends; i++){
+            GameObject friendCopy = Instantiate(friendPrefab, friendLocation.transform);
 
             if (i == 0)
             {
-                friendPrefabs[i].transform.position = friend1Pos;
+                friendCopy.transform.localPosition = friend1Pos;
             }
             else if (i == 1)
             {
-                friendPrefabs[i].transform.position = friend2Pos;
+                friendCopy.transform.localPosition = friend2Pos;
             }
             else if (i == 2)
             {
-                friendPrefabs[i].transform.position = friend3Pos;
+                friendCopy.transform.localPosition = friend3Pos;
             }
-            Instantiate(friendPrefabs[i], friendLocation.transform);
+
+            Sprite friendImage = ImportImage(friendsImagesDirBase + friendsImagesDir + "/" + friends[i].url);
+
+            friendCopy.GetComponentInChildren<Image>().sprite = friendImage;
+            friendCopy.GetComponentInChildren<Image>().preserveAspect = true;
+            friendCopy.transform.GetChild(1).GetComponent<TextMeshPro>().text = friends[i].name;
+        }
+    }
+
+    public void Reset(){
+        foreach (Transform t in friendLocation.transform){
+            GameObject.Destroy(t.gameObject);
         }
     }
 }

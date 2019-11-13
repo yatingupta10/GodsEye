@@ -20,67 +20,49 @@ public class RecentTransactionsController : MonoBehaviour
     int currentTransaction = 0;
 
     List<VenmoTx> transactionData;
-    List<GameObject> recentTransactions = new List<GameObject>();
 
-
-    // Start is called before the first frame update
-    void Start(){
-        //CreateTransactionsArrays();
-       
-
-        //toggleUpButton(false);
-
-        
-    }
 
     public void Begin(){
         CreateTransactionsArrays();
         toggleUpButton(false);
     }
 
-    //void ImportTransactionData(){
-    //    //this seems to work, but need to be sure since printing out doesn't work
-    //    TextAsset jsonObj = Resources.LoadAll(recentTransactionDir)[0] as TextAsset;
-
-    //    Transaction tObj = JsonUtility.FromJson<Transaction>(jsonObj.text);
-
-    //    transactionData = tObj.transactions;
-
-    //    numTransactions = transactionData.Count;
-
-    //    Debug.Log("Imported " + numTransactions + " recent transactions.");
-    //}
-
-
     void CreateTransactionsArrays(){
-        /*TextAsset jsonObj = Resources.LoadAll("profile_dir")[0] as TextAsset;
-
-        ProfileParser currentProf = ProfileParser.parseProfile(jsonObj.text);*/
-
-
-        /*Debug.Log(currentProf.profile.financial_info.venmo_tx);
-        Debug.Log(currentProf.profile.financial_info.venmo_tx.Count);*/
-
         numTransactions = MainDataController.instance.currentProf.profile.financial_info.venmo_tx.Count;
         transactionData = MainDataController.instance.currentProf.profile.financial_info.venmo_tx;
         Debug.Log("Imported " + numTransactions + " recent transactions.");
 
-        for (int i = 0; i < numTransactions; i++){
-            recentTransactions.Add(transactionDataPrefab);
+        currentTransaction = 0;
 
-            //set the text values for each transaction
-            recentTransactions[i].transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].amount;
-            recentTransactions[i].transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].date;
-            recentTransactions[i].transform.GetChild(2).GetComponent<TextMeshPro>().text = transactionData[i].recipient;
-            //recentTransactions[i].transform.GetChild(3).GetComponent<TextMeshPro>().text = transactionData[i].payer;
+        for (int i = 0; i < numTransactions; i++){
             //add transaction data prefab to scene
-            if (i == 0){
-                Instantiate(recentTransactions[i], upperLocation.transform);
-            } else if (i == numTransactions - 1){
-                Instantiate(recentTransactions[i], lowerLocation.transform);
-            } else {
-                Instantiate(recentTransactions[i], upperLocation.transform);
-                Instantiate(recentTransactions[i], lowerLocation.transform);
+            if (i == 0)
+            {
+                GameObject transactionCopy = Instantiate(transactionDataPrefab, upperLocation.transform);
+
+                //set the text values for each transaction
+                transactionCopy.transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].amount;
+                transactionCopy.transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].date;
+                transactionCopy.transform.GetChild(2).GetComponent<TextMeshPro>().text = transactionData[i].recipient;
+            } else if (i == numTransactions - 1)
+            {
+                GameObject transactionCopy = Instantiate(transactionDataPrefab, lowerLocation.transform);
+
+                transactionCopy.transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].amount;
+                transactionCopy.transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].date;
+                transactionCopy.transform.GetChild(2).GetComponent<TextMeshPro>().text = transactionData[i].recipient;
+            } else
+            {
+                GameObject transactionCopyUpper = Instantiate(transactionDataPrefab, upperLocation.transform);
+                GameObject transactionCopyLower = Instantiate(transactionDataPrefab, lowerLocation.transform);
+
+                transactionCopyUpper.transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].amount;
+                transactionCopyUpper.transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].date;
+                transactionCopyUpper.transform.GetChild(2).GetComponent<TextMeshPro>().text = transactionData[i].recipient;
+
+                transactionCopyLower.transform.GetChild(0).GetComponent<TextMeshPro>().text = transactionData[i].amount;
+                transactionCopyLower.transform.GetChild(1).GetComponent<TextMeshPro>().text = transactionData[i].date;
+                transactionCopyLower.transform.GetChild(2).GetComponent<TextMeshPro>().text = transactionData[i].recipient;
             }
         }
 
@@ -95,6 +77,8 @@ public class RecentTransactionsController : MonoBehaviour
 
         if (numTransactions < 3){
             toggleDownButton(false);
+        } else {
+            toggleDownButton(true);
         }
     }
 
@@ -138,5 +122,15 @@ public class RecentTransactionsController : MonoBehaviour
     //turn the down button on/off
     void toggleDownButton(bool state){
         downButton.SetActive(state);
+    }
+
+    public void Reset(){
+        foreach (Transform t in upperLocation.transform){
+            GameObject.Destroy(t.gameObject);
+        }
+
+        foreach (Transform t in lowerLocation.transform){
+            GameObject.Destroy(t.gameObject);
+        }
     }
 }

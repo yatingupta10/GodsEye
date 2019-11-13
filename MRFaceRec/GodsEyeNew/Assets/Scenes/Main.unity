@@ -5333,6 +5333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feed6dcfe2e3fa3409fb4eebd15da6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facebookButton: {fileID: 1450527452}
+  instagramButton: {fileID: 1450527454}
+  twitterButton: {fileID: 1450527456}
+  linkedinButton: {fileID: 1450527458}
 --- !u!1 &1273177303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4741818828524050467, guid: 6f354315ead78b64085391837622cbe3,
@@ -6638,55 +6642,6 @@ MonoBehaviour:
     type: 3}
   backButton: {fileID: 692215605}
   forwardButton: {fileID: 147310219}
---- !u!1 &1324204627
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1324204628}
-  - component: {fileID: 1324204629}
-  m_Layer: 0
-  m_Name: InterestsDataController (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1324204628
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324204627}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1499166871}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1324204629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324204627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc4cbc559c0810d4783446bd039dd41c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkinsPrefab: {fileID: 468697549095764243, guid: 6c13cb65b26667d45bf24b3f1c1e5cd6,
-    type: 3}
-  checkinlocation: {fileID: 1521913872}
-  likesPrefab: {fileID: 468697549095764243, guid: 027309af94dff9b4d8b9f6f64847f55a,
-    type: 3}
-  likesLocation: {fileID: 2014625136}
 --- !u!1 &1334627111
 GameObject:
   m_ObjectHideFlags: 0
@@ -8245,7 +8200,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 297901516}
-  - {fileID: 1324204628}
   m_Father: {fileID: 1115407283}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9141,6 +9095,11 @@ MonoBehaviour:
   financialIcon: {fileID: 562559569}
   interestsIcon: {fileID: 2111369014}
   connectionsIcon: {fileID: 1293632023}
+  recentImagesController: {fileID: 1323941942}
+  recentTransactionsController: {fileID: 58921340}
+  interestsController: {fileID: 297901515}
+  familyMembersController: {fileID: 1453318486}
+  topFriendsController: {fileID: 394075082}
 --- !u!1 &1795036042 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1826426042480480733, guid: ad9d50b3363995447864d60d5caa414f,
@@ -9437,6 +9396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   companyLogo: {fileID: 1508382085}
+  companyLogoBackground: {fileID: 2146933490}
 --- !u!1 &2146933490 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4782788580931617420, guid: 8569daa9f312bc646a33faf6abef12a9,

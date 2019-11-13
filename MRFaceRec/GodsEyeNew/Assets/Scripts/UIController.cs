@@ -46,6 +46,13 @@ public class UIController : MonoBehaviour
     public GameObject connectionsIcon;
 
     List<GameObject> iconList = new List<GameObject>();
+
+    [Header("Reset GameObjects")]
+    public GameObject recentImagesController;
+    public GameObject recentTransactionsController;
+    public GameObject interestsController;
+    public GameObject familyMembersController;
+    public GameObject topFriendsController;
     
 
     // Start is called before the first frame update
@@ -219,6 +226,12 @@ public class UIController : MonoBehaviour
 
         DeactivateAll();
         facePane.GetComponent<FacePaneController>().Reset();
+
+        recentImagesController.GetComponent<RecentImagesController>().Reset();
+        recentTransactionsController.GetComponent<RecentTransactionsController>().Reset();
+        interestsController.GetComponent<InterestsController>().Reset();
+        familyMembersController.GetComponent<FamilyMembersController>().Reset();
+        topFriendsController.GetComponent<TopFriendsController>().Reset();
 
         MainDataController.instance.mainUI.transform.parent = Camera.main.transform;
 

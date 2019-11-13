@@ -29,10 +29,17 @@ public class FaceRecName : MonoBehaviour
     // Update is called once per frame
     void Update(){
         //only for testing in unity editor
-        if (Input.GetKeyDown(KeyCode.X)){
-            displayText.text = "Found Face:\nTESTING";
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            displayText.text = "Found Face:\nTESTING 1";
             Begin();
-            recName = "gagan";
+            recName = "Gagan Vasudev";
+        }
+
+        if (Input.GetKeyDown(KeyCode.C)){
+            displayText.text = "Found Face:\nTESTING 2";
+            Begin();
+            recName = "Victor Zamarian";
         }
     }
 

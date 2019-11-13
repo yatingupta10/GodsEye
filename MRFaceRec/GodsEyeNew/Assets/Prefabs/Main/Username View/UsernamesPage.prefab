@@ -142,6 +142,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 2318899572653689910, guid: b0220de2e0e9dea40bb16013972c562b,
+        type: 3}
+      propertyPath: m_Name
+      value: InstagramUsernameButton
+      objectReference: {fileID: 0}
     - target: {fileID: 6642234273404294251, guid: b0220de2e0e9dea40bb16013972c562b,
         type: 3}
       propertyPath: m_TagString
@@ -192,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723553252504339975, guid: b0220de2e0e9dea40bb16013972c562b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0220de2e0e9dea40bb16013972c562b, type: 3}
@@ -278,6 +288,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.015
       objectReference: {fileID: 0}
+    - target: {fileID: 2318899572653689910, guid: b0220de2e0e9dea40bb16013972c562b,
+        type: 3}
+      propertyPath: m_Name
+      value: LinkedInUsernameButton
+      objectReference: {fileID: 0}
     - target: {fileID: 6642234273404294251, guid: b0220de2e0e9dea40bb16013972c562b,
         type: 3}
       propertyPath: m_TagString
@@ -328,6 +343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723553252504339975, guid: b0220de2e0e9dea40bb16013972c562b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0220de2e0e9dea40bb16013972c562b, type: 3}
@@ -414,6 +434,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 2318899572653689910, guid: b0220de2e0e9dea40bb16013972c562b,
+        type: 3}
+      propertyPath: m_Name
+      value: FacebookUsernameButton
+      objectReference: {fileID: 0}
     - target: {fileID: 6642234273404294251, guid: b0220de2e0e9dea40bb16013972c562b,
         type: 3}
       propertyPath: m_TagString
@@ -464,6 +489,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723553252504339975, guid: b0220de2e0e9dea40bb16013972c562b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0220de2e0e9dea40bb16013972c562b, type: 3}
@@ -550,6 +580,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 2318899572653689910, guid: b0220de2e0e9dea40bb16013972c562b,
+        type: 3}
+      propertyPath: m_Name
+      value: TwitterUsernameButton
+      objectReference: {fileID: 0}
     - target: {fileID: 6642234273404294251, guid: b0220de2e0e9dea40bb16013972c562b,
         type: 3}
       propertyPath: m_TagString
@@ -600,6 +635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723553252504339975, guid: b0220de2e0e9dea40bb16013972c562b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0220de2e0e9dea40bb16013972c562b, type: 3}
