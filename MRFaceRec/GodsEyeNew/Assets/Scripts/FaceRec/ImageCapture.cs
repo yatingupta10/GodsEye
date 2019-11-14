@@ -118,6 +118,7 @@ public class ImageCapture : MonoBehaviour
         if (result.success)
         {
             //tempText.GetComponent<TextMeshPro>().text = "took a picture";
+            FaceRecName.instance.displayText.text = "Picture taken";
             photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
         } else
         {

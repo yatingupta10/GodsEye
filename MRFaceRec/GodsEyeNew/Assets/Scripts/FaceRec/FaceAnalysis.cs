@@ -36,17 +36,19 @@ public class FaceAnalysis : MonoBehaviour
     /// <summary>
     /// Base endpoint of Face Recognition Service
     /// </summary>
-    const string baseEndpoint = "https://godseyefaceapi.cognitiveservices.azure.com/face/v1.0/";
+    const string baseEndpoint = "https://godseyefacerecognition.cognitiveservices.azure.com/face/v1.0/";
 
     /// <summary>
     /// Auth key of Face Recognition Service
     /// </summary>
-    private const string key = "2288d178b7624a6aba38ea0f0283751a";
+    private const string key = "df5efbdb19b746139a5febca6bda2ddc";
+    //c31e9561e2d14783a32f5f854be30345
+    //df5efbdb19b746139a5febca6bda2ddc
 
     /// <summary>
     /// Id (name) of the created person group 
     /// </summary>
-    private const string personGroupId = "godseyevictim";
+    private const string personGroupId = "538";
 
     /// <summary>
     /// Initialises this class
