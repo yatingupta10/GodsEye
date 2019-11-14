@@ -29,8 +29,6 @@ public class ImageCapture : MonoBehaviour
     /// </summary>
     private GestureRecognizer recognizer;
 
-    public GameObject tempText;
-
     /// <summary>
     /// Initialises this class
     /// </summary>
@@ -47,10 +45,10 @@ public class ImageCapture : MonoBehaviour
         //comment this out when the voice commands work
 
         // Initialises user gestures capture 
-        recognizer = new GestureRecognizer();
+        /*recognizer = new GestureRecognizer();
         recognizer.SetRecognizableGestures(GestureSettings.Tap);
         recognizer.Tapped += TapHandler;
-        recognizer.StartCapturingGestures();
+        recognizer.StartCapturingGestures();*/
 
         Debug.Log("started image capture");
     }
@@ -95,8 +93,6 @@ public class ImageCapture : MonoBehaviour
             c.pixelFormat = CapturePixelFormat.BGRA32;
 
             Debug.Log("before start photoasync");
-
-            tempText.GetComponent<TextMeshPro>().text = "before photo async";
 
             captureObject.StartPhotoModeAsync(c, delegate (PhotoCapture.PhotoCaptureResult result)
             {

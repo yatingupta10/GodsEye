@@ -48,9 +48,6 @@ public class FaceAnalysis : MonoBehaviour
     /// </summary>
     private const string personGroupId = "godseyevictim";
 
-
-    public GameObject tempText;
-
     /// <summary>
     /// Initialises this class
     /// </summary>
@@ -138,7 +135,7 @@ public class FaceAnalysis : MonoBehaviour
                 }
             } catch (System.Exception e)
             {
-                
+                FaceRecName.instance.displayText.text = "No faces found";
             }
         }
     }
@@ -189,8 +186,6 @@ public class FaceAnalysis : MonoBehaviour
             string jsonResponse = www.downloadHandler.text;
             Debug.Log($"Get Person - jsonResponse: {jsonResponse}");
 
-            tempText.GetComponent<TextMeshPro>().text = jsonResponse;
-
             Candidate_RootObject[] candidate_RootObject = JsonConvert.DeserializeObject<Candidate_RootObject[]>(jsonResponse);
 
             // For each face to identify that has been submitted, display its candidate
@@ -199,6 +194,9 @@ public class FaceAnalysis : MonoBehaviour
                 if (candidateRO.candidates.Count > 0)
                 {
                     StartCoroutine(GetPerson(candidateRO.candidates[0].personId));
+                } else
+                {
+                    FaceRecName.instance.displayText.text = "Face found but\nnot recognized";
                 }
 
                 // Delay the next "GetPerson" call, so all faces candidate are displayed properly
@@ -224,12 +222,7 @@ public class FaceAnalysis : MonoBehaviour
 
             Debug.Log($"Get Person - jsonResponse: {jsonResponse}");
 
-            tempText.GetComponent<TextMeshPro>().text = "Person: " + jsonResponse;
-
             IdentifiedPerson_RootObject identifiedPerson_RootObject = JsonConvert.DeserializeObject<IdentifiedPerson_RootObject>(jsonResponse);
-
-            // Display the name of the person in the UI
-            tempText.GetComponent<TextMeshPro>().text = identifiedPerson_RootObject.name + " | " + identifiedPerson_RootObject.personId;
 
             FaceRecName.instance.recName = identifiedPerson_RootObject.name;
             FaceRecName.instance.displayText.text = "Face Found:\n" + identifiedPerson_RootObject.name;
