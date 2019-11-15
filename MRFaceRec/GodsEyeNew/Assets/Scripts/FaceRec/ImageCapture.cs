@@ -67,6 +67,7 @@ public class ImageCapture : MonoBehaviour
         if (FaceRecName.instance.recName == ""){
             tapsCount++;
             Debug.Log(tapsCount);
+            FaceRecName.instance.displayText.text = "About to take a picture...";
             ExecuteImageCaptureAndAnalysis();
         }
     }

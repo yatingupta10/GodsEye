@@ -63,6 +63,8 @@ public class SpeechManager : MonoBehaviour
                 Application.Quit();
             } else if (screen.activeInHierarchy){
                 ui.GetComponent<UIController>().BackToCamera();
+            } else if (continueButton.activeInHierarchy){
+                ui.GetComponent<UIController>().BackToCamera();
             }
         });
 
@@ -167,6 +169,14 @@ public class SpeechManager : MonoBehaviour
 
         if (keywords.TryGetValue(args.text, out keywordAction)){
             keywordAction.Invoke();
+        }
+    }
+
+    //only for testing
+    void Update(){
+        if (Input.GetKeyDown(KeyCode.Z) && continueButton.activeInHierarchy){
+            face.GetComponent<FacePaneController>().BeginMove();
+            ui.GetComponent<UIController>().CategoryViewFromButton();
         }
     }
 }
