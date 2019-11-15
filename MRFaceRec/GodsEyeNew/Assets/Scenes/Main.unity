@@ -209,6 +209,11 @@ PrefabInstance:
       propertyPath: screen
       value: 
       objectReference: {fileID: 782258746}
+    - target: {fileID: 895111255389013800, guid: 6f354315ead78b64085391837622cbe3,
+        type: 3}
+      propertyPath: leftForceScale
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 528808068530128189, guid: 6f354315ead78b64085391837622cbe3,
         type: 3}
       propertyPath: m_Mesh
@@ -4967,8 +4972,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066500120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 2}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalPosition: {x: 0, y: 0.25, z: 2.25}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 1439574499}
   - {fileID: 767130930}
@@ -5008,11 +5013,11 @@ MonoBehaviour:
   lifetime: 0
   SolverHandler: {fileID: 1066500123}
   referenceDirection: 2
-  minDistance: 2
-  maxDistance: 2.1
+  minDistance: 1
+  maxDistance: 2.25
   minViewDegrees: 0
-  maxViewDegrees: 17
-  aspectV: 1
+  maxViewDegrees: 26
+  aspectV: 0.35
   ignoreAngleClamp: 0
   ignoreDistanceClamp: 0
   orientToReferenceDirection: 0
