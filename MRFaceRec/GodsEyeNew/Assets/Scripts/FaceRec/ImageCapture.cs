@@ -67,7 +67,7 @@ public class ImageCapture : MonoBehaviour
         if (FaceRecName.instance.recName == ""){
             tapsCount++;
             Debug.Log(tapsCount);
-            FaceRecName.instance.displayText.text = "About to take a picture...";
+            FaceRecName.instance.displayText.text = "Image capturing\ninitiated";
             ExecuteImageCaptureAndAnalysis();
         }
     }
@@ -118,12 +118,8 @@ public class ImageCapture : MonoBehaviour
     {
         if (result.success)
         {
-            //tempText.GetComponent<TextMeshPro>().text = "took a picture";
             FaceRecName.instance.displayText.text = "Picture taken";
             photoCaptureObject.StopPhotoModeAsync(OnStoppedPhotoMode);
-        } else
-        {
-            //tempText.GetComponent<TextMeshPro>().text = "failed to take a picture";
         }
         
     }

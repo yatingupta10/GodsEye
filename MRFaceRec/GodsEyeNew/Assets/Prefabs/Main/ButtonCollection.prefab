@@ -347,7 +347,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c42afa1dd8c44d0499013e6704de0baf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a41ecfd5714d6249b6c29087e0e744e, type: 3}
   m_Color: {r: 0, g: 0.5882353, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -388,7 +388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5222266652433770694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 0, z: 0}
+  m_LocalPosition: {x: -0.15, y: 0, z: 0}
   m_LocalScale: {x: 14, y: 7, z: 2}
   m_Children:
   - {fileID: 5222266654266844584}
@@ -396,7 +396,7 @@ Transform:
   - {fileID: 5222266652891295540}
   - {fileID: 5222266652585494457}
   m_Father: {fileID: 5222266653288444248}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5222266652433770719
 BoxCollider:
@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 5222266652508414746}
   - component: {fileID: 5222266652508414747}
   m_Layer: 0
-  m_Name: SaveButton
+  m_Name: CloseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -798,7 +798,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5222266652508414725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0, z: 0}
+  m_LocalPosition: {x: 0.15, y: 0, z: 0}
   m_LocalScale: {x: 14, y: 7, z: 2}
   m_Children:
   - {fileID: 5222266654358619005}
@@ -806,7 +806,7 @@ Transform:
   - {fileID: 5222266653937126748}
   - {fileID: 5222266653957609420}
   m_Father: {fileID: 5222266653288444248}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5222266652508414750
 BoxCollider:
@@ -1815,7 +1815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Save
+  m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
   m_sharedMaterial: {fileID: 21202819797275496, guid: 6a84f857bec7e7345843ae29404c57ce,
@@ -2170,8 +2170,8 @@ Transform:
   m_LocalPosition: {x: 0.975, y: 0.575, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5222266652508414724}
   - {fileID: 5222266652433770693}
+  - {fileID: 5222266652508414724}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

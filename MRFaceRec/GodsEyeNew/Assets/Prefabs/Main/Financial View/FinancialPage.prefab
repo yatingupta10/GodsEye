@@ -135,7 +135,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 21126705128354268, guid: 8b31c0e4f3ec46e4d93ad44cacff1223, type: 2}
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -191,9 +191,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1,000,000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8b31c0e4f3ec46e4d93ad44cacff1223, type: 2}
-  m_sharedMaterial: {fileID: 21126705128354268, guid: 8b31c0e4f3ec46e4d93ad44cacff1223,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -225,7 +224,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 258
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -2928,7 +2927,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 21126705128354268, guid: 8b31c0e4f3ec46e4d93ad44cacff1223, type: 2}
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2984,9 +2983,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Amazon
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8b31c0e4f3ec46e4d93ad44cacff1223, type: 2}
-  m_sharedMaterial: {fileID: 21126705128354268, guid: 8b31c0e4f3ec46e4d93ad44cacff1223,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3011,14 +3009,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 24.95
+  m_fontSize: 26.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 2
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 258
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -3636,7 +3634,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 21126705128354268, guid: 8b31c0e4f3ec46e4d93ad44cacff1223, type: 2}
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3692,9 +3690,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Business Technology Analyst
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8b31c0e4f3ec46e4d93ad44cacff1223, type: 2}
-  m_sharedMaterial: {fileID: 21126705128354268, guid: 8b31c0e4f3ec46e4d93ad44cacff1223,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3719,7 +3716,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 12.45
+  m_fontSize: 13.2
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

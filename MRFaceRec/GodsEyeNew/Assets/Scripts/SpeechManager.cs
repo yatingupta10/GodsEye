@@ -50,18 +50,20 @@ public class SpeechManager : MonoBehaviour
             }
         });
 
-        //save results and go back to camera
-        keywords.Add("Save", () => {
-            if (screen.activeInHierarchy){
-                ui.GetComponent<UIController>().SaveResults();
+        //quit the app
+        keywords.Add("Quit", () => {
+            if (cameraReticle.activeInHierarchy){
+                Application.Quit();
+            } else if (continueButton.activeInHierarchy) {
+                Application.Quit();
+            } else if (screen.activeInHierarchy){
+                ui.GetComponent<UIController>().CloseApp();
             }
         });
 
         //close the app if in camera scene or go back to the camera scene
         keywords.Add("Close", () => {
-            if (cameraReticle.activeInHierarchy){
-                Application.Quit();
-            } else if (screen.activeInHierarchy){
+            if (screen.activeInHierarchy){
                 ui.GetComponent<UIController>().BackToCamera();
             } else if (continueButton.activeInHierarchy){
                 ui.GetComponent<UIController>().BackToCamera();

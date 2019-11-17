@@ -214,10 +214,9 @@ public class UIController : MonoBehaviour
     }
 
 
-    //save results and go back to camera
-    public void SaveResults(){
-        //save the results to the camera scene here
-        BackToCamera();
+    //quit the application from the main UI
+    public void CloseApp(){
+        Application.Quit();
     }
 
     //go back to camera

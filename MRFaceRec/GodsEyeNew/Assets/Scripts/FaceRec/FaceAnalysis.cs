@@ -198,7 +198,7 @@ public class FaceAnalysis : MonoBehaviour
                     StartCoroutine(GetPerson(candidateRO.candidates[0].personId));
                 } else
                 {
-                    FaceRecName.instance.displayText.text = "Face found but\nnot recognized";
+                    FaceRecName.instance.displayText.text = "No matching\nperson found";
                 }
 
                 // Delay the next "GetPerson" call, so all faces candidate are displayed properly

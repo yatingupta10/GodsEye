@@ -172,6 +172,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6642234273404294254, guid: b0220de2e0e9dea40bb16013972c562b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 6642234273404294255, guid: b0220de2e0e9dea40bb16013972c562b,
         type: 3}
       propertyPath: m_Mesh
