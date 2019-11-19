@@ -166,11 +166,12 @@ public class ProfileParser
 
     public static Dictionary<int, int> residenceMap = new Dictionary<int, int>
             {
-                {90007, 1}, //USC Area
-                {90031, 5}, //Beverly Hills
-                {90017, 3}, //Downtown LA
-                {91001, 2}, //Pasadena
-                {90291, 4} //Santa Monica
+                {90007, 7}, //USC Area
+                {90031, 9}, //Beverly Hills
+                {90017, 8}, //Downtown LA
+                {91001, 7}, //Pasadena
+                {90291, 8}, //Santa Monica
+                {0, 0}      //If zipcode doesn't exist, hence json has 0 value
             };
 
 
@@ -183,23 +184,40 @@ public class ProfileParser
             {
                 { "Residence" ,5},
                 { "Salary", 4},
-                { "Dependents" , 3},
-                { "Check-ins" , 2},
+                { "Check-ins" , 3},
+                { "Dependents" , 2},
                 { "Age" ,1}
             };
 
+        //No presence on social media
+        int score = 0;
+        if(res == 0 && sal == 0 && dependents == 0 && checkins.Count == 0 && age == 0)
+            Random rnd = new Random();
+            score  = rnd.Next(25, 35);
+            return score;
+        
         //salary computation
         int normalized_sal = 0;
-        if (sal > 0 && sal < 50000)
+        if (sal > 0 && sal < 25000)
             normalized_sal = 1;
-        else if (sal >= 50000 && sal < 100000)
+        else if (sal >= 25000 && sal < 50000)
             normalized_sal = 2;
-        else if (sal >= 100000 && sal < 200000)
+        else if (sal >= 50000 && sal < 100000)
             normalized_sal = 3;
-        else if (sal >= 200000 && sal < 500000)
+        else if (sal >= 10000 && sal < 120000)
             normalized_sal = 4;
-        else
+        else if (sal >= 120000 && sal < 140000)
             normalized_sal = 5;
+        else if (sal >= 140000 && sal < 160000)
+            normalized_sal = 6;
+        else if (sal >= 160000 && sal < 200000)
+            normalized_sal = 7;
+        else if (sal >= 20000 && sal < 300000)
+            normalized_sal = 8;
+        else if (sal >= 300000 && sal < 500000)
+            normalized_sal = 9;
+        else
+            normalized_sal = 10;
 
         Console.WriteLine("normalized sal : " + normalized_sal);
 
@@ -207,32 +225,36 @@ public class ProfileParser
         //age computation
         int normalized_age = 0;
         if (age > 0 && age < 20)
-            normalized_age = 2;
-        else if (age >= 20 && age < 30)
-            normalized_age = 5;
-        else if (age >= 30 && age < 40)
             normalized_age = 4;
+        else if (age >= 20 && age < 25)
+            normalized_age = 6;
+        else if (age >= 25 && age < 30)
+            normalized_age = 8;
+        else if (age >= 30 && age < 35)
+            normalized_age = 9;
+        else if (age >= 35 && age < 40)
+            normalized_age = 7;
         else if (age >= 40 && age < 50)
-            normalized_age = 3;
+            normalized_age = 5;
         else
-            normalized_age = 1;
-
-        Console.WriteLine("normalized age : " + normalized_age);
+            normalized_age = 3;
 
         Console.WriteLine("normalized age : " + normalized_age);
 
         //score calculation
-        int score = 0;
         score += priorities["Age"] * normalized_age;
-        Console.WriteLine("Score : " + score);
-        score += priorities["Check-ins"] * checkins.Count;
-        Console.WriteLine("Score : " + score);
+        //Console.WriteLine("Score : " + score);
+        int length_checkins = checkins.Count ;
+        if (length_checkins > 5)
+            length_checkins = 5
+        score += priorities["Check-ins"] * length_checkins;
+       // Console.WriteLine("Score : " + score);
         score += priorities["Dependents"] * dependents;
-        Console.WriteLine("Score : " + score);
+       // Console.WriteLine("Score : " + score);
         score += priorities["Salary"] * normalized_sal;
-        Console.WriteLine("Score : " + score);
+       // Console.WriteLine("Score : " + score);
         score += priorities["Residence"] * residenceMap[res];
-        Console.WriteLine("Score : " + score);
+        //Console.WriteLine("Score : " + score);
 
         return (int)(score);
 
