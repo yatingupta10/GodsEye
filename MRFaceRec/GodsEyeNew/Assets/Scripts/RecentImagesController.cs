@@ -50,8 +50,6 @@ public class RecentImagesController : MonoBehaviour
         }
 
         numImages = RecentImages.Count;
-
-        Debug.Log("Imported " + numImages + " images as sprites.");
     }
 
     void CreateImageArrays(){

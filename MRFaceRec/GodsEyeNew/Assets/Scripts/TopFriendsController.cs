@@ -24,9 +24,7 @@ public class TopFriendsController : MonoBehaviour
     }
 
     Sprite ImportImage(string imagePath){
-        Debug.Log("path of image : " + imagePath);
         Texture2D image = Resources.Load(imagePath) as Texture2D;
-        Debug.Log(image);
         return Sprite.Create(image, new Rect(0, 0, image.width, image.height), new Vector2(0.5f, 0.5f), 40);
     }
 

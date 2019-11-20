@@ -43,9 +43,6 @@ public class FacePaneDataController : MonoBehaviour
         int score = MainDataController.instance.currentProf.score;
         string firstName = MainDataController.instance.currentProf.profile.first_name;
         string lastName = MainDataController.instance.currentProf.profile.last_name;
-        Debug.Log("Score : " + score.ToString());
-        Debug.Log("FirstName : " + firstName);
-        Debug.Log("LastName : " + lastName);
 
         GameObject[] allObjects = Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[];
 

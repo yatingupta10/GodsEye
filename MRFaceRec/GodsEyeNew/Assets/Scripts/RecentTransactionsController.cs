@@ -30,7 +30,6 @@ public class RecentTransactionsController : MonoBehaviour
     void CreateTransactionsArrays(){
         numTransactions = MainDataController.instance.currentProf.profile.financial_info.venmo_tx.Count;
         transactionData = MainDataController.instance.currentProf.profile.financial_info.venmo_tx;
-        Debug.Log("Imported " + numTransactions + " recent transactions.");
 
         currentTransaction = 0;
 
