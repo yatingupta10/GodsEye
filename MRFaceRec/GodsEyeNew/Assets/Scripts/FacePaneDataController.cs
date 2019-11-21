@@ -57,6 +57,11 @@ public class FacePaneDataController : MonoBehaviour
                 obj.GetComponent<TextMeshPro>().color = ReturnColor32(score);
             }
 
+            if (obj.tag == "FacePaneIndex")
+            {
+                //set vulnerability text based on score here
+            }
+
             if (obj.tag == "FullNameTag"){
                 obj.GetComponent<TextMeshPro>().text = firstName + " " + lastName;
             }

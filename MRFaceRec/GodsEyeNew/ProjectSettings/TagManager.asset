@@ -29,6 +29,7 @@ TagManager:
   - Edu1TextTenure
   - RelationshipStatus
   - ScoreDisplayBackground
+  - FacePaneIndex
   layers:
   - Default
   - TransparentFX

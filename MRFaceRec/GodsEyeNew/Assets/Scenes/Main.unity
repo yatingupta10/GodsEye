@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -214,6 +214,11 @@ PrefabInstance:
       propertyPath: leftForceScale
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 895111255389013800, guid: 6f354315ead78b64085391837622cbe3,
+        type: 3}
+      propertyPath: faceIndex
+      value: 
+      objectReference: {fileID: 1827389261}
     - target: {fileID: 528808068530128189, guid: 6f354315ead78b64085391837622cbe3,
         type: 3}
       propertyPath: m_Mesh
@@ -268,6 +273,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016605128537090727, guid: 6f354315ead78b64085391837622cbe3,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f354315ead78b64085391837622cbe3, type: 3}
@@ -4982,7 +4992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066500120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 2.25}
+  m_LocalPosition: {x: 0, y: 0.25, z: 2}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 1439574499}
@@ -5023,11 +5033,11 @@ MonoBehaviour:
   lifetime: 0
   SolverHandler: {fileID: 1066500123}
   referenceDirection: 2
-  minDistance: 1
-  maxDistance: 2.25
+  minDistance: 2
+  maxDistance: 2.1
   minViewDegrees: 0
   maxViewDegrees: 17
-  aspectV: 0.35
+  aspectV: 10
   ignoreAngleClamp: 0
   ignoreDistanceClamp: 0
   orientToReferenceDirection: 0
@@ -8843,6 +8853,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   focusTime: 1
+--- !u!1 &1827389261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2357129441678252557, guid: 6f354315ead78b64085391837622cbe3,
+    type: 3}
+  m_PrefabInstance: {fileID: 373698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846971020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4782788580062396504, guid: 8569daa9f312bc646a33faf6abef12a9,

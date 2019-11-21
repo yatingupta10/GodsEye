@@ -8,6 +8,7 @@ public class FacePaneController : MonoBehaviour
 {
     public GameObject faceButton;
     public GameObject nameText;
+    public GameObject faceIndex;
     public GameObject screen;
 
     public float upForceScale;
@@ -69,11 +70,12 @@ public class FacePaneController : MonoBehaviour
         {
             rb.constraints |= RigidbodyConstraints.FreezeAll;
             nameText.SetActive(true);
+            faceIndex.SetActive(false);
             //scoreText.SetActive(true);
             //buttonCollection.SetActive(true);
             screen.SetActive(true);
             colliderCollection.SetActive(false);
-            score.transform.localPosition = new Vector3(0.3f, 0.35f, 0.0f);
+            //score.transform.localPosition = new Vector3(0.3f, 0.35f, 0.0f);
             nextMove = false;
         }
     }
@@ -81,10 +83,11 @@ public class FacePaneController : MonoBehaviour
     public void Reset()
     {
         transform.localPosition = Vector3.zero;
-        score.transform.localPosition = new Vector3(0.0f, 0.35f, 0.0f);
+        //score.transform.localPosition = new Vector3(0.0f, 0.35f, 0.0f);
         nameText.SetActive(false);
         screen.SetActive(false);
         colliderCollection.SetActive(true);
+        faceIndex.SetActive(true);
         faceButton.SetActive(true);
         gameObject.SetActive(true);
     }

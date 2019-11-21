@@ -79,6 +79,7 @@ public class ImageCapture : MonoBehaviour
     {
         Resolution cameraResolution = PhotoCapture.SupportedResolutions.OrderByDescending
             ((res) => res.width * res.height).First();
+
         Texture2D targetTexture = new Texture2D(cameraResolution.width, cameraResolution.height);
 
         //tempText.text = "W: " + cameraResolution.width + " | H: " + cameraResolution.height;

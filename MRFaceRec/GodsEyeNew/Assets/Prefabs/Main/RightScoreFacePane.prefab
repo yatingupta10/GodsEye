@@ -332,7 +332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gagan Vasudev
+  m_text: Yash Patel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -958,7 +958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 79
+  m_text: 73
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31933a8cc8999674993edfa6a0251af7, type: 2}
   m_sharedMaterial: {fileID: 21396770757108362, guid: 31933a8cc8999674993edfa6a0251af7,
