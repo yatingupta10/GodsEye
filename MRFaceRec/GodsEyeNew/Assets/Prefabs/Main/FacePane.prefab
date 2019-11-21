@@ -291,7 +291,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: deea383f954443147aa50d1256f008af, type: 3}
-  m_Color: {r: 0.5019608, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.7490196, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -490,7 +490,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 79
+  m_text: 44
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31933a8cc8999674993edfa6a0251af7, type: 2}
   m_sharedMaterial: {fileID: 21396770757108362, guid: 31933a8cc8999674993edfa6a0251af7,
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278223103
-  m_fontColor: {r: 0.5019608, g: 1, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 0.7490196, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -693,7 +693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gagan Vasudev
+  m_text: Victor Zamarian
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 21396770757108362, guid: 31933a8cc8999674993edfa6a0251af7,
