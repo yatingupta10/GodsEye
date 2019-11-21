@@ -134,6 +134,7 @@ public class FaceAnalysis : MonoBehaviour
                 if (facesIdList.Count > 0)
                 {
                     StartCoroutine(IdentifyFaces(facesIdList));
+                    yield break;
                 }
             } catch (System.Exception e)
             {
@@ -196,6 +197,7 @@ public class FaceAnalysis : MonoBehaviour
                 if (candidateRO.candidates.Count > 0)
                 {
                     StartCoroutine(GetPerson(candidateRO.candidates[0].personId));
+                    yield break;
                 } else
                 {
                     FaceRecName.instance.displayText.text = "No matching\nperson found";
@@ -229,6 +231,7 @@ public class FaceAnalysis : MonoBehaviour
             FaceRecName.instance.recName = identifiedPerson_RootObject.name;
             FaceRecName.instance.displayText.text = "Face Found:\n" + identifiedPerson_RootObject.name;
             FaceRecName.instance.Begin();
+            yield break;
         }
     }
 
