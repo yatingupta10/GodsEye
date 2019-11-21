@@ -176,7 +176,7 @@ public class SpeechManager : MonoBehaviour
 
     //only for testing
     void Update(){
-        if (Input.GetKeyDown(KeyCode.Z) && continueButton.activeInHierarchy){
+        if (Input.GetKeyDown(KeyCode.Q) && continueButton.activeInHierarchy){
             face.GetComponent<FacePaneController>().BeginMove();
             ui.GetComponent<UIController>().CategoryViewFromButton();
         }
