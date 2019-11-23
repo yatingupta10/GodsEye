@@ -11,11 +11,6 @@ using System.Net.Http.Headers;
 using TMPro;
 using UnityEngine.UI;
 
-
-using System.Drawing;
-using Image = System.Drawing.Image;
-using Graphics = System.Drawing.Graphics;
-
 public class FaceAnalysis : MonoBehaviour
 {
     /// <summary>
@@ -70,46 +65,6 @@ public class FaceAnalysis : MonoBehaviour
         //CreateLabel();
     }
 
-
-    public static Image ResizeImage(Image imgToResize, Size destinationSize)
-    {
-        var originalWidth = imgToResize.Width;
-        var originalHeight = imgToResize.Height;
-
-        //how many units are there to make the original length
-        var hRatio = (float)originalHeight / destinationSize.Height;
-        var wRatio = (float)originalWidth / destinationSize.Width;
-
-        //get the shorter side
-        var ratio = System.Math.Min(hRatio, wRatio);
-
-        var hScale = System.Convert.ToInt32(destinationSize.Height * ratio);
-        var wScale = System.Convert.ToInt32(destinationSize.Width * ratio);
-
-        //start cropping from the center
-        var startX = (originalWidth - wScale) / 2;
-        var startY = (originalHeight - hScale) / 2;
-
-        //crop the image from the specified location and size
-        var sourceRectangle = new Rectangle(startX, startY, wScale, hScale);
-
-        //the future size of the image
-        var bitmap = new Bitmap(destinationSize.Width, destinationSize.Height);
-
-        //fill-in the whole bitmap
-        var destinationRectangle = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
-
-        //generate the new image
-        using (var g = Graphics.FromImage(bitmap))
-        {
-            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            g.DrawImage(imgToResize, destinationRectangle, sourceRectangle, GraphicsUnit.Pixel);
-        }
-
-        return bitmap;
-
-    }
-
     /// <summary>
     /// Spawns cursor for the Main Camera
     /// </summary>
@@ -149,14 +104,6 @@ public class FaceAnalysis : MonoBehaviour
         // Change the image into a bytes array
         imageBytes = GetImageAsByteArray(imagePath);
 
-        Bitmap newImg = new Bitmap(imagePath);
-        Image croppedImg = ResizeImage(newImg, new Size(1024, 1024));
-
-        ImageConverter convertor = new ImageConverter();
-        byte[] croppedImgBytes = (byte[])convertor.ConvertTo(croppedImg, typeof(byte[]));
-
-
-
         using (UnityWebRequest www =
             UnityWebRequest.Post(detectFacesEndpoint, webForm))
         {
@@ -164,7 +111,6 @@ public class FaceAnalysis : MonoBehaviour
             www.SetRequestHeader("Content-Type", "application/octet-stream");
             www.uploadHandler.contentType = "application/octet-stream";
             www.uploadHandler = new UploadHandlerRaw(imageBytes);
-            //www.uploadHandler = new UploadHandlerRaw(croppedImgBytes);
             www.downloadHandler = new DownloadHandlerBuffer();
 
             yield return www.SendWebRequest();
@@ -172,8 +118,6 @@ public class FaceAnalysis : MonoBehaviour
             try
             {
                 string jsonResponse = www.downloadHandler.text;
-                
-                FaceRecName.instance.displayText.text = jsonResponse;
 
                 Receiver[] face_RootObject =
                     JsonConvert.DeserializeObject<Receiver[]>(jsonResponse);
