@@ -29,6 +29,7 @@ public class ImageCapture : MonoBehaviour
     /// </summary>
     private GestureRecognizer recognizer;
 
+
     /// <summary>
     /// Initialises this class
     /// </summary>
@@ -77,8 +78,9 @@ public class ImageCapture : MonoBehaviour
     /// </summary>
     private void ExecuteImageCaptureAndAnalysis()
     {
-        Resolution cameraResolution = PhotoCapture.SupportedResolutions.OrderByDescending
-            ((res) => res.width * res.height).First();
+        //Resolution cameraResolution = PhotoCapture.SupportedResolutions.OrderByDescending
+        //    ((res) => res.width * res.height).First();
+        Resolution cameraResolution = PhotoCapture.SupportedResolutions.ElementAt(1);
 
         Texture2D targetTexture = new Texture2D(cameraResolution.width, cameraResolution.height);
 
@@ -106,8 +108,7 @@ public class ImageCapture : MonoBehaviour
                 // Set the image path on the FaceAnalysis class
                 FaceAnalysis.Instance.imagePath = filePath;
 
-                photoCaptureObject.TakePhotoAsync
-                (filePath, PhotoCaptureFileOutputFormat.JPG, OnCapturedPhotoToDisk);
+                photoCaptureObject.TakePhotoAsync(filePath, PhotoCaptureFileOutputFormat.JPG, OnCapturedPhotoToDisk);
             });
         });
     }
@@ -124,6 +125,7 @@ public class ImageCapture : MonoBehaviour
         }
         
     }
+
 
     /// <summary>
     /// Register the full execution of the Photo Capture. If successfull, it will begin the Image Analysis process.
