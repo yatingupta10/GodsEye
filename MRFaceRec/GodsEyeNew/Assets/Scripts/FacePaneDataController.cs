@@ -35,6 +35,19 @@ public class FacePaneDataController : MonoBehaviour
             return new Color32(0, 255, 0, 255);
     }
 
+    private string GetVulnerabilityText(int score)
+    {
+        if (score < 26 && score > 0){
+            return "Fortified";
+        } else if (score >= 26 && score < 51){
+            return "Low Vulnerability";
+        } else if (score >= 51 && score < 76){
+            return "Medium Vulnerability";
+        } else {
+            return "Highly Vulnerable";
+        }
+    }
+
     public void Begin()
     {
         string faceImg = MainDataController.instance.currentProf.profile.face_image;
@@ -59,7 +72,7 @@ public class FacePaneDataController : MonoBehaviour
 
             if (obj.tag == "FacePaneIndex")
             {
-                //set vulnerability text based on score here
+                obj.GetComponent<TextMeshPro>().text = GetVulnerabilityText(score);
             }
 
             if (obj.tag == "FullNameTag"){
